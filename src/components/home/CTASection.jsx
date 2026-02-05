@@ -19,11 +19,11 @@ export default function CTASection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Ready to Elevate Your EHS Program?
+            Need Industrial Hygiene Support?
           </h2>
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-            Let's discuss how we can help you achieve compliance, reduce risks, 
-            and create a safer, more sustainable operation.
+            Contact us to discuss your exposure assessment needs, regulatory questions, 
+            or program development requirements.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -32,7 +32,7 @@ export default function CTASection() {
                 size="lg" 
                 className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group"
               >
-                Schedule a Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>

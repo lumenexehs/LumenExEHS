@@ -35,7 +35,7 @@ export default function HeroSection() {
           >
             <Shield className="w-5 h-5 text-emerald-400" />
             <span className="text-emerald-400 font-medium tracking-wide uppercase text-sm">
-              Trusted EHS Partner Since 2005
+              Science-Based Industrial Hygiene Since 2005
             </span>
           </motion.div>
 
@@ -45,8 +45,8 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
           >
-            Protecting People,
-            <span className="block text-emerald-400">Safeguarding the Planet</span>
+            Defensible Exposure Assessment
+            <span className="block text-emerald-400">& Decision-Ready Reporting</span>
           </motion.h1>
 
           <motion.p 
@@ -55,9 +55,9 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed"
           >
-            Comprehensive environmental, health, and safety consulting services 
-            that help organizations achieve compliance, reduce risk, and create 
-            sustainable operations.
+            Rigorous industrial hygiene assessments, exposure characterization, 
+            and scientifically-grounded interpretations aligned with OSHA, NIOSH, 
+            and AIHA best practice standards.
           </motion.p>
 
           <motion.div 
@@ -71,7 +71,7 @@ export default function HeroSection() {
                 size="lg" 
                 className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group"
               >
-                Get a Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
@@ -81,7 +81,7 @@ export default function HeroSection() {
                 variant="outline"
                 className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full"
               >
-                Explore Our Services
+                View Our Capabilities
               </Button>
             </Link>
           </motion.div>
@@ -93,9 +93,9 @@ export default function HeroSection() {
             className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-300"
           >
             {[
-              "ISO 14001 Certified",
-              "OSHA Compliant",
-              "500+ Projects Completed"
+              "CIH-Led Assessments",
+              "AIHA Member",
+              "Peer-Reviewed Methods"
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-emerald-400" />

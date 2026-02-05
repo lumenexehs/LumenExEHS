@@ -3,23 +3,23 @@ import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Their environmental audit team helped us achieve ISO 14001 certification ahead of schedule. Exceptional expertise and professionalism.",
+    quote: "Their exposure assessment methodology provided the defensible documentation we needed for our respiratory protection program evaluation.",
     author: "Sarah Mitchell",
-    role: "VP of Operations",
+    role: "EHS Manager",
     company: "Pacific Manufacturing Inc.",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
   },
   {
-    quote: "The safety training program they developed reduced our incident rate by 60%. Best investment we've made in workplace safety.",
+    quote: "The quantitative noise survey and statistical analysis gave us clear, actionable data for our hearing conservation program decisions.",
     author: "Michael Chen",
-    role: "HSE Director",
+    role: "Industrial Hygienist",
     company: "Coastal Energy Group",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
   },
   {
-    quote: "Navigating EPA regulations felt impossible until we partnered with them. Their compliance expertise is unmatched.",
+    quote: "Their interpretation of air monitoring results against applicable OELs helped us prioritize engineering controls effectively.",
     author: "Jennifer Adams",
-    role: "Environmental Manager",
+    role: "Safety Director",
     company: "Sterling Chemicals",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop"
   }
@@ -37,13 +37,14 @@ export default function TestimonialsSection() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">
-            Client Success Stories
+            Client Feedback
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
-            Trusted by Industry Leaders
+            Trusted by EHS Professionals
           </h2>
           <p className="text-lg text-slate-600">
-            See how we've helped organizations transform their EHS programs and achieve measurable results.
+            Feedback from organizations who have utilized our industrial hygiene services 
+            for exposure assessment and program support.
           </p>
         </motion.div>
 

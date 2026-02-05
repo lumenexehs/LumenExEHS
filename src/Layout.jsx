@@ -113,7 +113,7 @@ export default function Layout({ children, currentPageName }) {
                   className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full px-5"
                 >
                   <Phone className="w-4 h-4 mr-2" />
-                  Get a Quote
+                  Contact Us
                 </Button>
               </Link>
             </div>
@@ -173,7 +173,7 @@ export default function Layout({ children, currentPageName }) {
                   <div className="p-6 border-t">
                     <Link to={createPageUrl("Contact")} onClick={() => setMobileMenuOpen(false)}>
                       <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white rounded-full">
-                        Get a Quote
+                        Contact Us
                       </Button>
                     </Link>
                   </div>
@@ -201,13 +201,13 @@ export default function Layout({ children, currentPageName }) {
                 <span className="font-bold text-xl">EHS Consulting</span>
               </div>
               <p className="text-slate-400 mb-6 max-w-sm">
-                Expert environmental, health, and safety consulting services 
-                helping organizations protect their people and the planet.
+                Science-based industrial hygiene consulting providing defensible 
+                exposure assessment and decision-ready reporting.
               </p>
               <div className="flex items-center gap-4 text-sm text-slate-400">
-                <span>ISO 14001 Certified</span>
+                <span>CIH-Led Practice</span>
                 <span>•</span>
-                <span>OSHA Compliant</span>
+                <span>AIHA Member</span>
               </div>
             </div>
 

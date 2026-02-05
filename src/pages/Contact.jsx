@@ -24,12 +24,12 @@ import {
 
 const serviceOptions = [
   { value: "general", label: "General Inquiry" },
-  { value: "environmental_audit", label: "Environmental Audits" },
-  { value: "safety_assessment", label: "Safety Assessments" },
-  { value: "compliance_review", label: "Compliance Reviews" },
-  { value: "training", label: "EHS Training" },
-  { value: "risk_assessment", label: "Risk Assessment" },
-  { value: "permit_assistance", label: "Permit Assistance" }
+  { value: "environmental_audit", label: "Exposure Assessment" },
+  { value: "safety_assessment", label: "Occupational Hygiene Survey" },
+  { value: "compliance_review", label: "Regulatory Compliance Support" },
+  { value: "training", label: "Technical Training" },
+  { value: "risk_assessment", label: "Health Hazard Evaluation" },
+  { value: "permit_assistance", label: "Written Program Development" }
 ];
 
 export default function Contact() {
@@ -85,11 +85,11 @@ export default function Contact() {
               Contact Us
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Let's Start a Conversation
+              Request a Consultation
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Ready to improve your EHS program? Get in touch for a free consultation 
-              and discover how we can help protect your people and the environment.
+              Contact us to discuss your exposure assessment needs, regulatory questions, 
+              or industrial hygiene program requirements.
             </p>
           </motion.div>
         </div>
@@ -109,11 +109,11 @@ export default function Contact() {
             >
               <div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">
-                  Get in Touch
+                  Contact Information
                 </h2>
                 <p className="text-slate-600 mb-8">
-                  We're here to help. Reach out via phone, email, or fill out the form 
-                  and we'll get back to you within 24 hours.
+                  Reach out to discuss your industrial hygiene needs. We respond to 
+                  inquiries within one business day.
                 </p>
               </div>
 
@@ -190,7 +190,7 @@ export default function Contact() {
                 ) : (
                   <>
                     <h3 className="text-xl font-bold text-slate-900 mb-6">
-                      Request a Consultation
+                      Project Inquiry
                     </h3>
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid md:grid-cols-2 gap-6">
@@ -262,12 +262,12 @@ export default function Contact() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message">Message *</Label>
+                        <Label htmlFor="message">Project Details *</Label>
                         <Textarea
                           id="message"
                           value={formData.message}
                           onChange={(e) => handleChange("message", e.target.value)}
-                          placeholder="Tell us about your EHS needs and challenges..."
+                          placeholder="Describe your assessment needs, agents of concern, or regulatory questions..."
                           required
                           className="min-h-[150px] resize-none"
                         />

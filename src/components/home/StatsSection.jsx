@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "500+", label: "Projects Completed" },
-  { value: "98%", label: "Client Satisfaction" },
-  { value: "20+", label: "Years Experience" },
-  { value: "150+", label: "Active Clients" }
+  { value: "500+", label: "Assessments Conducted" },
+  { value: "20+", label: "Years of Practice" },
+  { value: "CIH", label: "Board Certified Staff" },
+  { value: "AIHA", label: "Accredited Methods" }
 ];
 
 export default function StatsSection() {

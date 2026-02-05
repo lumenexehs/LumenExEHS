@@ -21,90 +21,90 @@ const services = [
   {
     id: "environmental_audit",
     icon: Leaf,
-    title: "Environmental Audits",
-    shortDesc: "Comprehensive environmental assessments",
-    description: "Our environmental audits provide thorough evaluations of your operations to ensure regulatory compliance and identify opportunities for improvement.",
+    title: "Exposure Assessment",
+    shortDesc: "Quantitative exposure characterization",
+    description: "Systematic exposure assessment using AIHA strategies to characterize worker exposures and compare against applicable occupational exposure limits (OELs).",
     features: [
-      "Multi-media compliance assessments",
-      "Air, water, and waste management reviews",
-      "ISO 14001 gap analysis and certification support",
-      "Environmental management system development",
-      "Sustainability program recommendations"
+      "Similar Exposure Group (SEG) development",
+      "Personal and area air sampling",
+      "Statistical analysis per AIHA guidelines",
+      "Comparison to OSHA PELs, ACGIH TLVs, and other OELs",
+      "Exposure profile determination and documentation"
     ],
     image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=600&q=80"
   },
   {
     id: "safety_assessment",
     icon: HardHat,
-    title: "Safety Assessments",
-    shortDesc: "Workplace safety evaluations",
-    description: "Protect your workforce with comprehensive safety assessments that identify hazards, evaluate risks, and provide actionable recommendations.",
+    title: "Occupational Hygiene Surveys",
+    shortDesc: "Comprehensive workplace evaluations",
+    description: "Systematic industrial hygiene surveys to identify, evaluate, and document chemical, physical, and biological hazards in the workplace.",
     features: [
-      "Job hazard analysis (JHA)",
-      "Workplace safety inspections",
-      "OSHA compliance evaluations",
-      "Safety program development",
-      "Incident investigation and root cause analysis"
+      "Baseline and comprehensive surveys",
+      "Process hazard characterization",
+      "Ventilation assessment and verification",
+      "Control effectiveness evaluation",
+      "Prioritized findings and technical recommendations"
     ],
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
   },
   {
     id: "compliance_review",
     icon: ClipboardCheck,
-    title: "Compliance Reviews",
-    shortDesc: "Regulatory compliance analysis",
-    description: "Navigate complex regulations with confidence. Our compliance reviews ensure you meet all federal, state, and local requirements.",
+    title: "Regulatory Compliance Support",
+    shortDesc: "OSHA and EPA regulatory analysis",
+    description: "Technical review of regulatory requirements with gap analysis and documentation support for OSHA health standards and EPA requirements.",
     features: [
-      "Multi-jurisdictional regulatory analysis",
-      "Permit compliance verification",
-      "Regulatory change management",
-      "Compliance calendar development",
-      "Agency liaison support"
+      "OSHA health standard applicability review",
+      "Written program gap analysis",
+      "Exposure monitoring protocol development",
+      "Recordkeeping compliance verification",
+      "Regulatory interpretation and guidance"
     ],
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
   },
   {
     id: "training",
     icon: GraduationCap,
-    title: "EHS Training",
-    shortDesc: "Customized safety training programs",
-    description: "Build a culture of safety with our comprehensive training programs tailored to your industry and workforce needs.",
+    title: "Technical Training",
+    shortDesc: "Evidence-based occupational health training",
+    description: "Technical training on industrial hygiene principles, exposure controls, and hazard recognition based on current science and regulatory requirements.",
     features: [
-      "OSHA 10 & 30-hour courses",
-      "Hazard communication training",
-      "Emergency response procedures",
-      "Confined space entry certification",
-      "Custom training program development"
+      "Respiratory protection and fit testing",
+      "Hearing conservation program training",
+      "Hazard communication per GHS/HazCom",
+      "PPE selection and use criteria",
+      "Exposure control hierarchy principles"
     ],
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
   },
   {
     id: "risk_assessment",
     icon: AlertTriangle,
-    title: "Risk Assessment",
-    shortDesc: "Systematic hazard identification",
-    description: "Proactively identify and mitigate risks before they become incidents with our systematic risk assessment methodologies.",
+    title: "Health Hazard Evaluation",
+    shortDesc: "Systematic hazard characterization",
+    description: "Comprehensive health hazard evaluations to identify agents of concern, characterize exposure potential, and assess risk relative to occupational exposure limits.",
     features: [
-      "Process hazard analysis (PHA)",
-      "Quantitative risk assessments",
-      "Bow-tie analysis",
-      "Risk matrix development",
-      "Risk mitigation planning"
+      "Chemical hazard identification and inventory",
+      "Exposure pathway analysis",
+      "Qualitative and quantitative risk characterization",
+      "Control banding applications",
+      "Prioritized control recommendations"
     ],
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
   },
   {
     id: "permit_assistance",
     icon: FileCheck,
-    title: "Permit Assistance",
-    shortDesc: "Permitting process navigation",
-    description: "Streamline your permitting process with expert guidance on applications, renewals, and compliance documentation.",
+    title: "Written Program Development",
+    shortDesc: "Regulatory-compliant program documentation",
+    description: "Development and review of written health and safety programs to meet OSHA regulatory requirements and industry best practices.",
     features: [
-      "Air quality permit applications",
-      "Wastewater discharge permits",
-      "Stormwater management plans",
-      "Hazardous waste permits",
-      "Construction permit support"
+      "Respiratory protection programs (29 CFR 1910.134)",
+      "Hearing conservation programs (29 CFR 1910.95)",
+      "Hazard communication programs (29 CFR 1910.1200)",
+      "Substance-specific compliance programs",
+      "Medical surveillance protocol support"
     ],
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
   }
@@ -134,14 +134,14 @@ export default function Services() {
             className="max-w-3xl"
           >
             <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">
-              Our Services
+              Technical Capabilities
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Comprehensive EHS Solutions
+              Industrial Hygiene Services
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              From environmental compliance to workplace safety, we provide end-to-end 
-              consulting services tailored to your industry's unique challenges.
+              Scientifically rigorous exposure assessment, monitoring, and interpretation 
+              services aligned with OSHA, NIOSH, and AIHA standards.
             </p>
           </motion.div>
         </div>
@@ -208,7 +208,7 @@ export default function Services() {
                     <Button 
                       className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full group"
                     >
-                      Request This Service
+                      Discuss This Service
                       <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
@@ -250,10 +250,10 @@ export default function Services() {
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Discover", desc: "Initial consultation to understand your needs and challenges" },
-              { step: "02", title: "Assess", desc: "Comprehensive evaluation of your current EHS status" },
-              { step: "03", title: "Plan", desc: "Develop tailored strategies and actionable recommendations" },
-              { step: "04", title: "Implement", desc: "Execute solutions with ongoing support and guidance" }
+              { step: "01", title: "Scope", desc: "Define assessment objectives, agents of concern, and applicable standards" },
+              { step: "02", title: "Assess", desc: "Conduct monitoring using validated methods and AIHA strategies" },
+              { step: "03", title: "Interpret", desc: "Analyze data against OELs with statistical rigor and professional judgment" },
+              { step: "04", title: "Report", desc: "Deliver decision-ready findings with defensible documentation" }
             ].map((item, index) => (
               <motion.div
                 key={item.step}
@@ -282,17 +282,17 @@ export default function Services() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Not Sure Which Service You Need?
+              Questions About Your Assessment Needs?
             </h2>
             <p className="text-lg text-slate-300 mb-8">
-              Schedule a free consultation and we'll help you identify the right solutions for your organization.
+              Contact us to discuss your specific exposure assessment or regulatory compliance requirements.
             </p>
             <Link to={createPageUrl("Contact")}>
               <Button 
                 size="lg" 
                 className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group"
               >
-                Schedule a Free Consultation
+                Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>

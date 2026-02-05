@@ -14,38 +14,38 @@ import { motion } from "framer-motion";
 const services = [
   {
     icon: Leaf,
-    title: "Environmental Audits",
-    description: "Comprehensive environmental assessments to ensure regulatory compliance and identify improvement opportunities.",
+    title: "Exposure Assessment",
+    description: "Quantitative and qualitative exposure characterization using validated sampling and analytical methods.",
     color: "emerald"
   },
   {
     icon: HardHat,
-    title: "Safety Assessments",
-    description: "Thorough workplace safety evaluations to protect employees and minimize operational risks.",
+    title: "Occupational Hygiene Surveys",
+    description: "Systematic workplace evaluations for chemical, physical, and biological agents following AIHA strategies.",
     color: "amber"
   },
   {
     icon: ClipboardCheck,
-    title: "Compliance Reviews",
-    description: "Expert analysis of your regulatory standing with actionable recommendations for full compliance.",
+    title: "Regulatory Compliance Review",
+    description: "Technical analysis of OSHA, EPA, and state regulatory requirements with gap identification.",
     color: "blue"
   },
   {
     icon: GraduationCap,
-    title: "EHS Training",
-    description: "Customized training programs to build a culture of safety and environmental responsibility.",
+    title: "Technical Training",
+    description: "Evidence-based training on exposure controls, PPE selection, and hazard recognition protocols.",
     color: "purple"
   },
   {
     icon: AlertTriangle,
-    title: "Risk Assessment",
-    description: "Systematic identification and evaluation of potential hazards with mitigation strategies.",
+    title: "Health Hazard Evaluation",
+    description: "Systematic hazard identification, exposure modeling, and risk characterization aligned with OELs.",
     color: "rose"
   },
   {
     icon: FileCheck,
-    title: "Permit Assistance",
-    description: "Navigate complex permitting processes with expert guidance and documentation support.",
+    title: "Program Development",
+    description: "Written programs for respiratory protection, hearing conservation, and hazard communication per regulatory standards.",
     color: "cyan"
   }
 ];
@@ -71,14 +71,14 @@ export default function ServicesOverview() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">
-            Our Expertise
+            Technical Capabilities
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
-            Comprehensive EHS Solutions
+            Industrial Hygiene Services
           </h2>
           <p className="text-lg text-slate-600">
-            From compliance audits to safety training, we provide end-to-end services 
-            tailored to your industry's unique challenges.
+            Scientifically rigorous assessment, monitoring, and interpretation services 
+            grounded in recognized standards and best practices.
           </p>
         </motion.div>
 

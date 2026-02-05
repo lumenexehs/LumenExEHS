@@ -15,27 +15,27 @@ import {
 
 const team = [
   {
-    name: "Dr. Robert Harrison",
-    role: "Founder & CEO",
-    bio: "25+ years in environmental consulting, former EPA senior advisor",
+    name: "Dr. Robert Harrison, CIH",
+    role: "Principal Industrial Hygienist",
+    bio: "Board Certified Industrial Hygienist, 25+ years in exposure assessment and occupational health",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
   },
   {
-    name: "Emily Rodriguez",
-    role: "Director of Safety",
-    bio: "CSP certified, OSHA authorized instructor with 15 years experience",
+    name: "Emily Rodriguez, CSP, CIH",
+    role: "Senior Industrial Hygienist",
+    bio: "Specializes in chemical exposure assessment, respiratory protection, and hazard evaluation",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
   },
   {
-    name: "James Thompson",
-    role: "Senior Environmental Scientist",
-    bio: "PE, QEP certified with expertise in air quality and remediation",
+    name: "James Thompson, MS, CIH",
+    role: "Industrial Hygiene Scientist",
+    bio: "Expertise in noise and vibration assessment, ergonomics, and physical agent monitoring",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
   },
   {
-    name: "Lisa Chen",
-    role: "Compliance Manager",
-    bio: "Specializes in EPA, OSHA, and state regulatory compliance",
+    name: "Lisa Chen, MPH",
+    role: "Occupational Health Specialist",
+    bio: "Focus on exposure data interpretation, statistical analysis, and regulatory compliance",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop"
   }
 ];
@@ -43,33 +43,33 @@ const team = [
 const values = [
   {
     icon: Shield,
-    title: "Integrity",
-    description: "We uphold the highest ethical standards in all our work and recommendations."
+    title: "Scientific Rigor",
+    description: "All assessments follow validated methods and peer-reviewed protocols."
   },
   {
     icon: Target,
-    title: "Excellence",
-    description: "We deliver exceptional quality and continuously improve our expertise."
+    title: "Defensibility",
+    description: "Documentation and conclusions that withstand technical and regulatory scrutiny."
   },
   {
     icon: Users,
-    title: "Partnership",
-    description: "We build lasting relationships based on trust and mutual success."
+    title: "Objectivity",
+    description: "Independent analysis focused on accurate exposure characterization."
   },
   {
     icon: Heart,
-    title: "Commitment",
-    description: "We're dedicated to protecting people and the environment."
+    title: "Worker Health Focus",
+    description: "Committed to protecting workers through sound industrial hygiene practice."
   }
 ];
 
 const certifications = [
-  "ISO 14001:2015 Certified",
-  "ISO 45001:2018 Certified",
-  "OSHA Authorized Training Provider",
-  "EPA Smart Sectors Partner",
+  "Board Certified Industrial Hygienists (CIH)",
   "AIHA Member Organization",
-  "NAEM Corporate Member"
+  "AIHA-LAP Accredited Labs Used",
+  "NIOSH Validated Methods",
+  "OSHA Technical Support",
+  "Peer-Reviewed Protocols"
 ];
 
 export default function About() {
@@ -93,11 +93,11 @@ export default function About() {
               About Us
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Two Decades of EHS Excellence
+              Two Decades of Industrial Hygiene Practice
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Since 2005, we've been helping organizations create safer workplaces 
-              and more sustainable operations through expert consulting and unwavering commitment.
+              Since 2005, we've provided rigorous exposure assessment, hazard evaluation, 
+              and technical consultation grounded in occupational health science and regulatory standards.
             </p>
           </motion.div>
         </div>
@@ -114,23 +114,23 @@ export default function About() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                Our Story
+                Our Practice
               </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  Founded by Dr. Robert Harrison after his tenure at the EPA, our firm 
-                  was built on a simple belief: every organization deserves access to 
-                  expert EHS guidance that makes a real difference.
+                  Founded by Dr. Robert Harrison, CIH, our practice was established 
+                  on the principle that exposure assessment must be scientifically 
+                  defensible and aligned with recognized occupational health standards.
                 </p>
                 <p>
-                  What started as a small consultancy has grown into a full-service 
-                  EHS firm serving clients across manufacturing, energy, healthcare, 
-                  and construction industries throughout North America.
+                  We serve manufacturing, energy, healthcare, and construction 
+                  sectors with industrial hygiene assessments, exposure monitoring, 
+                  and technical interpretation services.
                 </p>
                 <p>
-                  Today, our team of 40+ certified professionals brings decades of 
-                  combined experience to every project, ensuring our clients receive 
-                  the highest caliber of service and expertise.
+                  Our team of Board Certified Industrial Hygienists applies AIHA 
+                  exposure assessment strategies, validated sampling methods, and 
+                  statistical analysis to deliver decision-ready findings.
                 </p>
               </div>
               <div className="mt-8 flex items-center gap-6">
@@ -281,10 +281,10 @@ export default function About() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-white mb-4">
-              Certifications & Memberships
+              Credentials & Standards
             </h2>
             <p className="text-slate-400">
-              Recognized excellence in environmental, health, and safety consulting
+              Professional certifications and recognized methodologies
             </p>
           </motion.div>
 
@@ -316,17 +316,17 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-              Let's Work Together
+              Discuss Your Assessment Needs
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Ready to partner with a team that truly understands your EHS challenges?
+              Contact us to discuss your exposure assessment or industrial hygiene requirements.
             </p>
             <Link to={createPageUrl("Contact")}>
               <Button 
                 size="lg" 
                 className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group"
               >
-                Get in Touch
+                Request Consultation
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
