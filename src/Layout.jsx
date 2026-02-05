@@ -57,7 +57,7 @@ export default function Layout({ children, currentPageName }) {
             ? "bg-white shadow-sm" 
             : isHomePage 
               ? "bg-transparent" 
-              : "bg-[#0F2A4A]"
+              : "bg-[#1a3a52]"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -91,7 +91,7 @@ export default function Layout({ children, currentPageName }) {
                   to={createPageUrl(link.page)}
                   className={`text-sm font-medium transition-colors ${
                     currentPageName === link.page
-                      ? isScrolled ? "text-emerald-600" : "text-emerald-400"
+                      ? isScrolled ? "text-[#1a3a52]" : "text-[#d4af7a]"
                       : isScrolled ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white"
                   }`}
                 >
@@ -115,7 +115,7 @@ export default function Layout({ children, currentPageName }) {
               <Link to={createPageUrl("Contact")}>
                 <Button 
                   size="sm"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full px-5"
+                  className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold rounded-full px-5"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   Contact Us
@@ -138,12 +138,13 @@ export default function Layout({ children, currentPageName }) {
                 <div className="flex flex-col h-full">
                   <div className="p-6 border-b">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center">
-                        <Shield className="w-5 h-5 text-white" />
+                      <div className="w-10 h-10 bg-[#1a3a52] rounded-lg flex items-center justify-center">
+                        <Shield className="w-5 h-5 text-[#d4af7a]" />
                       </div>
-                      <span className="font-bold text-lg text-slate-900">
-                        EHS Consulting
-                      </span>
+                      <div>
+                        <div className="font-bold text-lg text-slate-900">LumenEx EHS</div>
+                        <div className="text-xs italic text-[#d4af7a]">Carer for Carers</div>
+                      </div>
                     </div>
                   </div>
                   
@@ -156,7 +157,7 @@ export default function Layout({ children, currentPageName }) {
                           onClick={() => setMobileMenuOpen(false)}
                           className={`flex items-center justify-between py-3 px-4 rounded-lg transition-colors ${
                             currentPageName === link.page
-                              ? "bg-emerald-50 text-emerald-600"
+                              ? "bg-[#d4af7a]/10 text-[#1a3a52]"
                               : "text-slate-600 hover:bg-slate-50"
                           }`}
                         >
@@ -195,7 +196,7 @@ export default function Layout({ children, currentPageName }) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#0F2A4A] text-white">
+      <footer className="bg-[#1a3a52] text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
           <div className="grid md:grid-cols-4 gap-12">
             <div className="md:col-span-2">
@@ -255,7 +256,7 @@ export default function Layout({ children, currentPageName }) {
 
           <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-slate-500">
-              © {new Date().getFullYear()} EHS Consulting. All rights reserved.
+              © {new Date().getFullYear()} LumenEx EHS. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm text-slate-500">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

@@ -58,11 +58,11 @@ export default function TestimonialsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-slate-50 rounded-2xl p-8 relative"
             >
-              <Quote className="w-10 h-10 text-emerald-100 absolute top-6 right-6" />
+              <Quote className="w-10 h-10 text-[#d4af7a]/20 absolute top-6 right-6" />
               
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                  <Star key={i} className="w-4 h-4 fill-[#d4af7a] text-[#d4af7a]" />
                 ))}
               </div>
 
@@ -79,7 +79,7 @@ export default function TestimonialsSection() {
                 <div>
                   <div className="font-semibold text-slate-900">{testimonial.author}</div>
                   <div className="text-sm text-slate-500">{testimonial.role}</div>
-                  <div className="text-sm text-emerald-600">{testimonial.company}</div>
+                  <div className="text-sm text-[#1a3a52]">{testimonial.company}</div>
                 </div>
               </div>
             </motion.div>

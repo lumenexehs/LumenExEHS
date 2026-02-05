@@ -51,12 +51,12 @@ const services = [
 ];
 
 const colorClasses = {
-  emerald: "bg-emerald-50 text-emerald-600 group-hover:bg-emerald-100",
-  amber: "bg-amber-50 text-amber-600 group-hover:bg-amber-100",
-  blue: "bg-blue-50 text-blue-600 group-hover:bg-blue-100",
-  purple: "bg-purple-50 text-purple-600 group-hover:bg-purple-100",
-  rose: "bg-rose-50 text-rose-600 group-hover:bg-rose-100",
-  cyan: "bg-cyan-50 text-cyan-600 group-hover:bg-cyan-100"
+  emerald: "bg-[#1a3a52]/5 text-[#1a3a52] group-hover:bg-[#1a3a52]/10",
+  amber: "bg-[#d4af7a]/10 text-[#1a3a52] group-hover:bg-[#d4af7a]/20",
+  blue: "bg-[#1a3a52]/5 text-[#1a3a52] group-hover:bg-[#1a3a52]/10",
+  purple: "bg-[#d4af7a]/10 text-[#1a3a52] group-hover:bg-[#d4af7a]/20",
+  rose: "bg-[#1a3a52]/5 text-[#1a3a52] group-hover:bg-[#1a3a52]/10",
+  cyan: "bg-[#d4af7a]/10 text-[#1a3a52] group-hover:bg-[#d4af7a]/20"
 };
 
 export default function ServicesOverview() {
@@ -98,13 +98,13 @@ export default function ServicesOverview() {
                 <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-colors ${colorClasses[service.color]}`}>
                   <service.icon className="w-7 h-7" />
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                <h3 className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-[#1a3a52] transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-slate-600 leading-relaxed mb-4">
                   {service.description}
                 </p>
-                <span className="inline-flex items-center text-emerald-600 font-medium text-sm group-hover:gap-2 transition-all">
+                <span className="inline-flex items-center text-[#d4af7a] font-medium text-sm group-hover:gap-2 transition-all">
                   Learn more
                   <ArrowRight className="w-4 h-4 ml-1 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                 </span>
