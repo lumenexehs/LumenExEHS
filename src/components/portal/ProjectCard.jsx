@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { Calendar, Clock } from "lucide-react";
+import { Calendar, Clock, ArrowRight, User } from "lucide-react";
 import { format } from "date-fns";
 
 const statusColors = {
@@ -45,7 +45,7 @@ export default function ProjectCard({ project }) {
           <Progress value={project.progress || 0} className="h-2" />
         </div>
 
-        <div className="flex items-center gap-6 text-sm text-slate-500">
+        <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
           {project.start_date && (
             <div className="flex items-center gap-1.5">
               <Calendar className="w-4 h-4" />
@@ -60,7 +60,24 @@ export default function ProjectCard({ project }) {
           )}
         </div>
 
-        {project.notes && (
+        {project.consultant_name && (
+          <div className="flex items-center gap-2 text-sm text-slate-600">
+            <User className="w-4 h-4 text-slate-400" />
+            <span>Consultant: {project.consultant_name}</span>
+          </div>
+        )}
+
+        {project.next_steps && (
+          <div className="bg-emerald-50 border border-emerald-100 rounded-lg p-4">
+            <div className="flex items-center gap-2 text-emerald-700 font-medium text-sm mb-1">
+              <ArrowRight className="w-4 h-4" />
+              Next Steps
+            </div>
+            <p className="text-sm text-emerald-800">{project.next_steps}</p>
+          </div>
+        )}
+
+        {project.notes && !project.next_steps && (
           <p className="text-sm text-slate-600 border-t pt-4">
             {project.notes}
           </p>
