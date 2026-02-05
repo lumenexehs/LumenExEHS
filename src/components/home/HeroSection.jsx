@@ -33,9 +33,9 @@ export default function HeroSection() {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 mb-6"
           >
-            <Shield className="w-5 h-5 text-emerald-400" />
-            <span className="text-emerald-400 font-medium tracking-wide uppercase text-sm">
-              Science-Based Industrial Hygiene Since 2005
+            <Shield className="w-5 h-5 text-[#d4af7a]" />
+            <span className="text-[#d4af7a] font-medium tracking-wide text-sm italic">
+              Carer for Carers — Anticipating Hazards Since 2005
             </span>
           </motion.div>
 
@@ -45,8 +45,8 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
           >
-            Defensible Exposure Assessment
-            <span className="block text-emerald-400">& Decision-Ready Reporting</span>
+            Illuminating Workplace Hazards
+            <span className="block text-[#d4af7a]">Before Harm Occurs</span>
           </motion.h1>
 
           <motion.p 
@@ -55,9 +55,8 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed"
           >
-            Rigorous industrial hygiene assessments, exposure characterization, 
-            and scientifically-grounded interpretations aligned with OSHA, NIOSH, 
-            and AIHA best practice standards.
+            Precise, evidence-based industrial hygiene assessments that provide clarity and 
+            support informed decisions for those caring for worker health and safety.
           </motion.p>
 
           <motion.div 
@@ -69,7 +68,7 @@ export default function HeroSection() {
             <Link to={createPageUrl("Contact")}>
               <Button 
                 size="lg" 
-                className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group"
+                className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold px-8 py-6 text-lg rounded-full group"
               >
                 Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -79,7 +78,7 @@ export default function HeroSection() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full"
+                className="border-[#d4af7a]/50 text-[#d4af7a] hover:bg-[#d4af7a]/10 px-8 py-6 text-lg rounded-full"
               >
                 View Our Capabilities
               </Button>

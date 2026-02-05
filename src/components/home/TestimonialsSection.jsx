@@ -36,15 +36,15 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">
-            Client Feedback
+          <span className="text-[#d4af7a] font-medium tracking-wide text-sm italic">
+            Supporting Those Who Care for Workers
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a52] mt-3 mb-4">
             Trusted by EHS Professionals
           </h2>
           <p className="text-lg text-slate-600">
-            Feedback from organizations who have utilized our industrial hygiene services 
-            for exposure assessment and program support.
+            Feedback from safety professionals and organizations who rely on our 
+            precise, supportive guidance for worker health decisions.
           </p>
         </motion.div>
 

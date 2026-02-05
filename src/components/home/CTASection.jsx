@@ -19,18 +19,18 @@ export default function CTASection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Need Industrial Hygiene Support?
+            We're Here to Support You
           </h2>
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-            Contact us to discuss your exposure assessment needs, regulatory questions, 
-            or program development requirements.
+            Let us help illuminate workplace hazards and provide the clarity you need 
+            to protect workers effectively.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={createPageUrl("Contact")}>
               <Button 
                 size="lg" 
-                className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group"
+                className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold px-8 py-6 text-lg rounded-full group"
               >
                 Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

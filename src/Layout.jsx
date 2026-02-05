@@ -65,16 +65,21 @@ export default function Layout({ children, currentPageName }) {
             {/* Logo */}
             <Link to={createPageUrl("Home")} className="flex items-center gap-3">
               <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
-                isScrolled ? "bg-emerald-600" : "bg-emerald-500"
+                isScrolled ? "bg-[#1a3a52]" : "bg-[#1a3a52]/90"
               }`}>
-                <Shield className="w-5 h-5 text-white" />
+                <Shield className="w-5 h-5 text-[#d4af7a]" />
               </div>
               <div>
-                <span className={`font-bold text-lg ${
+                <div className={`font-bold text-lg ${
                   isScrolled ? "text-slate-900" : "text-white"
                 }`}>
-                  EHS Consulting
-                </span>
+                  LumenEx EHS
+                </div>
+                <div className={`text-xs italic ${
+                  isScrolled ? "text-[#d4af7a]" : "text-[#d4af7a]"
+                }`}>
+                  Carer for Carers
+                </div>
               </div>
             </Link>
 
@@ -172,7 +177,7 @@ export default function Layout({ children, currentPageName }) {
 
                   <div className="p-6 border-t">
                     <Link to={createPageUrl("Contact")} onClick={() => setMobileMenuOpen(false)}>
-                      <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white rounded-full">
+                      <Button className="w-full bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold rounded-full">
                         Contact Us
                       </Button>
                     </Link>
@@ -195,14 +200,17 @@ export default function Layout({ children, currentPageName }) {
           <div className="grid md:grid-cols-4 gap-12">
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
-                  <Shield className="w-5 h-5 text-white" />
+                <div className="w-10 h-10 bg-[#1a3a52] rounded-lg flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-[#d4af7a]" />
                 </div>
-                <span className="font-bold text-xl">EHS Consulting</span>
+                <div>
+                  <div className="font-bold text-xl text-white">LumenEx EHS</div>
+                  <div className="text-sm italic text-[#d4af7a]">Carer for Carers</div>
+                </div>
               </div>
               <p className="text-slate-400 mb-6 max-w-sm">
-                Science-based industrial hygiene consulting providing defensible 
-                exposure assessment and decision-ready reporting.
+                Anticipating hazards and providing precise, evidence-based industrial hygiene 
+                guidance for those responsible for worker health and safety.
               </p>
               <div className="flex items-center gap-4 text-sm text-slate-400">
                 <span>CIH-Led Practice</span>

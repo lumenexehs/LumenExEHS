@@ -70,15 +70,15 @@ export default function ServicesOverview() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">
-            Technical Capabilities
+          <span className="text-[#d4af7a] font-medium tracking-wide text-sm italic">
+            Anticipating Risk, Providing Clarity
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a52] mt-3 mb-4">
             Industrial Hygiene Services
           </h2>
           <p className="text-lg text-slate-600">
-            Scientifically rigorous assessment, monitoring, and interpretation services 
-            grounded in recognized standards and best practices.
+            Precise, cost-effective assessments that illuminate hazards and support 
+            informed decision-making for worker health protection.
           </p>
         </motion.div>
 
