@@ -94,13 +94,10 @@ export default function ClientPortal() {
       <header className="lg:hidden bg-white border-b sticky top-0 z-40">
         <div className="flex items-center justify-between px-4 h-14">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-[#1a3a52] rounded-lg flex items-center justify-center">
-              <Shield className="w-4 h-4 text-[#d4af7a]" />
+            <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
+              <Shield className="w-4 h-4 text-white" />
             </div>
-            <div>
-              <div className="font-semibold text-slate-900 text-sm">EHS</div>
-              <div className="text-xs text-slate-500">Client Portal</div>
-            </div>
+            <span className="font-semibold text-slate-900">Client Portal</span>
           </div>
           
           <Sheet>

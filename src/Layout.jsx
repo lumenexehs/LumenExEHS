@@ -70,10 +70,10 @@ export default function Layout({ children, currentPageName }) {
                 <Shield className="w-5 h-5 text-[#d4af7a]" />
               </div>
               <div>
-                <div className={`font-bold text-xl ${
+                <div className={`font-bold text-lg ${
                   isScrolled ? "text-slate-900" : "text-white"
                 }`}>
-                  EHS
+                  LumenEx EHS
                 </div>
                 <div className={`text-xs italic ${
                   isScrolled ? "text-[#d4af7a]" : "text-[#d4af7a]"
@@ -142,7 +142,7 @@ export default function Layout({ children, currentPageName }) {
                         <Shield className="w-5 h-5 text-[#d4af7a]" />
                       </div>
                       <div>
-                        <div className="font-bold text-xl text-slate-900">EHS</div>
+                        <div className="font-bold text-lg text-slate-900">LumenEx EHS</div>
                         <div className="text-xs italic text-[#d4af7a]">Carer for Carers</div>
                       </div>
                     </div>
@@ -205,7 +205,7 @@ export default function Layout({ children, currentPageName }) {
                   <Shield className="w-5 h-5 text-[#d4af7a]" />
                 </div>
                 <div>
-                  <div className="font-bold text-2xl text-white">EHS</div>
+                  <div className="font-bold text-xl text-white">LumenEx EHS</div>
                   <div className="text-sm italic text-[#d4af7a]">Carer for Carers</div>
                 </div>
               </div>
@@ -256,7 +256,7 @@ export default function Layout({ children, currentPageName }) {
 
           <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-slate-500">
-              © {new Date().getFullYear()} EHS Consulting. All rights reserved.
+              © {new Date().getFullYear()} LumenEx EHS. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm text-slate-500">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
