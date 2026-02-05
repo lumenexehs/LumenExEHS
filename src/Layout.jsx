@@ -247,9 +247,9 @@ export default function Layout({ children, currentPageName }) {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-3 text-slate-400">
-                <li>(555) 123-4567</li>
-                <li>info@ehsconsulting.com</li>
-                <li>123 Environmental Way<br />Suite 400<br />Boston, MA 02110</li>
+                <li>(647) 975-9541</li>
+                <li>info@lumenexehs.ca</li>
+                <li>Markham, ON L6C 0H5</li>
               </ul>
             </div>
           </div>

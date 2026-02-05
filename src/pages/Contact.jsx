@@ -124,7 +124,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Phone</h3>
-                    <p className="text-slate-600">(555) 123-4567</p>
+                    <p className="text-slate-600">(647) 975-9541</p>
                     <p className="text-sm text-slate-500">Mon-Fri, 8am-6pm EST</p>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-                    <p className="text-slate-600">info@ehsconsulting.com</p>
+                    <p className="text-slate-600">info@lumenexehs.ca</p>
                     <p className="text-sm text-slate-500">We respond within 24 hours</p>
                   </div>
                 </div>
@@ -146,9 +146,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Office</h3>
-                    <p className="text-slate-600">123 Environmental Way</p>
-                    <p className="text-slate-600">Suite 400</p>
-                    <p className="text-slate-600">Boston, MA 02110</p>
+                    <p className="text-slate-600">Markham, ON L6C 0H5</p>
                   </div>
                 </div>
 

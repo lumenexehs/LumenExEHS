@@ -62,22 +62,22 @@ export default function SupportContact({ projects = [] }) {
 
       <div className="space-y-3 mb-5">
         <a 
-          href="tel:+15551234567" 
+          href="tel:+16479759541" 
           className="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors"
         >
           <Phone className="w-4 h-4 text-slate-400" />
           <div>
-            <div className="text-sm font-medium text-slate-700">(555) 123-4567</div>
+            <div className="text-sm font-medium text-slate-700">(647) 975-9541</div>
             <div className="text-xs text-slate-500">Mon-Fri, 8am-6pm EST</div>
           </div>
         </a>
         <a 
-          href="mailto:support@ehsconsulting.com"
+          href="mailto:info@lumenexehs.ca"
           className="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors"
         >
           <Mail className="w-4 h-4 text-slate-400" />
           <div>
-            <div className="text-sm font-medium text-slate-700">support@ehsconsulting.com</div>
+            <div className="text-sm font-medium text-slate-700">info@lumenexehs.ca</div>
             <div className="text-xs text-slate-500">Response within 24 hours</div>
           </div>
         </a>
