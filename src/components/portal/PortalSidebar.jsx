@@ -32,8 +32,8 @@ export default function PortalSidebar({ activeTab, setActiveTab, user }) {
           <Shield className="w-5 h-5 text-white" />
         </div>
         <div>
-          <div className="font-semibold text-slate-900 text-sm">EHS Consulting</div>
-          <div className="text-xs text-slate-500">Client Portal</div>
+          <div className="font-semibold text-slate-900 text-sm">EHS</div>
+          <div className="text-xs text-slate-500 italic text-[#d4af7a]">Carer for Carers</div>
         </div>
       </div>
 
