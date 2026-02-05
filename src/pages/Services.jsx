@@ -14,99 +14,112 @@ import {
   Factory,
   Zap,
   Stethoscope,
-  Building
+  Building,
+  Activity
 } from "lucide-react";
 
 const services = [
   {
-    id: "environmental_audit",
+    id: "occupational_hygiene",
     icon: Leaf,
-    title: "Exposure Assessment",
+    title: "Occupational Hygiene and Exposure Assessment",
     shortDesc: "Quantitative exposure characterization",
-    description: "Systematic exposure assessment using AIHA strategies to characterize worker exposures and compare against applicable occupational exposure limits (OELs).",
-    features: [
-      "Similar Exposure Group (SEG) development",
-      "Personal and area air sampling",
-      "Statistical analysis per AIHA guidelines",
-      "Comparison to OSHA PELs, ACGIH TLVs, and other OELs",
-      "Exposure profile determination and documentation"
+    scope: "Systematic evaluation of airborne chemical exposures through personal and area monitoring. Development of Similar Exposure Groups (SEGs) and statistical interpretation of results against applicable occupational exposure limits.",
+    approach: "Apply AIHA exposure assessment strategies including initial assessment, basic characterization, and comprehensive surveys. Utilize NIOSH-validated methods and AIHA-LAP accredited laboratories. Statistical analysis follows AIHA guidance documents.",
+    deliverables: [
+      "SEG definitions with exposure determinants documented",
+      "Personal breathing zone and area sampling data",
+      "Statistical analysis of exposure distributions (95% UCL)",
+      "Comparison to OSHA PELs, ACGIH TLVs, and internal OELs",
+      "Exposure profile determination (well-controlled, controlled, poorly controlled, highly uncertain)",
+      "Prioritized exposure control recommendations"
     ],
     image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=600&q=80"
   },
   {
-    id: "safety_assessment",
+    id: "noise_physical",
     icon: HardHat,
-    title: "Occupational Hygiene Surveys",
-    shortDesc: "Comprehensive workplace evaluations",
-    description: "Systematic industrial hygiene surveys to identify, evaluate, and document chemical, physical, and biological hazards in the workplace.",
-    features: [
-      "Baseline and comprehensive surveys",
-      "Process hazard characterization",
-      "Ventilation assessment and verification",
-      "Control effectiveness evaluation",
-      "Prioritized findings and technical recommendations"
+    title: "Noise and Physical Agents",
+    shortDesc: "Acoustic and physical hazard assessment",
+    scope: "Quantitative assessment of noise exposures, vibration, radiation (ionizing and non-ionizing), and other physical agents. Evaluation per OSHA standards and ACGIH TLVs with statistical treatment of dosimetry data.",
+    approach: "Personal noise dosimetry and octave-band analysis. Area surveys using Type 1 or Type 2 sound level meters. Statistical analysis of exposure distributions. Engineering control evaluations and hearing conservation program audits.",
+    deliverables: [
+      "8-hour TWA noise exposure determinations",
+      "Octave-band analysis for engineering control design",
+      "Statistical evaluation of noise exposure variability",
+      "Hearing conservation program compliance assessment",
+      "Engineering and administrative control recommendations",
+      "Audiometric testing oversight protocols"
     ],
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
   },
   {
-    id: "compliance_review",
+    id: "heat_stress",
+    icon: Zap,
+    title: "Heat Stress Assessment",
+    shortDesc: "Thermal environment evaluation",
+    scope: "Quantitative assessment of heat stress risk using WBGT measurements and metabolic heat generation estimates. Evaluation per ACGIH heat stress TLV and NIOSH criteria. Work-rest regimen development for hot environments.",
+    approach: "WBGT monitoring using ISO 7243 protocols. Metabolic rate estimation per ISO 8996. Statistical analysis of peak and average exposures. Acclimatization status review. Engineering and administrative control evaluation.",
+    deliverables: [
+      "WBGT measurements (indoor and outdoor)",
+      "Metabolic rate calculations for job tasks",
+      "Comparison to ACGIH TLV for heat stress",
+      "Work-rest cycle recommendations",
+      "Acclimatization protocol development",
+      "Heat illness prevention program guidance"
+    ],
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80"
+  },
+  {
+    id: "iaq",
+    icon: Building,
+    title: "Indoor Air Quality and IEQ",
+    shortDesc: "Building environment assessment",
+    scope: "Systematic evaluation of indoor environmental quality including HVAC performance, contaminant sources, thermal comfort, humidity, and occupant concerns. Application of ASHRAE and EPA guidance for non-industrial settings.",
+    approach: "Real-time monitoring of CO2, temperature, and relative humidity. Source identification and ventilation assessment. Comparison to ASHRAE 62.1 standards. Mold and moisture surveys using calibrated instruments. Occupant questionnaires.",
+    deliverables: [
+      "HVAC system assessment and airflow verification",
+      "CO2 and temperature/humidity monitoring data",
+      "Contaminant source identification",
+      "Ventilation adequacy evaluation per ASHRAE 62.1",
+      "Microbial and moisture assessment (if indicated)",
+      "Prioritized remediation and maintenance recommendations"
+    ],
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
+  },
+  {
+    id: "regulatory_due_diligence",
     icon: ClipboardCheck,
-    title: "Regulatory Compliance Support",
-    shortDesc: "OSHA and EPA regulatory analysis",
-    description: "Technical review of regulatory requirements with gap analysis and documentation support for OSHA health standards and EPA requirements.",
-    features: [
-      "OSHA health standard applicability review",
-      "Written program gap analysis",
-      "Exposure monitoring protocol development",
-      "Recordkeeping compliance verification",
-      "Regulatory interpretation and guidance"
+    title: "Regulatory Risk and Due Diligence Support",
+    shortDesc: "Compliance assessment and transaction support",
+    scope: "Technical review of OSHA health standard compliance, exposure monitoring records, and industrial hygiene program adequacy. Support for mergers, acquisitions, and divestitures with focus on occupational health liabilities.",
+    approach: "Systematic review of regulatory applicability, exposure monitoring protocols, recordkeeping, and written program compliance. Gap analysis against OSHA standards. Historical exposure data review for potential legacy issues.",
+    deliverables: [
+      "OSHA health standard applicability matrix",
+      "Exposure monitoring protocol compliance review",
+      "Written program gap analysis (e.g., respiratory protection, HazCom)",
+      "Recordkeeping adequacy assessment (29 CFR 1910.1020)",
+      "Industrial hygiene liability identification",
+      "Prioritized compliance roadmap with cost estimates"
     ],
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
   },
   {
-    id: "training",
-    icon: GraduationCap,
-    title: "Technical Training",
-    shortDesc: "Evidence-based occupational health training",
-    description: "Technical training on industrial hygiene principles, exposure controls, and hazard recognition based on current science and regulatory requirements.",
-    features: [
-      "Respiratory protection and fit testing",
-      "Hearing conservation program training",
-      "Hazard communication per GHS/HazCom",
-      "PPE selection and use criteria",
-      "Exposure control hierarchy principles"
-    ],
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
-  },
-  {
-    id: "risk_assessment",
+    id: "specialized_environments",
     icon: AlertTriangle,
-    title: "Health Hazard Evaluation",
-    shortDesc: "Systematic hazard characterization",
-    description: "Comprehensive health hazard evaluations to identify agents of concern, characterize exposure potential, and assess risk relative to occupational exposure limits.",
-    features: [
-      "Chemical hazard identification and inventory",
-      "Exposure pathway analysis",
-      "Qualitative and quantitative risk characterization",
-      "Control banding applications",
-      "Prioritized control recommendations"
+    title: "Specialized or High-Sensitivity Environments",
+    shortDesc: "Cleanroom, laboratory, and healthcare IH",
+    scope: "Industrial hygiene support for controlled environments, research facilities, healthcare settings, and operations requiring heightened exposure controls. Includes biosafety assessments, cleanroom certification, and pharmaceutical manufacturing support.",
+    approach: "Application of specialized standards (e.g., ISO 14644 for cleanrooms, CDC/NIH biosafety guidelines). Airborne viable monitoring, containment verification, and exposure assessment for potent compounds. Coordination with infection control and biosafety professionals.",
+    deliverables: [
+      "Cleanroom classification testing and certification support",
+      "Containment verification for biological safety cabinets",
+      "Exposure assessment for highly potent compounds",
+      "Biosafety level adequacy evaluation",
+      "Cross-contamination and carryover assessments",
+      "Engineering control performance verification"
     ],
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
-  },
-  {
-    id: "permit_assistance",
-    icon: FileCheck,
-    title: "Written Program Development",
-    shortDesc: "Regulatory-compliant program documentation",
-    description: "Development and review of written health and safety programs to meet OSHA regulatory requirements and industry best practices.",
-    features: [
-      "Respiratory protection programs (29 CFR 1910.134)",
-      "Hearing conservation programs (29 CFR 1910.95)",
-      "Hazard communication programs (29 CFR 1910.1200)",
-      "Substance-specific compliance programs",
-      "Medical surveillance protocol support"
-    ],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+    image: "https://images.unsplash.com/photo-1581093458791-9d42e11b4c15?w=600&q=80"
   }
 ];
 
@@ -186,23 +199,44 @@ export default function Services() {
                       {service.shortDesc}
                     </span>
                   </div>
-                  
-                  <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+
+                  <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                     {service.title}
                   </h2>
-                  
-                  <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
 
-                  <ul className="space-y-3 mb-8">
-                    {service.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-slate-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="space-y-6 mb-8">
+                    <div>
+                      <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-2">
+                        Scope
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        {service.scope}
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-2">
+                        Typical Approach
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        {service.approach}
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-3">
+                        Key Deliverables
+                      </h3>
+                      <ul className="space-y-2">
+                        {service.deliverables.map((deliverable) => (
+                          <li key={deliverable} className="flex items-start gap-2">
+                            <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                            <span className="text-slate-700 text-sm">{deliverable}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
 
                   <Link to={createPageUrl("Contact") + `?service=${service.id}`}>
                     <Button 

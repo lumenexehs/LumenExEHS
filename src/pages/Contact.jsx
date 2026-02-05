@@ -24,12 +24,12 @@ import {
 
 const serviceOptions = [
   { value: "general", label: "General Inquiry" },
-  { value: "environmental_audit", label: "Exposure Assessment" },
-  { value: "safety_assessment", label: "Occupational Hygiene Survey" },
-  { value: "compliance_review", label: "Regulatory Compliance Support" },
-  { value: "training", label: "Technical Training" },
-  { value: "risk_assessment", label: "Health Hazard Evaluation" },
-  { value: "permit_assistance", label: "Written Program Development" }
+  { value: "occupational_hygiene", label: "Occupational Hygiene & Exposure Assessment" },
+  { value: "noise_physical", label: "Noise and Physical Agents" },
+  { value: "heat_stress", label: "Heat Stress Assessment" },
+  { value: "iaq", label: "Indoor Air Quality and IEQ" },
+  { value: "regulatory_due_diligence", label: "Regulatory Risk & Due Diligence" },
+  { value: "specialized_environments", label: "Specialized/High-Sensitivity Environments" }
 ];
 
 export default function Contact() {
