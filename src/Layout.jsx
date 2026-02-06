@@ -64,11 +64,11 @@ export default function Layout({ children, currentPageName }) {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to={createPageUrl("Home")} className="flex items-center gap-3">
-              <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
-                isScrolled ? "bg-[#1a3a52]" : "bg-[#1a3a52]/90"
-              }`}>
-                <Shield className="w-5 h-5 text-[#d4af7a]" />
-              </div>
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c1bbd0e35_ChatGPTImage202611808_43_49.png"
+                alt="LumenEx EHS"
+                className="w-10 h-10 object-contain"
+              />
               <div>
                 <div className={`font-bold text-lg ${
                   isScrolled ? "text-slate-900" : "text-white"
@@ -138,9 +138,11 @@ export default function Layout({ children, currentPageName }) {
                 <div className="flex flex-col h-full">
                   <div className="p-6 border-b">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-[#1a3a52] rounded-lg flex items-center justify-center">
-                        <Shield className="w-5 h-5 text-[#d4af7a]" />
-                      </div>
+                      <img 
+                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c1bbd0e35_ChatGPTImage202611808_43_49.png"
+                        alt="LumenEx EHS"
+                        className="w-10 h-10 object-contain"
+                      />
                       <div>
                         <div className="font-bold text-lg text-slate-900">LumenEx EHS</div>
                         <div className="text-xs italic text-[#d4af7a]">Carer for Carers</div>
@@ -201,9 +203,11 @@ export default function Layout({ children, currentPageName }) {
           <div className="grid md:grid-cols-4 gap-12">
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-[#1a3a52] rounded-lg flex items-center justify-center">
-                  <Shield className="w-5 h-5 text-[#d4af7a]" />
-                </div>
+                <img 
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c1bbd0e35_ChatGPTImage202611808_43_49.png"
+                  alt="LumenEx EHS"
+                  className="w-10 h-10 object-contain"
+                />
                 <div>
                   <div className="font-bold text-xl text-white">LumenEx EHS</div>
                   <div className="text-sm italic text-[#d4af7a]">Carer for Carers</div>
