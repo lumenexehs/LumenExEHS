@@ -68,6 +68,7 @@ export default function Layout({ children, currentPageName }) {
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c1bbd0e35_ChatGPTImage202611808_43_49.png"
                 alt="LumenEx EHS"
                 className="w-10 h-10 object-contain"
+                style={{ mixBlendMode: 'multiply' }}
               />
               <div>
                 <div className={`font-bold text-lg ${
@@ -142,6 +143,7 @@ export default function Layout({ children, currentPageName }) {
                         src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c1bbd0e35_ChatGPTImage202611808_43_49.png"
                         alt="LumenEx EHS"
                         className="w-10 h-10 object-contain"
+                        style={{ mixBlendMode: 'multiply' }}
                       />
                       <div>
                         <div className="font-bold text-lg text-slate-900">LumenEx EHS</div>
@@ -207,6 +209,7 @@ export default function Layout({ children, currentPageName }) {
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c1bbd0e35_ChatGPTImage202611808_43_49.png"
                   alt="LumenEx EHS"
                   className="w-10 h-10 object-contain"
+                  style={{ mixBlendMode: 'multiply' }}
                 />
                 <div>
                   <div className="font-bold text-xl text-white">LumenEx EHS</div>
