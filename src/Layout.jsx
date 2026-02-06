@@ -65,7 +65,7 @@ export default function Layout({ children, currentPageName }) {
             {/* Logo */}
             <Link to={createPageUrl("Home")} className="flex items-center gap-3">
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c1bbd0e35_ChatGPTImage202611808_43_49.png"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
                 alt="LumenEx EHS"
                 className="w-10 h-10 object-contain"
                 style={{ mixBlendMode: 'multiply' }}
@@ -140,7 +140,7 @@ export default function Layout({ children, currentPageName }) {
                   <div className="p-6 border-b">
                     <div className="flex items-center gap-3">
                       <img 
-                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c1bbd0e35_ChatGPTImage202611808_43_49.png"
+                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
                         alt="LumenEx EHS"
                         className="w-10 h-10 object-contain"
                         style={{ mixBlendMode: 'multiply' }}
@@ -206,7 +206,7 @@ export default function Layout({ children, currentPageName }) {
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-4">
                 <img 
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c1bbd0e35_ChatGPTImage202611808_43_49.png"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
                   alt="LumenEx EHS"
                   className="w-10 h-10 object-contain"
                   style={{ mixBlendMode: 'multiply' }}
