@@ -42,7 +42,7 @@ export default function CTASection() {
               className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full"
             >
               <Phone className="mr-2 w-5 h-5" />
-              (555) 123-4567
+              (647) 975-9541
             </Button>
           </div>
         </motion.div>
