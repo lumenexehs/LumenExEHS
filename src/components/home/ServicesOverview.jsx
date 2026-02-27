@@ -74,7 +74,7 @@ export default function ServicesOverview() {
             Anticipating Risk, Providing Clarity
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a52] mt-3 mb-4">
-            Industrial Hygiene Services
+            Environmental Health & Safety Services
           </h2>
           <p className="text-lg text-slate-600">
             Precise, cost-effective assessments that illuminate hazards and support 
