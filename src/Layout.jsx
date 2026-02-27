@@ -63,13 +63,24 @@ export default function Layout({ children, currentPageName }) {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to={createPageUrl("Home")} className="flex items-center">
+            <Link to={createPageUrl("Home")} className="flex items-center gap-3">
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/6737c422d_ChatGPTImageJan12202602_45_33PM.png"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
                 alt="LumenEx EHS"
-                className="h-14 w-auto object-contain"
-                style={{ mixBlendMode: 'multiply' }}
+                className="w-12 h-12 object-contain"
               />
+              <div>
+                <div className={`font-bold text-lg ${
+                  isScrolled ? "text-slate-900" : "text-white"
+                }`}>
+                  LumenEx EHS
+                </div>
+                <div className={`text-xs italic ${
+                  isScrolled ? "text-[#d4af7a]" : "text-[#d4af7a]"
+                }`}>
+                  Carer for Carers
+                </div>
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
@@ -126,13 +137,16 @@ export default function Layout({ children, currentPageName }) {
               <SheetContent side="right" className="w-80 p-0">
                 <div className="flex flex-col h-full">
                   <div className="p-6 border-b">
-                    <div className="flex items-center">
+                    <div className="flex items-center gap-3">
                       <img 
-                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/6737c422d_ChatGPTImageJan12202602_45_33PM.png"
+                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
                         alt="LumenEx EHS"
-                        className="h-14 w-auto object-contain"
-                        style={{ mixBlendMode: 'multiply' }}
+                        className="w-12 h-12 object-contain"
                       />
+                      <div>
+                        <div className="font-bold text-lg text-slate-900">LumenEx EHS</div>
+                        <div className="text-xs italic text-[#d4af7a]">Carer for Carers</div>
+                      </div>
                     </div>
                   </div>
                   
@@ -188,12 +202,16 @@ export default function Layout({ children, currentPageName }) {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
           <div className="grid md:grid-cols-4 gap-12">
             <div className="md:col-span-2">
-              <div className="flex items-center mb-4">
+              <div className="flex items-center gap-3 mb-4">
                 <img 
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/6737c422d_ChatGPTImageJan12202602_45_33PM.png"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
                   alt="LumenEx EHS"
-                  className="h-16 w-auto object-contain brightness-0 invert"
+                  className="w-12 h-12 object-contain"
                 />
+                <div>
+                  <div className="font-bold text-xl text-white">LumenEx EHS</div>
+                  <div className="text-sm italic text-[#d4af7a]">Carer for Carers</div>
+                </div>
               </div>
               <p className="text-slate-400 mb-6 max-w-sm">
                 Anticipating hazards and providing precise, evidence-based industrial hygiene 
