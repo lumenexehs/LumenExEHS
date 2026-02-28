@@ -310,10 +310,10 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-              Discuss Your Assessment Needs
+              Let's Bring Clarity to Your Workplace
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Contact us to discuss your exposure assessment or industrial hygiene requirements.
+              Contact us to discuss your occupational hygiene, EHS program, or regulatory compliance needs across Ontario.
             </p>
             <Link to={createPageUrl("Contact")}>
               <Button 
