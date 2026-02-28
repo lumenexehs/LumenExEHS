@@ -92,9 +92,9 @@ export default function HeroSection() {
             className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-300"
           >
             {[
-              "CIH-Led Assessments",
-              "AIHA Member",
-              "Peer-Reviewed Methods"
+              "Certified Industrial Hygienist (CIH) credential is the global standard for certification",
+              "Certified Safety Professionals (CSP)",
+              "Canadian Registered Safety Professionals (CRSP)"
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-emerald-400" />
