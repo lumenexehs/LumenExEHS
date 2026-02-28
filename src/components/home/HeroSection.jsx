@@ -10,8 +10,8 @@ export default function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
-          alt="Industrial facility"
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80"
+          alt="Canadian workplace"
           className="w-full h-full object-cover" />
 
         <div className="absolute inset-0 bg-gradient-to-r from-[#0F2A4A]/95 via-[#0F2A4A]/80 to-[#0F2A4A]/60" />
@@ -35,7 +35,7 @@ export default function HeroSection() {
 
             <Shield className="w-5 h-5 text-[#d4af7a]" />
             <span className="text-[#d4af7a] font-medium tracking-wide text-sm italic">
-              Carer for Carers — Backed by 19+ Years of Field Experience
+              🍁 Ontario-Based · Backed by 19+ Years of Field Experience
             </span>
           </motion.div>
 
