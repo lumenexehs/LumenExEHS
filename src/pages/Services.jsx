@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import WorkGallery from "@/components/services/WorkGallery";
 import { 
   Leaf, HardHat, ClipboardCheck, GraduationCap, Zap, Building,
   ArrowRight, CheckCircle2, Factory, Stethoscope, Activity,
@@ -293,9 +292,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      {/* Work Gallery */}
-      <WorkGallery />
 
       {/* CTA */}
       <section className="py-20 bg-[#0F2A4A]">
