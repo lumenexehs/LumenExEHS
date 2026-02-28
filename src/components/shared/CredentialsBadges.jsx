@@ -1,43 +1,41 @@
 import { motion } from "framer-motion";
 
-const credentials = [
+const logos = [
   {
-    acronym: "CIH",
-    full: "Certified Industrial Hygienist",
-    body: "ABIH",
-    color: "bg-[#1a3a52] text-white border-[#1a3a52]"
+    name: "CIH",
+    url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c87874c5b_CIH-BGC-1.png",
+    bg: "bg-white"
   },
   {
-    acronym: "CSP",
-    full: "Certified Safety Professional",
-    body: "BCSP",
-    color: "bg-[#0F2A4A] text-white border-[#0F2A4A]"
+    name: "CSP",
+    url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e35794f13_1742923500322.jpg",
+    bg: "bg-black"
   },
   {
-    acronym: "CRSP",
-    full: "Canadian Registered Safety Professional",
-    body: "BCRSP",
-    color: "bg-emerald-700 text-white border-emerald-700"
+    name: "CRSP",
+    url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/825ddff5a_bcrsp_logo_dark.png",
+    bg: "bg-white"
   }
 ];
 
 export default function CredentialsBadges({ dark = false }) {
   return (
-    <div className="flex flex-wrap justify-center gap-4">
-      {credentials.map((cred, index) => (
+    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-14">
+      {logos.map((logo, index) => (
         <motion.div
-          key={cred.acronym}
+          key={logo.name}
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.3, delay: index * 0.1 }}
-          className={`flex items-center gap-3 px-5 py-3 rounded-xl border-2 shadow-sm ${cred.color}`}
+          transition={{ duration: 0.4, delay: index * 0.12 }}
+          className={`rounded-xl overflow-hidden shadow-md ${logo.bg} p-3 flex items-center justify-center`}
+          style={{ width: 120, height: 120 }}
         >
-          <div className="text-2xl font-extrabold tracking-tight">{cred.acronym}</div>
-          <div>
-            <div className="text-xs font-semibold opacity-90">{cred.full}</div>
-            <div className="text-xs opacity-70">{cred.body} Certified</div>
-          </div>
+          <img
+            src={logo.url}
+            alt={`${logo.name} credential logo`}
+            className="w-full h-full object-contain"
+          />
         </motion.div>
       ))}
     </div>
