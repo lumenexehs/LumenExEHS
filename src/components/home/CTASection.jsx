@@ -19,11 +19,11 @@ export default function CTASection() {
           transition={{ duration: 0.6 }}>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            We're Here to Support You
+            Replace Uncertainty with Evidence
           </h2>
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-            Let us help illuminate workplace hazards and provide the clarity you need 
-            to protect workers effectively.
+            Occupational health hazards may be invisible — but with the right expertise, tools, 
+            and methodology, they don't have to remain uncertain. Let's bring clarity to your workplace.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
