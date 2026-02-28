@@ -96,9 +96,9 @@ export default function About() {
               Occupational Hygiene & EHS Consulting Across Ontario
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Since 2005, LumenEx Environmental Health & Safety Consulting Inc. has helped public, 
-              private, and non-profit organizations across Ontario replace workplace uncertainty 
-              with defensible data and practical protection strategies.
+              LumenEx EHS brings over 19 years of field experience in industrial hygiene and environmental 
+              health to Ontario employers — translating complex exposure data into clear, defensible 
+              risk decisions that protect workers and strengthen organizational due diligence.
             </p>
           </motion.div>
         </div>
