@@ -68,7 +68,7 @@ const services = [
       "Ergonomic risk identification and control prioritization",
       "Workstation and task modification recommendations"
     ],
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80"
+    image: "https://images.unsplash.com/photo-1548323990-8f3b4e1e8c2d?w=600&q=80"
   },
   {
     id: "iaq",
