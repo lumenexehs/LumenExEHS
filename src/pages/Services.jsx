@@ -125,9 +125,11 @@ const services = [
 
 const industries = [
   { icon: Factory, name: "Manufacturing" },
-  { icon: Zap, name: "Energy & Utilities" },
-  { icon: Stethoscope, name: "Healthcare" },
-  { icon: Building, name: "Construction" }
+  { icon: Building, name: "Construction" },
+  { icon: Stethoscope, name: "Hospitals & Healthcare" },
+  { icon: GraduationCap, name: "Educational Institutions" },
+  { icon: Activity, name: "Film Industry" },
+  { icon: HardHat, name: "Pharmaceuticals" }
 ];
 
 export default function Services() {
