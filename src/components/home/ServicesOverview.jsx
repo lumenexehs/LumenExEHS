@@ -77,8 +77,8 @@ export default function ServicesOverview() {
             Occupational Hygiene & EHS Services
           </h2>
           <p className="text-lg text-slate-600">
-            Comprehensive EHS consulting across Ontario for public, private, and non-profit 
-            organizations — turning complex, invisible workplace hazards into clear, actionable protection strategies.
+            From air quality and noise to ergonomics and safety programs — we help Ontario 
+            employers understand their risks and take the right steps to protect their workers.
           </p>
         </motion.div>
 
