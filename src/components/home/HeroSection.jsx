@@ -45,8 +45,8 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
 
-          Making Invisible Hazards
-          <span className="block text-[#d4af7a]">Visible & Manageable</span>
+          We Identify Workplace Hazards
+          <span className="block text-[#d4af7a]">Before They Cause Harm</span>
           </motion.h1>
 
           <motion.p
@@ -55,9 +55,8 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
 
-          Occupational hygiene and EHS consulting for public, private, and non-profit 
-          organizations across Ontario — delivering defensible exposure assessments, 
-          regulatory compliance support, and practical risk control solutions.
+          Independent occupational hygiene and EHS consulting across Ontario —
+          helping employers understand, measure, and control invisible workplace risks.
           </motion.p>
 
           <motion.div
