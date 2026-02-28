@@ -3,24 +3,24 @@ import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Their exposure assessment methodology provided the defensible documentation we needed for our respiratory protection program evaluation.",
+    quote: "LumenEx transformed what felt like an impossible compliance challenge into a clear, manageable action plan. Their defensible exposure data gave our JHSC exactly what they needed.",
     author: "Sarah Mitchell",
     role: "EHS Manager",
-    company: "Pacific Manufacturing Inc.",
+    company: "Ontario Manufacturing Facility",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
   },
   {
-    quote: "The quantitative noise survey and statistical analysis gave us clear, actionable data for our hearing conservation program decisions.",
+    quote: "The noise assessment and statistical analysis cut through the uncertainty. We finally understood our actual risk level and could invest in the right controls.",
     author: "Michael Chen",
-    role: "Industrial Hygienist",
-    company: "Coastal Energy Group",
+    role: "Health & Safety Coordinator",
+    company: "Construction Project, Greater Toronto Area",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
   },
   {
-    quote: "Their interpretation of air monitoring results against applicable OELs helped us prioritize engineering controls effectively.",
+    quote: "Their indoor air quality investigation identified the source of our occupant complaints quickly and their remediation guidance was practical and cost-effective.",
     author: "Jennifer Adams",
-    role: "Safety Director",
-    company: "Sterling Chemicals",
+    role: "Facilities Director",
+    company: "Ontario Educational Institution",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop"
   }
 ];
