@@ -51,7 +51,7 @@ const services = [
       "Hearing conservation program compliance review",
       "Engineering and administrative control recommendations"
     ],
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
+    image: "https://images.unsplash.com/photo-1517090186835-e348b621c9ca?w=600&q=80"
   },
   {
     id: "heat_ergonomics",
