@@ -97,9 +97,8 @@ export default function About() {
               Occupational Hygiene & EHS Consulting Across Ontario
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              LumenEx EHS brings over 19 years of field experience in industrial hygiene and environmental 
-              health to Ontario employers — translating complex exposure data into clear, defensible 
-              risk decisions that protect workers and strengthen organizational due diligence.
+              We help Ontario employers understand workplace health risks — and what to do about them.
+              19+ years of industrial hygiene field experience, delivered with clarity and accountability.
             </p>
           </motion.div>
         </div>
