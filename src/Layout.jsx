@@ -253,7 +253,7 @@ export default function Layout({ children, currentPageName }) {
               <ul className="space-y-3 text-slate-400">
                 <li>(647) 975-9541</li>
                 <li>info@lumenexehs.ca</li>
-                <li>Markham, ON L6C 0H5</li>
+                <li>Toronto, ON</li>
               </ul>
             </div>
           </div>
