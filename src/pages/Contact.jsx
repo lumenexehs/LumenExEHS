@@ -126,17 +126,6 @@ export default function Contact() {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-emerald-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Phone</h3>
-                    <p className="text-slate-600">(647) 975-9541</p>
-                    <p className="text-sm text-slate-500">Mon-Fri, 8am-6pm EST</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5 text-emerald-600" />
                   </div>
                   <div>
