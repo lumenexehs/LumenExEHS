@@ -49,12 +49,11 @@ export default function CommunityServiceSection() {
             Community Service
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
-            Giving Back Through Occupational Hygiene
+            Pro Bono Services for Those Who Can't Afford IH Support
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
-            We believe every worker deserves protection — regardless of their employer's budget. 
-            LumenEx EHS periodically offers pro-bono and reduced-fee IH services to NGOs, unions, 
-            healthcare organizations, and community groups across Ontario.
+            Every worker deserves a safe environment — regardless of budget. We offer free and 
+            reduced-fee services to NGOs, shelters, unions, and community organizations across Ontario.
           </p>
         </motion.div>
 
