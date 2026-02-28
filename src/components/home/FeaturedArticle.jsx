@@ -4,13 +4,13 @@ import { Linkedin, ArrowRight, ChevronLeft, ChevronRight, BookOpen } from "lucid
 
 const articles = [
 {
-  id: 1,
-  title: "Ontario Launches Canada's First Occupational Exposure Registry",
-  date: "Nov 2024",
-  summary: "Ontario's new registry lets workers record exposures to hazardous substances such as asbestos, lead, and silica — creating secure, downloadable records that inform prevention and future medical assessments.",
-  image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/46e7cc829_1772212842931.png",
-  url: "https://www.linkedin.com/posts/lumenex-ehs_ontario-has-launched-canadas-first-occupational-activity-7433200414990299136-OSy1",
-  tag: "Regulatory Update"
+  id: 3,
+  title: "Regulation Watch™ — Winter Height Hazards & Working-at-Heights Compliance",
+  date: "Feb 2025",
+  summary: "Winter doesn't pause fall risks — it amplifies them. Ice, snow, and cold-induced dexterity loss compound fall exposure across Ontario sites. WAH certification requirements don't change in winter; due diligence expectations increase.",
+  image: "https://media.licdn.com/dms/image/v2/D5612AQFMfkcm1iLr4Q/article-cover_image-shrink_720_1280/B56ZylKst9HUAI-/0/1772297596163?e=2147483647&v=beta&t=q0sVmzD_udVuob-6B0WrgUUft4QGm-1QLiBZ9b_OLzM",
+  url: "https://www.linkedin.com/pulse/regulation-watch-winter-height-hazards-compliance-services-customer-leiic",
+  tag: "Regulation Watch"
 },
 {
   id: 2,
@@ -22,13 +22,13 @@ const articles = [
   tag: "IH Education"
 },
 {
-  id: 3,
-  title: "Regulation Watch™ — Winter Height Hazards & Working-at-Heights Compliance",
-  date: "Feb 2025",
-  summary: "Winter doesn't pause fall risks — it amplifies them. Ice, snow, and cold-induced dexterity loss compound fall exposure across Ontario sites. WAH certification requirements don't change in winter; due diligence expectations increase.",
-  image: "https://media.licdn.com/dms/image/v2/D5612AQFMfkcm1iLr4Q/article-cover_image-shrink_720_1280/B56ZylKst9HUAI-/0/1772297596163?e=2147483647&v=beta&t=q0sVmzD_udVuob-6B0WrgUUft4QGm-1QLiBZ9b_OLzM",
-  url: "https://www.linkedin.com/pulse/regulation-watch-winter-height-hazards-compliance-services-customer-leiic",
-  tag: "Regulation Watch"
+  id: 1,
+  title: "Ontario Launches Canada's First Occupational Exposure Registry",
+  date: "Nov 2024",
+  summary: "Ontario's new registry lets workers record exposures to hazardous substances such as asbestos, lead, and silica — creating secure, downloadable records that inform prevention and future medical assessments.",
+  image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/46e7cc829_1772212842931.png",
+  url: "https://www.linkedin.com/posts/lumenex-ehs_ontario-has-launched-canadas-first-occupational-activity-7433200414990299136-OSy1",
+  tag: "Regulatory Update"
 }];
 
 
