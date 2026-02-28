@@ -294,6 +294,9 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Work Gallery */}
+      <WorkGallery />
+
       {/* CTA */}
       <section className="py-20 bg-[#0F2A4A]">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
