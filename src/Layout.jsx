@@ -220,7 +220,11 @@ export default function Layout({ children, currentPageName }) {
               <div className="flex items-center gap-4 text-sm text-slate-400">
                 <span>CIH-Led Practice</span>
                 <span>•</span>
-                <span>AIHA Member</span>
+                <span>Certified Industrial Hygienist (CIH)</span>
+                <span>•</span>
+                <span>CSP</span>
+                <span>•</span>
+                <span>CRSP</span>
               </div>
             </div>
 
