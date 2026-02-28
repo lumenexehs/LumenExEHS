@@ -216,20 +216,7 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="flex justify-center"
             >
-              <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80"
-                  alt="Safety lamp concept — illuminating hidden hazards"
-                  className="rounded-2xl shadow-2xl w-full max-w-xs object-cover"
-                  style={{ minHeight: "320px" }}
-                />
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#0F2A4A]/60 to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5 text-center">
-                  <p className="text-[#d4af7a] font-semibold text-sm italic">
-                    "Light the environment.<br />Reveal what cannot be seen."
-                  </p>
-                </div>
-              </div>
+              <SafetyLampAnimation />
             </motion.div>
           </div>
         </div>
