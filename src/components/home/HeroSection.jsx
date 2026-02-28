@@ -35,7 +35,7 @@ export default function HeroSection() {
           >
             <Shield className="w-5 h-5 text-[#d4af7a]" />
             <span className="text-[#d4af7a] font-medium tracking-wide text-sm italic">
-              Carer for Carers — Anticipating Hazards Since 2005
+              Carer for Carers — Backed by 19+ Years of Field Experience
             </span>
           </motion.div>
 
