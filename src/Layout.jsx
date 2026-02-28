@@ -222,9 +222,9 @@ export default function Layout({ children, currentPageName }) {
                 <span>•</span>
                 
                 
-                <span>CSP</span>
+                <a href="https://www.bcsp.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">CSP</a>
                 <span>•</span>
-                <span>CRSP</span>
+                <a href="https://bcrsp.ca/en" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">CRSP</a>
               </div>
             </div>
 
