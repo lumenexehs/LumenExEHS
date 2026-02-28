@@ -12,6 +12,8 @@ import {
   Building2,
   Shield
 } from "lucide-react";
+import CommunityServiceSection from "@/components/shared/CommunityServiceSection";
+import CredentialsBadges from "@/components/shared/CredentialsBadges";
 
 const team = [
   {
