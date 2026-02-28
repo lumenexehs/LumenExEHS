@@ -232,10 +232,10 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Anticipate & Recognize", desc: "Baseline walkthrough and process review to identify exposure determinants, operational variability, and existing control gaps — before any instrument is deployed." },
-              { step: "02", title: "Design & Evaluate", desc: "SEG-based measurement strategies targeting the upper tail of the exposure distribution. Sampling for personal breathing zone (PBZ) and area concentrations benchmarked against OELs and ACGIH TLVs®." },
-              { step: "03", title: "Analyse & Interpret", desc: "Bayesian statistical methods (IHDataAnalyst, IHSTAT) and AIHA exposure banding to quantify uncertainty, characterize exposure profiles, and produce findings that hold up to regulatory and legal scrutiny." },
-              { step: "04", title: "Control & Communicate", desc: "Hierarchy-of-controls recommendations written for the people who implement them — workers, supervisors, JHSCs, and leadership — practical, proportionate, and operationally realistic." }
+              { step: "01", title: "Anticipate & Recognize", desc: "Baseline walkthrough to identify exposure determinants and control gaps — before any instrument is deployed." },
+              { step: "02", title: "Design & Evaluate", desc: "SEG-based sampling targeting the upper tail of the exposure distribution, benchmarked against OELs and ACGIH TLVs®." },
+              { step: "03", title: "Analyse & Interpret", desc: "Bayesian statistical methods to quantify uncertainty and produce exposure profiles that hold up to regulatory and legal scrutiny." },
+              { step: "04", title: "Control & Communicate", desc: "Hierarchy-of-controls recommendations written for workers, supervisors, and JHSCs — practical and operationally realistic." }
             ].map((item, index) => (
               <motion.div
                 key={item.step}
