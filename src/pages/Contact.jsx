@@ -25,11 +25,17 @@ import {
 const serviceOptions = [
   { value: "general", label: "General Inquiry" },
   { value: "occupational_hygiene", label: "Occupational Hygiene & Exposure Assessment" },
-  { value: "noise_physical", label: "Noise and Physical Agents" },
-  { value: "heat_stress", label: "Heat Stress Assessment" },
-  { value: "iaq", label: "Indoor Air Quality and IEQ" },
-  { value: "regulatory_due_diligence", label: "Regulatory Risk & Due Diligence" },
-  { value: "specialized_environments", label: "Specialized/High-Sensitivity Environments" }
+  { value: "noise_physical", label: "Noise, Radiation & Physical Agents" },
+  { value: "heat_stress", label: "Heat Stress Monitoring" },
+  { value: "ergonomics", label: "Ergonomics Assessment" },
+  { value: "iaq", label: "Indoor Air Quality, Odour & Vapour Intrusion" },
+  { value: "microbial", label: "Microbial Contamination & Exposure" },
+  { value: "radon", label: "Radon Safety Inspection" },
+  { value: "ehs_programs", label: "EH&S Program & Policy Development" },
+  { value: "chemical_prestart", label: "Chemical Prestart Health & Safety Review" },
+  { value: "safety_management", label: "Safety Management System Development" },
+  { value: "training", label: "Training" },
+  { value: "risk_assessment", label: "Risk Assessment" }
 ];
 
 export default function Contact() {
