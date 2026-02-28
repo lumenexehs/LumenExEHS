@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
+import WorkGallery from "@/components/services/WorkGallery";
 import { 
   Leaf, HardHat, ClipboardCheck, GraduationCap, Zap, Building,
   ArrowRight, CheckCircle2, Factory, Stethoscope, Activity,
