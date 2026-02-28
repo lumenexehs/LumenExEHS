@@ -69,11 +69,56 @@ export default function WorkGallery() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
           <h2 className="text-3xl font-bold text-slate-900 mb-3">Our Work in Action</h2>
           <p className="text-slate-600 max-w-xl mx-auto">Real-world assessments across diverse Ontario workplaces and environments.</p>
         </motion.div>
+
+        {/* Live Phone Showcase */}
+        <div className="flex justify-center mb-16">
+          <div className="relative w-72 h-[600px]">
+            {/* Phone Frame */}
+            <div className="absolute inset-0 bg-black rounded-3xl shadow-2xl p-3 flex flex-col">
+              {/* Notch */}
+              <div className="mx-auto w-32 h-6 bg-black rounded-b-2xl mb-2 z-10"></div>
+              {/* Screen */}
+              <div className="flex-1 bg-slate-900 rounded-2xl overflow-hidden">
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={phoneIndex}
+                    src={galleryImages[phoneIndex]}
+                    alt="Showcase"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="w-full h-full object-cover"
+                  />
+                </AnimatePresence>
+              </div>
+            </div>
+
+            {/* Navigation Buttons */}
+            <button
+              onClick={() => setPhoneIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1))}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 text-slate-700 hover:text-emerald-600 transition-colors z-20"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            <button
+              onClick={() => setPhoneIndex((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1))}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 text-slate-700 hover:text-emerald-600 transition-colors z-20"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+
+            {/* Counter */}
+            <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 text-center">
+              <p className="text-sm font-medium text-slate-600">{phoneIndex + 1} / {galleryImages.length}</p>
+            </div>
+          </div>
+        </div>
 
         {/* Grid Gallery */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
