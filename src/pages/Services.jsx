@@ -149,7 +149,7 @@ export default function Services() {
             className="max-w-3xl"
           >
             <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">
-              Technical Capabilities
+              Ontario EHS Consulting
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
               Occupational Hygiene & EHS Services
