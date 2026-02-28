@@ -319,10 +319,10 @@ export default function Services() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Questions About Your Assessment Needs?
+              Ready to Replace Uncertainty with Evidence?
             </h2>
             <p className="text-lg text-slate-300 mb-8">
-              Contact us to discuss your specific exposure assessment or regulatory compliance requirements.
+              Contact us to discuss your occupational hygiene, EHS program, or regulatory compliance needs across Ontario.
             </p>
             <Link to={createPageUrl("Contact")}>
               <Button 
