@@ -19,11 +19,10 @@ export default function CTASection() {
           transition={{ duration: 0.6 }}>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Replace Uncertainty with Evidence
+            Not Sure What's in Your Workplace Air?
           </h2>
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-            Occupational health hazards may be invisible — but with the right expertise, tools, 
-            and methodology, they don't have to remain uncertain. Let's bring clarity to your workplace.
+            We help you find out — and what to do about it. Get a free consultation with an Ontario-based CIH.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
