@@ -169,6 +169,71 @@ export default function About() {
         </div>
       </section>
 
+      {/* Safety Lamp Metaphor Section */}
+      <section className="py-20 bg-[#0F2A4A] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-1/3 w-64 h-64 bg-[#d4af7a] rounded-full blur-3xl" />
+        </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-3 gap-10 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-2 space-y-5"
+            >
+              <span className="text-[#d4af7a] font-semibold tracking-wide uppercase text-sm">
+                The Safety Lamp
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Detection Before Harm. Foresight Over Reaction.
+              </h2>
+              <p className="text-slate-300 leading-relaxed">
+                The original miner's safety lamp was not designed for emergencies — it was designed for <em>prevention</em>. By revealing the presence of methane or the absence of oxygen through a change in flame, it transformed invisible, deadly conditions into actionable information.
+              </p>
+              <p className="text-slate-300 leading-relaxed">
+                LumenEx EHS brings that same principle to modern workplaces. We use scientific monitoring, professional interpretation, and evidence-based guidance to turn unseen occupational health hazards into clear, manageable insight — before they cause harm to workers.
+              </p>
+              <div className="grid sm:grid-cols-3 gap-5 pt-4">
+                {[
+                  { label: "Detect", desc: "Identify hazards that are not immediately obvious" },
+                  { label: "Interpret", desc: "Translate data into clear risk findings" },
+                  { label: "Protect", desc: "Guide defensible, proportionate controls" }
+                ].map((item) => (
+                  <div key={item.label} className="bg-white/10 rounded-xl p-4 border border-white/10">
+                    <div className="text-[#d4af7a] font-bold text-lg mb-1">{item.label}</div>
+                    <div className="text-slate-400 text-sm">{item.desc}</div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="flex justify-center"
+            >
+              <div className="relative">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80"
+                  alt="Safety lamp concept — illuminating hidden hazards"
+                  className="rounded-2xl shadow-2xl w-full max-w-xs object-cover"
+                  style={{ minHeight: "320px" }}
+                />
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#0F2A4A]/60 to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5 text-center">
+                  <p className="text-[#d4af7a] font-semibold text-sm italic">
+                    "Light the environment.<br />Reveal what cannot be seen."
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Values Section */}
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
