@@ -35,7 +35,7 @@ export default function HeroSection() {
 
             <Shield className="w-5 h-5 text-[#d4af7a]" />
             <span className="text-[#d4af7a] font-medium tracking-wide text-sm italic">
-              🍁 Ontario-Based · Backed by 19+ Years of Field Experience
+              🍁 Carer for Carers — Ontario-Based · 19+ Years of Field Experience
             </span>
           </motion.div>
 
@@ -44,20 +44,30 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-
-          We Identify Workplace Hazards
-          <span className="block text-[#d4af7a]">Before They Cause Harm</span>
+            Making Invisible Hazards
+            <span className="block text-[#d4af7a]">Visible — Before They Cause Harm</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-
-          Independent occupational hygiene and EHS consulting across Ontario —
-          helping employers understand, measure, and control invisible workplace risks.
+            className="text-lg md:text-xl text-slate-300 mb-3 leading-relaxed">
+            Independent occupational hygiene and EHS consulting across Ontario.
           </motion.p>
+
+          {/* Safety Lamp Concept */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="mb-8 pl-4 border-l-2 border-[#d4af7a]/60"
+          >
+            <p className="text-slate-400 text-sm leading-relaxed italic">
+              Like the miner's safety lamp — designed to detect invisible gases and warn of unseen danger — 
+              we illuminate the hazards in your workplace before they cause harm.
+            </p>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
