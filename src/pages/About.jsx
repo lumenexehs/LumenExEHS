@@ -93,11 +93,12 @@ export default function About() {
               About Us
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Two Decades of Industrial Hygiene Practice
+              Occupational Hygiene & EHS Consulting Across Ontario
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Since 2005, we've provided rigorous exposure assessment, hazard evaluation, 
-              and technical consultation grounded in occupational health science and regulatory standards.
+              Since 2005, LumenEx Environmental Health & Safety Consulting Inc. has helped public, 
+              private, and non-profit organizations across Ontario replace workplace uncertainty 
+              with defensible data and practical protection strategies.
             </p>
           </motion.div>
         </div>
