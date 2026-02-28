@@ -53,7 +53,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-300 mb-3 leading-relaxed">
-            Independent occupational hygiene and EHS consulting across Ontario.
+            Independent occupational hygiene and Environmental Health & Safety consulting across Ontario.
           </motion.p>
 
           {/* Safety Lamp Concept */}
