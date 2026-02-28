@@ -13,40 +13,40 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    icon: Leaf,
-    title: "Occupational Hygiene & Exposure Assessment",
-    description: "Defensible exposure assessments with SEG design, personal monitoring, statistical analysis, and risk management across chemical, physical, and biological agents.",
-    color: "emerald"
+  icon: Leaf,
+  title: "Exposure Assessment",
+  description: "We measure what workers breathe, touch, and hear — and tell you whether it's safe. Clear risk findings backed by science.",
+  color: "emerald"
   },
   {
-    icon: HardHat,
-    title: "Noise, Radiation & Physical Agents",
-    description: "Occupational noise (TWA, NC, PNC), ionizing and non-ionizing radiation evaluations, vibration, and physical hazard monitoring using validated protocols.",
-    color: "amber"
+  icon: HardHat,
+  title: "Noise & Physical Hazards",
+  description: "Noise dosimetry, vibration, and radiation surveys to protect workers from physical hazards you can't always see or feel.",
+  color: "amber"
   },
   {
-    icon: AlertTriangle,
-    title: "Heat Stress & Ergonomics",
-    description: "WBGT-based heat stress monitoring, metabolic rate estimation, work-rest cycle development, and ergonomic risk assessments for Ontario workplaces.",
-    color: "rose"
+  icon: AlertTriangle,
+  title: "Heat Stress & Ergonomics",
+  description: "Is your workplace too hot? Are repetitive tasks hurting workers? We assess the risk and help you fix it.",
+  color: "rose"
   },
   {
-    icon: ClipboardCheck,
-    title: "Indoor Air Quality & Microbial Investigations",
-    description: "IAQ assessments, odour and vapour intrusion investigations, microbial contamination evaluations, and radon safety inspections.",
-    color: "blue"
+  icon: ClipboardCheck,
+  title: "Indoor Air Quality",
+  description: "Odours, mould, radon, or air complaints? We find the source and guide you through practical solutions.",
+  color: "blue"
   },
   {
-    icon: FileCheck,
-    title: "EH&S Program & Policy Development",
-    description: "Safety Management System development and review, Chemical Prestart Health & Safety Reviews, and comprehensive EH&S program and policy frameworks.",
-    color: "cyan"
+  icon: FileCheck,
+  title: "EH&S Programs & Policies",
+  description: "We build the written safety programs and compliance frameworks your organization is required to have — and actually needs.",
+  color: "cyan"
   },
   {
-    icon: GraduationCap,
-    title: "Training & Risk Assessment",
-    description: "Workplace health and safety training, risk assessments across chemical, physical, and biological hazards, and regulatory compliance support across Ontario.",
-    color: "purple"
+  icon: GraduationCap,
+  title: "Training & Risk Assessment",
+  description: "Practical safety training and risk assessments for workers, supervisors, and safety committees across Ontario.",
+  color: "purple"
   }
 ];
 
