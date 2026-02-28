@@ -231,10 +231,10 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Anticipate & Recognize", desc: "Baseline walkthrough to identify exposure determinants and control gaps — before any instrument is deployed." },
-              { step: "02", title: "Design & Evaluate", desc: "SEG-based sampling targeting the upper tail of the exposure distribution, benchmarked against OELs and ACGIH TLVs®." },
-              { step: "03", title: "Analyse & Interpret", desc: "Bayesian statistical methods to quantify uncertainty and produce exposure profiles that hold up to regulatory and legal scrutiny." },
-              { step: "04", title: "Control & Communicate", desc: "Hierarchy-of-controls recommendations written for workers, supervisors, and JHSCs — practical and operationally realistic." }
+              { step: "01", title: "Anticipate & Recognize", desc: "Walk the workplace, understand the work, and identify what could be harming workers — before taking any measurements." },
+              { step: "02", title: "Design & Evaluate", desc: "Design a targeted sampling strategy that captures real exposure levels for the workers most at risk." },
+              { step: "03", title: "Analyse & Interpret", desc: "Turn monitoring data into clear exposure profiles — with a risk verdict you can act on and defend." },
+              { step: "04", title: "Control & Communicate", desc: "Provide practical, ranked recommendations in plain language — for workers, supervisors, and safety committees." }
             ].map((item, index) => (
               <motion.div
                 key={item.step}
