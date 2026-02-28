@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
+import CommunityServiceSection from "@/components/home/CommunityServiceSection";
 import { 
   Award, 
   Users, 
@@ -12,8 +13,6 @@ import {
   Building2,
   Shield
 } from "lucide-react";
-import CommunityServiceSection from "@/components/shared/CommunityServiceSection";
-import CredentialsBadges from "@/components/shared/CredentialsBadges";
 
 const team = [
   {
