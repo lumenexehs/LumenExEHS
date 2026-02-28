@@ -20,6 +20,15 @@ const articles = [
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/61912440e_garforth_lamps.jpg",
     url: "https://www.linkedin.com/company/lumenex-ehs",
     tag: "IH Education"
+  },
+  {
+    id: 3,
+    title: "Regulation Watch™ — Winter Height Hazards & Working-at-Heights Compliance",
+    date: "Feb 2025",
+    summary: "Winter doesn't pause fall risks — it amplifies them. Ice, snow, and cold-induced dexterity loss compound fall exposure across Ontario sites. WAH certification requirements don't change in winter; due diligence expectations increase.",
+    image: "https://media.licdn.com/dms/image/v2/D5612AQFMfkcm1iLr4Q/article-cover_image-shrink_720_1280/B56ZylKst9HUAI-/0/1772297596163?e=2147483647&v=beta&t=q0sVmzD_udVuob-6B0WrgUUft4QGm-1QLiBZ9b_OLzM",
+    url: "https://www.linkedin.com/pulse/regulation-watch-winter-height-hazards-compliance-services-customer-leiic",
+    tag: "Regulation Watch"
   }
 ];
 
