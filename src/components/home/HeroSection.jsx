@@ -93,7 +93,7 @@ export default function HeroSection() {
             className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-300"
           >
             {[
-              "Certified Industrial Hygienist (CIH) credential is the global standard for certification",
+              "Certified Industrial Hygienist (CIH)",
               "Certified Safety Professionals (CSP)",
               "Canadian Registered Safety Professionals (CRSP)"
             ].map((item, i) => (
