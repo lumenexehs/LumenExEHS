@@ -120,22 +120,10 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  LumenEx EHS is an independent occupational hygiene and EHS consulting practice 
-                  serving Ontario employers across a broad range of sectors — from construction 
-                  and manufacturing to acute care, pharmaceutical production, film, 
-                  Indigenous communities, and educational institutions.
+                  LumenEx EHS is an independent occupational hygiene and EHS consulting practice serving Ontario employers — from construction and manufacturing to healthcare, pharmaceuticals, film production, and educational institutions.
                 </p>
                 <p>
-                  Our practice is built on the industrial hygiene anticipation-recognition-evaluation-control 
-                  (AREC) model. Every engagement — whether a single-agent exposure assessment or a 
-                  multi-site EHS program review — is grounded in Ontario OHS legislation, CSA standards, 
-                  ACGIH TLVs®/BEIs®, and current peer-reviewed occupational hygiene science.
-                </p>
-                <p>
-                  We believe the credibility of an assessment is only as strong as the science behind it. 
-                  That commitment extends beyond client work: we actively contribute volunteer IH expertise 
-                  to community organizations and NGOs, and support pro-bono health and safety initiatives 
-                  for under-resourced workplaces.
+                  Every engagement is grounded in the AREC model (Anticipation, Recognition, Evaluation, Control), Ontario OHS legislation, CSA standards, and ACGIH TLVs®/BEIs® — producing findings that are defensible, evidence-based, and operationally practical.
                 </p>
               </div>
               <div className="mt-8 flex items-center gap-6">
