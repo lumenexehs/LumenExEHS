@@ -45,6 +45,14 @@ const galleryImages = [
 
 export default function WorkGallery() {
   const [selectedIndex, setSelectedIndex] = useState(null);
+  const [phoneIndex, setPhoneIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPhoneIndex((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1));
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   const handlePrevious = () => {
     setSelectedIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
