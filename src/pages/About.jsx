@@ -119,21 +119,22 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  LumenEx EHS is an occupational hygiene and EHS consulting firm serving 
-                  a diverse range of clients across Ontario — from construction projects and 
-                  manufacturing facilities to hospitals, Indigenous communities, educational 
-                  institutions, and residential property managers.
+                  LumenEx EHS is an independent occupational hygiene and EHS consulting practice 
+                  serving Ontario employers across a broad range of sectors — from construction 
+                  and manufacturing to acute care, pharmaceutical production, film, 
+                  Indigenous communities, and educational institutions.
                 </p>
                 <p>
-                  We deliver defensible exposure assessments, regulatory compliance support, 
-                  and practical risk control solutions that make invisible health hazards visible. 
-                  Our work is grounded in Canadian OHS legislation, CSA standards, ACGIH TLVs®, 
-                  and international occupational hygiene research.
+                  Our practice is built on the industrial hygiene anticipation-recognition-evaluation-control 
+                  (AREC) model. Every engagement — whether a single-agent exposure assessment or a 
+                  multi-site EHS program review — is grounded in Ontario OHS legislation, CSA standards, 
+                  ACGIH TLVs®/BEIs®, and current peer-reviewed occupational hygiene science.
                 </p>
                 <p>
-                  Beyond professional consulting, we actively contribute volunteer expertise 
-                  to community groups and NGOs, and collaborate with charitable organizations 
-                  through pro-bono initiatives and community-focused partnerships.
+                  We believe the credibility of an assessment is only as strong as the science behind it. 
+                  That commitment extends beyond client work: we actively contribute volunteer IH expertise 
+                  to community organizations and NGOs, and support pro-bono health and safety initiatives 
+                  for under-resourced workplaces.
                 </p>
               </div>
               <div className="mt-8 flex items-center gap-6">
