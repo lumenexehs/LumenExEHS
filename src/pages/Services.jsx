@@ -22,102 +22,102 @@ const services = [
   {
     id: "occupational_hygiene",
     icon: Leaf,
-    title: "Occupational Hygiene and Exposure Assessment",
-    shortDesc: "Quantitative exposure characterization",
-    scope: "Systematic evaluation of airborne chemical exposures through personal and area monitoring. Development of Similar Exposure Groups (SEGs) and statistical interpretation of results against applicable occupational exposure limits.",
-    approach: "Apply AIHA exposure assessment strategies including initial assessment, basic characterization, and comprehensive surveys. Utilize NIOSH-validated methods and AIHA-LAP accredited laboratories. Statistical analysis follows AIHA guidance documents.",
+    title: "Occupational Hygiene & Exposure Risk Management",
+    shortDesc: "Comprehensive exposure characterization",
+    scope: "Systematic evaluation of chemical, physical, and biological agents through personal and area monitoring. Development of Similar Exposure Group (SEG) frameworks and statistical interpretation of results against Canadian occupational exposure limits.",
+    approach: "Structured hazard screening combining field instrumentation, walkthrough assessments, exposure modelling, and AI-supported data analytics. Bayesian statistical analysis transforms limited datasets into forward-looking risk projections that inform strategic planning.",
     deliverables: [
       "SEG definitions with exposure determinants documented",
       "Personal breathing zone and area sampling data",
-      "Statistical analysis of exposure distributions (95% UCL)",
-      "Comparison to OSHA PELs, ACGIH TLVs, and internal OELs",
-      "Exposure profile determination (well-controlled, controlled, poorly controlled, highly uncertain)",
-      "Prioritized exposure control recommendations"
+      "Statistical analysis including Bayesian risk quantification",
+      "Comparison to provincial OELs and ACGIH TLVs®",
+      "Exposure profile determination and risk prioritization",
+      "Hierarchy-of-control aligned recommendations"
     ],
     image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=600&q=80"
   },
   {
     id: "noise_physical",
     icon: HardHat,
-    title: "Noise and Physical Agents",
-    shortDesc: "Acoustic and physical hazard assessment",
-    scope: "Quantitative assessment of noise exposures, vibration, radiation (ionizing and non-ionizing), and other physical agents. Evaluation per OSHA standards and ACGIH TLVs with statistical treatment of dosimetry data.",
-    approach: "Personal noise dosimetry and octave-band analysis. Area surveys using Type 1 or Type 2 sound level meters. Statistical analysis of exposure distributions. Engineering control evaluations and hearing conservation program audits.",
+    title: "Noise & Physical Agents (Occupational, NC, PNC)",
+    shortDesc: "Acoustic and radiation hazard assessment",
+    scope: "Quantitative assessment of occupational noise (TWA, NC and PNC), ionizing and non-ionizing radiation, vibration, and other physical agents for Ontario workplaces across manufacturing, construction, healthcare, and film industries.",
+    approach: "Personal noise dosimetry and octave-band analysis using Type 1/Type 2 sound level meters. Ionizing and non-ionizing radiation surveys per applicable Ontario regulations. Statistical treatment of dosimetry data for defensible exposure decisions.",
     deliverables: [
       "8-hour TWA noise exposure determinations",
-      "Octave-band analysis for engineering control design",
-      "Statistical evaluation of noise exposure variability",
-      "Hearing conservation program compliance assessment",
-      "Engineering and administrative control recommendations",
-      "Audiometric testing oversight protocols"
+      "NC and PNC noise criteria assessments",
+      "Ionizing and non-ionizing radiation evaluation reports",
+      "Statistical evaluation of exposure variability",
+      "Hearing conservation program compliance review",
+      "Engineering and administrative control recommendations"
     ],
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
   },
   {
-    id: "heat_stress",
+    id: "heat_ergonomics",
     icon: Zap,
-    title: "Heat Stress Assessment",
-    shortDesc: "Thermal environment evaluation",
-    scope: "Quantitative assessment of heat stress risk using WBGT measurements and metabolic heat generation estimates. Evaluation per ACGIH heat stress TLV and NIOSH criteria. Work-rest regimen development for hot environments.",
-    approach: "WBGT monitoring using ISO 7243 protocols. Metabolic rate estimation per ISO 8996. Statistical analysis of peak and average exposures. Acclimatization status review. Engineering and administrative control evaluation.",
+    title: "Heat Stress Monitoring & Ergonomics Assessment",
+    shortDesc: "Thermal and musculoskeletal risk evaluation",
+    scope: "Quantitative heat stress assessment using WBGT measurements and metabolic rate estimates for Ontario workplaces. Ergonomic risk assessments for workplace safety, injury prevention, and compliance with Ontario OHS requirements.",
+    approach: "WBGT monitoring per ISO 7243 protocols. Metabolic rate estimation per ISO 8996. Ergonomic evaluations using validated tools addressing posture, force, repetition, and work organization factors.",
     deliverables: [
-      "WBGT measurements (indoor and outdoor)",
-      "Metabolic rate calculations for job tasks",
-      "Comparison to ACGIH TLV for heat stress",
-      "Work-rest cycle recommendations",
-      "Acclimatization protocol development",
-      "Heat illness prevention program guidance"
+      "WBGT measurements (indoor and outdoor environments)",
+      "Metabolic rate calculations for specific job tasks",
+      "Work-rest cycle and acclimatization protocol recommendations",
+      "Heat illness prevention program guidance",
+      "Ergonomic risk identification and control prioritization",
+      "Workstation and task modification recommendations"
     ],
     image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80"
   },
   {
     id: "iaq",
     icon: Building,
-    title: "Indoor Air Quality and IEQ",
-    shortDesc: "Building environment assessment",
-    scope: "Systematic evaluation of indoor environmental quality including HVAC performance, contaminant sources, thermal comfort, humidity, and occupant concerns. Application of ASHRAE and EPA guidance for non-industrial settings.",
-    approach: "Real-time monitoring of CO2, temperature, and relative humidity. Source identification and ventilation assessment. Comparison to ASHRAE 62.1 standards. Mold and moisture surveys using calibrated instruments. Occupant questionnaires.",
+    title: "Indoor Air Quality, Odour, Vapour & Microbial Investigations",
+    shortDesc: "Indoor environmental quality assessment",
+    scope: "Systematic evaluation of indoor environments including IAQ, odour and vapour intrusion investigations, microbial contamination and exposure evaluations, and radon safety inspections for Ontario buildings across residential, commercial, and institutional settings.",
+    approach: "Real-time monitoring of CO2, VOCs, particulates, temperature, and humidity. Source identification, ventilation assessment, and microbial sampling. Radon testing per Health Canada guidelines. Investigations tailored to residential, healthcare, and educational environments.",
     deliverables: [
-      "HVAC system assessment and airflow verification",
-      "CO2 and temperature/humidity monitoring data",
-      "Contaminant source identification",
-      "Ventilation adequacy evaluation per ASHRAE 62.1",
-      "Microbial and moisture assessment (if indicated)",
-      "Prioritized remediation and maintenance recommendations"
+      "HVAC system assessment and ventilation adequacy review",
+      "Contaminant source identification and odour investigation reports",
+      "Vapour intrusion assessment with risk characterization",
+      "Microbial contamination sampling and remediation guidance",
+      "Radon safety inspection report with Health Canada benchmarks",
+      "Prioritized remediation and indoor air quality improvement plan"
     ],
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
   },
   {
-    id: "regulatory_due_diligence",
+    id: "ehs_programs",
     icon: ClipboardCheck,
-    title: "Regulatory Risk and Due Diligence Support",
-    shortDesc: "Compliance assessment and transaction support",
-    scope: "Technical review of OSHA health standard compliance, exposure monitoring records, and industrial hygiene program adequacy. Support for mergers, acquisitions, and divestitures with focus on occupational health liabilities.",
-    approach: "Systematic review of regulatory applicability, exposure monitoring protocols, recordkeeping, and written program compliance. Gap analysis against OSHA standards. Historical exposure data review for potential legacy issues.",
+    title: "EH&S Program, Policy & Safety Management Systems",
+    shortDesc: "Program development and compliance support",
+    scope: "Development and review of comprehensive EH&S programs and policies, Safety Management Systems, and Chemical Prestart Health & Safety Reviews (as required under Ontario Regulation 851). Regulatory compliance support for Ontario public and private sector organizations.",
+    approach: "Gap analysis against Ontario OHS legislation, CSA standards, and sector-specific requirements. Systematic review of written programs, hazard registers, and management systems. Practical, implementable recommendations aligned with due diligence principles.",
     deliverables: [
-      "OSHA health standard applicability matrix",
-      "Exposure monitoring protocol compliance review",
-      "Written program gap analysis (e.g., respiratory protection, HazCom)",
-      "Recordkeeping adequacy assessment (29 CFR 1910.1020)",
-      "Industrial hygiene liability identification",
-      "Prioritized compliance roadmap with cost estimates"
+      "Chemical Prestart Health & Safety Review reports",
+      "EH&S program and policy documentation",
+      "Safety Management System development or gap analysis",
+      "Regulatory compliance roadmap with prioritized actions",
+      "Hazard identification and risk assessment frameworks",
+      "JHSC-ready documentation and communication materials"
     ],
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
   },
   {
-    id: "specialized_environments",
-    icon: AlertTriangle,
-    title: "Specialized or High-Sensitivity Environments",
-    shortDesc: "Cleanroom, laboratory, and healthcare IH",
-    scope: "Industrial hygiene support for controlled environments, research facilities, healthcare settings, and operations requiring heightened exposure controls. Includes biosafety assessments, cleanroom certification, and pharmaceutical manufacturing support.",
-    approach: "Application of specialized standards (e.g., ISO 14644 for cleanrooms, CDC/NIH biosafety guidelines). Airborne viable monitoring, containment verification, and exposure assessment for potent compounds. Coordination with infection control and biosafety professionals.",
+    id: "training",
+    icon: GraduationCap,
+    title: "Training & Specialized Environment Support",
+    shortDesc: "Education, training, and high-sensitivity environments",
+    scope: "Evidence-based workplace health and safety training for workers, supervisors, and JHSCs. Specialized EHS support for high-sensitivity environments including hospitals, pharmaceutical facilities, Indigenous communities, and film productions.",
+    approach: "Training programs tailored to Ontario regulatory requirements and the specific hazards of each workplace. Specialized assessments for controlled environments applying sector-specific standards and guidance from Health Canada, CSA, and international bodies.",
     deliverables: [
-      "Cleanroom classification testing and certification support",
-      "Containment verification for biological safety cabinets",
-      "Exposure assessment for highly potent compounds",
-      "Biosafety level adequacy evaluation",
-      "Cross-contamination and carryover assessments",
-      "Engineering control performance verification"
+      "Customized health and safety training programs",
+      "Worker, supervisor, and JHSC training delivery",
+      "Pharmaceutical and cleanroom exposure assessment support",
+      "Hospital and healthcare facility IH assessments",
+      "Indigenous community and remote site EHS support",
+      "Film industry production safety assessments"
     ],
     image: "https://images.unsplash.com/photo-1581093458791-9d42e11b4c15?w=600&q=80"
   }
