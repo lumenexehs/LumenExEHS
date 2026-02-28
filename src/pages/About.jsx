@@ -151,7 +151,23 @@ export default function About() {
                   <div>
                     <div className="text-2xl font-bold text-slate-900">19+</div>
                     <div className="text-sm text-slate-500">Years of Field Experience</div>
-...
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative"
+            >
+              <img 
+                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80"
+                alt="Team collaboration"
+                className="rounded-2xl shadow-xl"
+              />
               <div className="absolute -bottom-6 -left-6 bg-emerald-500 text-white p-6 rounded-xl shadow-lg">
                 <div className="text-3xl font-bold">19+</div>
                 <div className="text-emerald-100">Years of Experience</div>
