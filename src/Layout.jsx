@@ -218,7 +218,7 @@ export default function Layout({ children, currentPageName }) {
                 Anticipating invisible workplace hazards and turning them into clear, actionable guidance for those who protect workers.
               </p>
               <div className="flex items-center gap-4 text-sm text-slate-400">
-                <span>CIH-Led Practice</span>
+                <a href="https://gobgc.org/cih/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">CIH-Led Practice</a>
                 <span>•</span>
                 
                 
