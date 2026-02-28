@@ -119,7 +119,7 @@ const services = [
       "Indigenous community and remote site EHS support",
       "Film industry production safety assessments"
     ],
-    image: "https://images.unsplash.com/photo-1581093458791-9d42e11b4c15?w=600&q=80"
+    image: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=600&q=80"
   }
 ];
 
