@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: "500+", label: "Assessments Conducted" },
-  { value: "20+", label: "Years of Practice" },
-  { value: "CIH", label: "Board Certified Staff" },
-  { value: "AIHA", label: "Accredited Methods" }
+  { value: "20+", label: "Years Serving Ontario" },
+  { value: "CIH", label: "Board Certified Hygienists" },
+  { value: "10+", label: "Sectors Served" }
 ];
 
 export default function StatsSection() {
