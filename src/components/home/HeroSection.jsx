@@ -40,23 +40,24 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.h1 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
           >
-            Illuminating Workplace Hazards
-            <span className="block text-[#d4af7a]">Before Harm Occurs</span>
+          Making Invisible Hazards
+          <span className="block text-[#d4af7a]">Visible & Manageable</span>
           </motion.h1>
 
           <motion.p 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed"
           >
-            Precise, evidence-based industrial hygiene assessments that provide clarity and 
-            support informed decisions for those caring for worker health and safety.
+          Occupational hygiene and EHS consulting for public, private, and non-profit 
+          organizations across Ontario — delivering defensible exposure assessments, 
+          regulatory compliance support, and practical risk control solutions.
           </motion.p>
 
           <motion.div 
