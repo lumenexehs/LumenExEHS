@@ -131,8 +131,10 @@ const industries = [
   { icon: Building, name: "Construction" },
   { icon: Stethoscope, name: "Hospitals & Healthcare" },
   { icon: GraduationCap, name: "Educational Institutions" },
-  { icon: Activity, name: "Film Industry" },
-  { icon: HardHat, name: "Pharmaceuticals" }
+  { icon: Activity, name: "Production" },
+  { icon: HardHat, name: "Pharmaceuticals" },
+  { icon: Building, name: "Residential (Home Owner)" },
+  { icon: ClipboardCheck, name: "Public Services" }
 ];
 
 function ServiceCard({ service, index }) {
