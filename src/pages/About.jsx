@@ -44,22 +44,22 @@ const values = [
   {
     icon: Shield,
     title: "Scientific Rigor",
-    description: "All assessments follow validated methods and peer-reviewed protocols."
+    description: "All assessments follow Canadian OHS legislation, CSA standards, ACGIH TLVs®, and international occupational hygiene research."
   },
   {
     icon: Target,
     title: "Defensibility",
-    description: "Documentation and conclusions that withstand technical and regulatory scrutiny."
+    description: "Documentation and conclusions that withstand technical and regulatory scrutiny — grounded in evidence, not guesswork."
   },
   {
     icon: Users,
-    title: "Objectivity",
-    description: "Independent analysis focused on accurate exposure characterization."
+    title: "Community Commitment",
+    description: "Beyond consulting, we contribute volunteer expertise to NGOs and community groups, and support pro-bono safety initiatives."
   },
   {
     icon: Heart,
-    title: "Worker Health Focus",
-    description: "Committed to protecting workers through sound industrial hygiene practice."
+    title: "Carer for Carers",
+    description: "Dedicated to those responsible for worker health and safety — providing the clarity needed to protect people effectively."
   }
 ];
 
