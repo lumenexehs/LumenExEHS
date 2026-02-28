@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SafetyLampAnimation from "@/components/about/SafetyLampAnimation";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
