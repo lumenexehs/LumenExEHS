@@ -167,7 +167,7 @@ export default function Services() {
       <section className="py-12 bg-slate-50 border-b">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
-            <span className="text-slate-500 font-medium">Industries We Serve:</span>
+            <span className="text-slate-500 font-medium">Sectors We Serve Across Ontario:</span>
             {industries.map((industry) => (
               <div key={industry.name} className="flex items-center gap-2 text-slate-700">
                 <industry.icon className="w-5 h-5 text-emerald-600" />
