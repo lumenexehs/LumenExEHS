@@ -1,84 +1,66 @@
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { 
-  Leaf, 
-  HardHat, 
-  ClipboardCheck, 
-  GraduationCap, 
-  AlertTriangle, 
-  FileCheck,
-  ArrowRight 
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const services = [
   {
-  icon: Leaf,
-  title: "Exposure Assessment",
-  description: "We measure what workers breathe, touch, and hear — and tell you whether it's safe. Clear risk findings backed by science.",
-  color: "emerald"
+    title: "Exposure Assessment",
+    description: "Measure what workers breathe, touch, and hear — clear risk findings backed by science.",
+    image: "https://images.unsplash.com/photo-1581093458791-9d36cae56b90?w=600&q=80",
+    color: "#1a3a52"
   },
   {
-  icon: HardHat,
-  title: "Noise & Physical Hazards",
-  description: "Noise dosimetry, vibration, and radiation surveys to protect workers from physical hazards you can't always see or feel.",
-  color: "amber"
+    title: "Noise & Physical Hazards",
+    description: "Noise dosimetry, vibration, and radiation surveys to protect your team.",
+    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80",
+    color: "#d4af7a"
   },
   {
-  icon: AlertTriangle,
-  title: "Heat Stress & Ergonomics",
-  description: "Is your workplace too hot? Are repetitive tasks hurting workers? We assess the risk and help you fix it.",
-  color: "rose"
+    title: "Heat Stress & Ergonomics",
+    description: "Identify heat risk and repetitive strain before workers get hurt.",
+    image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600&q=80",
+    color: "#1a3a52"
   },
   {
-  icon: ClipboardCheck,
-  title: "Indoor Air Quality",
-  description: "Odours, mould, radon, or air complaints? We find the source and guide you through practical solutions.",
-  color: "blue"
+    title: "Indoor Air Quality",
+    description: "Track down odours, mould, radon, and air complaints at the source.",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+    color: "#d4af7a"
   },
   {
-  icon: FileCheck,
-  title: "EH&S Programs & Policies",
-  description: "We build the written safety programs and compliance frameworks your organization is required to have — and actually needs.",
-  color: "cyan"
+    title: "EH&S Programs & Policies",
+    description: "Written safety programs and compliance frameworks your organization actually needs.",
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80",
+    color: "#1a3a52"
   },
   {
-  icon: GraduationCap,
-  title: "Training & Risk Assessment",
-  description: "Practical safety training and risk assessments for workers, supervisors, and safety committees across Ontario.",
-  color: "purple"
+    title: "Training & Risk Assessment",
+    description: "Practical safety training for workers, supervisors, and JHSCs across Ontario.",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
+    color: "#d4af7a"
   }
 ];
 
-const colorClasses = {
-  emerald: "bg-[#1a3a52]/5 text-[#1a3a52] group-hover:bg-[#1a3a52]/10",
-  amber: "bg-[#d4af7a]/10 text-[#1a3a52] group-hover:bg-[#d4af7a]/20",
-  blue: "bg-[#1a3a52]/5 text-[#1a3a52] group-hover:bg-[#1a3a52]/10",
-  purple: "bg-[#d4af7a]/10 text-[#1a3a52] group-hover:bg-[#d4af7a]/20",
-  rose: "bg-[#1a3a52]/5 text-[#1a3a52] group-hover:bg-[#1a3a52]/10",
-  cyan: "bg-[#d4af7a]/10 text-[#1a3a52] group-hover:bg-[#d4af7a]/20"
-};
-
 export default function ServicesOverview() {
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-14"
         >
           <span className="text-[#d4af7a] font-medium tracking-wide text-sm italic">
-            Anticipating Risk, Providing Clarity
+            Serving Ontario Workplaces
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a52] mt-3 mb-4">
-            Occupational Hygiene & EHS Services
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a52] mt-3 mb-3">
+            What We Do
           </h2>
-          <p className="text-lg text-slate-600">
-            From air quality and noise to ergonomics and safety programs — we help Ontario 
-            employers understand their risks and take the right steps to protect their workers.
+          <p className="text-slate-500">
+            From factories and hospitals to schools and construction sites — we protect Ontario workers.
           </p>
         </motion.div>
 
@@ -89,25 +71,31 @@ export default function ServicesOverview() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
             >
-              <Link 
+              <Link
                 to={createPageUrl("Services")}
-                className="group block bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 h-full border border-slate-100"
+                className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 h-full"
               >
-                <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-colors ${colorClasses[service.color]}`}>
-                  <service.icon className="w-7 h-7" />
+                <div className="relative h-44 overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <h3 className="absolute bottom-3 left-4 text-white font-semibold text-lg drop-shadow">
+                    {service.title}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-[#1a3a52] transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-slate-600 leading-relaxed mb-4">
-                  {service.description}
-                </p>
-                <span className="inline-flex items-center text-[#d4af7a] font-medium text-sm group-hover:gap-2 transition-all">
-                  Learn more
-                  <ArrowRight className="w-4 h-4 ml-1 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
-                </span>
+                <div className="p-5">
+                  <p className="text-slate-600 text-sm leading-relaxed mb-3">
+                    {service.description}
+                  </p>
+                  <span className="inline-flex items-center text-[#d4af7a] font-medium text-sm gap-1 group-hover:gap-2 transition-all">
+                    Learn more <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
               </Link>
             </motion.div>
           ))}
