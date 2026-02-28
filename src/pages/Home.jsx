@@ -1,6 +1,7 @@
 import HeroSection from "@/components/home/HeroSection";
 import FeaturedArticle from "@/components/home/FeaturedArticle";
 import ServicesOverview from "@/components/home/ServicesOverview";
+import CanadaSceneStrip from "@/components/home/CanadaSceneStrip";
 import StatsSection from "@/components/home/StatsSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import CTASection from "@/components/home/CTASection";

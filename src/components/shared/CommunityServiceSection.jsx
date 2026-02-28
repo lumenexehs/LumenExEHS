@@ -2,62 +2,47 @@ import { motion } from "framer-motion";
 import { Heart, Users, Wind, Mic, Activity, Thermometer } from "lucide-react";
 
 const services = [
-  {
-    icon: Wind,
-    title: "Respirator Fit Testing",
-    desc: "Quantitative and qualitative fit testing for frontline workers at NGOs, shelters, and community health centres."
-  },
-  {
-    icon: Activity,
-    title: "Indoor Air Quality",
-    desc: "IAQ screening for community organizations, places of worship, and under-resourced workplaces concerned about air quality."
-  },
-  {
-    icon: Thermometer,
-    title: "Heat Stress Assessment",
-    desc: "Heat stress monitoring and worker guidance for outdoor and indoor community programs during high-heat periods."
-  },
-  {
-    icon: Mic,
-    title: "Health & Safety Training",
-    desc: "Practical OHS awareness sessions for union members, community workers, and healthcare volunteers."
-  },
-  {
-    icon: Users,
-    title: "JHSC Support",
-    desc: "Technical guidance for Joint Health and Safety Committees at non-profit organizations who lack access to IH expertise."
-  },
-  {
-    icon: Heart,
-    title: "Pro-Bono Consultations",
-    desc: "Complimentary consultations for Indigenous communities, shelters, and charitable organizations facing pressing health and safety concerns."
-  }
+  { icon: Wind, title: "Respirator Fit Testing", desc: "For NGOs, shelters, and community health centres." },
+  { icon: Activity, title: "Indoor Air Quality", desc: "IAQ screening for under-resourced workplaces." },
+  { icon: Thermometer, title: "Heat Stress Assessment", desc: "Monitoring and worker guidance for community programs." },
+  { icon: Mic, title: "Health & Safety Training", desc: "Practical OHS sessions for community workers and volunteers." },
+  { icon: Users, title: "JHSC Support", desc: "Technical guidance for safety committees at non-profits." },
+  { icon: Heart, title: "Pro-Bono Consultations", desc: "Free consultations for Indigenous communities, shelters, and charities." }
 ];
 
 export default function CommunityServiceSection() {
   return (
-    <section className="py-24 bg-emerald-50">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920&q=80"
+          alt="Community service"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-emerald-900/85" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-12"
         >
-          <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">
-            Community Service
+          <span className="text-emerald-300 font-semibold tracking-wide uppercase text-sm">
+            🍁 Giving Back to Canada
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
-            Pro Bono Services for Those Who Can't Afford IH Support
+          <h2 className="text-3xl md:text-4xl font-bold text-white mt-3 mb-3">
+            Pro Bono for Organizations That Need It
           </h2>
-          <p className="text-lg text-slate-600 leading-relaxed">
-            Every worker deserves a safe environment — regardless of budget. We offer free and 
-            reduced-fee services to NGOs, shelters, unions, and community organizations across Ontario.
+          <p className="text-emerald-100 leading-relaxed">
+            Every worker deserves a safe environment — regardless of budget. Free and reduced-fee services for Ontario NGOs, shelters, and communities.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -65,14 +50,14 @@ export default function CommunityServiceSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="bg-white rounded-xl p-6 shadow-sm border border-emerald-100 flex gap-4"
+              className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20 flex gap-4"
             >
-              <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                <service.icon className="w-6 h-6 text-emerald-600" />
+              <div className="w-11 h-11 bg-emerald-400/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <service.icon className="w-5 h-5 text-emerald-300" />
               </div>
               <div>
-                <h3 className="font-semibold text-slate-900 mb-1">{service.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{service.desc}</p>
+                <h3 className="font-semibold text-white mb-1 text-sm">{service.title}</h3>
+                <p className="text-emerald-200 text-sm leading-relaxed">{service.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -83,10 +68,13 @@ export default function CommunityServiceSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-12 text-center"
+          className="mt-10 text-center"
         >
-          <p className="text-slate-500 text-sm">
-            Is your organization in need? <a href="mailto:info@lumenexehs.ca" className="text-emerald-600 font-medium hover:underline">Contact us at info@lumenexehs.ca</a> to discuss how we can help.
+          <p className="text-emerald-200 text-sm">
+            Is your organization in need?{" "}
+            <a href="mailto:info@lumenexehs.ca" className="text-white font-medium hover:underline">
+              Contact info@lumenexehs.ca
+            </a>
           </p>
         </motion.div>
       </div>
