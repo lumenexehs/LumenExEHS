@@ -45,22 +45,22 @@ const values = [
   {
     icon: Shield,
     title: "Scientific Rigour",
-    description: "Every assessment applies the AREC model — Anticipation, Recognition, Evaluation, and Control — grounded in AIHA methodology, ACGIH TLVs®/BEIs®, Ontario OHS legislation, and current peer-reviewed IH science."
+    description: "Assessments grounded in AIHA methodology, ACGIH TLVs®/BEIs®, and Ontario OHS legislation — evidence-based, never assumption-driven."
   },
   {
     icon: Target,
     title: "Defensible Practice",
-    description: "Findings, exposure profiles, and control recommendations are documented to withstand Ministry of Labour audit, legal scrutiny, and peer technical review — evidence-based, never assumption-driven."
+    description: "Findings and recommendations documented to withstand Ministry of Labour audit, legal scrutiny, and peer technical review."
   },
   {
     icon: Users,
     title: "Community Commitment",
-    description: "We contribute volunteer IH expertise to NGOs, charitable organizations, and under-resourced workplaces — extending occupational health protection beyond those who can afford it."
+    description: "Volunteer IH expertise contributed to NGOs and under-resourced workplaces — extending occupational health protection to those who need it most."
   },
   {
     icon: Heart,
     title: "Carer for Carers",
-    description: "We exist to support the professionals responsible for worker health — EHS managers, JHSCs, nursing supervisors, safety officers — giving them the data and language they need to act decisively."
+    description: "We support EHS managers, JHSCs, and safety officers with the data and language they need to protect workers and act decisively."
   }
 ];
 
