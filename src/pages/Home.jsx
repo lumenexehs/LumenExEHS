@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <HeroSection />
-      <FeaturedArticle />
       <ServicesOverview />
+      <FeaturedArticle />
       <CanadaSceneStrip />
       <StatsSection />
 
