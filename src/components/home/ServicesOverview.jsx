@@ -14,39 +14,39 @@ import { motion } from "framer-motion";
 const services = [
   {
     icon: Leaf,
-    title: "Exposure Assessment",
-    description: "Quantitative and qualitative exposure characterization using validated sampling and analytical methods.",
+    title: "Occupational Hygiene & Exposure Assessment",
+    description: "Defensible exposure assessments with SEG design, personal monitoring, statistical analysis, and risk management across chemical, physical, and biological agents.",
     color: "emerald"
   },
   {
     icon: HardHat,
-    title: "Occupational Hygiene Surveys",
-    description: "Systematic workplace evaluations for chemical, physical, and biological agents following AIHA strategies.",
+    title: "Noise, Radiation & Physical Agents",
+    description: "Occupational noise (TWA, NC, PNC), ionizing and non-ionizing radiation evaluations, vibration, and physical hazard monitoring using validated protocols.",
     color: "amber"
   },
   {
-    icon: ClipboardCheck,
-    title: "Regulatory Compliance Review",
-    description: "Technical analysis of OSHA, EPA, and state regulatory requirements with gap identification.",
-    color: "blue"
-  },
-  {
-    icon: GraduationCap,
-    title: "Technical Training",
-    description: "Evidence-based training on exposure controls, PPE selection, and hazard recognition protocols.",
-    color: "purple"
-  },
-  {
     icon: AlertTriangle,
-    title: "Health Hazard Evaluation",
-    description: "Systematic hazard identification, exposure modeling, and risk characterization aligned with OELs.",
+    title: "Heat Stress & Ergonomics",
+    description: "WBGT-based heat stress monitoring, metabolic rate estimation, work-rest cycle development, and ergonomic risk assessments for Ontario workplaces.",
     color: "rose"
   },
   {
+    icon: ClipboardCheck,
+    title: "Indoor Air Quality & Microbial Investigations",
+    description: "IAQ assessments, odour and vapour intrusion investigations, microbial contamination evaluations, and radon safety inspections.",
+    color: "blue"
+  },
+  {
     icon: FileCheck,
-    title: "Program Development",
-    description: "Written programs for respiratory protection, hearing conservation, and hazard communication per regulatory standards.",
+    title: "EH&S Program & Policy Development",
+    description: "Safety Management System development and review, Chemical Prestart Health & Safety Reviews, and comprehensive EH&S program and policy frameworks.",
     color: "cyan"
+  },
+  {
+    icon: GraduationCap,
+    title: "Training & Risk Assessment",
+    description: "Workplace health and safety training, risk assessments across chemical, physical, and biological hazards, and regulatory compliance support across Ontario.",
+    color: "purple"
   }
 ];
 
