@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/select";
 import { base44 } from "@/api/base44Client";
 import { 
-  Phone, 
   Mail, 
   MapPin, 
   Clock,
