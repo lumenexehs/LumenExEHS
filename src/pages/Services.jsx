@@ -85,7 +85,7 @@ const services = [
       "Radon safety inspection report with Health Canada benchmarks",
       "Prioritized remediation and indoor air quality improvement plan"
     ],
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
+    image: "https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=600&q=80"
   },
   {
     id: "ehs_programs",
