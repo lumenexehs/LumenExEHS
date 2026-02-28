@@ -281,7 +281,7 @@ export default function Services() {
               Our Approach
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
-              How We Work With You
+              Our Four-Phase Approach
             </h2>
           </motion.div>
 
