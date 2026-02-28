@@ -112,8 +112,8 @@ export default function Contact() {
                   Contact Information
                 </h2>
                 <p className="text-slate-600 mb-8">
-                  Reach out to discuss your industrial hygiene needs. We respond to 
-                  inquiries within one business day.
+                  Reach out to discuss your occupational hygiene or EHS needs across Ontario. 
+                  We respond to all inquiries within one business day.
                 </p>
               </div>
 
