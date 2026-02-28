@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
+import CommunityServiceSection from "@/components/home/CommunityServiceSection";
 import { 
   Award, 
   Users, 
@@ -12,8 +13,6 @@ import {
   Building2,
   Shield
 } from "lucide-react";
-import CommunityServiceSection from "@/components/shared/CommunityServiceSection";
-import CredentialsBadges from "@/components/shared/CredentialsBadges";
 
 const team = [
   {
@@ -280,13 +279,12 @@ export default function About() {
             <h2 className="text-3xl font-bold text-white mb-4">
               Credentials & Standards
             </h2>
-            <p className="text-slate-400 mb-10">
+            <p className="text-slate-400">
               Professional certifications and recognized Canadian standards
             </p>
-            <CredentialsBadges dark />
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {certifications.map((cert, index) => (
               <motion.div
                 key={cert}
