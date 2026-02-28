@@ -141,7 +141,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Office</h3>
-                    <p className="text-slate-600">Markham, ON L6C 0H5</p>
+                    <p className="text-slate-600">Toronto, Ontario</p>
                   </div>
                 </div>
 
