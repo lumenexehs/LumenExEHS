@@ -219,7 +219,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Our Approach Section */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
@@ -230,43 +230,34 @@ export default function About() {
             className="text-center max-w-2xl mx-auto mb-16"
           >
             <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">
-              Our Leadership
+              Our Methodology
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
-              Meet the Experts
+              How We Make the Invisible Visible
             </h2>
             <p className="text-lg text-slate-600">
-              Industry veterans dedicated to your success
+              A structured, science-based approach to detecting, measuring, and controlling what cannot be seen.
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
+            {[
+              { step: "01", title: "Hazard Screening & Prioritization", desc: "Field instrumentation, walkthrough assessments, exposure modelling, and AI-supported analytics to identify high-risk priorities — replacing guesswork with measurable data." },
+              { step: "02", title: "Strategic Sampling & SEG Design", desc: "Similar Exposure Group frameworks ensuring representativeness across heat stress, noise, dust, silica, chemicals, and indoor air — with integrated, cost-effective campaigns." },
+              { step: "03", title: "Data Amplification & Predictive Insight", desc: "Advanced statistical methods including Bayesian analysis to interpret datasets, quantify uncertainty, forecast risk, and strengthen regulatory defensibility." },
+              { step: "04", title: "Translating Science into Action", desc: "Complex findings translated into practical language for workers, supervisors, JHSCs, and leadership — with hierarchy-of-control aligned, operationally realistic recommendations." }
+            ].map((item, index) => (
               <motion.div
-                key={member.name}
+                key={item.step}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group"
+                className="bg-white rounded-xl p-8 shadow-sm border border-slate-100"
               >
-                <div className="relative overflow-hidden rounded-xl mb-4">
-                  <img 
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                </div>
-                <h3 className="text-lg font-semibold text-slate-900">
-                  {member.name}
-                </h3>
-                <div className="text-emerald-600 font-medium text-sm mb-2">
-                  {member.role}
-                </div>
-                <p className="text-slate-500 text-sm">
-                  {member.bio}
-                </p>
+                <div className="text-4xl font-bold text-emerald-100 mb-4">{item.step}</div>
+                <h3 className="text-lg font-semibold text-slate-900 mb-3">{item.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </div>
