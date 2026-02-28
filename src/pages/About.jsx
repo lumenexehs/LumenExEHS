@@ -115,39 +115,41 @@ export default function About() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                Our Practice
+                Who We Are
               </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  Founded by Dr. Robert Harrison, CIH, our practice was established 
-                  on the principle that exposure assessment must be scientifically 
-                  defensible and aligned with recognized occupational health standards.
+                  LumenEx EHS is an occupational hygiene and EHS consulting firm serving 
+                  a diverse range of clients across Ontario — from construction projects and 
+                  manufacturing facilities to hospitals, Indigenous communities, educational 
+                  institutions, and residential property managers.
                 </p>
                 <p>
-                  We serve manufacturing, energy, healthcare, and construction 
-                  sectors with industrial hygiene assessments, exposure monitoring, 
-                  and technical interpretation services.
+                  We deliver defensible exposure assessments, regulatory compliance support, 
+                  and practical risk control solutions that make invisible health hazards visible. 
+                  Our work is grounded in Canadian OHS legislation, CSA standards, ACGIH TLVs®, 
+                  and international occupational hygiene research.
                 </p>
                 <p>
-                  Our team of Board Certified Industrial Hygienists applies AIHA 
-                  exposure assessment strategies, validated sampling methods, and 
-                  statistical analysis to deliver decision-ready findings.
+                  Beyond professional consulting, we actively contribute volunteer expertise 
+                  to community groups and NGOs, and collaborate with charitable organizations 
+                  through pro-bono initiatives and community-focused partnerships.
                 </p>
               </div>
               <div className="mt-8 flex items-center gap-6">
                 <div className="flex items-center gap-3">
                   <Building2 className="w-8 h-8 text-emerald-600" />
                   <div>
-                    <div className="text-2xl font-bold text-slate-900">40+</div>
-                    <div className="text-sm text-slate-500">Team Members</div>
+                    <div className="text-2xl font-bold text-slate-900">10+</div>
+                    <div className="text-sm text-slate-500">Sectors Served</div>
                   </div>
                 </div>
                 <div className="w-px h-12 bg-slate-200" />
                 <div className="flex items-center gap-3">
                   <Award className="w-8 h-8 text-emerald-600" />
                   <div>
-                    <div className="text-2xl font-bold text-slate-900">15+</div>
-                    <div className="text-sm text-slate-500">Certifications</div>
+                    <div className="text-2xl font-bold text-slate-900">20+</div>
+                    <div className="text-sm text-slate-500">Years of Practice</div>
                   </div>
                 </div>
               </div>
