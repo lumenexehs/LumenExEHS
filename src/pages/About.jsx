@@ -227,10 +227,10 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Hazard Screening & Prioritization", desc: "Field instrumentation, walkthrough assessments, exposure modelling, and AI-supported analytics to identify high-risk priorities — replacing guesswork with measurable data." },
-              { step: "02", title: "Strategic Sampling & SEG Design", desc: "Similar Exposure Group frameworks ensuring representativeness across heat stress, noise, dust, silica, chemicals, and indoor air — with integrated, cost-effective campaigns." },
-              { step: "03", title: "Data Amplification & Predictive Insight", desc: "Advanced statistical methods including Bayesian analysis to interpret datasets, quantify uncertainty, forecast risk, and strengthen regulatory defensibility." },
-              { step: "04", title: "Translating Science into Action", desc: "Complex findings translated into practical language for workers, supervisors, JHSCs, and leadership — with hierarchy-of-control aligned, operationally realistic recommendations." }
+              { step: "01", title: "Anticipate & Recognize", desc: "Baseline walkthrough and process review to identify exposure determinants, operational variability, and existing control gaps — before any instrument is deployed." },
+              { step: "02", title: "Design & Evaluate", desc: "SEG-based measurement strategies targeting the upper tail of the exposure distribution. Sampling for personal breathing zone (PBZ) and area concentrations benchmarked against OELs and ACGIH TLVs®." },
+              { step: "03", title: "Analyse & Interpret", desc: "Bayesian statistical methods (IHDataAnalyst, IHSTAT) and AIHA exposure banding to quantify uncertainty, characterize exposure profiles, and produce findings that hold up to regulatory and legal scrutiny." },
+              { step: "04", title: "Control & Communicate", desc: "Hierarchy-of-controls recommendations written for the people who implement them — workers, supervisors, JHSCs, and leadership — practical, proportionate, and operationally realistic." }
             ].map((item, index) => (
               <motion.div
                 key={item.step}
