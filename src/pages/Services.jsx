@@ -102,7 +102,7 @@ const services = [
       "Hazard identification and risk assessment frameworks",
       "JHSC-ready documentation and communication materials"
     ],
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
   },
   {
     id: "training",
