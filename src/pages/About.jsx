@@ -291,7 +291,7 @@ export default function About() {
               Our Methodology
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
-              How We Make the Invisible Visible
+              How We Illuminate Workplace Risk
             </h2>
             <p className="text-lg text-slate-600">
               A four-step process to find, measure, and control workplace hazards — clearly and defensibly.

@@ -214,8 +214,8 @@ export default function Layout({ children, currentPageName }) {
                 </div>
               </div>
               <p className="text-slate-400 mb-6 max-w-sm">
-                Anticipating hazards and providing precise, evidence-based industrial hygiene 
-                guidance for those responsible for worker health and safety.
+                Like the miner's safety lamp — we illuminate what cannot be seen. 
+                Anticipating invisible workplace hazards and turning them into clear, actionable guidance for those who protect workers.
               </p>
               <div className="flex items-center gap-4 text-sm text-slate-400">
                 <span>CIH-Led Practice</span>
