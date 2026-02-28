@@ -152,11 +152,12 @@ export default function Services() {
               Technical Capabilities
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Industrial Hygiene Services
+              Occupational Hygiene & EHS Services
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Scientifically rigorous exposure assessment, monitoring, and interpretation 
-              services aligned with OSHA, NIOSH, and AIHA standards.
+              Comprehensive EHS consulting across Ontario — delivering defensible exposure 
+              assessments, regulatory compliance support, and practical risk control solutions 
+              aligned with Canadian OHS legislation, CSA standards, and ACGIH TLVs®.
             </p>
           </motion.div>
         </div>
