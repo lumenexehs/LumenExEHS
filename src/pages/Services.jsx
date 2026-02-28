@@ -287,10 +287,10 @@ export default function Services() {
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Scope", desc: "Define assessment objectives, agents of concern, and applicable standards" },
-              { step: "02", title: "Assess", desc: "Conduct monitoring using validated methods and AIHA strategies" },
-              { step: "03", title: "Interpret", desc: "Analyze data against OELs with statistical rigor and professional judgment" },
-              { step: "04", title: "Report", desc: "Deliver decision-ready findings with defensible documentation" }
+              { step: "01", title: "Screen & Prioritize", desc: "Field instrumentation, exposure modelling, and AI-supported analytics to detect high-risk hazards and focus effort where it matters most." },
+              { step: "02", title: "Design & Sample", desc: "Strategic SEG-based sampling campaigns that are integrated, cost-effective, and statistically valid across all relevant agents." },
+              { step: "03", title: "Analyze & Forecast", desc: "Advanced Bayesian statistical methods to interpret data, quantify uncertainty, and generate forward-looking risk projections." },
+              { step: "04", title: "Communicate & Protect", desc: "Translate complex findings into clear, actionable recommendations — defensible, hierarchy-of-control aligned, and operationally realistic." }
             ].map((item, index) => (
               <motion.div
                 key={item.step}
