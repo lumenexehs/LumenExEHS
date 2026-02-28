@@ -74,11 +74,11 @@ export default function ServicesOverview() {
             Anticipating Risk, Providing Clarity
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a52] mt-3 mb-4">
-            Environmental Health & Safety Services
+            Occupational Hygiene & EHS Services
           </h2>
           <p className="text-lg text-slate-600">
-            Precise, cost-effective assessments that illuminate hazards and support 
-            informed decision-making for worker health protection.
+            Comprehensive EHS consulting across Ontario for public, private, and non-profit 
+            organizations — turning complex, invisible workplace hazards into clear, actionable protection strategies.
           </p>
         </motion.div>
 
