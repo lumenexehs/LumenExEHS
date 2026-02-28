@@ -84,7 +84,7 @@ const services = [
       "Radon measurement report with Health Canada guideline comparison and mitigation options",
       "Prioritized IEQ improvement plan with short- and long-term control recommendations"
     ],
-    image: "https://images.unsplash.com/photo-1464082354059-27db6ce50048?w=600&q=80"
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e3ec8e48c_ChatGPTImageFeb28202604_23_54PM.png"
   },
   {
     id: "ehs_programs",
