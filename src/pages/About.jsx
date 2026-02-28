@@ -225,7 +225,7 @@ export default function About() {
               How We Make the Invisible Visible
             </h2>
             <p className="text-lg text-slate-600">
-              A structured, science-based approach to detecting, measuring, and controlling what cannot be seen.
+              A four-step process to find, measure, and control workplace hazards — clearly and defensibly.
             </p>
           </motion.div>
 
