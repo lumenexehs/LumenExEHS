@@ -88,8 +88,8 @@ export default function Contact() {
               Request a Consultation
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Contact us to discuss your exposure assessment needs, regulatory questions, 
-              or industrial hygiene program requirements.
+              Contact us to discuss your occupational hygiene, EHS program, regulatory compliance needs, 
+              or any workplace health and safety challenge across Ontario.
             </p>
           </motion.div>
         </div>
