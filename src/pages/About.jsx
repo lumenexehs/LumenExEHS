@@ -43,23 +43,23 @@ const team = [
 const values = [
   {
     icon: Shield,
-    title: "Scientific Rigor",
-    description: "All assessments follow Canadian OHS legislation, CSA standards, ACGIH TLVs®, and international occupational hygiene research."
+    title: "Scientific Rigour",
+    description: "Every assessment applies the AREC model — Anticipation, Recognition, Evaluation, and Control — grounded in AIHA methodology, ACGIH TLVs®/BEIs®, Ontario OHS legislation, and current peer-reviewed IH science."
   },
   {
     icon: Target,
-    title: "Defensibility",
-    description: "Documentation and conclusions that withstand technical and regulatory scrutiny — grounded in evidence, not guesswork."
+    title: "Defensible Practice",
+    description: "Findings, exposure profiles, and control recommendations are documented to withstand Ministry of Labour audit, legal scrutiny, and peer technical review — evidence-based, never assumption-driven."
   },
   {
     icon: Users,
     title: "Community Commitment",
-    description: "Beyond consulting, we contribute volunteer expertise to NGOs and community groups, and support pro-bono safety initiatives."
+    description: "We contribute volunteer IH expertise to NGOs, charitable organizations, and under-resourced workplaces — extending occupational health protection beyond those who can afford it."
   },
   {
     icon: Heart,
     title: "Carer for Carers",
-    description: "Dedicated to those responsible for worker health and safety — providing the clarity needed to protect people effectively."
+    description: "We exist to support the professionals responsible for worker health — EHS managers, JHSCs, nursing supervisors, safety officers — giving them the data and language they need to act decisively."
   }
 ];
 
