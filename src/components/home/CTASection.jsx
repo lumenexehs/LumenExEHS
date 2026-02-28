@@ -16,8 +16,8 @@ export default function CTASection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+          transition={{ duration: 0.6 }}>
+
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             We're Here to Support You
           </h2>
@@ -28,25 +28,25 @@ export default function CTASection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={createPageUrl("Contact")}>
-              <Button 
-                size="lg" 
-                className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold px-8 py-6 text-lg rounded-full group"
-              >
+              <Button
+                size="lg"
+                className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold px-8 py-6 text-lg rounded-full group">
+
                 Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full"
-            >
-              <Phone className="mr-2 w-5 h-5" />
-              (555) 123-4567
-            </Button>
+            
+
+
+
+
+
+
+
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
