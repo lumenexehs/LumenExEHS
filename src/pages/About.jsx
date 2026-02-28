@@ -278,7 +278,7 @@ export default function About() {
               Credentials & Standards
             </h2>
             <p className="text-slate-400">
-              Professional certifications and recognized methodologies
+              Professional certifications and recognized Canadian standards
             </p>
           </motion.div>
 
