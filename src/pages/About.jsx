@@ -155,11 +155,18 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <img 
-                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80"
-                alt="Team collaboration"
-                className="rounded-2xl shadow-xl"
-              />
+              <div className="rounded-2xl shadow-xl overflow-hidden" style={{ minHeight: "360px" }}>
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                  style={{ minHeight: "360px" }}
+                >
+                  <source src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+                </video>
+              </div>
               <div className="absolute -bottom-6 -left-6 bg-emerald-500 text-white p-6 rounded-xl shadow-lg">
                 <div className="text-3xl font-bold">19+</div>
                 <div className="text-emerald-100">Years of Experience</div>
