@@ -34,7 +34,7 @@ const services = [
       "Exposure profile determination and risk prioritization",
       "Hierarchy-of-control aligned recommendations"
     ],
-    image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=600&q=80"
+    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80"
   },
   {
     id: "noise_physical",
