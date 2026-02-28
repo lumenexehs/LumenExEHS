@@ -67,7 +67,7 @@ export default function Layout({ children, currentPageName }) {
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
                 alt="LumenEx EHS"
-                className="w-12 h-12 object-contain" />
+                className={`w-12 h-12 object-contain transition-all duration-300 ${isScrolled ? 'brightness-150' : 'brightness-100'}`} />
 
               <div>
                 <div className={`font-bold text-lg ${
@@ -141,7 +141,7 @@ export default function Layout({ children, currentPageName }) {
                       <img
                         src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
                         alt="LumenEx EHS"
-                        className="w-12 h-12 object-contain" />
+                        className="w-12 h-12 object-contain brightness-100" />
 
                       <div>
                         <div className="font-bold text-lg text-slate-900">LumenEx EHS</div>
@@ -206,7 +206,7 @@ export default function Layout({ children, currentPageName }) {
                 <img
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
                   alt="LumenEx EHS"
-                  className="w-12 h-12 object-contain" />
+                  className="w-12 h-12 object-contain brightness-100" />
 
                 <div>
                   <div className="font-bold text-xl text-white">LumenEx EHS</div>
