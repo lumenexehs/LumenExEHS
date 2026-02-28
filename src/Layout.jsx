@@ -256,7 +256,7 @@ export default function Layout({ children, currentPageName }) {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-3 text-slate-400">
                 <li>info@lumenexehs.ca</li>
-                <li>Toronto, ON</li>
+                <li>Toronto, Ontario</li>
               </ul>
             </div>
           </div>
