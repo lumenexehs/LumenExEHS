@@ -51,9 +51,9 @@ import About from './pages/About';
 import ClientPortal from './pages/ClientPortal';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import Services from './pages/Services';
 import TermsAndConditions from './pages/TermsAndConditions';
-import PrivacyPolicy from './pages/PrivacyPolicy';
 import __Layout from './Layout.jsx';
 
 
@@ -62,9 +62,9 @@ export const PAGES = {
     "ClientPortal": ClientPortal,
     "Contact": Contact,
     "Home": Home,
+    "PrivacyPolicy": PrivacyPolicy,
     "Services": Services,
     "TermsAndConditions": TermsAndConditions,
-    "PrivacyPolicy": PrivacyPolicy,
 }
 
 export const pagesConfig = {

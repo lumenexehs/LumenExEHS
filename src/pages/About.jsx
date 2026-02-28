@@ -91,14 +91,15 @@ export default function About() {
             className="max-w-3xl"
           >
             <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">
-              About Us
+              About LumenEx EHS
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Occupational Hygiene & EHS Consulting Across Ontario
+              Making Invisible Hazards Visible
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              We help Ontario employers understand workplace health risks — and what to do about them.
-              19+ years of industrial hygiene field experience, delivered with clarity and accountability.
+              LumenEx EHS is an independent occupational hygiene and EHS consulting practice based in Ontario — 
+              built on 19+ years of field experience and a single guiding purpose: 
+              revealing what can't be seen, measured, or managed without the right expertise.
             </p>
           </motion.div>
         </div>
@@ -115,14 +116,17 @@ export default function About() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                Who We Are
+                Our Purpose — and Our Name
               </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  LumenEx EHS is an independent occupational hygiene and EHS consulting practice based in Ontario. We work with employers in manufacturing, construction, healthcare, education, production, and the public sector.
+                  Before modern gas detectors existed, miners carried a safety lamp — a carefully engineered tool that did more than provide light. It detected hazardous gases and oxygen-depleted air that were completely invisible to the human eye. A change in the flame was an early warning signal, a way to reveal unseen danger before it became tragedy.
                 </p>
                 <p>
-                  Our work is built on a simple premise: workplace hazards that aren't measured can't be managed. We identify what's there, assess the risk, and help you control it — with findings that hold up to regulatory review.
+                  That is the metaphor behind LumenEx EHS. Our work is to <span className="font-semibold text-slate-800">light the environment</span> — to detect, measure, and interpret workplace hazards that most people cannot see, smell, or feel until it is too late. Chemical exposures, noise, heat, contaminated air, biological agents: the risks that silently accumulate over time.
+                </p>
+                <p>
+                  We work with employers in manufacturing, construction, healthcare, education, and the public sector — helping them anticipate risk rather than react to incidents, using science, monitoring, and professional judgement to protect their workers.
                 </p>
               </div>
               <div className="mt-8 flex items-center gap-6">
