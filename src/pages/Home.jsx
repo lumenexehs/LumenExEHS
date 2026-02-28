@@ -3,7 +3,7 @@ import FeaturedArticle from "@/components/home/FeaturedArticle";
 import ServicesOverview from "@/components/home/ServicesOverview";
 import CanadaSceneStrip from "@/components/home/CanadaSceneStrip";
 import StatsSection from "@/components/home/StatsSection";
-import TestimonialsSection from "@/components/home/TestimonialsSection";
+
 import CTASection from "@/components/home/CTASection";
 import CommunityServiceSection from "@/components/shared/CommunityServiceSection";
 import CredentialsBadges from "@/components/shared/CredentialsBadges";
@@ -48,7 +48,6 @@ export default function Home() {
       </section>
 
       <CommunityServiceSection />
-      <TestimonialsSection />
       <CTASection />
     </div>
   );
