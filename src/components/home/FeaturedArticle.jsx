@@ -11,8 +11,16 @@ const articles = [
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/46e7cc829_1772212842931.png",
     url: "https://www.linkedin.com/posts/lumenex-ehs_ontario-has-launched-canadas-first-occupational-activity-7433200414990299136-OSy1",
     tag: "Regulatory Update"
+  },
+  {
+    id: 2,
+    title: "Understanding the Miner's Safety Lamp: The Original Gas Detector",
+    date: "Jan 2025",
+    summary: "Before modern gas detectors, the Garforth lamp revealed invisible methane hazards through changes in flame shape and colour. This historical tool laid the foundation for today's occupational hygiene practice — detecting what the eye cannot see.",
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/61912440e_garforth_lamps.jpg",
+    url: "https://www.linkedin.com/company/lumenex-ehs",
+    tag: "IH Education"
   }
-  // Add more articles here in the future
 ];
 
 export default function FeaturedArticle() {
