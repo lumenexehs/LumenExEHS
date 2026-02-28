@@ -3,6 +3,7 @@ import FeaturedArticle from "@/components/home/FeaturedArticle";
 import ServicesOverview from "@/components/home/ServicesOverview";
 import StatsSection from "@/components/home/StatsSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
+import CommunityServiceSection from "@/components/home/CommunityServiceSection";
 import CTASection from "@/components/home/CTASection";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <ServicesOverview />
       <StatsSection />
       <TestimonialsSection />
+      <CommunityServiceSection />
       <CTASection />
     </div>
   );
