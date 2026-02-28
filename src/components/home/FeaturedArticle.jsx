@@ -18,7 +18,7 @@ const articles = [
     date: "Jan 2025",
     summary: "Before modern gas detectors, the Garforth lamp revealed invisible methane hazards through changes in flame shape and colour. This historical tool laid the foundation for today's occupational hygiene practice — detecting what the eye cannot see.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/61912440e_garforth_lamps.jpg",
-    url: "https://www.linkedin.com/company/lumenex-ehs",
+    url: "https://www.suttonbeauty.org.uk/suttonhistory/sutton_memories22/",
     tag: "IH Education"
   },
   {
