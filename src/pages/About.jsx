@@ -305,7 +305,7 @@ export default function About() {
               Let's Bring Clarity to Your Workplace
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Contact us to discuss your occupational hygiene, EHS program, or regulatory compliance needs across Ontario.
+            Have a workplace health concern? Not sure where to start? Reach out — we'll point you in the right direction.
             </p>
             <Link to={createPageUrl("Contact")}>
               <Button 
