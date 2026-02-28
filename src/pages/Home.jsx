@@ -15,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <FeaturedArticle />
       <ServicesOverview />
+      <CanadaSceneStrip />
       <StatsSection />
 
       {/* Credentials Strip */}
