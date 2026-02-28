@@ -64,12 +64,12 @@ const values = [
 ];
 
 const certifications = [
-  "Board Certified Industrial Hygienists (CIH)",
-  "AIHA Member Organization",
-  "AIHA-LAP Accredited Labs Used",
-  "NIOSH Validated Methods",
-  "OSHA Technical Support",
-  "Peer-Reviewed Protocols"
+  "Certified Industrial Hygienist (CIH)",
+  "Certified Safety Professional (CSP)",
+  "Canadian Registered Safety Professional (CRSP)",
+  "Ontario OHS Legislation",
+  "CSA Standards",
+  "ACGIH TLVs® Methods"
 ];
 
 export default function About() {
