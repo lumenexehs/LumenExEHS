@@ -179,11 +179,10 @@ export default function Contact() {
                       <CheckCircle className="w-8 h-8 text-emerald-600" />
                     </div>
                     <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                      Thank You!
+                      Message Received
                     </h3>
                     <p className="text-slate-600 max-w-md mx-auto">
-                      Your message has been received. One of our EHS consultants will 
-                      contact you within 24 hours.
+                      We'll review your concern and follow up within 1 business day with a clear recommendation.
                     </p>
                   </div>
                 ) : (
