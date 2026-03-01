@@ -218,11 +218,57 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="flex flex-col items-center gap-6"
             >
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/7fb3e8ffd_image.png"
-                alt="Miner's safety lamp"
-                className="w-48 h-48 object-cover rounded-2xl shadow-lg border border-white/10"
-              />
+              <div className="relative w-48 h-48">
+                <img
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/7fb3e8ffd_image.png"
+                  alt="Miner's safety lamp"
+                  className="w-48 h-48 object-cover rounded-2xl shadow-lg border border-white/10"
+                />
+                {/* Flickering flame glow overlay */}
+                <motion.div
+                  className="absolute rounded-full pointer-events-none"
+                  style={{
+                    width: 36,
+                    height: 36,
+                    top: "38%",
+                    left: "44%",
+                    background: "radial-gradient(circle, rgba(255,200,60,0.85) 0%, rgba(255,120,20,0.5) 50%, transparent 80%)",
+                    filter: "blur(4px)",
+                  }}
+                  animate={{
+                    scale: [1, 1.25, 0.95, 1.18, 1],
+                    x: [0, 2, -2, 1, 0],
+                    y: [0, -2, 1, -1, 0],
+                    opacity: [0.85, 1, 0.75, 1, 0.85],
+                  }}
+                  transition={{
+                    duration: 1.4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />
+                {/* Outer warm glow */}
+                <motion.div
+                  className="absolute rounded-full pointer-events-none"
+                  style={{
+                    width: 70,
+                    height: 70,
+                    top: "30%",
+                    left: "35%",
+                    background: "radial-gradient(circle, rgba(255,160,30,0.25) 0%, transparent 70%)",
+                    filter: "blur(8px)",
+                  }}
+                  animate={{
+                    scale: [1, 1.15, 0.9, 1.1, 1],
+                    opacity: [0.5, 0.8, 0.4, 0.7, 0.5],
+                  }}
+                  transition={{
+                    duration: 1.8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />
+              </div>
               <SafetyLampAnimation />
             </motion.div>
           </div>
