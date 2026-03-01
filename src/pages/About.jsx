@@ -292,27 +292,7 @@ export default function About() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { step: "01", title: "Anticipate & Recognize", desc: "Walk the workplace, understand the work, and identify what could be harming workers — before taking any measurements." },
-              { step: "02", title: "Design & Evaluate", desc: "Design a targeted sampling strategy that captures real exposure levels for the workers most at risk." },
-              { step: "03", title: "Analyse & Interpret", desc: "Turn monitoring data into clear exposure profiles — with a risk verdict you can act on and defend." },
-              { step: "04", title: "Control & Communicate", desc: "Provide practical, ranked recommendations in plain language — for workers, supervisors, and safety committees." }
-            ].map((item, index) => (
-              <motion.div
-                key={item.step}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-xl p-8 shadow-sm border border-slate-100"
-              >
-                <div className="text-4xl font-bold text-emerald-100 mb-4">{item.step}</div>
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">{item.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
+          <ApproachSteps />
         </div>
       </section>
 
