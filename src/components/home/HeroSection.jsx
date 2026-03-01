@@ -13,10 +13,10 @@ const audiences = [
 
 
 const benefits = [
-{ icon: Shield, text: "Get data you can trust — not guesswork" },
-{ icon: CheckCircle, text: "Stay compliant with Ontario OHS law" },
-{ icon: ArrowRight, text: "Clear action plans, not just reports" },
-{ icon: Calendar, text: "Fast turnaround, plain-language findings" }];
+{ icon: Shield, text: "Cost-effective solutions — no unnecessary work" },
+{ icon: CheckCircle, text: "Legal compliance with Ontario OHS law" },
+{ icon: ArrowRight, text: "Practical, proportionate recommendations" },
+{ icon: Calendar, text: "Clear findings you can act on immediately" }];
 
 
 export default function HeroSection() {
