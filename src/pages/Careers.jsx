@@ -99,7 +99,8 @@ export default function Careers() {
             className="text-center max-w-2xl mx-auto mb-14"
           >
             <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">Why LumenEx</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3">What You'll Get</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-2">Why Join Us</h2>
+            <p className="text-slate-500">Real work. Expert mentorship. Community impact.</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
