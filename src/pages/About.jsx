@@ -217,7 +217,7 @@ export default function About() {
               className="flex flex-col items-center gap-6"
             >
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/7fb3e8ffd_image.png"
                 alt="Miner's safety lamp"
                 className="w-48 h-48 object-cover rounded-2xl shadow-lg border border-white/10"
               />
