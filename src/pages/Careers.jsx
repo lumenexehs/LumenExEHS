@@ -136,9 +136,7 @@ export default function Careers() {
           >
             <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">Open Roles</span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3">Current Openings</h2>
-            <p className="text-slate-600 mt-4">
-              Don't see a perfect fit? Send us an open application — we're always interested in meeting talented EHS professionals.
-            </p>
+            <p className="text-slate-500 mt-3 text-sm">Part-time · Flexible · Ontario</p>
           </motion.div>
 
           <div className="space-y-6">
