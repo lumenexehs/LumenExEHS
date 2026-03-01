@@ -7,7 +7,7 @@ const services = [
   {
     title: "Exposure Assessment",
     description: "Measure what workers breathe, touch, and hear — clear risk findings backed by science.",
-    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/6c58a9245_IMG_3101.jpg",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80",
     color: "#1a3a52"
   },
   {
