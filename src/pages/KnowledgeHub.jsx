@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { ArrowRight, Wind, FlaskConical, Building2, HeartPulse, ShieldCheck, Users, BookOpen } from "lucide-react";
 import { articles } from "@/components/home/KnowledgeHub";
