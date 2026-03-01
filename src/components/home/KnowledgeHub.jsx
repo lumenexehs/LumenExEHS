@@ -170,7 +170,7 @@ export default function KnowledgeHub() {
                   </span>
                 </div>
               </div>
-            </Link>
+            </a>
 
             {/* Secondary grid */}
             <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
