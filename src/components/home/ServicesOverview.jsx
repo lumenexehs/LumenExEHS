@@ -19,7 +19,7 @@ const services = [
   {
     title: "Heat Stress & Ergonomics",
     description: "Identify heat risk and repetitive strain before workers get hurt.",
-    image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600&q=80",
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e1febeb2d_20260301_0417_ImageGeneration_remix_01kjmazxpre3xrr473txxxqw5z.png",
     color: "#1a3a52"
   },
   {
