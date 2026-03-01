@@ -18,14 +18,15 @@ const topics = [
 
 export const articles = [
   {
-    id: "mould-workplace",
-    topic: "indoor-air",
-    tag: "Indoor Air Quality",
-    title: "Mould in the Workplace: When to Worry, When to Act",
-    summary: "Visible mould isn't always the problem — hidden growth behind walls and in HVAC systems often is. Here's how to tell when you need a professional assessment.",
-    image: "https://images.unsplash.com/photo-1584461800461-c7b5c2bca95b?w=600&q=80",
-    date: "Feb 2025",
+    id: "ontario-exposure-registry",
+    topic: "compliance",
+    tag: "Regulation Watch",
+    title: "Ontario Launches Canada's First Occupational Exposure Registry",
+    summary: "Ontario's new digital OER portal lets workers document and track exposure to designated hazardous substances like asbestos, lead, mercury, and silica — a pivotal shift toward proactive exposure management.",
+    image: "https://media.licdn.com/dms/image/v2/D5612AQEtr8v-kycP3w/article-cover_image-shrink_720_1280/B56ZyleVv3HYAI-/0/1772302723879?e=2147483647&v=beta&t=IHauWElf2TOOEqu8v4HZR8OcZSui2SUp_ohQFKhXp2w",
+    date: "Feb 2026",
     readTime: "4 min read",
+    externalUrl: "https://www.linkedin.com/pulse/global-bite-size-ohs-17-services-customer-4mjvc",
   },
   {
     id: "radon-ontario",
