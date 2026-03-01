@@ -305,17 +305,29 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-xl p-8 text-center shadow-sm"
+                className="relative bg-white rounded-xl p-8 text-center shadow-sm overflow-hidden"
               >
-                <div className="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mx-auto mb-5">
-                  <value.icon className="w-7 h-7 text-emerald-600" />
+                {/* Light background image */}
+                <div
+                  className="absolute inset-0 rounded-xl"
+                  style={{
+                    backgroundImage: `url(${value.bgImage})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    opacity: 0.07,
+                  }}
+                />
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mx-auto mb-5">
+                    <value.icon className="w-7 h-7 text-emerald-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-slate-600">
+                    {value.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                  {value.title}
-                </h3>
-                <p className="text-slate-600">
-                  {value.description}
-                </p>
               </motion.div>
             ))}
           </div>
