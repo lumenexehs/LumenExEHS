@@ -27,7 +27,7 @@ const services = [
       "Exposure rating classifications and prioritized risk narratives",
       "Hierarchy-of-controls recommendations with implementation guidance"
     ],
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80"
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/9375df2c5_20260301_0342_ImageGeneration_remix_01kjm8zs61fkyb4nb8xp3f491q.png"
   },
   {
     id: "noise_physical",
