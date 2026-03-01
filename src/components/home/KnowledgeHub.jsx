@@ -182,8 +182,10 @@ export default function KnowledgeHub() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.07 }}
                 >
-                  <Link
-                    to={createPageUrl(`Article?id=${article.id}`)}
+                  <a
+                    href={article.externalUrl || createPageUrl(`Article?id=${article.id}`)}
+                    target={article.externalUrl ? "_blank" : "_self"}
+                    rel={article.externalUrl ? "noopener noreferrer" : undefined}
                     className="group block rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow h-full"
                   >
                     <div className="h-36 overflow-hidden bg-slate-100">
