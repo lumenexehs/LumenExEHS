@@ -90,24 +90,11 @@ export default function Contact() {
               Contact Us
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Talk to us about your concern.
+              Talk to Us About Your Concern
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed mb-8">
-              Not sure what you need? Tell us what's worrying you — air quality, a smell, noise, a compliance gap — and we'll point you in the right direction.
+            <p className="text-xl text-slate-300 leading-relaxed">
+              Air quality issues, odours, mould, noise, workplace exposures, compliance questions — describe what you're dealing with and we'll tell you what we can do.
             </p>
-            {/* Steps */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              {[
-                { num: "1", text: "Send us a message below" },
-                { num: "2", text: "We respond within 1 business day" },
-                { num: "3", text: "Book a free 15-min consult" },
-              ].map((s) => (
-                <div key={s.num} className="flex items-center gap-3 bg-white/10 border border-white/15 rounded-xl px-4 py-3">
-                  <span className="w-7 h-7 rounded-full bg-emerald-500 text-white text-sm font-bold flex items-center justify-center flex-shrink-0">{s.num}</span>
-                  <span className="text-white text-sm">{s.text}</span>
-                </div>
-              ))}
-            </div>
           </motion.div>
         </div>
       </section>
