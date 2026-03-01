@@ -199,7 +199,7 @@ export default function KnowledgeHub() {
                       <p className="text-xs text-slate-500 line-clamp-2">{article.summary}</p>
                       <span className="text-xs text-slate-400 mt-2 block">{article.date} · {article.readTime}</span>
                     </div>
-                  </Link>
+                  </a>
                 </motion.div>
               ))}
             </div>
