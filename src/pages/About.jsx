@@ -101,12 +101,10 @@ export default function About() {
               About LumenEx EHS
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Making Invisible Hazards Visible
+              Make invisible workplace health hazards visible — with data you can trust and action you can take.
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              LumenEx EHS is an independent occupational hygiene and EHS consulting practice based in Ontario — 
-              built on 19+ years of field experience and a single guiding purpose: 
-              revealing what can't be seen, measured, or managed without the right expertise.
+              Ontario-based. CIH-led. 19+ years of field experience. We illuminate the hazards your workers can't see — and give you clear answers.
             </p>
           </motion.div>
         </div>
