@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import CommunityServiceSection from "@/components/home/CommunityServiceSection";
+import ApproachSteps from "@/components/about/ApproachSteps";
 import { 
   Award, 
   Users, 
