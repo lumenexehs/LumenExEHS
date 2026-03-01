@@ -74,12 +74,16 @@ export default function Careers() {
               Join Our Team
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Careers at LumenEx EHS
+              Work that matters. A mission worth joining.
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
-              We're a small, expert team with a big mission — making invisible workplace hazards visible. 
-              If you're passionate about occupational hygiene, worker health, and evidence-based practice, we'd love to hear from you.
+            <p className="text-xl text-slate-300 leading-relaxed mb-8">
+              We're a small, expert team making invisible workplace hazards visible across Ontario. We value clear thinking, plain language, and people who genuinely care about worker health.
             </p>
+            <div className="flex flex-wrap gap-3">
+              {["Mission-driven", "Flexible part-time roles", "Community impact", "Learning culture"].map(tag => (
+                <span key={tag} className="bg-white/10 border border-white/15 text-white text-sm font-medium px-4 py-1.5 rounded-full">{tag}</span>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
