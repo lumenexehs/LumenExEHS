@@ -214,8 +214,13 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="flex justify-center"
+              className="flex flex-col items-center gap-6"
             >
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80"
+                alt="Miner's safety lamp"
+                className="w-48 h-48 object-cover rounded-2xl shadow-lg border border-white/10"
+              />
               <SafetyLampAnimation />
             </motion.div>
           </div>
