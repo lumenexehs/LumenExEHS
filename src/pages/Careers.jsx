@@ -73,15 +73,15 @@ export default function Careers() {
             <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">
               Join Our Team
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Work that matters. A mission worth joining.
+            <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-4">
+              Work That Matters
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed mb-8">
-              We're a small, expert team making invisible workplace hazards visible across Ontario. We value clear thinking, plain language, and people who genuinely care about worker health.
+            <p className="text-xl text-slate-300 leading-relaxed mb-6">
+              Small team. Real impact. Every project protects someone's health.
             </p>
             <div className="flex flex-wrap gap-3">
-              {["Mission-driven", "Flexible part-time roles", "Community impact", "Learning culture"].map(tag => (
-                <span key={tag} className="bg-white/10 border border-white/15 text-white text-sm font-medium px-4 py-1.5 rounded-full">{tag}</span>
+              {["Part-Time Roles", "Flexible & Remote-Friendly", "Mission-Driven"].map(tag => (
+                <span key={tag} className="bg-white/10 border border-white/15 text-white text-xs font-medium px-3 py-1.5 rounded-full">{tag}</span>
               ))}
             </div>
           </motion.div>
