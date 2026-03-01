@@ -65,7 +65,7 @@ const services = [
       "MSD hazard inventory with quantified risk scores and control hierarchy",
       "Ergonomic intervention report with prioritized workstation modifications"
     ],
-    image: "https://images.unsplash.com/photo-1548323990-8f3b4e1e8c2d?w=600&q=80"
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/4b6becd0c_20260301_0417_ImageGeneration_remix_01kjmazxpre3xrr473txxxqw5z.png"
   },
   {
     id: "iaq",
