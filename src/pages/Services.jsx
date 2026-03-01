@@ -114,114 +114,81 @@ function ServiceCard({ service, index }) {
       transition={{ duration: 0.5, delay: index * 0.07 }}
       className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"
     >
-      {/* Top-level summary */}
-      <div className="p-8">
+      <div className="p-7 md:p-8">
+        {/* Header */}
         <div className="flex items-start gap-4 mb-4">
           <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center flex-shrink-0">
             <service.icon className="w-6 h-6 text-emerald-600" />
           </div>
-          <div>
-            <h3 className="text-xl font-bold text-slate-900 mb-1">{service.title}</h3>
-            <span className="text-emerald-600 text-sm font-medium">{service.tagline}</span>
+          <div className="flex-1">
+            <h3 className="text-xl font-bold text-slate-900 mb-0.5">{service.title}</h3>
+            <span className="text-emerald-600 text-xs font-semibold uppercase tracking-wide">{service.tagline}</span>
           </div>
         </div>
 
+        {/* Summary */}
         <p className="text-slate-600 mb-5 leading-relaxed">{service.summary}</p>
 
-        <ul className="grid grid-cols-2 gap-2 mb-6">
-          {service.bullets.map((b) => (
-            <li key={b} className="flex items-center gap-2 text-sm text-slate-700">
-              <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
-              {b}
-            </li>
-          ))}
-        </ul>
-
-        {/* When you need it */}
-        {service.triggers && (
-          <div className="mb-5">
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">When you need it</p>
-            <div className="flex flex-wrap gap-2">
-              {service.triggers.map(t => (
-                <span key={t} className="bg-amber-50 border border-amber-100 text-amber-700 text-xs px-2.5 py-1 rounded-full">{t}</span>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Who it helps */}
-        {service.audiences && (
-          <div className="mb-5">
+        {/* 3-column info grid */}
+        <div className="grid md:grid-cols-3 gap-4 mb-6">
+          {/* Who it helps */}
+          <div className="bg-slate-50 rounded-xl p-4">
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Who it helps</p>
-            <div className="flex flex-wrap gap-2">
-              {service.audiences.map(a => {
-                const info = audienceMap[a];
-                if (!info) return null;
+            <div className="flex flex-wrap gap-1.5">
+              {service.audiences.map((a) => {
+                const AIcon = audienceMap[a]?.icon;
                 return (
-                  <span key={a} className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full">
-                    <info.icon className="w-3 h-3 text-emerald-500" />{info.label}
+                  <span key={a} className="flex items-center gap-1 bg-white border border-slate-200 rounded-full px-2 py-0.5 text-xs text-slate-700">
+                    {AIcon && <AIcon className="w-3 h-3 text-emerald-500" />}
+                    {audienceMap[a]?.label}
                   </span>
                 );
               })}
             </div>
           </div>
-        )}
-
-        <div className="flex items-center gap-3">
-          <Link to={createPageUrl("Contact") + `?service=${service.id}`}>
-            <Button className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full text-sm group">
-              Book a Free Consult
-              <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
-          <Button
-            variant="ghost"
-            className="text-slate-500 hover:text-slate-800 text-sm rounded-full"
-            onClick={() => setExpanded(!expanded)}
-          >
-            {expanded ? "Less detail" : "What we deliver"}
-            {expanded ? <ChevronUp className="ml-1 w-4 h-4" /> : <ChevronDown className="ml-1 w-4 h-4" />}
-          </Button>
+          {/* When you need it */}
+          <div className="bg-slate-50 rounded-xl p-4">
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">When you need it</p>
+            <ul className="space-y-1">
+              {service.triggers.map((t) => (
+                <li key={t} className="flex items-start gap-1.5 text-xs text-slate-600">
+                  <span className="w-1 h-1 rounded-full bg-amber-400 mt-1.5 flex-shrink-0" />
+                  {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* What we deliver */}
+          <div className="bg-slate-50 rounded-xl p-4">
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">What you get</p>
+            <ul className="space-y-1">
+              {service.deliverables.map((d) => (
+                <li key={d} className="flex items-start gap-1.5 text-xs text-slate-600">
+                  <CheckCircle2 className="w-3 h-3 text-emerald-500 mt-0.5 flex-shrink-0" />
+                  {d}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
 
-      {/* Expandable detail */}
-      <AnimatePresence>
-        {expanded && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.35 }}
-            className="overflow-hidden"
-          >
-            <div className="border-t border-slate-100 bg-slate-50 px-8 py-8 grid md:grid-cols-2 gap-8">
-              <div>
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="rounded-xl shadow-md w-full h-48 object-cover mb-6"
-                />
-                <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-3">Scope</h4>
-                <p className="text-slate-600 text-sm leading-relaxed mb-5">{service.scope}</p>
-                <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-3">Our Approach</h4>
-                <p className="text-slate-600 text-sm leading-relaxed">{service.approach}</p>
-              </div>
-              <div>
-                <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-4">Key Deliverables</h4>
-                <ul className="space-y-3">
-                  {service.deliverables.map((d) => (
-                    <li key={d} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-700 text-sm">{d}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+        {/* Capability bullets */}
+        <ul className="flex flex-wrap gap-2 mb-6">
+          {service.bullets.map((b) => (
+            <li key={b} className="flex items-center gap-1.5 bg-emerald-50 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">
+              <CheckCircle2 className="w-3 h-3" />
+              {b}
+            </li>
+          ))}
+        </ul>
+
+        <Link to={`${createPageUrl("Contact")}?service=${service.id}`}>
+          <Button className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full text-sm group">
+            Get a Quote
+            <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </Link>
+      </div>
     </motion.div>
   );
 }
@@ -283,8 +250,8 @@ export default function Services() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-slate-900 mb-3">What We Do</h2>
-            <p className="text-slate-500 max-w-xl mx-auto">Click "Full detail" on any service to explore scope, methodology, and deliverables.</p>
+            <h2 className="text-3xl font-bold text-slate-900 mb-3">Our Services</h2>
+            <p className="text-slate-500 max-w-xl mx-auto">Each card shows who benefits, when to call us, and exactly what you'll receive.</p>
           </motion.div>
           <div className="space-y-6">
             {services.map((service, index) => (
