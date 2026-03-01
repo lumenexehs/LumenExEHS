@@ -146,8 +146,10 @@ export default function KnowledgeHub() {
         {featured && (
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Featured card */}
-            <Link
-              to={createPageUrl(`Article?id=${featured.id}`)}
+            <a
+              href={featured.externalUrl || createPageUrl(`Article?id=${featured.id}`)}
+              target={featured.externalUrl ? "_blank" : "_self"}
+              rel={featured.externalUrl ? "noopener noreferrer" : undefined}
               className="lg:col-span-1 group block rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="relative h-52 overflow-hidden bg-slate-100">
