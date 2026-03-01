@@ -89,7 +89,7 @@ Visible</span>
           className="flex flex-col sm:flex-row gap-4 mb-14">
           <Link to={`${createPageUrl("Contact")}?service=general`}>
             <Button size="lg" className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold px-8 py-6 text-base rounded-full group">
-              📅 Book a Free 15-Min Consult
+              📅 Book a Free 30-Min Consult
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
