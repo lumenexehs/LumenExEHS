@@ -112,13 +112,21 @@ export default function Contact() {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">
-                  Contact Information
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">
+                  What Happens Next
                 </h2>
-                <p className="text-slate-600 mb-8">
-                  Reach out to discuss your occupational hygiene or EHS needs across Ontario. 
-                  We respond to all inquiries within one business day.
-                </p>
+                <div className="space-y-4 mb-8">
+                  {[
+                    { step: "1", text: "You describe your concern — no jargon needed." },
+                    { step: "2", text: "We respond within 1 business day with a clear recommendation." },
+                    { step: "3", text: "We scope the work together and get started." },
+                  ].map(({ step, text }) => (
+                    <div key={step} className="flex items-start gap-3">
+                      <span className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 font-bold text-sm flex items-center justify-center flex-shrink-0 mt-0.5">{step}</span>
+                      <p className="text-slate-700 text-sm">{text}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               <div className="space-y-6">
