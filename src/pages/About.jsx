@@ -100,12 +100,17 @@ export default function About() {
             <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">
               About LumenEx EHS
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Make invisible workplace health hazards visible — with data you can trust and action you can take.
+            <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-4">
+              Our Mission: Make Invisible Hazards Visible
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
-              Ontario-based. CIH-led. 19+ years of field experience. We illuminate the hazards your workers can't see — and give you clear answers.
+            <p className="text-xl text-slate-300 leading-relaxed mb-6">
+              Data you can trust. Action you can take. — Independent, CIH-led EHS consulting in Ontario since 2006.
             </p>
+            <div className="flex flex-wrap gap-3">
+              {["CIH-Led", "19+ Years", "Ontario-Based", "Community Volunteer Program"].map(tag => (
+                <span key={tag} className="bg-white/10 border border-white/15 text-white text-xs font-medium px-3 py-1.5 rounded-full">{tag}</span>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
