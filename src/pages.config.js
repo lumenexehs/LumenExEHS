@@ -55,6 +55,8 @@ import Home from './pages/Home';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Services from './pages/Services';
 import TermsAndConditions from './pages/TermsAndConditions';
+import Article from './pages/Article';
+import KnowledgeHub from './pages/KnowledgeHub';
 import __Layout from './Layout.jsx';
 
 
@@ -67,6 +69,8 @@ export const PAGES = {
     "PrivacyPolicy": PrivacyPolicy,
     "Services": Services,
     "TermsAndConditions": TermsAndConditions,
+    "Article": Article,
+    "KnowledgeHub": KnowledgeHub,
 }
 
 export const pagesConfig = {
