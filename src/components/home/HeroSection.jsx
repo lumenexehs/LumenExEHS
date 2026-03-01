@@ -54,7 +54,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 max-w-3xl">
-          Making Invisible Hazards Visible —
+          Making Invisible Hazards Visible
           <span className="block text-[#d4af7a] mt-1">Before They Cause Harm</span>
         </motion.h1>
 
