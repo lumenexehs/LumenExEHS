@@ -29,6 +29,17 @@ export const articles = [
     externalUrl: "https://www.linkedin.com/pulse/global-bite-size-ohs-17-services-customer-4mjvc",
   },
   {
+    id: "winter-height-hazards",
+    topic: "compliance",
+    tag: "Regulation Watch",
+    title: "Winter Height Hazards & Working-at-Heights Compliance",
+    summary: "Snow, ice, reduced visibility, and cold-induced dexterity loss significantly increase fall exposure. Winter doesn't change regulatory requirements — it raises due diligence expectations.",
+    image: "https://media.licdn.com/dms/image/v2/D5612AQFMfkcm1iLr4Q/article-cover_image-shrink_720_1280/B56ZylKst9HUAI-/0/1772297596163?e=2147483647&v=beta&t=q0sVmzD_udVuob-6B0WrgUUft4QGm-1QLiBZ9b_OLzM",
+    date: "Feb 2026",
+    readTime: "4 min read",
+    externalUrl: "https://www.linkedin.com/pulse/regulation-watch-winter-height-hazards-compliance-services-customer-leiic",
+  },
+  {
     id: "radon-ontario",
     topic: "indoor-air",
     tag: "Radon",
