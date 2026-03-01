@@ -10,8 +10,8 @@ export default function CTASection() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=1920&q=80"
-          alt="Industrial air quality monitoring"
+          src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=1920&q=80"
+          alt="Woman concerned about air quality in workplace"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0F2A4A]/95 via-[#0F2A4A]/80 to-[#0F2A4A]/70" />
