@@ -300,17 +300,24 @@ export default function Services() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
-              Ready to Replace Uncertainty with Evidence?
+              Not Sure Which Service You Need?
             </h2>
             <p className="text-lg text-slate-300 mb-8">
-              Contact us to discuss your occupational hygiene or EHS needs across Ontario.
+              Tell us your concern. We'll point you in the right direction — no obligation.
             </p>
-            <Link to={createPageUrl("Contact")}>
-              <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group">
-                Request a Consultation
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to={`${createPageUrl("Contact")}?service=general`}>
+                <Button size="lg" className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold px-8 py-6 text-base rounded-full group">
+                  📅 Book a Free 15-Min Consult
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <Link to={createPageUrl("Contact")}>
+                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-base rounded-full">
+                  Get an Assessment Quote
+                </Button>
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
