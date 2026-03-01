@@ -136,8 +136,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-                    <p className="text-slate-600">info@lumenexehs.ca</p>
-                    <p className="text-sm text-slate-500">We respond within 24 hours</p>
+                    <a href="mailto:info@lumenexehs.ca" className="text-slate-600 hover:text-emerald-600 transition-colors">info@lumenexehs.ca</a>
+                    <p className="text-sm text-slate-500 mt-0.5">Response within 1 business day</p>
                   </div>
                 </div>
 
