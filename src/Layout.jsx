@@ -17,6 +17,7 @@ const navLinks = [
 { name: "Home", page: "Home" },
 { name: "About", page: "About" },
 { name: "Services", page: "Services" },
+{ name: "Knowledge Hub", page: "KnowledgeHub" },
 { name: "Careers", page: "Careers" },
 { name: "Contact", page: "Contact" }];
 
