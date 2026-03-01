@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 import SafetyLampAnimation from "@/components/about/SafetyLampAnimation";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
