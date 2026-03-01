@@ -249,11 +249,16 @@ export default function Services() {
               Ontario EHS Consulting
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-5">
-              Occupational Hygiene & EHS Services
+              What We Solve
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
-              Defensible exposure assessments, regulatory compliance support, and practical risk control solutions — aligned with Ontario OHS legislation, CSA standards, and ACGIH TLVs®.
+            <p className="text-xl text-slate-300 leading-relaxed mb-6">
+              Air quality issues. Noise. Odours. Mould. Workplace exposures. Compliance gaps. — We assess, measure, and give you clear answers.
             </p>
+            <div className="flex flex-wrap gap-3">
+              {["Indoor Air & Odours", "Exposure Assessment", "Heat & Noise", "Compliance Support", "Training"].map(tag => (
+                <span key={tag} className="bg-white/10 border border-white/15 text-white text-xs font-medium px-3 py-1.5 rounded-full">{tag}</span>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
