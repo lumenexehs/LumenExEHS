@@ -10,8 +10,8 @@ export default function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80"
-          alt="Canadian workplace"
+          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80"
+          alt="Occupational health and safety"
           className="w-full h-full object-cover" />
 
         <div className="absolute inset-0 bg-gradient-to-r from-[#0F2A4A]/95 via-[#0F2A4A]/80 to-[#0F2A4A]/60" />
