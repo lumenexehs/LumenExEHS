@@ -1,5 +1,5 @@
 import HeroSection from "@/components/home/HeroSection";
-import KnowledgeHub from "@/components/home/KnowledgeHub";
+
 import ServicesOverview from "@/components/home/ServicesOverview";
 import CanadaSceneStrip from "@/components/home/CanadaSceneStrip";
 import StatsSection from "@/components/home/StatsSection";
