@@ -5,40 +5,40 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "Exposure Assessment",
-    description: "Measure what workers breathe, touch, and hear — clear risk findings backed by science.",
+    title: "Indoor Air, Mould & Radon",
+    description: "Something smells off? Worried about mould or radon? We find the source.",
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e3ec8e48c_ChatGPTImageFeb28202604_23_54PM.png",
+    color: "#d4af7a"
+  },
+  {
+    title: "Chemical & Dust Exposure",
+    description: "Measure what workers breathe — and tell you if it's safe.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/9375df2c5_20260301_0342_ImageGeneration_remix_01kjm8zs61fkyb4nb8xp3f491q.png",
     color: "#1a3a52"
   },
   {
     title: "Noise & Physical Hazards",
-    description: "Noise dosimetry, vibration, and radiation surveys to protect your team.",
+    description: "Too loud? Radiation concerns? Vibration? We measure it and tell you what to fix.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/63355d785_20260301_0400_ImageGeneration_remix_01kjma0etbfg2bskz604ancbdh.png",
     color: "#d4af7a"
   },
   {
     title: "Heat Stress & Ergonomics",
-    description: "Identify heat risk and repetitive strain before workers get hurt.",
+    description: "Hot workplaces or injury risk? Protect workers before they get hurt.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e1febeb2d_20260301_0417_ImageGeneration_remix_01kjmazxpre3xrr473txxxqw5z.png",
     color: "#1a3a52"
   },
   {
-    title: "Indoor Air Quality",
-    description: "Track down odours, mould, radon, and air complaints at the source.",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+    title: "Compliance & Safety Programs",
+    description: "Not sure if you're compliant? We build programs that hold up to audits.",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80",
     color: "#d4af7a"
   },
   {
-    title: "EH&S Programs & Policies",
-    description: "Written safety programs and compliance frameworks your organization actually needs.",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80",
-    color: "#1a3a52"
-  },
-  {
-    title: "Training & Risk Assessment",
-    description: "Practical safety training for workers, supervisors, and JHSCs across Ontario.",
+    title: "Training & Sector Support",
+    description: "Real hazard training — not generic slide decks — for your team.",
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
-    color: "#d4af7a"
+    color: "#1a3a52"
   }
 ];
 
