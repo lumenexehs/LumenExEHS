@@ -34,23 +34,23 @@ const openings = [
 const perks = [
   {
     icon: Users,
-    title: "Mission-Driven Team",
-    description: "Work alongside experienced CIHs and safety professionals who genuinely care about protecting workers."
+    title: "Expert Team",
+    description: "Work with CIHs and safety professionals who care. Learn from the best."
   },
   {
     icon: Award,
-    title: "Professional Development",
-    description: "Support for CIH, CSP, and CRSP exam preparation, conference attendance, and continuing education."
+    title: "Grow Your Career",
+    description: "CIH/CSP/CRSP exam support, conference access, and continuing education."
   },
   {
     icon: Heart,
-    title: "Community Impact",
-    description: "Participate in our pro bono program — contributing occupational hygiene expertise to under-resourced organizations."
+    title: "Give Back",
+    description: "Pro bono IH work for NGOs and under-resourced communities — real impact."
   },
   {
     icon: Zap,
-    title: "Varied & Meaningful Work",
-    description: "No two projects are the same. Exposure to diverse industries, agents, and workplace environments."
+    title: "Diverse Projects",
+    description: "Homes, hospitals, factories, schools — no two projects are the same."
   }
 ];
 
