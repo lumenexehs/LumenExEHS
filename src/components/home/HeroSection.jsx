@@ -5,19 +5,19 @@ import { ArrowRight, Shield, CheckCircle, Home, Factory, Building2, HeartPulse, 
 import { motion } from "framer-motion";
 
 const audiences = [
-  { icon: Home, label: "Homeowners", desc: "Mould, radon, air quality" },
-  { icon: Factory, label: "Businesses", desc: "Food, furniture, fabrication" },
-  { icon: Building2, label: "Facility Managers", desc: "Buildings & properties" },
-  { icon: HeartPulse, label: "Public Sector", desc: "Hospitals, schools, police" },
-  { icon: Users, label: "NGOs", desc: "Volunteer IH support" },
-];
+{ icon: Home, label: "Homeowners", desc: "Mould, radon, air quality" },
+{ icon: Factory, label: "Businesses", desc: "Food, furniture, fabrication" },
+{ icon: Building2, label: "Facility Managers", desc: "Buildings & properties" },
+{ icon: HeartPulse, label: "Public Sector", desc: "Hospitals, schools, police" },
+{ icon: Users, label: "NGOs", desc: "Volunteer IH support" }];
+
 
 const benefits = [
-  { icon: Shield, text: "Get data you can trust — not guesswork" },
-  { icon: CheckCircle, text: "Stay compliant with Ontario OHS law" },
-  { icon: ArrowRight, text: "Clear action plans, not just reports" },
-  { icon: Calendar, text: "Fast turnaround, plain-language findings" },
-];
+{ icon: Shield, text: "Get data you can trust — not guesswork" },
+{ icon: CheckCircle, text: "Stay compliant with Ontario OHS law" },
+{ icon: ArrowRight, text: "Clear action plans, not just reports" },
+{ icon: Calendar, text: "Fast turnaround, plain-language findings" }];
+
 
 export default function HeroSection() {
   return (
@@ -55,15 +55,15 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 max-w-3xl">
           Worried about air quality,<br />odours, or workplace safety?
-          <span className="block text-[#d4af7a] mt-1">We find the hazard. You get the answer.</span>
+          <span className="block text-[#d4af7a] mt-1">We make Invisible Hazards
+Visible</span>
         </motion.h1>
 
         {/* Sub */}
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg text-slate-300 mb-8 max-w-xl">
+        <motion.p initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="text-lg text-slate-300 mb-8 max-w-xl">
           Independent occupational hygiene &amp; EHS consulting — for homes, businesses, facilities, and public sector across Ontario.
         </motion.p>
 
@@ -73,12 +73,12 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="grid grid-cols-2 gap-2 mb-10 max-w-lg">
-          {benefits.map((b, i) => (
-            <div key={i} className="flex items-center gap-2 text-slate-300 text-sm">
+          {benefits.map((b, i) =>
+          <div key={i} className="flex items-center gap-2 text-slate-300 text-sm">
               <b.icon className="w-4 h-4 text-emerald-400 flex-shrink-0" />
               <span>{b.text}</span>
             </div>
-          ))}
+          )}
         </motion.div>
 
         {/* CTAs */}
@@ -94,7 +94,7 @@ export default function HeroSection() {
             </Button>
           </Link>
           <Link to={createPageUrl("Contact")}>
-            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-base rounded-full">
+            <Button size="lg" variant="outline" className="bg-cyan-600 text-white px-8 py-6 text-base font-medium rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-10 border-white/30 hover:bg-white/10">
               Get an Assessment Quote
             </Button>
           </Link>
@@ -107,15 +107,15 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.55 }}
           className="flex flex-wrap gap-3">
           <span className="text-slate-500 text-xs self-center mr-1">Who we help →</span>
-          {audiences.map((a) => (
-            <div key={a.label} className="flex items-center gap-2 bg-white/8 border border-white/10 rounded-full px-4 py-1.5">
+          {audiences.map((a) =>
+          <div key={a.label} className="flex items-center gap-2 bg-white/8 border border-white/10 rounded-full px-4 py-1.5">
               <a.icon className="w-3.5 h-3.5 text-emerald-400" />
               <span className="text-white text-xs font-medium">{a.label}</span>
               <span className="text-slate-400 text-xs hidden sm:inline">· {a.desc}</span>
             </div>
-          ))}
+          )}
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
