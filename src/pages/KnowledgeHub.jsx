@@ -100,7 +100,7 @@ export default function KnowledgeHub() {
                       </span>
                     </div>
                   </div>
-                </Link>
+                </a>
               </motion.div>
             ))}
           </div>
