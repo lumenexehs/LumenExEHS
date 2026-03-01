@@ -6,39 +6,27 @@ import { Briefcase, MapPin, Clock, ArrowRight, Users, Heart, Award, Zap } from "
 
 const openings = [
   {
-    title: "Occupational Hygienist (CIH or CIH-Eligible)",
-    type: "Full-Time",
+    title: "Sales Representative",
+    type: "Part-Time",
     location: "Toronto, ON (Hybrid)",
-    summary: "Conduct workplace exposure assessments, sampling strategies, and deliver defensible reports across a variety of Ontario industries.",
+    summary: "Help grow LumenEx EHS by identifying new client opportunities, building relationships, and communicating the value of our occupational hygiene and EHS services to prospective clients.",
     requirements: [
-      "CIH designation or actively pursuing",
-      "3+ years field experience in industrial hygiene",
-      "Familiarity with Ontario OHS legislation and ACGIH TLVs®",
-      "Strong written communication skills"
+      "Proven experience in B2B sales or business development",
+      "Excellent interpersonal and communication skills",
+      "Self-motivated with strong follow-through",
+      "Interest in occupational health & safety sector is an asset"
     ]
   },
   {
-    title: "EHS Consultant – Safety Programs",
-    type: "Full-Time",
-    location: "Toronto, ON (Hybrid)",
-    summary: "Support clients in developing EH&S programs, safety management systems, and regulatory compliance documentation.",
+    title: "Digital Marketing Specialist",
+    type: "Part-Time",
+    location: "Remote / Toronto, ON",
+    summary: "Drive online presence and lead generation for LumenEx EHS through content creation, SEO, social media, and digital campaigns tailored to the EHS and occupational hygiene space.",
     requirements: [
-      "CSP or CRSP designation preferred",
-      "Experience with safety program development",
-      "Knowledge of Ontario OHSA and CSA standards",
-      "Ability to communicate complex findings simply"
-    ]
-  },
-  {
-    title: "Industrial Hygiene Technician",
-    type: "Contract / Part-Time",
-    location: "Greater Toronto Area",
-    summary: "Assist with field sampling campaigns, equipment calibration, and data entry under the supervision of a CIH.",
-    requirements: [
-      "Diploma or degree in Occupational Health & Safety or related field",
-      "Hands-on experience with air sampling equipment an asset",
-      "Detail-oriented with strong field documentation habits",
-      "Valid Ontario driver's licence"
+      "Experience managing social media accounts and content calendars",
+      "Familiarity with SEO, Google Analytics, and email marketing tools",
+      "Strong writing skills with ability to translate technical topics accessibly",
+      "Portfolio of previous digital marketing work preferred"
     ]
   }
 ];
