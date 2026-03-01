@@ -13,7 +13,7 @@ const services = [
   {
     title: "Noise & Physical Hazards",
     description: "Noise dosimetry, vibration, and radiation surveys to protect your team.",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80",
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/63355d785_20260301_0400_ImageGeneration_remix_01kjma0etbfg2bskz604ancbdh.png",
     color: "#d4af7a"
   },
   {
