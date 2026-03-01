@@ -6,7 +6,7 @@ import { createPageUrl } from "@/utils";
 import { 
   Leaf, HardHat, ClipboardCheck, GraduationCap, Zap, Building,
   ArrowRight, CheckCircle2, Factory, Stethoscope, Activity,
-  ChevronDown, ChevronUp
+  ChevronDown, ChevronUp, Home, Building2, Users, HeartPulse
 } from "lucide-react";
 
 const services = [
