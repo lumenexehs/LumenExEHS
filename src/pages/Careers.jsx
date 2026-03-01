@@ -196,13 +196,13 @@ export default function Careers() {
             transition={{ duration: 0.6 }}
           >
             <Briefcase className="w-12 h-12 text-emerald-400 mx-auto mb-5" />
-            <h2 className="text-3xl font-bold text-white mb-4">Don't See Your Role Listed?</h2>
-            <p className="text-slate-300 mb-8 leading-relaxed">
-              We welcome open applications from CIHs, safety professionals, and occupational health specialists at any career stage. 
-              Send your CV and a brief note about your background to{" "}
+            <h2 className="text-3xl font-bold text-white mb-4">Don't See Your Role?</h2>
+            <p className="text-slate-300 mb-8">
+              Send your CV and a note to{" "}
               <a href="mailto:info@lumenexehs.ca" className="text-emerald-400 hover:text-emerald-300 underline">
                 info@lumenexehs.ca
               </a>
+              {" "}— we're always open to meeting driven people.
             </p>
             <Link to={createPageUrl("Contact")}>
               <Button size="lg" className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold rounded-full px-8 group">
