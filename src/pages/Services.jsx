@@ -21,6 +21,8 @@ const services = [
     bullets: ["SEG-based exposure assessment", "Personal breathing zone monitoring", "Bayesian statistical analysis", "Hierarchy-of-controls recommendations"],
     audiences: ["business", "facility", "public"],
     triggers: ["Chemical or dust concerns", "Ministry of Labour audit", "New process or chemical introduced"],
+    audiences: ["business", "facility", "public"],
+    triggers: ["Chemical or dust concerns", "Ministry of Labour audit", "New process or chemical introduced"],
     scope: "Applying the classical industrial hygiene paradigm — anticipation, recognition, evaluation, and control — to characterize worker exposure to chemical, physical, and biological stressors. We build defensible Similar Exposure Group (SEG) frameworks, apply AIHA-aligned qualitative and quantitative assessment strategies, and interpret monitoring data against Ontario O. Reg. 833 OELs and ACGIH TLVs®/BEIs® to inform meaningful risk decisions.",
     approach: "Each engagement begins with a thorough baseline walkthrough to identify exposure determinants, process variability, and control effectiveness. Measurement strategies are designed to characterize the upper tail of the exposure distribution. AIHA exposure banding and Bayesian statistical tools (IHDataAnalyst, IHSTAT) are used to quantify uncertainty and produce forward-looking exposure profiles that support due diligence.",
     deliverables: [
