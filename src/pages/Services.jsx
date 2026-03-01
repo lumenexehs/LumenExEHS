@@ -9,14 +9,18 @@ import {
   ChevronDown, ChevronUp, Home, Building2, Users, HeartPulse
 } from "lucide-react";
 
+const audienceIcons = { home: Home, business: Factory, facility: Building2, public: HeartPulse, ngo: Users };
+
 const services = [
   {
     id: "occupational_hygiene",
     icon: Leaf,
     title: "Occupational Hygiene & Exposure Risk Management",
     tagline: "Anticipation, recognition, evaluation & control",
-    summary: "Characterize worker exposure to chemical, physical, and biological stressors using the AREC model — producing defensible exposure profiles benchmarked against Ontario OELs and ACGIH TLVs®.",
+    summary: "Workers exposed to chemicals, dust, or biological agents? We measure real exposures and tell you if they're safe — in plain language.",
     bullets: ["SEG-based exposure assessment", "Personal breathing zone monitoring", "Bayesian statistical analysis", "Hierarchy-of-controls recommendations"],
+    audiences: ["business", "facility", "public"],
+    triggers: ["Chemical or dust concerns", "Ministry of Labour audit", "New process or chemical introduced"],
     scope: "Applying the classical industrial hygiene paradigm — anticipation, recognition, evaluation, and control — to characterize worker exposure to chemical, physical, and biological stressors. We build defensible Similar Exposure Group (SEG) frameworks, apply AIHA-aligned qualitative and quantitative assessment strategies, and interpret monitoring data against Ontario O. Reg. 833 OELs and ACGIH TLVs®/BEIs® to inform meaningful risk decisions.",
     approach: "Each engagement begins with a thorough baseline walkthrough to identify exposure determinants, process variability, and control effectiveness. Measurement strategies are designed to characterize the upper tail of the exposure distribution. AIHA exposure banding and Bayesian statistical tools (IHDataAnalyst, IHSTAT) are used to quantify uncertainty and produce forward-looking exposure profiles that support due diligence.",
     deliverables: [
