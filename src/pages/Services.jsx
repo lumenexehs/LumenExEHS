@@ -46,7 +46,7 @@ const services = [
       "Statistical analysis of dosimetry variability and exposure profile",
       "Hearing conservation program gap review with engineering control priorities"
     ],
-    image: "https://images.unsplash.com/photo-1517090186835-e348b621c9ca?w=600&q=80"
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e69f0a4a0_20260301_0400_ImageGeneration_remix_01kjma0etbfg2bskz604ancbdh.png"
   },
   {
     id: "heat_ergonomics",
