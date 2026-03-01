@@ -28,7 +28,7 @@ export default function HeroSection() {
           src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80"
           alt="Occupational health and safety"
           className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0F2A4A]/97 via-[#0F2A4A]/85 to-[#0F2A4A]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0F2A4A]/95 via-[#0F2A4A]/90 to-[#0F2A4A]/80" />
       </div>
 
       <motion.div
