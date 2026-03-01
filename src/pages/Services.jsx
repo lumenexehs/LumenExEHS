@@ -9,137 +9,97 @@ import {
   ChevronDown, ChevronUp, Home, Building2, Users, HeartPulse
 } from "lucide-react";
 
-const audienceIcons = { home: Home, business: Factory, facility: Building2, public: HeartPulse, ngo: Users };
+const audienceMap = {
+  home: { icon: Home, label: "Homeowners" },
+  business: { icon: Factory, label: "Businesses" },
+  facility: { icon: Building2, label: "Facilities" },
+  public: { icon: HeartPulse, label: "Public Sector" },
+  ngo: { icon: Users, label: "NGOs" },
+};
 
 const services = [
   {
+    id: "iaq",
+    icon: Building,
+    title: "Indoor Air Quality, Odour & Mould",
+    tagline: "Indoor Air · Radon · Microbial",
+    summary: "Something smells off? Worried about mould, radon, or poor air? We find the source, test what matters, and give you clear next steps.",
+    bullets: ["Mould & Legionella testing", "Radon measurement", "Odour source investigation", "Ventilation assessment"],
+    audiences: ["home", "facility", "public", "ngo"],
+    triggers: ["Musty smell or visible mould", "Occupant health complaints", "Real estate transaction", "Post-flood or renovation"],
+    deliverables: ["Contaminant source report", "Radon levels vs. Health Canada guidelines", "Mould remediation scope", "Ventilation improvement plan"],
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e3ec8e48c_ChatGPTImageFeb28202604_23_54PM.png"
+  },
+  {
     id: "occupational_hygiene",
     icon: Leaf,
-    title: "Occupational Hygiene & Exposure Risk Management",
-    tagline: "Anticipation, recognition, evaluation & control",
-    summary: "Workers exposed to chemicals, dust, or biological agents? We measure real exposures and tell you if they're safe — in plain language.",
-    bullets: ["SEG-based exposure assessment", "Personal breathing zone monitoring", "Bayesian statistical analysis", "Hierarchy-of-controls recommendations"],
+    title: "Chemical & Biological Exposure Assessment",
+    tagline: "Dust · Chemicals · Bioaerosols",
+    summary: "Workers exposed to chemicals, dust, or biological agents? We measure real exposures and tell you if they're safe — benchmarked against Ontario law.",
+    bullets: ["Personal breathing zone sampling", "SEG exposure profiles", "Bayesian risk analysis", "Control recommendations"],
     audiences: ["business", "facility", "public"],
-    triggers: ["Chemical or dust concerns", "Ministry of Labour audit", "New process or chemical introduced"],
-    audiences: ["business", "facility", "public"],
-    triggers: ["Chemical or dust concerns", "Ministry of Labour audit", "New process or chemical introduced"],
-    scope: "Applying the classical industrial hygiene paradigm — anticipation, recognition, evaluation, and control — to characterize worker exposure to chemical, physical, and biological stressors. We build defensible Similar Exposure Group (SEG) frameworks, apply AIHA-aligned qualitative and quantitative assessment strategies, and interpret monitoring data against Ontario O. Reg. 833 OELs and ACGIH TLVs®/BEIs® to inform meaningful risk decisions.",
-    approach: "Each engagement begins with a thorough baseline walkthrough to identify exposure determinants, process variability, and control effectiveness. Measurement strategies are designed to characterize the upper tail of the exposure distribution. AIHA exposure banding and Bayesian statistical tools (IHDataAnalyst, IHSTAT) are used to quantify uncertainty and produce forward-looking exposure profiles that support due diligence.",
-    deliverables: [
-      "SEG inventory with documented exposure determinants and task profiles",
-      "Personal breathing zone (PBZ) and area monitoring data packages",
-      "Statistical exposure assessment with Bayesian risk quantification",
-      "Benchmarking against O. Reg. 833 OELs and ACGIH TLVs®",
-      "Exposure rating classifications and prioritized risk narratives",
-      "Hierarchy-of-controls recommendations with implementation guidance"
-    ],
+    triggers: ["Chemical or dust concerns", "Ministry of Labour audit", "New process or substance introduced"],
+    deliverables: ["Exposure profiles vs. Ontario OELs & ACGIH TLVs®", "Risk ratings by worker group", "Prioritized control plan", "Audit-ready report"],
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/9375df2c5_20260301_0342_ImageGeneration_remix_01kjm8zs61fkyb4nb8xp3f491q.png"
   },
   {
     id: "noise_physical",
     icon: HardHat,
-    title: "Noise & Physical Agents Assessment",
-    tagline: "Acoustic, radiation & vibration hazard characterization",
-    summary: "Quantitative evaluation of noise exposure, vibration, and radiation across Ontario workplaces — benchmarked against O. Reg. 381/15, CSA standards, and ACGIH TLVs®.",
-    bullets: ["8-hour TWA noise dosimetry", "Ionizing & non-ionizing radiation surveys", "Hand-arm & whole-body vibration", "Hearing conservation program review"],
-    scope: "Quantitative evaluation of occupational noise exposure (TWA, Ldn, NC, and PNC criteria), hand-arm and whole-body vibration, ionizing and non-ionizing radiation (RF, ELF-EMF, UV, laser), and other physical agents across Ontario workplaces — including manufacturing, film production, construction, healthcare, and office environments.",
-    approach: "Personal noise dosimetry using calibrated Type 1/Type 2 instruments with full octave-band analysis for source characterization and noise control modelling. Radiation surveys conducted per applicable Ontario and federal regulatory frameworks. All dosimetric datasets are subjected to rigorous statistical treatment to distinguish true exposure variability from measurement uncertainty.",
-    deliverables: [
-      "8-hour TWA and Ldn noise exposure reports per O. Reg. 381/15",
-      "Noise criteria (NC/PNC/RC) assessments for occupied space design",
-      "Ionizing and non-ionizing radiation field survey reports",
-      "Hand-arm and whole-body vibration exposure determinations",
-      "Statistical analysis of dosimetry variability and exposure profile",
-      "Hearing conservation program gap review with engineering control priorities"
-    ],
+    title: "Noise, Radiation & Physical Agents",
+    tagline: "Noise · Vibration · Radiation",
+    summary: "Too loud? Concerned about radiation or vibration? We measure it, compare it to the law, and tell you what to fix.",
+    bullets: ["8-hour TWA noise dosimetry", "Vibration (hand-arm & whole-body)", "Radiation field surveys", "Hearing program review"],
+    audiences: ["business", "facility", "public"],
+    triggers: ["Workers reporting hearing issues", "Loud equipment added", "JHSC noise concerns"],
+    deliverables: ["Noise exposure report vs. O. Reg. 381/15", "Radiation survey findings", "Engineering control priorities", "Hearing conservation gaps"],
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e69f0a4a0_20260301_0400_ImageGeneration_remix_01kjma0etbfg2bskz604ancbdh.png"
   },
   {
     id: "heat_ergonomics",
     icon: Zap,
-    title: "Heat Stress Monitoring & Ergonomics",
-    tagline: "Thermal work limit & musculoskeletal risk evaluation",
-    summary: "WBGT-based heat stress monitoring and evidence-based ergonomic assessments to protect workers from thermal and musculoskeletal hazards in Ontario.",
-    bullets: ["WBGT monitoring (ISO 7243)", "Metabolic rate estimation", "RULA/REBA ergonomic assessments", "MSD hazard control recommendations"],
-    scope: "Quantitative heat stress monitoring using wet-bulb globe temperature (WBGT) measurements, metabolic rate estimation, and clothing adjustment factors to evaluate thermal work limits — including foundries, outdoor construction, kitchens, and laundries. Ergonomics assessments address MSD hazard identification, job demands analysis, and workstation optimization.",
-    approach: "WBGT monitoring conducted per ISO 7243 and ACGIH TLV® protocols with job-specific metabolic rate estimation per ISO 8996. Ergonomic evaluations draw on validated observational tools (RULA, REBA, NIOSH Lifting Equation, Strain Index) using a participatory approach that involves workers and supervisors.",
-    deliverables: [
-      "WBGT measurements across indoor and outdoor environments by shift and season",
-      "Metabolic rate profiles for specific job classifications (ISO 8996)",
-      "ACGIH TLV®-based thermal work limit determinations and acclimatization protocols",
-      "Heat illness prevention program review and update recommendations",
-      "MSD hazard inventory with quantified risk scores and control hierarchy",
-      "Ergonomic intervention report with prioritized workstation modifications"
-    ],
+    title: "Heat Stress & Ergonomics",
+    tagline: "Heat · Ergonomics · MSD Prevention",
+    summary: "Hot workplaces or repetitive injury risks? We assess thermal limits and ergonomic hazards before workers get hurt.",
+    bullets: ["WBGT heat monitoring (ISO 7243)", "Metabolic rate estimation", "RULA/REBA ergonomic review", "MSD control recommendations"],
+    audiences: ["business", "facility"],
+    triggers: ["Summer outdoor or hot indoor work", "MSD injury spike", "New production line or task"],
+    deliverables: ["Heat exposure vs. ACGIH TLV® limits", "Acclimatization protocols", "Ergonomic risk scores", "Workstation modification plan"],
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/4b6becd0c_20260301_0417_ImageGeneration_remix_01kjmazxpre3xrr473txxxqw5z.png"
-  },
-  {
-    id: "iaq",
-    icon: Building,
-    title: "Indoor Air Quality, Odour & Microbial Investigations",
-    tagline: "Indoor environmental quality & occupant health protection",
-    summary: "Structured IAQ investigations, odour source characterization, vapour intrusion, microbial (mould, Legionella) assessments, and radon measurement programs across Ontario.",
-    bullets: ["IAQ baseline assessments", "Odour & vapour intrusion investigations", "Mould & Legionella evaluations", "Radon measurement & mitigation"],
-    scope: "Structured investigation of indoor environmental quality (IEQ) concerns across residential, commercial, institutional, and healthcare settings in Ontario. Services span IAQ baseline assessments, odour source characterization, sub-slab vapour intrusion investigations, microbial contamination evaluations, and radon measurement programs — all within the AREC framework.",
-    approach: "Direct-reading instruments deployed for real-time characterization of CO₂, TVOC, PM₂.₅/PM₁₀, temperature, and relative humidity as first-tier screening. Confirmed by targeted analytical sampling where warranted. Ventilation reviewed against ASHRAE 62.1. Microbial investigations follow AIHA and ACGIH guidance. Radon testing aligned with Health Canada and CSA C828.",
-    deliverables: [
-      "Ventilation adequacy review benchmarked against ASHRAE 62.1 and NBC",
-      "Contaminant source characterization reports for odour and chemical complaints",
-      "Vapour intrusion pathway assessment with exposure risk characterization",
-      "Microbial investigation report with sampling data, risk narrative, and remediation scope",
-      "Radon measurement report with Health Canada guideline comparison and mitigation options",
-      "Prioritized IEQ improvement plan with short- and long-term control recommendations"
-    ],
-    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e3ec8e48c_ChatGPTImageFeb28202604_23_54PM.png"
   },
   {
     id: "ehs_programs",
     icon: ClipboardCheck,
-    title: "EH&S Programs, Policy & Safety Management",
-    tagline: "Compliance architecture & due diligence frameworks",
-    summary: "Development and gap analysis of written EH&S programs and safety management systems aligned with Ontario OHSA, ISO 45001, CSA Z1000, and COR™ frameworks.",
-    bullets: ["Chemical Prestart reviews (O. Reg. 851)", "Written EH&S program development", "ISO 45001 / CSA Z1000 gap analysis", "JHSC-accessible program summaries"],
-    scope: "Development, gap analysis, and revision of written EH&S programs and policies required under the Ontario OHSA — including Chemical Prestart Health & Safety Reviews under O. Reg. 851. Safety Management System (SMS) engagements are structured around ISO 45001, CSA Z1000, and COR™ to build durable, audit-ready compliance infrastructure.",
-    approach: "Engagements begin with a legislated requirements inventory mapped against existing program documentation and hazard registers. Gap findings are translated into a compliance roadmap with prioritized actions scaled to organizational capacity. Written programs are developed in plain language accessible to workers and JHSCs — grounded in client-specific hazards and operations.",
-    deliverables: [
-      "Chemical Prestart Health & Safety Review report (O. Reg. 851, s. 7)",
-      "Written EH&S program development or revision (OHSA-aligned)",
-      "Safety Management System gap analysis against ISO 45001 or CSA Z1000",
-      "Legislated requirements inventory with compliance status matrix",
-      "Hazard identification and risk assessment (HIRA) framework documentation",
-      "JHSC-accessible program summaries and worker communication materials"
-    ],
+    title: "Compliance & Safety Management",
+    tagline: "Programs · Policies · Audits",
+    summary: "Not sure if you're compliant? Need written programs that will hold up to an audit? We build them in plain language — for workers and managers alike.",
+    bullets: ["Chemical Prestart reviews (O. Reg. 851)", "Written EH&S program development", "ISO 45001 / CSA Z1000 gap analysis", "JHSC-ready summaries"],
+    audiences: ["business", "facility", "public"],
+    triggers: ["Ministry of Labour inspection", "New chemicals or processes", "Program never updated"],
+    deliverables: ["Compliance gap report", "Written programs (OHSA-aligned)", "Safety management system framework", "JHSC communication materials"],
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
   },
   {
     id: "training",
     icon: GraduationCap,
     title: "Training & Specialized Sector Support",
-    tagline: "Applied IH training & high-sensitivity environment expertise",
-    summary: "Competency-based OHS training for workers, supervisors, and JHSC members — plus specialized IH support for healthcare, film, pharmaceuticals, and Indigenous communities.",
-    bullets: ["Worker & supervisor hazard training", "JHSC Part I & II facilitation", "Pharmaceutical & cleanroom IH", "Healthcare & remote site support"],
-    scope: "Competency-based occupational health and safety training grounded in Ontario OHSA requirements and actual workplace hazard profiles. Specialized industrial hygiene support for high-sensitivity sectors: healthcare facilities, film and television production, Indigenous and remote communities, and educational institutions.",
-    approach: "Training programs are developed from a task hazard analysis baseline, ensuring content reflects real exposure scenarios rather than generic checklists. Delivery is adapted to literacy, language, and operational context. Sector-specific assessments apply relevant regulatory and technical standards.",
-    deliverables: [
-      "Hazard-specific worker and supervisor training (needs analysis through delivery)",
-      "JHSC Part I and Part II training facilitation",
-      "Pharmaceutical facility and cleanroom IH exposure assessment reports",
-      "Hospital and long-term care IH program support (Legionella, disinfectants, IAQ)",
-      "Indigenous community and remote site EHS field assessment support",
-      "Film and television production safety assessments and set IH evaluations"
-    ],
+    tagline: "Training · Healthcare · Film · Indigenous Communities",
+    summary: "Need training that reflects real hazards — not a generic slide deck? We deliver competency-based OHS training and sector-specific IH support.",
+    bullets: ["Worker & supervisor hazard training", "JHSC Part I & II facilitation", "Healthcare & pharmaceutical IH", "Indigenous & remote site support"],
+    audiences: ["business", "public", "ngo"],
+    triggers: ["JHSC training due", "New workforce or high turnover", "Specialized sector assessment needed"],
+    deliverables: ["Custom hazard training (needs analysis → delivery)", "JHSC certification facilitation", "Sector-specific IH assessment report", "Plain-language worker materials"],
     image: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=600&q=80"
   }
 ];
 
 const industries = [
+  { icon: Home, name: "Homeowners" },
   { icon: Factory, name: "Manufacturing" },
-  { icon: Building, name: "Construction" },
-  { icon: Stethoscope, name: "Hospitals & Healthcare" },
-  { icon: GraduationCap, name: "Educational Institutions" },
-  { icon: Activity, name: "Production" },
+  { icon: Building2, name: "Facility Managers" },
+  { icon: HeartPulse, name: "Hospitals & Healthcare" },
+  { icon: GraduationCap, name: "Schools" },
   { icon: HardHat, name: "Pharmaceuticals" },
-  { icon: Building, name: "Residential (Home Owner)" },
+  { icon: Users, name: "NGOs" },
   { icon: ClipboardCheck, name: "Public Services" }
 ];
 
