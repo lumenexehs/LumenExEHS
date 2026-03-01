@@ -48,22 +48,26 @@ const values = [
   {
     icon: Shield,
     title: "Scientific Rigour",
-    description: "Assessments grounded in AIHA methodology, ACGIH TLVs®/BEIs®, and Ontario OHS legislation — evidence-based, never assumption-driven."
+    description: "Assessments grounded in AIHA methodology, ACGIH TLVs®/BEIs®, and Ontario OHS legislation — evidence-based, never assumption-driven.",
+    bgImage: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=60"
   },
   {
     icon: Target,
     title: "Defensible Practice",
-    description: "Findings and recommendations documented to withstand Ministry of Labour audit, legal scrutiny, and peer technical review."
+    description: "Findings and recommendations documented to withstand Ministry of Labour audit, legal scrutiny, and peer technical review.",
+    bgImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=60"
   },
   {
     icon: Users,
     title: "Community Commitment",
-    description: "Volunteer IH expertise contributed to NGOs and under-resourced workplaces — extending occupational health protection to those who need it most."
+    description: "Volunteer IH expertise contributed to NGOs and under-resourced workplaces — extending occupational health protection to those who need it most.",
+    bgImage: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=60"
   },
   {
     icon: Heart,
     title: "Carer for Carers",
-    description: "We support EHS managers, JHSCs, and safety officers with the data and language they need to protect workers and act decisively."
+    description: "We support EHS managers, JHSCs, and safety officers with the data and language they need to protect workers and act decisively.",
+    bgImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=60"
   }
 ];
 
