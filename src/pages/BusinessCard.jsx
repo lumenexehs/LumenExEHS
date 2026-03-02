@@ -28,7 +28,7 @@ export default function BusinessCard() {
         <div className="flex justify-center mb-8">
           <img
             src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
-            alt="LumenEx EHS" className="w-40 h-28 object-contain opacity-70" />
+            alt="LumenEx EHS" className="opacity-100 w-40 h-28 object-contain" />
 
 
         </div>
