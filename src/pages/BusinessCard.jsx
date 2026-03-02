@@ -31,8 +31,10 @@ function downloadVCard() {
 }
 
 function ContactCapture() {
-  const [form, setForm] = useState({ name: "", email: "", organization: "", message: "", social: "" });
-  const [status, setStatus] = useState("idle"); // idle | submitting | done
+  const [form, setForm] = useState({ name: "", email: "", organization: "", occupation: "" });
+  const [selectedPlatform, setSelectedPlatform] = useState(null);
+  const [socialHandle, setSocialHandle] = useState("");
+  const [status, setStatus] = useState("idle");
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -40,10 +42,13 @@ function ContactCapture() {
     e.preventDefault();
     if (!form.email) return;
     setStatus("submitting");
+    const socialLine = selectedPlatform && socialHandle
+      ? `${selectedPlatform.label}: ${selectedPlatform.prefix}${socialHandle}`
+      : "—";
     await base44.integrations.Core.SendEmail({
       to: "info@lumenexehs.ca",
       subject: `New contact from business card — ${form.name || form.email}`,
-      body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nOrganization: ${form.organization || "—"}\nOccupation: ${form.message || "—"}\nSocial/Website: ${form.social || "—"}`,
+      body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nOrganization: ${form.organization || "—"}\nOccupation: ${form.occupation || "—"}\nSocial: ${socialLine}`,
     });
     setStatus("done");
   };
@@ -87,19 +92,52 @@ function ContactCapture() {
             className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
           />
           <input
-            name="message"
-            value={form.message}
+            name="occupation"
+            value={form.occupation}
             onChange={handleChange}
             placeholder="Occupation (optional)"
             className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
           />
-          <input
-            name="social"
-            value={form.social}
-            onChange={handleChange}
-            placeholder="Social / website (e.g. linkedin.com/in/…, @handle)"
-            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
-          />
+
+          {/* Social platform picker */}
+          <div>
+            <p className="text-xs text-slate-400 mb-2">Social / website (optional)</p>
+            <div className="flex gap-2 flex-wrap mb-2">
+              {SOCIAL_PLATFORMS.map((p) => (
+                <button
+                  key={p.key}
+                  type="button"
+                  onClick={() => {
+                    setSelectedPlatform(selectedPlatform?.key === p.key ? null : p);
+                    setSocialHandle("");
+                  }}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all ${
+                    selectedPlatform?.key === p.key
+                      ? "text-white border-transparent"
+                      : "bg-white text-slate-500 border-slate-200"
+                  }`}
+                  style={selectedPlatform?.key === p.key ? { backgroundColor: p.color, borderColor: p.color } : {}}
+                >
+                  <span>{p.icon}</span>
+                  {p.label}
+                </button>
+              ))}
+            </div>
+            {selectedPlatform && (
+              <div className="flex items-center gap-0 rounded-xl border border-slate-200 bg-white overflow-hidden">
+                <span className="text-xs text-slate-400 px-3 whitespace-nowrap border-r border-slate-200 py-2.5">
+                  {selectedPlatform.prefix}
+                </span>
+                <input
+                  value={socialHandle}
+                  onChange={(e) => setSocialHandle(e.target.value)}
+                  placeholder={selectedPlatform.key === "website" ? "yourdomain.com" : "your handle or URL"}
+                  className="flex-1 text-sm px-3 py-2.5 bg-transparent text-slate-800 placeholder-slate-400 focus:outline-none"
+                />
+              </div>
+            )}
+          </div>
+
           <button
             type="submit"
             disabled={status === "submitting"}
