@@ -78,13 +78,19 @@ function ContactCapture() {
             placeholder="Organization (optional)"
             className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
           />
-          <textarea
+          <input
             name="message"
             value={form.message}
             onChange={handleChange}
-            placeholder="Short message (optional)"
-            rows={2}
-            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68] resize-none"
+            placeholder="Occupation (optional)"
+            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
+          />
+          <input
+            name="social"
+            value={form.social}
+            onChange={handleChange}
+            placeholder="Social / website (e.g. linkedin.com/in/…, @handle)"
+            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
           />
           <button
             type="submit"
