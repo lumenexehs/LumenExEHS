@@ -86,7 +86,7 @@ export default function BusinessCard() {
         {/* Secondary Actions */}
         <div className="grid grid-cols-3 gap-3 mb-8">
           <a
-            href="https://www.linkedin.com/company/lumenex-ehs"
+            href="https://www.linkedin.com/in/lumenex-ehs/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-1.5 py-4 rounded-2xl bg-white border border-slate-200 shadow-sm active:scale-95 transition-transform">
