@@ -49,6 +49,7 @@
  */
 import About from './pages/About';
 import Article from './pages/Article';
+import BusinessCard from './pages/BusinessCard';
 import Careers from './pages/Careers';
 import ClientPortal from './pages/ClientPortal';
 import Contact from './pages/Contact';
@@ -57,13 +58,13 @@ import KnowledgeHub from './pages/KnowledgeHub';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Services from './pages/Services';
 import TermsAndConditions from './pages/TermsAndConditions';
-import BusinessCard from './pages/BusinessCard';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
     "About": About,
     "Article": Article,
+    "BusinessCard": BusinessCard,
     "Careers": Careers,
     "ClientPortal": ClientPortal,
     "Contact": Contact,
@@ -72,7 +73,6 @@ export const PAGES = {
     "PrivacyPolicy": PrivacyPolicy,
     "Services": Services,
     "TermsAndConditions": TermsAndConditions,
-    "BusinessCard": BusinessCard,
 }
 
 export const pagesConfig = {

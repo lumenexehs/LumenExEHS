@@ -102,24 +102,24 @@ function ContactCapture() {
           {/* Social platform picker */}
           <div>
             <p className="text-xs text-slate-400 mb-2">Social / website (optional)</p>
-            <div className="flex gap-2 flex-wrap mb-2">
+            <div className="flex gap-2.5 flex-wrap mb-2">
               {SOCIAL_PLATFORMS.map((p) => (
                 <button
                   key={p.key}
                   type="button"
+                  title={p.label}
                   onClick={() => {
                     setSelectedPlatform(selectedPlatform?.key === p.key ? null : p);
                     setSocialHandle("");
                   }}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-all ${
+                  className={`w-10 h-10 rounded-full text-sm font-bold border-2 flex items-center justify-center transition-all active:scale-95 ${
                     selectedPlatform?.key === p.key
                       ? "text-white border-transparent"
                       : "bg-white text-slate-500 border-slate-200"
                   }`}
                   style={selectedPlatform?.key === p.key ? { backgroundColor: p.color, borderColor: p.color } : {}}
                 >
-                  <span>{p.icon}</span>
-                  {p.label}
+                  {p.icon}
                 </button>
               ))}
             </div>
