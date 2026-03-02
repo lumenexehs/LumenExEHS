@@ -5,6 +5,7 @@ VERSION:3.0
 FN:Kenny LI
 ORG:LumenEx EHS
 TITLE:EHS Consultant
+TEL:+16476856904
 EMAIL:info@lumenexehs.ca
 URL:https://lumenexehs.ca
 END:VCARD`;
