@@ -48,11 +48,11 @@ export default function BusinessCard() {
         {/* Identity */}
         <div className="text-center mb-6">
           <h1 className="text-2xl font-bold text-[#1a3a52] tracking-tight mb-0.5">Kenny LI</h1>
-          <p className="text-sm font-semibold text-[#c49d68] uppercase tracking-widest mb-1">EHS Consultant</p>
+          <p className="text-sm font-semibold text-[#c49d68] uppercase tracking-widest mb-1">Environmental Health & Safety CONSULTANT</p>
           <p className="text-sm text-slate-400 font-medium">Certified Industrial Hygienist | Certified Safety Professional</p>
           <div className="w-10 h-px bg-[#d4af7a] mx-auto my-4" />
-          <p className="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
-            Making invisible workplace health risks visible through science-based assessment.
+          <p className="text-slate-500 mx-auto text-sm font-light leading-relaxed max-w-xs">Making invisible workplace health risks visible through science-based assessment.
+
           </p>
         </div>
 
