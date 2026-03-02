@@ -3,12 +3,12 @@ import { Mail, Phone, Linkedin, Globe, Calendar, Download } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 
 const SOCIAL_PLATFORMS = [
-  { key: "linkedin", label: "LinkedIn", icon: "in", color: "#0077b5", prefix: "linkedin.com/in/" },
-  { key: "instagram", label: "Instagram", icon: "IG", color: "#e1306c", prefix: "@" },
-  { key: "facebook", label: "Facebook", icon: "fb", color: "#1877f2", prefix: "facebook.com/" },
-  { key: "youtube", label: "YouTube", icon: "YT", color: "#ff0000", prefix: "youtube.com/@" },
-  { key: "website", label: "Website", icon: "🌐", color: "#c49d68", prefix: "https://" },
-];
+{ key: "linkedin", label: "LinkedIn", icon: "in", color: "#0077b5", prefix: "linkedin.com/in/" },
+{ key: "instagram", label: "Instagram", icon: "IG", color: "#e1306c", prefix: "@" },
+{ key: "facebook", label: "Facebook", icon: "fb", color: "#1877f2", prefix: "facebook.com/" },
+{ key: "youtube", label: "YouTube", icon: "YT", color: "#ff0000", prefix: "youtube.com/@" },
+{ key: "website", label: "Website", icon: "🌐", color: "#c49d68", prefix: "https://" }];
+
 
 const VCARD = `BEGIN:VCARD
 VERSION:3.0
@@ -42,13 +42,13 @@ function ContactCapture() {
     e.preventDefault();
     if (!form.email) return;
     setStatus("submitting");
-    const socialLine = selectedPlatform && socialHandle
-      ? `${selectedPlatform.label}: ${selectedPlatform.prefix}${socialHandle}`
-      : "—";
+    const socialLine = selectedPlatform && socialHandle ?
+    `${selectedPlatform.label}: ${selectedPlatform.prefix}${socialHandle}` :
+    "—";
     await base44.integrations.Core.SendEmail({
       to: "info@lumenexehs.ca",
       subject: `New contact from business card — ${form.name || form.email}`,
-      body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nOrganization: ${form.organization || "—"}\nOccupation: ${form.occupation || "—"}\nSocial: ${socialLine}`,
+      body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nOrganization: ${form.organization || "—"}\nOccupation: ${form.occupation || "—"}\nSocial: ${socialLine}`
     });
     setStatus("done");
   };
@@ -62,96 +62,96 @@ function ContactCapture() {
         If you'd like me to follow up, you may leave your contact details here.
       </p>
 
-      {status === "done" ? (
-        <p className="text-xs text-emerald-600 font-medium py-3 text-center">
+      {status === "done" ?
+      <p className="text-xs text-emerald-600 font-medium py-3 text-center">
           Thanks — I'll be in touch.
-        </p>
-      ) : (
-        <form onSubmit={handleSubmit} className="space-y-2.5">
+        </p> :
+
+      <form onSubmit={handleSubmit} className="space-y-2.5">
           <input
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            placeholder="Full name"
-            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
-          />
+          name="name"
+          value={form.name}
+          onChange={handleChange}
+          placeholder="Full name"
+          className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]" />
+
           <input
-            name="email"
-            type="email"
-            required
-            value={form.email}
-            onChange={handleChange}
-            placeholder="Email address *"
-            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
-          />
+          name="email"
+          type="email"
+          required
+          value={form.email}
+          onChange={handleChange}
+          placeholder="Email address *"
+          className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]" />
+
           <input
-            name="organization"
-            value={form.organization}
-            onChange={handleChange}
-            placeholder="Organization (optional)"
-            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
-          />
+          name="organization"
+          value={form.organization}
+          onChange={handleChange}
+          placeholder="Organization (optional)"
+          className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]" />
+
           <input
-            name="occupation"
-            value={form.occupation}
-            onChange={handleChange}
-            placeholder="Occupation (optional)"
-            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
-          />
+          name="occupation"
+          value={form.occupation}
+          onChange={handleChange}
+          placeholder="Occupation (optional)"
+          className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]" />
+
 
           {/* Social platform picker */}
           <div>
             <p className="text-xs text-slate-400 mb-2">Social / website (optional)</p>
             <div className="flex gap-2.5 flex-wrap mb-2">
-              {SOCIAL_PLATFORMS.map((p) => (
-                <button
-                  key={p.key}
-                  type="button"
-                  title={p.label}
-                  onClick={() => {
-                    setSelectedPlatform(selectedPlatform?.key === p.key ? null : p);
-                    setSocialHandle("");
-                  }}
-                  className={`w-10 h-10 rounded-full text-sm font-bold border-2 flex items-center justify-center transition-all active:scale-95 ${
-                    selectedPlatform?.key === p.key
-                      ? "text-white border-transparent"
-                      : "bg-white text-slate-500 border-slate-200"
-                  }`}
-                  style={selectedPlatform?.key === p.key ? { backgroundColor: p.color, borderColor: p.color } : {}}
-                >
+              {SOCIAL_PLATFORMS.map((p) =>
+            <button
+              key={p.key}
+              type="button"
+              title={p.label}
+              onClick={() => {
+                setSelectedPlatform(selectedPlatform?.key === p.key ? null : p);
+                setSocialHandle("");
+              }}
+              className={`w-10 h-10 rounded-full text-sm font-bold border-2 flex items-center justify-center transition-all active:scale-95 ${
+              selectedPlatform?.key === p.key ?
+              "text-white border-transparent" :
+              "bg-white text-slate-500 border-slate-200"}`
+              }
+              style={selectedPlatform?.key === p.key ? { backgroundColor: p.color, borderColor: p.color } : {}}>
+
                   {p.icon}
                 </button>
-              ))}
+            )}
             </div>
-            {selectedPlatform && (
-              <div className="flex items-center gap-0 rounded-xl border border-slate-200 bg-white overflow-hidden">
+            {selectedPlatform &&
+          <div className="flex items-center gap-0 rounded-xl border border-slate-200 bg-white overflow-hidden">
                 <span className="text-xs text-slate-400 px-3 whitespace-nowrap border-r border-slate-200 py-2.5">
                   {selectedPlatform.prefix}
                 </span>
                 <input
-                  value={socialHandle}
-                  onChange={(e) => setSocialHandle(e.target.value)}
-                  placeholder={selectedPlatform.key === "website" ? "yourdomain.com" : "your handle or URL"}
-                  className="flex-1 text-sm px-3 py-2.5 bg-transparent text-slate-800 placeholder-slate-400 focus:outline-none"
-                />
+              value={socialHandle}
+              onChange={(e) => setSocialHandle(e.target.value)}
+              placeholder={selectedPlatform.key === "website" ? "yourdomain.com" : "your handle or URL"}
+              className="flex-1 text-sm px-3 py-2.5 bg-transparent text-slate-800 placeholder-slate-400 focus:outline-none" />
+
               </div>
-            )}
+          }
           </div>
 
           <button
-            type="submit"
-            disabled={status === "submitting"}
-            className="w-full py-3 rounded-2xl bg-white border border-[#1a3a52] text-[#1a3a52] text-sm font-semibold active:scale-95 transition-transform disabled:opacity-50"
-          >
+          type="submit"
+          disabled={status === "submitting"}
+          className="w-full py-3 rounded-2xl bg-white border border-[#1a3a52] text-[#1a3a52] text-sm font-semibold active:scale-95 transition-transform disabled:opacity-50">
+
             {status === "submitting" ? "Sending…" : "Share Contact"}
           </button>
           <p className="text-xs text-slate-300 text-center leading-relaxed pt-1">
             Your contact information will be used only for direct professional follow-up.
           </p>
         </form>
-      )}
-    </div>
-  );
+      }
+    </div>);
+
 }
 
 export default function BusinessCard() {
@@ -182,10 +182,10 @@ export default function BusinessCard() {
         {/* Identity */}
         <div className="text-center mb-6">
           <h1 className="text-2xl font-bold text-[#1a3a52] tracking-tight mb-0.5">Kenny LI</h1>
-          <p className="text-sm font-semibold text-[#c49d68] uppercase tracking-widest mb-1">Environmental Health & Safety CONSULTANT</p>
-          <p className="text-sm text-slate-400 font-medium">Certified Industrial Hygienist | Certified Safety Professional</p>
+          <p className="text-sm font-semibold text-[#c49d68] uppercase tracking-widest mb-1">HEALTH & SAFETY CONSULTANT</p>
+          <p className="text-slate-400 text-xs font-normal">Certified Industrial Hygienist | Certified Safety Professional</p>
           <div className="w-10 h-px bg-[#d4af7a] mx-auto my-4" />
-          <p className="text-slate-500 mx-auto text-sm font-light leading-relaxed max-w-xs">Making invisible workplace health risks visible through science-based assessment.
+          <p className="text-slate-500 mx-auto text-sm font-light text-justify leading-relaxed max-w-xs">"Making invisible workplace health risks visible through science-based assessment."
 
           </p>
         </div>
