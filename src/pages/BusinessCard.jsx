@@ -274,17 +274,8 @@ export default function BusinessCard() {
         {/* Contact Capture */}
         <ContactCapture />
 
-        {/* Back to Top */}
-        <div className="flex justify-center mt-8 mb-4">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium text-slate-400 border border-slate-200 bg-white active:scale-95 transition-transform hover:text-[#1a3a52] hover:border-[#1a3a52]">
-            ↑ Back to top
-          </button>
-        </div>
-
         {/* Footer */}
-        <div className="text-center space-y-1 mt-2">
+        <div className="text-center space-y-1 mt-8">
           <p className="text-xs text-slate-400">Based in Ontario, Canada</p>
           <p className="text-xs text-slate-300">© {new Date().getFullYear()} LumenEx EHS</p>
         </div>
