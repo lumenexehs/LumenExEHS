@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Mail, Phone, Linkedin, Globe, Calendar, Download } from "lucide-react";
+import { base44 } from "@/api/base44Client";
 
 const VCARD = `BEGIN:VCARD
 VERSION:3.0
@@ -129,8 +131,11 @@ export default function BusinessCard() {
           </span>
         </div>
 
+        {/* Contact Capture */}
+        <ContactCapture />
+
         {/* Footer */}
-        <div className="text-center space-y-1">
+        <div className="text-center space-y-1 mt-8">
           <p className="text-xs text-slate-400">Based in Ontario, Canada</p>
           <p className="text-xs text-slate-300">© {new Date().getFullYear()} LumenEx EHS</p>
         </div>
