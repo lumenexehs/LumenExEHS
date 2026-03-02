@@ -48,7 +48,7 @@ function ContactCapture() {
     await base44.integrations.Core.SendEmail({
       to: "info@lumenexehs.ca",
       subject: `New contact from business card — ${form.name || form.email}`,
-      body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nOrganization: ${form.organization || "—"}\nOccupation: ${form.occupation || "—"}\nSocial: ${socialLine}`
+      body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nPhone: ${form.phone || "—"}\nOrganization: ${form.organization || "—"}\nOccupation: ${form.occupation || "—"}\nSocial: ${socialLine}`
     });
     setStatus("done");
   };
