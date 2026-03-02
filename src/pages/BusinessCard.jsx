@@ -23,7 +23,7 @@ function downloadVCard() {
 }
 
 function ContactCapture() {
-  const [form, setForm] = useState({ name: "", email: "", organization: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", organization: "", message: "", social: "" });
   const [status, setStatus] = useState("idle"); // idle | submitting | done
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
@@ -35,7 +35,7 @@ function ContactCapture() {
     await base44.integrations.Core.SendEmail({
       to: "info@lumenexehs.ca",
       subject: `New contact from business card — ${form.name || form.email}`,
-      body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nOrganization: ${form.organization || "—"}\nMessage: ${form.message || "—"}`,
+      body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nOrganization: ${form.organization || "—"}\nOccupation: ${form.message || "—"}\nSocial/Website: ${form.social || "—"}`,
     });
     setStatus("done");
   };
