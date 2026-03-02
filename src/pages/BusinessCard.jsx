@@ -72,7 +72,7 @@ function ContactCapture() {
           name="name"
           value={form.name}
           onChange={handleChange}
-          placeholder="Full name"
+          placeholder="Full name *"
           className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]" />
 
           <input
