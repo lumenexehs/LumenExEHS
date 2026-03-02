@@ -85,6 +85,14 @@ function ContactCapture() {
           className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]" />
 
           <input
+          name="phone"
+          type="tel"
+          value={form.phone}
+          onChange={handleChange}
+          placeholder="Phone number *"
+          className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]" />
+
+          <input
           name="organization"
           value={form.organization}
           onChange={handleChange}
