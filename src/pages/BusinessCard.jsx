@@ -2,6 +2,14 @@ import { useState } from "react";
 import { Mail, Phone, Linkedin, Globe, Calendar, Download } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 
+const SOCIAL_PLATFORMS = [
+  { key: "linkedin", label: "LinkedIn", icon: "in", color: "#0077b5", prefix: "linkedin.com/in/" },
+  { key: "instagram", label: "Instagram", icon: "IG", color: "#e1306c", prefix: "@" },
+  { key: "facebook", label: "Facebook", icon: "fb", color: "#1877f2", prefix: "facebook.com/" },
+  { key: "youtube", label: "YouTube", icon: "YT", color: "#ff0000", prefix: "youtube.com/@" },
+  { key: "website", label: "Website", icon: "🌐", color: "#c49d68", prefix: "https://" },
+];
+
 const VCARD = `BEGIN:VCARD
 VERSION:3.0
 FN:Kenny LI
