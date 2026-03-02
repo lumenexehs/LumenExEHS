@@ -22,6 +22,86 @@ function downloadVCard() {
   URL.revokeObjectURL(url);
 }
 
+function ContactCapture() {
+  const [form, setForm] = useState({ name: "", email: "", organization: "", message: "" });
+  const [status, setStatus] = useState("idle"); // idle | submitting | done
+
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!form.email) return;
+    setStatus("submitting");
+    await base44.integrations.Core.SendEmail({
+      to: "info@lumenexehs.ca",
+      subject: `New contact from business card — ${form.name || form.email}`,
+      body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nOrganization: ${form.organization || "—"}\nMessage: ${form.message || "—"}`,
+    });
+    setStatus("done");
+  };
+
+  return (
+    <div className="mt-6 pt-6 border-t border-slate-100">
+      <p className="text-xs font-semibold text-[#1a3a52] uppercase tracking-widest mb-1">
+        Leave your contact <span className="font-normal text-slate-400 normal-case tracking-normal">(optional)</span>
+      </p>
+      <p className="text-xs text-slate-400 mb-4 leading-relaxed">
+        If you'd like me to follow up, you may leave your contact details here.
+      </p>
+
+      {status === "done" ? (
+        <p className="text-xs text-emerald-600 font-medium py-3 text-center">
+          Thanks — I'll be in touch.
+        </p>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-2.5">
+          <input
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            placeholder="Full name"
+            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
+          />
+          <input
+            name="email"
+            type="email"
+            required
+            value={form.email}
+            onChange={handleChange}
+            placeholder="Email address *"
+            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
+          />
+          <input
+            name="organization"
+            value={form.organization}
+            onChange={handleChange}
+            placeholder="Organization (optional)"
+            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]"
+          />
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            placeholder="Short message (optional)"
+            rows={2}
+            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68] resize-none"
+          />
+          <button
+            type="submit"
+            disabled={status === "submitting"}
+            className="w-full py-3 rounded-2xl bg-white border border-[#1a3a52] text-[#1a3a52] text-sm font-semibold active:scale-95 transition-transform disabled:opacity-50"
+          >
+            {status === "submitting" ? "Sending…" : "Share Contact"}
+          </button>
+          <p className="text-xs text-slate-300 text-center leading-relaxed pt-1">
+            Your contact information will be used only for direct professional follow-up.
+          </p>
+        </form>
+      )}
+    </div>
+  );
+}
+
 export default function BusinessCard() {
   return (
     <div className="min-h-screen bg-[#f9f8f6] flex flex-col items-center justify-start px-5 pt-12 pb-10">
