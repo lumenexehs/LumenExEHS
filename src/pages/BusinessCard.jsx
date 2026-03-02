@@ -31,7 +31,7 @@ function downloadVCard() {
 }
 
 function ContactCapture() {
-  const [form, setForm] = useState({ name: "", email: "", organization: "", occupation: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", organization: "", occupation: "" });
   const [selectedPlatform, setSelectedPlatform] = useState(null);
   const [socialHandle, setSocialHandle] = useState("");
   const [status, setStatus] = useState("idle");
