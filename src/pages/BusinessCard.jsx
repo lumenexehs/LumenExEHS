@@ -74,7 +74,7 @@ export default function BusinessCard() {
           </a>
 
           <a
-            href="tel:+1"
+            href="tel:+16476856904"
             className="flex items-center justify-center gap-2.5 w-full py-3.5 rounded-2xl bg-white border border-slate-200 text-[#1a3a52] text-sm font-semibold shadow-sm active:scale-95 transition-transform">
 
             <Phone className="w-4 h-4 text-[#c49d68]" />
