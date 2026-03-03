@@ -140,15 +140,20 @@ function ServiceCard({ service, index }) {
     >
       <div className="p-7 md:p-8">
         {/* Header */}
-        <div className="flex items-start gap-4 mb-6">
-          <div className="w-11 h-11 bg-emerald-50 rounded-xl flex items-center justify-center flex-shrink-0">
+        <div className="flex items-start gap-4 mb-5">
+          <div className="w-11 h-11 bg-emerald-50 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
             <service.icon className="w-5 h-5 text-emerald-600" />
           </div>
           <div>
-            <h3 className="text-lg font-bold text-slate-900 leading-snug">{service.title}</h3>
             <span className="text-emerald-600 text-xs font-semibold uppercase tracking-wide">{service.tagline}</span>
+            <h3 className="text-base font-bold text-slate-900 leading-snug mt-0.5">{service.title}</h3>
           </div>
         </div>
+
+        {/* Question hook */}
+        <p className="text-slate-800 font-semibold text-[15px] leading-snug mb-5 italic">
+          "{service.question}"
+        </p>
 
         {/* Scenario block */}
         <div className="grid md:grid-cols-3 gap-4 mb-6">
