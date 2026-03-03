@@ -30,7 +30,7 @@ const services = [
   },
   {
     title: "Compliance & Safety Programs",
-    description: "Not sure if you're compliant? We build programs that hold up to audits.",
+    description: "Written OHS programs, regulatory gap analyses, and audit-ready documentation aligned with Ontario OHSA requirements.",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80",
     color: "#d4af7a"
   },
