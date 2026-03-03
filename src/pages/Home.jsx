@@ -15,6 +15,7 @@ export default function Home() {
     <div className="min-h-screen">
       <HeroSection />
       <ServicesOverview />
+      <ServiceHooks />
 
       <CanadaSceneStrip />
       <StatsSection />
