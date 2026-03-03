@@ -36,7 +36,7 @@ const services = [
   },
   {
     title: "Training & Sector Support",
-    description: "Real hazard training — not generic slide decks — for your team.",
+    description: "Hazard-specific training developed from field data — covering recognition, controls, and regulatory obligations for your sector.",
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
     color: "#1a3a52"
   }
