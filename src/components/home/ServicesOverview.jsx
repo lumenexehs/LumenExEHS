@@ -12,7 +12,7 @@ const services = [
   },
   {
     title: "Chemical & Dust Exposure",
-    description: "Measure what workers breathe — and tell you if it's safe.",
+    description: "Personal and area air sampling with results interpreted against Ontario OELs and ACGIH TLVs®. Regulatory-defensible reporting.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/9375df2c5_20260301_0342_ImageGeneration_remix_01kjm8zs61fkyb4nb8xp3f491q.png",
     color: "#1a3a52"
   },
