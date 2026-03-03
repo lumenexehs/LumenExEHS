@@ -18,7 +18,7 @@ const services = [
   },
   {
     title: "Noise & Physical Hazards",
-    description: "Too loud? Radiation concerns? Vibration? We measure it and tell you what to fix.",
+    description: "Noise dosimetry, radiation verification, and vibration assessments with control recommendations proportionate to measured risk.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/63355d785_20260301_0400_ImageGeneration_remix_01kjma0etbfg2bskz604ancbdh.png",
     color: "#d4af7a"
   },
