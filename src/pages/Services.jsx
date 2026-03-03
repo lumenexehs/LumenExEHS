@@ -132,51 +132,57 @@ function ServiceCard({ service, index }) {
       transition={{ duration: 0.5, delay: index * 0.07 }}
       className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"
     >
-      {/* Top-level summary */}
-      <div className="p-8">
-        <div className="flex items-start gap-4 mb-4">
-          <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center flex-shrink-0">
-            <service.icon className="w-6 h-6 text-emerald-600" />
+      <div className="p-7 md:p-8">
+        {/* Header */}
+        <div className="flex items-start gap-4 mb-6">
+          <div className="w-11 h-11 bg-emerald-50 rounded-xl flex items-center justify-center flex-shrink-0">
+            <service.icon className="w-5 h-5 text-emerald-600" />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-slate-900 mb-1">{service.title}</h3>
-            <span className="text-emerald-600 text-sm font-medium">{service.tagline}</span>
+            <h3 className="text-lg font-bold text-slate-900 leading-snug">{service.title}</h3>
+            <span className="text-emerald-600 text-xs font-semibold uppercase tracking-wide">{service.tagline}</span>
           </div>
         </div>
 
-        <p className="text-slate-600 mb-5 leading-relaxed">{service.summary}</p>
+        {/* Scenario block */}
+        <div className="grid md:grid-cols-3 gap-4 mb-6">
+          {/* Observable Situation */}
+          <div className="bg-slate-50 rounded-xl p-4">
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Observable Situation</p>
+            <p className="text-sm text-slate-700 leading-relaxed">{service.situation}</p>
+          </div>
+          {/* Possible Risk */}
+          <div className="bg-amber-50 rounded-xl p-4 border-l-2 border-amber-300">
+            <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-2">Possible Risk</p>
+            <p className="text-sm text-slate-700 leading-relaxed">{service.risk}</p>
+          </div>
+          {/* Professional Action */}
+          <div className="bg-emerald-50 rounded-xl p-4">
+            <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wide mb-2">Professional Action</p>
+            <p className="text-sm text-slate-700 leading-relaxed">{service.action}</p>
+          </div>
+        </div>
 
+        {/* Scope bullets */}
         <ul className="grid grid-cols-2 gap-2 mb-6">
           {service.bullets.map((b) => (
-            <li key={b} className="flex items-center gap-2 text-sm text-slate-700">
-              <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+            <li key={b} className="flex items-center gap-2 text-xs text-slate-600">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0" />
               {b}
             </li>
           ))}
         </ul>
 
-        {/* When you need it */}
-        {service.triggers && (
-          <div className="mb-5">
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">When you need it</p>
-            <div className="flex flex-wrap gap-2">
-              {service.triggers.map(t => (
-                <span key={t} className="bg-amber-50 border border-amber-100 text-amber-700 text-xs px-2.5 py-1 rounded-full">{t}</span>
-              ))}
-            </div>
-          </div>
-        )}
-
         {/* Who it helps */}
         {service.audiences && (
-          <div className="mb-5">
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Who it helps</p>
+          <div className="mb-6">
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Applicable Sectors</p>
             <div className="flex flex-wrap gap-2">
               {service.audiences.map(a => {
                 const info = audienceMap[a];
                 if (!info) return null;
                 return (
-                  <span key={a} className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full">
+                  <span key={a} className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 text-slate-600 text-xs px-2.5 py-1 rounded-full">
                     <info.icon className="w-3 h-3 text-emerald-500" />{info.label}
                   </span>
                 );
@@ -187,8 +193,8 @@ function ServiceCard({ service, index }) {
 
         <div className="flex items-center gap-3">
           <Link to={createPageUrl("Contact") + `?service=${service.id}`}>
-            <Button className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full text-sm group">
-              Book a Free Consult
+            <Button className="bg-[#1a3a52] hover:bg-[#0f2840] text-white rounded-full text-sm group">
+              Request an Assessment
               <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
