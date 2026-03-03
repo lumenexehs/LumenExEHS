@@ -159,7 +159,7 @@ function ServiceCard({ service, index }) {
         <div className="grid md:grid-cols-3 gap-4 mb-6">
           {/* Observable Situation */}
           <div className="bg-slate-50 rounded-xl p-4">
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Observable Situation</p>
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">The Situation</p>
             <p className="text-sm text-slate-700 leading-relaxed">{service.situation}</p>
           </div>
           {/* Risk */}
