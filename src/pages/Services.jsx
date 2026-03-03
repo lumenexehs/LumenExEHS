@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { 
   Leaf, HardHat, ClipboardCheck, GraduationCap, Zap, Building,
-  ArrowRight, CheckCircle2, Factory, AlertCircle, MoveRight,
+  ArrowRight, CheckCircle2, Factory, Stethoscope, Activity,
   ChevronDown, ChevronUp, Home, Building2, Users, HeartPulse
 } from "lucide-react";
 
@@ -23,11 +23,7 @@ const services = [
     icon: Building,
     title: "Indoor Air Quality, Odour & Mould",
     tagline: "Indoor Air · Radon · Microbial",
-    question: "Are your occupants reporting headaches, odours, or symptoms that clear up once they leave the building?",
-    situation: "Occupants report persistent headaches, stale air, or odours that improve upon leaving the building. A recent flood, renovation, or HVAC change preceded the complaints.",
-    risk: "The building is the source. Ventilation failure, microbial growth, or chemical off-gassing is driving the symptoms — and unverified IAQ issues carry direct liability.",
-    action: "A targeted IAQ assessment identifies the source and provides a remediation pathway.",
-    summary: "Occupants report persistent headaches, stale air, or odours that improve upon leaving the building. A recent flood, renovation, or HVAC change preceded the complaints.",
+    summary: "Something smells off? Worried about mould, radon, or poor air? We find the source, test what matters, and give you clear next steps.",
     bullets: ["Mould & Legionella testing", "Radon measurement", "Odour source investigation", "Ventilation assessment"],
     audiences: ["home", "facility", "public", "ngo"],
     triggers: ["Musty smell or visible mould", "Occupant health complaints", "Real estate transaction", "Post-flood or renovation"],
@@ -39,11 +35,7 @@ const services = [
     icon: Leaf,
     title: "Chemical & Biological Exposure Assessment",
     tagline: "Dust · Chemicals · Bioaerosols",
-    question: "Do your workers handle chemicals or generate dust without documented exposure data?",
-    situation: "Workers are handling chemicals, cutting or grinding materials, or working near biological sources. Visible dust is present, or new substances have been introduced without updated SDS review.",
-    risk: "Respirable particles and chemical vapours stay hazardous long after the visible cloud clears. Unmeasured exposure is an open regulatory liability.",
-    action: "A personal breathing zone assessment provides defensible exposure data benchmarked against Ontario OELs.",
-    summary: "Workers are handling chemicals, cutting or grinding materials, or working near biological sources without documented exposure data.",
+    summary: "Workers exposed to chemicals, dust, or biological agents? We measure real exposures and tell you if they're safe — benchmarked against Ontario law.",
     bullets: ["Personal breathing zone sampling", "SEG exposure profiles", "Bayesian risk analysis", "Control recommendations"],
     audiences: ["business", "facility", "public"],
     triggers: ["Chemical or dust concerns", "Ministry of Labour audit", "New process or substance introduced"],
@@ -55,11 +47,7 @@ const services = [
     icon: HardHat,
     title: "Noise, Radiation & Physical Agents",
     tagline: "Noise · Vibration · Radiation",
-    question: "Do workers shout to be heard at arm's length — or is your radiation equipment overdue for a field survey?",
-    situation: "Workers must raise their voice to be heard at arm's length, or facilities operate ionizing or non-ionizing equipment without recent compliance verification.",
-    risk: "Noise-induced hearing loss is permanent and cumulative. Radiation compliance cannot be assumed — field measurement is the only defensible position.",
-    action: "A structured noise and radiation survey provides regulatory-defensible results.",
-    summary: "Workers must raise their voice to be heard at arm's length, or ionizing equipment operates without recent compliance verification.",
+    summary: "Too loud? Concerned about radiation or vibration? We measure it, compare it to the law, and tell you what to fix.",
     bullets: ["8-hour TWA noise dosimetry", "Vibration (hand-arm & whole-body)", "Radiation field surveys", "Hearing program review"],
     audiences: ["business", "facility", "public"],
     triggers: ["Workers reporting hearing issues", "Loud equipment added", "JHSC noise concerns"],
@@ -71,11 +59,7 @@ const services = [
     icon: Zap,
     title: "Heat Stress & Ergonomics",
     tagline: "Heat · Ergonomics · MSD Prevention",
-    question: "Are workers fatigued or dizzy in warm conditions — or are MSDs climbing without an ergonomic root cause analysis?",
-    situation: "Workers performing heavy tasks in warm environments report fatigue, dizziness, or discomfort. Repetitive tasks have been associated with musculoskeletal complaints.",
-    risk: "Heat strain escalates to a medical emergency without warning. MSD injury costs compound over time. Ontario's general duty clause applies regardless of whether a temperature regulation exists.",
-    action: "Structured thermal and ergonomic monitoring establishes exposure levels and guides control priorities.",
-    summary: "Workers performing heavy tasks in warm environments report fatigue or dizziness. Repetitive tasks have been linked to musculoskeletal complaints.",
+    summary: "Hot workplaces or repetitive injury risks? We assess thermal limits and ergonomic hazards before workers get hurt.",
     bullets: ["WBGT heat monitoring (ISO 7243)", "Metabolic rate estimation", "RULA/REBA ergonomic review", "MSD control recommendations"],
     audiences: ["business", "facility"],
     triggers: ["Summer outdoor or hot indoor work", "MSD injury spike", "New production line or task"],
@@ -87,11 +71,7 @@ const services = [
     icon: ClipboardCheck,
     title: "Compliance & Safety Management",
     tagline: "Programs · Policies · Audits",
-    question: "When did you last review your written EHS programs against current OHSA requirements?",
-    situation: "Written EHS programs exist but have not been reviewed following a process, personnel, or regulatory change. A Ministry of Labour inspection has identified documentation gaps.",
-    risk: "Outdated programs undermine your due diligence defence. Regulators identify these gaps — and they are difficult to explain after an incident.",
-    action: "A compliance gap review identifies priority updates and produces audit-ready documentation.",
-    summary: "Written EHS programs exist but have not been reviewed following process or regulatory changes. Documentation gaps have been identified.",
+    summary: "Not sure if you're compliant? Need written programs that will hold up to an audit? We build them in plain language — for workers and managers alike.",
     bullets: ["Chemical Prestart reviews (O. Reg. 851)", "Written EH&S program development", "ISO 45001 / CSA Z1000 gap analysis", "JHSC-ready summaries"],
     audiences: ["business", "facility", "public"],
     triggers: ["Ministry of Labour inspection", "New chemicals or processes", "Program never updated"],
@@ -103,11 +83,7 @@ const services = [
     icon: GraduationCap,
     title: "Training & Specialized Sector Support",
     tagline: "Training · Healthcare · Film · Indigenous Communities",
-    question: "Is JHSC certification overdue — or do your workers face hazards that generic training doesn't address?",
-    situation: "JHSC certification is overdue, worker turnover has increased, or a sector-specific hazard (pharmaceutical, film, healthcare) requires specialized IH support.",
-    risk: "Competency gaps are the most common contributing factor in incidents. Regulators check JHSC records first.",
-    action: "Competency-based training and sector-specific assessment close the gaps with measurable outcomes.",
-    summary: "JHSC certification is overdue, worker turnover has increased, or sector-specific hazards require specialized assessment.",
+    summary: "Need training that reflects real hazards — not a generic slide deck? We deliver competency-based OHS training and sector-specific IH support.",
     bullets: ["Worker & supervisor hazard training", "JHSC Part I & II facilitation", "Healthcare & pharmaceutical IH", "Indigenous & remote site support"],
     audiences: ["business", "public", "ngo"],
     triggers: ["JHSC training due", "New workforce or high turnover", "Specialized sector assessment needed"],
@@ -138,72 +114,51 @@ function ServiceCard({ service, index }) {
       transition={{ duration: 0.5, delay: index * 0.07 }}
       className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"
     >
-      <div className="md:flex">
-        {/* Image — always visible on md+ */}
-        <div className="hidden md:block w-52 flex-shrink-0 relative">
-          <img
-            src={service.image}
-            alt={service.title}
-            className="absolute inset-0 w-full h-full object-cover rounded-l-2xl"
-          />
-        </div>
-
-      <div className="flex-1 p-7 md:p-8">
-        {/* Header */}
-        <div className="flex items-start gap-4 mb-5">
-          <div className="w-11 h-11 bg-emerald-50 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
-            <service.icon className="w-5 h-5 text-emerald-600" />
+      {/* Top-level summary */}
+      <div className="p-8">
+        <div className="flex items-start gap-4 mb-4">
+          <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center flex-shrink-0">
+            <service.icon className="w-6 h-6 text-emerald-600" />
           </div>
           <div>
-            <span className="text-emerald-600 text-xs font-semibold uppercase tracking-wide">{service.tagline}</span>
-            <h3 className="text-base font-bold text-slate-900 leading-snug mt-0.5">{service.title}</h3>
+            <h3 className="text-xl font-bold text-slate-900 mb-1">{service.title}</h3>
+            <span className="text-emerald-600 text-sm font-medium">{service.tagline}</span>
           </div>
         </div>
 
-        {/* Question hook */}
-        <p className="text-slate-800 font-semibold text-[15px] leading-snug mb-5 italic">
-          "{service.question}"
-        </p>
+        <p className="text-slate-600 mb-5 leading-relaxed">{service.summary}</p>
 
-        {/* Scenario block */}
-        <div className="grid md:grid-cols-3 gap-4 mb-6">
-          {/* Observable Situation */}
-          <div className="bg-slate-50 rounded-xl p-4">
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">The Situation</p>
-            <p className="text-sm text-slate-700 leading-relaxed">{service.situation}</p>
-          </div>
-          {/* Risk */}
-          <div className="bg-amber-50 rounded-xl p-4 border-l-2 border-amber-300">
-            <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-2">What's at Stake</p>
-            <p className="text-sm text-slate-700 leading-relaxed">{service.risk}</p>
-          </div>
-          {/* Professional Action */}
-          <div className="bg-emerald-50 rounded-xl p-4">
-            <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wide mb-2">Professional Action</p>
-            <p className="text-sm text-slate-700 leading-relaxed">{service.action}</p>
-          </div>
-        </div>
-
-        {/* Scope bullets */}
         <ul className="grid grid-cols-2 gap-2 mb-6">
           {service.bullets.map((b) => (
-            <li key={b} className="flex items-center gap-2 text-xs text-slate-600">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0" />
+            <li key={b} className="flex items-center gap-2 text-sm text-slate-700">
+              <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
               {b}
             </li>
           ))}
         </ul>
 
+        {/* When you need it */}
+        {service.triggers && (
+          <div className="mb-5">
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">When you need it</p>
+            <div className="flex flex-wrap gap-2">
+              {service.triggers.map(t => (
+                <span key={t} className="bg-amber-50 border border-amber-100 text-amber-700 text-xs px-2.5 py-1 rounded-full">{t}</span>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Who it helps */}
         {service.audiences && (
-          <div className="mb-6">
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Applicable Sectors</p>
+          <div className="mb-5">
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Who it helps</p>
             <div className="flex flex-wrap gap-2">
               {service.audiences.map(a => {
                 const info = audienceMap[a];
                 if (!info) return null;
                 return (
-                  <span key={a} className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 text-slate-600 text-xs px-2.5 py-1 rounded-full">
+                  <span key={a} className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full">
                     <info.icon className="w-3 h-3 text-emerald-500" />{info.label}
                   </span>
                 );
@@ -214,8 +169,8 @@ function ServiceCard({ service, index }) {
 
         <div className="flex items-center gap-3">
           <Link to={createPageUrl("Contact") + `?service=${service.id}`}>
-            <Button className="bg-[#1a3a52] hover:bg-[#0f2840] text-white rounded-full text-sm group">
-              Request an Assessment
+            <Button className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full text-sm group">
+              Book a Free Consult
               <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
@@ -228,8 +183,7 @@ function ServiceCard({ service, index }) {
             {expanded ? <ChevronUp className="ml-1 w-4 h-4" /> : <ChevronDown className="ml-1 w-4 h-4" />}
           </Button>
         </div>
-      </div>{/* end flex-1 */}
-      </div>{/* end md:flex */}
+      </div>
 
       {/* Expandable detail */}
       <AnimatePresence>
@@ -241,16 +195,25 @@ function ServiceCard({ service, index }) {
             transition={{ duration: 0.35 }}
             className="overflow-hidden"
           >
-            <div className="border-t border-slate-100 bg-slate-50 px-8 py-6">
-              <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-4">What We Deliver</h4>
-              <ul className="grid sm:grid-cols-2 gap-3">
-                {service.deliverables.map((d) => (
-                  <li key={d} className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-slate-700 text-sm">{d}</span>
-                  </li>
-                ))}
-              </ul>
+            <div className="border-t border-slate-100 bg-slate-50 px-8 py-8 grid md:grid-cols-2 gap-8">
+              <div>
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="rounded-xl shadow-md w-full h-48 object-cover"
+                />
+              </div>
+              <div>
+                <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-4">What We Deliver</h4>
+                <ul className="space-y-3">
+                  {service.deliverables.map((d) => (
+                    <li key={d} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-slate-700 text-sm">{d}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </motion.div>
         )}
@@ -258,7 +221,6 @@ function ServiceCard({ service, index }) {
     </motion.div>
   );
 }
-
 
 export default function Services() {
   return (
@@ -315,11 +277,10 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-12"
+            className="text-center mb-12"
           >
-            <span className="text-emerald-600 text-xs font-semibold uppercase tracking-widest">Assessment Services</span>
-            <h2 className="text-3xl font-bold text-slate-900 mt-2 mb-3">Service Scope & Methodology</h2>
-            <p className="text-slate-500 max-w-xl">Each service is structured around observable conditions, potential regulatory implications, and a defined assessment methodology. Expand any card for full deliverable detail.</p>
+            <h2 className="text-3xl font-bold text-slate-900 mb-3">What We Do</h2>
+            <p className="text-slate-500 max-w-xl mx-auto">Click "Full detail" on any service to explore scope, methodology, and deliverables.</p>
           </motion.div>
           <div className="space-y-6">
             {services.map((service, index) => (
