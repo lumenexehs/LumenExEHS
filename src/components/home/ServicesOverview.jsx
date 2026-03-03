@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const services = [
   {
     title: "Indoor Air, Mould & Radon",
-    description: "Something smells off? Worried about mould or radon? We find the source.",
+    description: "Systematic assessment of ventilation, biological growth, and radon — with written findings and a clear remediation pathway.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e3ec8e48c_ChatGPTImageFeb28202604_23_54PM.png",
     color: "#d4af7a"
   },
