@@ -228,8 +228,8 @@ function ServiceCard({ service, index }) {
             {expanded ? <ChevronUp className="ml-1 w-4 h-4" /> : <ChevronDown className="ml-1 w-4 h-4" />}
           </Button>
         </div>
-      </div>
-      </div>
+      </div>{/* end flex-1 */}
+      </div>{/* end md:flex */}
 
       {/* Expandable detail */}
       <AnimatePresence>
