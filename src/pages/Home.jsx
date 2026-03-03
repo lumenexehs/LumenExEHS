@@ -1,7 +1,6 @@
 import HeroSection from "@/components/home/HeroSection";
 
 import ServicesOverview from "@/components/home/ServicesOverview";
-import ServiceHooks from "@/components/home/ServiceHooks";
 import CanadaSceneStrip from "@/components/home/CanadaSceneStrip";
 import StatsSection from "@/components/home/StatsSection";
 
@@ -15,7 +14,6 @@ export default function Home() {
     <div className="min-h-screen">
       <HeroSection />
       <ServicesOverview />
-      <ServiceHooks />
 
       <CanadaSceneStrip />
       <StatsSection />
