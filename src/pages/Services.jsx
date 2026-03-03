@@ -138,7 +138,17 @@ function ServiceCard({ service, index }) {
       transition={{ duration: 0.5, delay: index * 0.07 }}
       className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"
     >
-      <div className="p-7 md:p-8">
+      <div className="md:flex">
+        {/* Image — always visible on md+ */}
+        <div className="hidden md:block w-52 flex-shrink-0 relative">
+          <img
+            src={service.image}
+            alt={service.title}
+            className="absolute inset-0 w-full h-full object-cover rounded-l-2xl"
+          />
+        </div>
+
+      <div className="flex-1 p-7 md:p-8">
         {/* Header */}
         <div className="flex items-start gap-4 mb-5">
           <div className="w-11 h-11 bg-emerald-50 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
