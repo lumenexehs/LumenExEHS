@@ -24,7 +24,7 @@ const services = [
   },
   {
     title: "Heat Stress & Ergonomics",
-    description: "Hot workplaces or injury risk? Protect workers before they get hurt.",
+    description: "Quantified heat stress indices (WBGT, Humidex) and ergonomic task analysis to support due diligence and engineering controls.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e1febeb2d_20260301_0417_ImageGeneration_remix_01kjmazxpre3xrr473txxxqw5z.png",
     color: "#1a3a52"
   },
