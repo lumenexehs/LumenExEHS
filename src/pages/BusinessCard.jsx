@@ -258,7 +258,7 @@ export default function BusinessCard() {
 
         {/* Credential strip */}
         <div className="flex justify-center gap-3 mb-8 flex-wrap">
-          {["CIH", "CSP", "CRSP"].map((cert) =>
+          {["CIH", "CSP"].map((cert) =>
           <span
             key={cert}
             className="text-xs font-semibold text-[#1a3a52] bg-[#f0e8d8] px-3 py-1 rounded-full tracking-wide">
