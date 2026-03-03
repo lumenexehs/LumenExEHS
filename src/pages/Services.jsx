@@ -301,10 +301,11 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="mb-12"
           >
-            <h2 className="text-3xl font-bold text-slate-900 mb-3">What We Do</h2>
-            <p className="text-slate-500 max-w-xl mx-auto">Click "Full detail" on any service to explore scope, methodology, and deliverables.</p>
+            <span className="text-emerald-600 text-xs font-semibold uppercase tracking-widest">Assessment Services</span>
+            <h2 className="text-3xl font-bold text-slate-900 mt-2 mb-3">Service Scope & Methodology</h2>
+            <p className="text-slate-500 max-w-xl">Each service is structured around observable conditions, potential regulatory implications, and a defined assessment methodology. Expand any card for full deliverable detail.</p>
           </motion.div>
           <div className="space-y-6">
             {services.map((service, index) => (
