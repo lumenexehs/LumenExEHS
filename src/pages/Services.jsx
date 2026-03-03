@@ -229,6 +229,7 @@ function ServiceCard({ service, index }) {
           </Button>
         </div>
       </div>
+      </div>
 
       {/* Expandable detail */}
       <AnimatePresence>
