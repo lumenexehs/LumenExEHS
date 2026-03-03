@@ -110,12 +110,12 @@ export default function ServicesOverview() {
                   <hook.icon className={`w-5 h-5 ${hook.iconColor}`} />
                 </div>
 
-                {/* Situation */}
-                <p className="text-slate-800 text-sm font-medium leading-snug mb-3">
-                  {hook.situation}
+                {/* Question hook */}
+                <p className="text-slate-900 text-sm font-semibold leading-snug mb-3">
+                  {hook.question}
                 </p>
 
-                {/* Risk */}
+                {/* Risk — stated directly, no hedging */}
                 <p className="text-slate-500 text-xs leading-relaxed mb-4 border-l-2 border-slate-200 pl-3">
                   {hook.risk}
                 </p>
