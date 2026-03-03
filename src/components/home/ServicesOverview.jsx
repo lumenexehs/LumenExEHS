@@ -57,10 +57,10 @@ export default function ServicesOverview() {
             Serving Ontario
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a52] mt-3 mb-3">
-            We Solve These Problems
+            Assessment & Advisory Services
           </h2>
           <p className="text-slate-500">
-            Air quality, odours, mould, noise, exposures, compliance — we've seen it all. Here's how we help.
+            Science-based occupational hygiene and environmental health services for Ontario workplaces.
           </p>
         </motion.div>
 
