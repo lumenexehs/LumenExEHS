@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { 
   Leaf, HardHat, ClipboardCheck, GraduationCap, Zap, Building,
-  ArrowRight, CheckCircle2, Factory, Stethoscope, Activity,
+  ArrowRight, CheckCircle2, Factory, AlertCircle, MoveRight,
   ChevronDown, ChevronUp, Home, Building2, Users, HeartPulse
 } from "lucide-react";
 
