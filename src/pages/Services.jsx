@@ -162,9 +162,9 @@ function ServiceCard({ service, index }) {
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Observable Situation</p>
             <p className="text-sm text-slate-700 leading-relaxed">{service.situation}</p>
           </div>
-          {/* Possible Risk */}
+          {/* Risk */}
           <div className="bg-amber-50 rounded-xl p-4 border-l-2 border-amber-300">
-            <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-2">Possible Risk</p>
+            <p className="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-2">What's at Stake</p>
             <p className="text-sm text-slate-700 leading-relaxed">{service.risk}</p>
           </div>
           {/* Professional Action */}
