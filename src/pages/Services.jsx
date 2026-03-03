@@ -241,25 +241,16 @@ function ServiceCard({ service, index }) {
             transition={{ duration: 0.35 }}
             className="overflow-hidden"
           >
-            <div className="border-t border-slate-100 bg-slate-50 px-8 py-8 grid md:grid-cols-2 gap-8">
-              <div>
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="rounded-xl shadow-md w-full h-48 object-cover"
-                />
-              </div>
-              <div>
-                <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-4">What We Deliver</h4>
-                <ul className="space-y-3">
-                  {service.deliverables.map((d) => (
-                    <li key={d} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-slate-700 text-sm">{d}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="border-t border-slate-100 bg-slate-50 px-8 py-6">
+              <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-4">What We Deliver</h4>
+              <ul className="grid sm:grid-cols-2 gap-3">
+                {service.deliverables.map((d) => (
+                  <li key={d} className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-slate-700 text-sm">{d}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </motion.div>
         )}
