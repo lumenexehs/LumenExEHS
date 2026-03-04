@@ -35,7 +35,7 @@ const services = [
     icon: Leaf,
     title: "Chemical & Biological Exposure Assessment",
     tagline: "Dust · Chemicals · Bioaerosols",
-    summary: "Workers exposed to chemicals, dust, or biological agents? We measure real exposures and tell you if they're safe — benchmarked against Ontario law.",
+    summary: "Airborne chemical, dust, and biological hazards are not always visible. Undocumented exposures create long-term health risks and regulatory vulnerability. We measure real exposures and benchmark them precisely against Ontario occupational exposure limits.",
     bullets: ["Personal breathing zone sampling", "SEG exposure profiles", "Bayesian risk analysis", "Control recommendations"],
     audiences: ["business", "facility", "public"],
     triggers: ["Chemical or dust concerns", "Ministry of Labour audit", "New process or substance introduced"],
