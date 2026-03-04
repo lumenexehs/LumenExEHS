@@ -301,19 +301,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="h-96 bg-slate-100 relative">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380923.25813272726!2d-79.74936277924346!3d43.65107422144003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34a993d8da71%3A0xa4fb6e4001b33d0!2sGreater%20Toronto%20Area!5e0!3m2!1sen!2sca!4v1709067600000"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Office Location"
-        />
-      </section>
+
     </div>
   );
 }
