@@ -279,8 +279,8 @@ export default function Services() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-slate-900 mb-3">What We Do</h2>
-            <p className="text-slate-500 max-w-xl mx-auto">Click "Full detail" on any service to explore scope, methodology, and deliverables.</p>
+            <h2 className="text-3xl font-bold text-slate-900 mb-3">Our Services</h2>
+            <p className="text-slate-500 max-w-xl mx-auto">Expand any service to review scope, methodology, and deliverables.</p>
           </motion.div>
           <div className="space-y-6">
             {services.map((service, index) => (
