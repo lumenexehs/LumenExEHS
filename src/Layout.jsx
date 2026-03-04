@@ -58,6 +58,8 @@ function LayoutInner({ children, currentPageName }) {
     checkAuth();
   }, []);
 
+  const tr = t[lang];
+
   // Don't show layout on ClientPortal page
   if (currentPageName === "ClientPortal") {
     return <>{children}</>;
@@ -327,8 +329,8 @@ function LayoutInner({ children, currentPageName }) {
               © {new Date().getFullYear()} LumenEx EHS. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm text-slate-500">
-              <Link to={createPageUrl("PrivacyPolicy")} className="hover:text-white transition-colors">Privacy Policy</Link>
-              <Link to={createPageUrl("TermsAndConditions")} className="hover:text-white transition-colors">Terms & Conditions</Link>
+              <Link to={createPageUrl("PrivacyPolicy")} className="hover:text-white transition-colors">{tr.footer.privacy}</Link>
+              <Link to={createPageUrl("TermsAndConditions")} className="hover:text-white transition-colors">{tr.footer.terms}</Link>
             </div>
           </div>
         </div>
