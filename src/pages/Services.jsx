@@ -268,7 +268,7 @@ export default function Services() {
             <span className="text-slate-500 font-medium text-sm">Sectors Across Ontario:</span>
             {industries.map((industry) =>
               industry.page ? (
-                <Link key={industry.name} to={createPageUrl(industry.page)} className="flex items-center gap-2 text-slate-700 hover:text-emerald-600 transition-colors">
+                <Link key={industry.name} to={createPageUrl(industry.page)} onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-2 text-slate-700 hover:text-emerald-600 transition-colors">
                   <industry.icon className="w-4 h-4 text-emerald-600" />
                   <span className="font-medium text-sm">{industry.name}</span>
                 </Link>
