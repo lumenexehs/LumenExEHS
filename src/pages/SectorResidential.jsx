@@ -4,7 +4,6 @@ import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageSquare, Wind, Radio, AlertTriangle, Building2 } from "lucide-react";
 import ResidentialImagePanel from "../components/residential/ResidentialImagePanel";
-import TenantJourneyAnimation from "../components/residential/TenantJourneyAnimation";
 
 const challenges = [
   { icon: MessageSquare, text: "Tenant IAQ complaints that are recurring or escalating without a clear explanation" },
@@ -78,8 +77,6 @@ export default function SectorResidential() {
               Property managers need clarity that resolves disputes and protects long-term asset value. An unresolved tenant complaint is not just a service issue. It is a liability that compounds over time.
             </p>
           </motion.div>
-          <TenantJourneyAnimation />
-
           <div className="space-y-4">
             {challenges.map((c, i) => (
               <motion.div key={i} initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.07 }}
