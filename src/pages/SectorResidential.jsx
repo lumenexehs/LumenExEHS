@@ -4,6 +4,7 @@ import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageSquare, Wind, Radio, AlertTriangle, Building2 } from "lucide-react";
 import ResidentialImagePanel from "../components/residential/ResidentialImagePanel";
+import TenantJourneyAnimation from "../components/residential/TenantJourneyAnimation";
 
 const challenges = [
   { icon: MessageSquare, text: "Tenant IAQ complaints that are recurring or escalating without a clear explanation" },
