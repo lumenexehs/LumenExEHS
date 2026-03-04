@@ -28,8 +28,8 @@ const sectorLinks = [
 { name: "Public Sector", page: "SectorPublicSector" },
 { name: "Healthcare", page: "SectorHealthcare" },
 { name: "Construction", page: "SectorConstruction" },
-{ name: "Residential / Property", page: "SectorResidential" },
-];
+{ name: "Residential / Property", page: "SectorResidential" }];
+
 
 
 export default function Layout({ children, currentPageName }) {
@@ -99,31 +99,31 @@ export default function Layout({ children, currentPageName }) {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) =>
-              link.name === "Services" ? (
-                <div key={link.page} className="relative" onMouseEnter={() => setSectorsOpen(true)} onMouseLeave={() => setSectorsOpen(false)}>
+              link.name === "Services" ?
+              <div key={link.page} className="relative" onMouseEnter={() => setSectorsOpen(true)} onMouseLeave={() => setSectorsOpen(false)}>
                   <Link
-                    to={createPageUrl(link.page)}
-                    className={`text-sm font-medium transition-colors flex items-center gap-1 ${
-                    currentPageName === link.page || sectorLinks.some(s => s.page === currentPageName) ?
-                    isScrolled ? "text-[#1a3a52]" : "text-[#d4af7a]" :
-                    isScrolled ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white"}`}>
+                  to={createPageUrl(link.page)}
+                  className={`text-sm font-medium transition-colors flex items-center gap-1 ${
+                  currentPageName === link.page || sectorLinks.some((s) => s.page === currentPageName) ?
+                  isScrolled ? "text-[#1a3a52]" : "text-[#d4af7a]" :
+                  isScrolled ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white"}`}>
                     {link.name}
                     <ChevronDown className="w-3 h-3" />
                   </Link>
-                  {sectorsOpen && (
-                    <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-slate-100 py-2 z-50">
+                  {sectorsOpen &&
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-slate-100 py-2 z-50">
                       <Link to={createPageUrl(link.page)} className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 font-medium border-b border-slate-100 mb-1">
                         All Services
                       </Link>
-                      {sectorLinks.map(s => (
-                        <Link key={s.page} to={createPageUrl(s.page)} className="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-[#1a3a52]">
+                      {sectorLinks.map((s) =>
+                  <Link key={s.page} to={createPageUrl(s.page)} className="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-[#1a3a52]">
                           {s.name}
                         </Link>
-                      ))}
-                    </div>
                   )}
-                </div>
-              ) : (
+                    </div>
+                }
+                </div> :
+
               <Link
                 key={link.page}
                 to={createPageUrl(link.page)}
@@ -135,7 +135,7 @@ export default function Layout({ children, currentPageName }) {
 
                   {link.name}
                 </Link>
-              )
+
               )}
             </nav>
 
@@ -268,9 +268,9 @@ export default function Layout({ children, currentPageName }) {
                   <div className="text-sm italic text-[#d4af7a]">Carer for Carers</div>
                 </div>
               </div>
-              <p className="text-slate-400 mb-6 max-w-sm">
-                Like the miner's safety lamp — we illuminate what cannot be seen. 
-                Anticipating invisible workplace hazards and turning them into clear, actionable guidance for those who protect workers.
+              <p className="text-slate-400 mb-6 max-w-sm">Like the miner's safety lamp, we illuminate what cannot be seen. Anticipating invisible workplace hazards and turning them into clear, actionable guidance for those who protect workers.
+
+
               </p>
               <div className="flex items-center gap-4 text-sm text-slate-400">
                 <a href="https://gobgc.org/cih/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">CIH-Led Practice</a>
