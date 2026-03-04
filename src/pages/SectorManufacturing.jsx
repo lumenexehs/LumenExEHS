@@ -5,35 +5,35 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Volume2, Thermometer, Wind, Truck, ClipboardCheck } from "lucide-react";
 
 const challenges = [
-  { icon: Volume2, text: "Noise exposure levels that are uncertain or undocumented, creating hearing loss liability" },
-  { icon: Thermometer, text: "Heat stress risks during peak production cycles, particularly in summer months" },
-  { icon: Wind, text: "Silica, metal dust, or process chemical exposures without current sampling data" },
-  { icon: Truck, text: "Diesel exhaust from internal combustion forklifts in enclosed production or warehouse areas" },
-  { icon: ClipboardCheck, text: "Ministry of Labour inspections or compliance audits with gaps in written programs" },
-];
+{ icon: Volume2, text: "Noise exposure levels that are uncertain or undocumented, creating hearing loss liability" },
+{ icon: Thermometer, text: "Heat stress risks during peak production cycles, particularly in summer months" },
+{ icon: Wind, text: "Silica, metal dust, or process chemical exposures without current sampling data" },
+{ icon: Truck, text: "Diesel exhaust from internal combustion forklifts in enclosed production or warehouse areas" },
+{ icon: ClipboardCheck, text: "Ministry of Labour inspections or compliance audits with gaps in written programs" }];
+
 
 const pillars = [
-  {
-    num: "01",
-    title: "Risk Identification",
-    body: "We map exposure pathways by worker group, task, and area — identifying where documentation gaps create the greatest legal and health risk before an incident occurs.",
-  },
-  {
-    num: "02",
-    title: "Strategic Exposure Assessment",
-    body: "Personal breathing zone sampling and noise dosimetry are conducted with minimal disruption to production, delivering results benchmarked against Ontario OELs and ACGIH TLVs.",
-  },
-  {
-    num: "03",
-    title: "Regulatory Alignment",
-    body: "We align findings with O. Reg. 381/15 (noise), O. Reg. 833 (chemical agents), and OHSA requirements, supporting audit-ready documentation and JHSC communication.",
-  },
-  {
-    num: "04",
-    title: "Practical Control and Communication",
-    body: "We prioritize controls by feasibility and risk level, producing actionable recommendations that supervisors and workers can apply without disrupting operations.",
-  },
-];
+{
+  num: "01",
+  title: "Risk Identification",
+  body: "We map exposure pathways by worker group, task, and area — identifying where documentation gaps create the greatest legal and health risk before an incident occurs."
+},
+{
+  num: "02",
+  title: "Strategic Exposure Assessment",
+  body: "Personal breathing zone sampling and noise dosimetry are conducted with minimal disruption to production, delivering results benchmarked against Ontario OELs and ACGIH TLVs."
+},
+{
+  num: "03",
+  title: "Regulatory Alignment",
+  body: "We align findings with O. Reg. 381/15 (noise), O. Reg. 833 (chemical agents), and OHSA requirements, supporting audit-ready documentation and JHSC communication."
+},
+{
+  num: "04",
+  title: "Practical Control and Communication",
+  body: "We prioritize controls by feasibility and risk level, producing actionable recommendations that supervisors and workers can apply without disrupting operations."
+}];
+
 
 export default function SectorManufacturing() {
   return (
@@ -76,15 +76,15 @@ export default function SectorManufacturing() {
             </p>
           </motion.div>
           <div className="space-y-4">
-            {challenges.map((c, i) => (
-              <motion.div key={i} initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.07 }}
-                className="flex items-start gap-4 bg-white rounded-xl p-5 border border-slate-100 shadow-sm">
+            {challenges.map((c, i) =>
+            <motion.div key={i} initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.07 }}
+            className="flex items-start gap-4 bg-white rounded-xl p-5 border border-slate-100 shadow-sm">
                 <div className="w-9 h-9 bg-amber-50 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                   <c.icon className="w-4 h-4 text-amber-600" />
                 </div>
                 <p className="text-slate-700 leading-relaxed">{c.text}</p>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -97,14 +97,14 @@ export default function SectorManufacturing() {
             <h2 className="text-3xl font-bold text-[#1a3a52] mt-2">How We Help Manufacturing Organizations</h2>
           </motion.div>
           <div className="grid sm:grid-cols-2 gap-6">
-            {pillars.map((p, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="p-6 rounded-2xl border border-slate-100 bg-slate-50">
+            {pillars.map((p, i) =>
+            <motion.div key={i} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.08 }}
+            className="p-6 rounded-2xl border border-slate-100 bg-slate-50">
                 <span className="text-[#d4af7a] font-bold text-sm">{p.num}</span>
                 <h3 className="text-[#1a3a52] font-bold text-lg mt-2 mb-2">{p.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{p.body}</p>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -136,7 +136,7 @@ export default function SectorManufacturing() {
                 </Button>
               </Link>
               <Link to={createPageUrl("Services")}>
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 rounded-full">
+                <Button size="lg" variant="outline" className="bg-sky-700 text-white px-8 text-sm font-medium rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-10 border-white/30 hover:bg-white/10">
                   View All Services
                 </Button>
               </Link>
@@ -144,6 +144,6 @@ export default function SectorManufacturing() {
           </motion.div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }
