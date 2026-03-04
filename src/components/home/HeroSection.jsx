@@ -45,8 +45,8 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 max-w-3xl">
 
-          Making Invisible Workplace
-          <span className="block text-[#d4af7a] mt-1">Health Risks Visible.</span>
+          Making Invisible
+          <span className="block text-[#d4af7a] mt-1">Hazards Visible.</span>
         </motion.h1>
 
         {/* Subheadline */}
