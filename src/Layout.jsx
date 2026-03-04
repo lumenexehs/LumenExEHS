@@ -13,6 +13,8 @@ import {
   ChevronDown,
   User } from
 "lucide-react";
+import ServicesMegaMenu from "@/components/navigation/ServicesMegaMenu";
+import Breadcrumbs from "@/components/navigation/Breadcrumbs";
 
 const navLinks = [
 { name: "Home", page: "Home" },
@@ -97,18 +99,7 @@ export default function Layout({ children, currentPageName }) {
                     {link.name}
                     <ChevronDown className="w-3 h-3" />
                   </Link>
-                  {sectorsOpen &&
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-slate-100 py-2 z-50">
-                      <Link to={createPageUrl(link.page)} className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 font-medium border-b border-slate-100 mb-1">
-                        All Services
-                      </Link>
-                      {sectorLinks.map((s) =>
-                  <Link key={s.page} to={createPageUrl(s.page)} className="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-[#1a3a52]">
-                          {s.name}
-                        </Link>
-                  )}
-                    </div>
-                }
+                  {sectorsOpen && <ServicesMegaMenu />}
                 </div> :
 
               <Link
@@ -228,6 +219,9 @@ export default function Layout({ children, currentPageName }) {
           </div>
         </div>
       </header>
+
+      {/* Breadcrumbs */}
+      <Breadcrumbs currentPageName={currentPageName} />
 
       {/* Main Content */}
       <main className={isHomePage ? "" : "pt-20"}>
