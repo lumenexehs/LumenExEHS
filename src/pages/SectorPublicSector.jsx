@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wind, Volume2, FileText, Shield, Eye } from "lucide-react";
+import PublicSectorImagePanel from "../components/publicsector/PublicSectorImagePanel";
 
 const challenges = [
   { icon: Wind, text: "Shooting range air quality with lead, particulate, and combustion by-product exposure" },
