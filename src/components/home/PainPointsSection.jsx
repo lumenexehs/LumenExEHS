@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { School, Factory, Building2, Home } from "lucide-react";
+import { Link } from "react-router-dom";
+import { createPageUrl } from "@/utils";
 
 const cards = [
   {
@@ -7,28 +9,32 @@ const cards = [
     sector: "Education and Offices",
     symptom: "Staff reporting odours or headaches.",
     consequence: "Without a documented assessment, the source remains unknown and complaints continue to escalate.",
-    color: "border-amber-200"
+    color: "border-amber-200",
+    page: "SectorEducation"
   },
   {
     icon: Factory,
     sector: "Manufacturing and Industrial",
     symptom: "Uncertainty about noise, heat, dust, diesel, or chemical exposure levels.",
     consequence: "Undocumented exposures create regulatory risk and complicate worker compensation decisions.",
-    color: "border-blue-200"
+    color: "border-blue-200",
+    page: "SectorManufacturing"
   },
   {
     icon: Building2,
     sector: "Public Sector and Training Facilities",
     symptom: "Long-term exposure concerns with no documented baseline.",
     consequence: "Absence of evidence is not evidence of absence. Defensible records protect both workers and organizations.",
-    color: "border-emerald-200"
+    color: "border-emerald-200",
+    page: "SectorPublicSector"
   },
   {
     icon: Home,
     sector: "Residential and Property Management",
     symptom: "Recurring air quality complaints and radon concerns.",
     consequence: "Repeated unresolved complaints carry legal and reputational consequences for property managers.",
-    color: "border-rose-200"
+    color: "border-rose-200",
+    page: "SectorResidential"
   }
 ];
 
@@ -62,18 +68,19 @@ export default function PainPointsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`bg-slate-50 rounded-2xl p-7 border-l-4 ${card.color} border border-slate-100`}
             >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-[#1a3a52]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <card.icon className="w-5 h-5 text-[#1a3a52]" />
+              <Link to={createPageUrl(card.page)} className={`block bg-slate-50 rounded-2xl p-7 border-l-4 ${card.color} border border-slate-100 hover:shadow-md transition-shadow`}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-[#1a3a52]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <card.icon className="w-5 h-5 text-[#1a3a52]" />
+                  </div>
+                  <h3 className="font-bold text-[#1a3a52] text-base">{card.sector}</h3>
                 </div>
-                <h3 className="font-bold text-[#1a3a52] text-base">{card.sector}</h3>
-              </div>
-              <p className="text-slate-700 text-sm font-medium mb-2">{card.symptom}</p>
-              <p className="text-slate-400 text-xs leading-relaxed italic border-t border-slate-200 pt-3 mt-3">
-                {card.consequence}
-              </p>
+                <p className="text-slate-700 text-sm font-medium mb-2">{card.symptom}</p>
+                <p className="text-slate-400 text-xs leading-relaxed italic border-t border-slate-200 pt-3 mt-3">
+                  {card.consequence}
+                </p>
+              </Link>
             </motion.div>
           ))}
         </div>
