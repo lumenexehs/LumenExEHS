@@ -16,15 +16,15 @@ import {
 import { LanguageProvider, useLang } from "@/components/LanguageContext";
 import { t } from "@/components/translations";
 
-const navLinks = [
-{ name: "Home", page: "Home" },
-{ name: "About", page: "About" },
-{ name: "Services", page: "Services" },
-{ name: "Knowledge Hub", page: "KnowledgeHub" },
-{ name: "Careers", page: "Careers" },
-{ name: "Contact", page: "Contact" }];
+const navLinkDefs = [
+{ key: "home", page: "Home" },
+{ key: "about", page: "About" },
+{ key: "services", page: "Services" },
+{ key: "knowledgeHub", page: "KnowledgeHub" },
+{ key: "careers", page: "Careers" },
+{ key: "contact", page: "Contact" }];
 
-const sectorLinks = [
+const sectorLinkDefs = [
 { name: "Education", page: "SectorEducation" },
 { name: "Manufacturing", page: "SectorManufacturing" },
 { name: "Public Sector", page: "SectorPublicSector" },
@@ -34,11 +34,13 @@ const sectorLinks = [
 
 
 
-export default function Layout({ children, currentPageName }) {
+function LayoutInner({ children, currentPageName }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [sectorsOpen, setSectorsOpen] = useState(false);
+  const { lang, toggleLang } = useLang();
+  const tr = t[lang];
 
   useEffect(() => {
     const handleScroll = () => {
