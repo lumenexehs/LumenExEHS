@@ -26,17 +26,17 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-28 w-full">
         {/* Eyebrow */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="flex items-center gap-2 mb-6">
+        
 
-          <Shield className="w-4 h-4 text-[#d4af7a]" />
-          <span className="text-[#d4af7a] font-medium text-sm tracking-wide">
-            Ontario-Based · CIH-Led · 19+ Years of Field Experience
-          </span>
-        </motion.div>
+
+
+
+
+
+
+
+
+
 
         {/* Headline */}
         <motion.h1
