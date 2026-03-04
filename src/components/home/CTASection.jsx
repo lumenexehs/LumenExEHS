@@ -24,14 +24,17 @@ export default function CTASection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-[#d4af7a] font-medium tracking-wide text-sm italic mb-4 block">
-            🍁 Ontario-Based · CIH-Led Practice
+          <span className="text-[#d4af7a] font-medium tracking-wide text-sm uppercase tracking-widest mb-4 block">
+            Ontario-Based · CIH-Led Practice
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-5">
-            Not Sure What's in Your Workplace Air?
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Uncertainty creates risk.
           </h2>
-          <p className="text-lg text-slate-300 mb-10 max-w-xl mx-auto">
-            We help you find out — and what to do about it. Free consultation with an Ontario-based CIH.
+          <h3 className="text-2xl md:text-3xl font-semibold text-[#d4af7a] mb-6">
+            Clarity creates control.
+          </h3>
+          <p className="text-base text-slate-300 mb-10 max-w-md mx-auto leading-relaxed">
+            Start with a confidential consultation. We will identify the right assessment approach for your organization.
           </p>
 
           <Link to={createPageUrl("Contact")}>
@@ -39,7 +42,7 @@ export default function CTASection() {
               size="lg"
               className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold px-10 py-6 text-lg rounded-full group"
             >
-              Request a Consultation
+              Start Your Risk Assessment
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
