@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Volume2, Thermometer, Wind, Truck, ClipboardCheck } from "lucide-react";
+import ManufacturingImagePanel from "../components/manufacturing/ManufacturingImagePanel";
 
 const challenges = [
 { icon: Volume2, text: "Noise exposure levels that are uncertain or undocumented, creating hearing loss liability" },
