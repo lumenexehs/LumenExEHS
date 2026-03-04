@@ -22,6 +22,15 @@ const navLinks = [
 { name: "Careers", page: "Careers" },
 { name: "Contact", page: "Contact" }];
 
+const sectorLinks = [
+{ name: "Education", page: "SectorEducation" },
+{ name: "Manufacturing", page: "SectorManufacturing" },
+{ name: "Public Sector", page: "SectorPublicSector" },
+{ name: "Healthcare", page: "SectorHealthcare" },
+{ name: "Construction", page: "SectorConstruction" },
+{ name: "Residential / Property", page: "SectorResidential" },
+];
+
 
 export default function Layout({ children, currentPageName }) {
   const [isScrolled, setIsScrolled] = useState(false);
