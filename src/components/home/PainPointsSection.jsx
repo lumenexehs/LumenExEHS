@@ -88,7 +88,7 @@ export default function PainPointsSection() {
               <Link to={createPageUrl(card.page)} className={`block bg-slate-50 rounded-2xl overflow-hidden border-l-4 ${card.color} border border-slate-100 hover:shadow-md transition-shadow group`}>
                 {card.image && (
                   <div className="relative w-full h-44 overflow-hidden">
-                    <img src={card.image} alt={card.sector} className="w-full h-full object-cover" />
+                    <img src={card.image} alt={card.sector} className="w-full h-full object-contain bg-white" />
                     <div className="absolute inset-0 bg-[#0F2A4A]/0 group-hover:bg-[#0F2A4A]/70 transition-all duration-300 flex flex-col justify-end p-5 opacity-0 group-hover:opacity-100">
                       <p className="text-xs font-semibold text-emerald-300 uppercase tracking-widest mb-1">{card.overlayLabel}</p>
                       <p className="text-white text-sm font-semibold leading-snug">{card.overlayTitle}</p>
