@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, School, Wind, AlertTriangle, Shield, Radio, MessageSquare } from "lucide-react";
+import IAQImagePanel from "@/components/education/IAQImagePanel";
 
 const challenges = [
 { icon: Wind, text: "Recurring odour complaints in classrooms with no identified source" },

@@ -56,14 +56,14 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import KnowledgeHub from './pages/KnowledgeHub';
 import PrivacyPolicy from './pages/PrivacyPolicy';
-import Services from './pages/Services';
-import TermsAndConditions from './pages/TermsAndConditions';
+import SectorConstruction from './pages/SectorConstruction';
 import SectorEducation from './pages/SectorEducation';
+import SectorHealthcare from './pages/SectorHealthcare';
 import SectorManufacturing from './pages/SectorManufacturing';
 import SectorPublicSector from './pages/SectorPublicSector';
 import SectorResidential from './pages/SectorResidential';
-import SectorHealthcare from './pages/SectorHealthcare';
-import SectorConstruction from './pages/SectorConstruction';
+import Services from './pages/Services';
+import TermsAndConditions from './pages/TermsAndConditions';
 import __Layout from './Layout.jsx';
 
 
@@ -77,14 +77,14 @@ export const PAGES = {
     "Home": Home,
     "KnowledgeHub": KnowledgeHub,
     "PrivacyPolicy": PrivacyPolicy,
-    "Services": Services,
-    "TermsAndConditions": TermsAndConditions,
+    "SectorConstruction": SectorConstruction,
     "SectorEducation": SectorEducation,
+    "SectorHealthcare": SectorHealthcare,
     "SectorManufacturing": SectorManufacturing,
     "SectorPublicSector": SectorPublicSector,
     "SectorResidential": SectorResidential,
-    "SectorHealthcare": SectorHealthcare,
-    "SectorConstruction": SectorConstruction,
+    "Services": Services,
+    "TermsAndConditions": TermsAndConditions,
 }
 
 export const pagesConfig = {
