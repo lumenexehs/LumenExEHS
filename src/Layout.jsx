@@ -13,6 +13,8 @@ import {
   ChevronDown,
   User } from
 "lucide-react";
+import { LanguageProvider, useLang } from "@/components/LanguageContext";
+import { t } from "@/components/translations";
 
 const navLinks = [
 { name: "Home", page: "Home" },
