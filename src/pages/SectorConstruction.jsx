@@ -39,9 +39,14 @@ export default function SectorConstruction() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="relative bg-[#0F2A4A] pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-10 w-80 h-80 bg-orange-400 rounded-full blur-3xl" />
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c8c3ead95_ChatGPTImageMar4202602_16_02PM.png"
+            alt="Construction sector"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#0F2A4A]/75" />
         </div>
         <div className="max-w-4xl mx-auto px-6 lg:px-8 relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
