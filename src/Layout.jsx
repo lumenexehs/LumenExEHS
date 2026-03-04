@@ -283,10 +283,7 @@ function LayoutInner({ children, currentPageName }) {
                   <div className="text-sm italic text-[#d4af7a]">Carer for Carers</div>
                 </div>
               </div>
-              <p className="text-slate-400 mb-6 max-w-sm">Like the miner's safety lamp, we illuminate what cannot be seen. Anticipating invisible workplace hazards and turning them into clear, actionable guidance for those who protect workers.
-
-
-              </p>
+              <p className="text-slate-400 mb-6 max-w-sm">{tr.footer.tagline}</p>
               <div className="flex items-center gap-4 text-sm text-slate-400">
                 <a href="https://gobgc.org/cih/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">CIH-Led Practice</a>
                 <span>•</span>
@@ -299,31 +296,25 @@ function LayoutInner({ children, currentPageName }) {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <h4 className="font-semibold mb-4">{tr.footer.quickLinks}</h4>
               <ul className="space-y-3 text-slate-400">
-                {navLinks.map((link) =>
+                {navLinkDefs.map((link) =>
                 <li key={link.page}>
-                    <Link
-                    to={createPageUrl(link.page)}
-                    className="hover:text-white transition-colors">
-
-                      {link.name}
+                    <Link to={createPageUrl(link.page)} className="hover:text-white transition-colors">
+                      {tr.nav[link.key]}
                     </Link>
                   </li>
                 )}
                 <li>
-                  <Link
-                    to={createPageUrl("ClientPortal")}
-                    className="hover:text-white transition-colors">
-
-                    Client Portal
+                  <Link to={createPageUrl("ClientPortal")} className="hover:text-white transition-colors">
+                    {tr.nav.clientPortal}
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
+              <h4 className="font-semibold mb-4">{tr.footer.contact}</h4>
               <ul className="space-y-3 text-slate-400">
                 <li><a href="mailto:info@lumenexehs.ca" className="hover:text-white transition-colors">info@lumenexehs.ca</a></li>
                 <li>Toronto, Ontario</li>
