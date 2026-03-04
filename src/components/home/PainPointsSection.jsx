@@ -19,7 +19,11 @@ const cards = [
     symptom: "Uncertainty about noise, heat, dust, diesel, or chemical exposure levels.",
     consequence: "Undocumented exposures create regulatory risk and complicate worker compensation decisions.",
     color: "border-blue-200",
-    page: "SectorManufacturing"
+    page: "SectorManufacturing",
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/434dcad8c_ChatGPTImageMar4202612_50_13PM.png",
+    overlayLabel: "Manufacturing Sector",
+    overlayTitle: "Noise, Dust & Chemical Exposure",
+    overlayDesc: "Quantified exposure assessments to protect workers and reduce regulatory risk."
   },
   {
     icon: Building2,
