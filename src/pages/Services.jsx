@@ -59,7 +59,7 @@ const services = [
     icon: Zap,
     title: "Heat Stress & Ergonomics",
     tagline: "Heat · Ergonomics · MSD Prevention",
-    summary: "Hot workplaces or repetitive injury risks? We assess thermal limits and ergonomic hazards before workers get hurt.",
+    summary: "Heat stress and ergonomic risks are underestimated until an incident occurs. We assess thermal conditions and workstation design early, providing structured recommendations to reduce injury risk and support due diligence.",
     bullets: ["WBGT heat monitoring (ISO 7243)", "Metabolic rate estimation", "RULA/REBA ergonomic review", "MSD control recommendations"],
     audiences: ["business", "facility"],
     triggers: ["Summer outdoor or hot indoor work", "MSD injury spike", "New production line or task"],
