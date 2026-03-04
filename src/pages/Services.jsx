@@ -71,7 +71,7 @@ const services = [
     icon: ClipboardCheck,
     title: "Compliance & Safety Management",
     tagline: "Programs · Policies · Audits",
-    summary: "Not sure if you're compliant? Need written programs that will hold up to an audit? We build them in plain language — for workers and managers alike.",
+    summary: "Gaps in EHS programs create legal exposure and complicate incident investigations. We develop written programs, policies, and audit-ready documentation that align with Ontario OHS requirements and hold up under scrutiny.",
     bullets: ["Chemical Prestart reviews (O. Reg. 851)", "Written EH&S program development", "ISO 45001 / CSA Z1000 gap analysis", "JHSC-ready summaries"],
     audiences: ["business", "facility", "public"],
     triggers: ["Ministry of Labour inspection", "New chemicals or processes", "Program never updated"],
