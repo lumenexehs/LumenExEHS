@@ -58,6 +58,7 @@ import KnowledgeHub from './pages/KnowledgeHub';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Services from './pages/Services';
 import TermsAndConditions from './pages/TermsAndConditions';
+import SectorEducation from './pages/SectorEducation';
 import __Layout from './Layout.jsx';
 
 
@@ -73,6 +74,7 @@ export const PAGES = {
     "PrivacyPolicy": PrivacyPolicy,
     "Services": Services,
     "TermsAndConditions": TermsAndConditions,
+    "SectorEducation": SectorEducation,
 }
 
 export const pagesConfig = {
