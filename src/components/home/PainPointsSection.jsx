@@ -42,7 +42,11 @@ const cards = [
     symptom: "Recurring air quality complaints and radon concerns.",
     consequence: "Repeated unresolved complaints carry legal and reputational consequences for property managers.",
     color: "border-rose-200",
-    page: "SectorResidential"
+    page: "SectorResidential",
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/88d7c6159_ChatGPTImageMar4202601_28_53PM.png",
+    overlayLabel: "Residential Sector",
+    overlayTitle: "Radon, Mould & Indoor Air Quality",
+    overlayDesc: "Science-based home assessments that resolve complaints and protect property value."
   }
 ];
 
