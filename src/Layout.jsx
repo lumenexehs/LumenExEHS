@@ -36,6 +36,7 @@ export default function Layout({ children, currentPageName }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [sectorsOpen, setSectorsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
