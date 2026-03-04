@@ -68,8 +68,121 @@ export default function Layout({ children, currentPageName }) {
 
   const isHomePage = currentPageName === "Home";
 
+  // SEO configurations per page
+  const getSEOConfig = () => {
+    const configs = {
+      Home: {
+        title: "LumenEx EHS - Occupational Health & Safety Consulting | Toronto",
+        description: "Expert occupational hygiene assessments, safety consulting, and EHS program development across Ontario. CIH-led practice serving education, manufacturing, public sector, and more.",
+        keywords: "occupational hygiene, safety consulting, EHS, environmental health, Toronto, Ontario",
+        canonicalUrl: "https://lumenexehs.ca",
+        ogImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/774460418_ChatGPTImageMar4202604_01_29PM-Picsart-BackgroundRemover.png"
+      },
+      About: {
+        title: "About LumenEx EHS - Our Mission & Team",
+        description: "Learn about LumenEx EHS, our CIH-led occupational hygiene practice, and our commitment to protecting workers across Ontario.",
+        keywords: "about us, occupational hygiene, CIH certified, safety consultants",
+        canonicalUrl: "https://lumenexehs.ca/about"
+      },
+      Services: {
+        title: "Occupational Health & Safety Services | LumenEx EHS",
+        description: "Comprehensive EHS services including hygiene assessments, safety audits, compliance reviews, training, and risk assessments.",
+        keywords: "occupational hygiene, safety assessment, compliance review, EHS services",
+        canonicalUrl: "https://lumenexehs.ca/services"
+      },
+      Contact: {
+        title: "Contact LumenEx EHS - Toronto Occupational Safety",
+        description: "Get in touch with LumenEx EHS for occupational hygiene and safety consulting services. Response within 1 business day.",
+        keywords: "contact us, occupational hygiene, safety consulting",
+        canonicalUrl: "https://lumenexehs.ca/contact"
+      },
+      KnowledgeHub: {
+        title: "Knowledge Hub - Articles & Resources | LumenEx EHS",
+        description: "Learn about occupational health, safety regulations, indoor air quality, and workplace assessments.",
+        keywords: "safety articles, occupational health, resources, knowledge",
+        canonicalUrl: "https://lumenexehs.ca/knowledge-hub"
+      },
+      Careers: {
+        title: "Careers at LumenEx EHS - Join Our Team",
+        description: "Explore career opportunities at LumenEx EHS, a leading occupational hygiene consulting firm.",
+        keywords: "careers, jobs, occupational hygiene, consulting",
+        canonicalUrl: "https://lumenexehs.ca/careers"
+      },
+      SectorEducation: {
+        title: "Education Sector - Indoor Air Quality Solutions | LumenEx EHS",
+        description: "Indoor air quality monitoring and occupational hygiene services for schools and educational facilities.",
+        keywords: "education, indoor air quality, schools, occupational hygiene",
+        canonicalUrl: "https://lumenexehs.ca/sector/education"
+      },
+      SectorManufacturing: {
+        title: "Manufacturing Sector - Workplace Exposure Assessment | LumenEx EHS",
+        description: "Noise, dust, and chemical exposure assessments for manufacturing and industrial facilities.",
+        keywords: "manufacturing, noise assessment, dust exposure, chemical hazards",
+        canonicalUrl: "https://lumenexehs.ca/sector/manufacturing"
+      },
+      SectorPublicSector: {
+        title: "Public Sector - Safety & Training Facility Assessment | LumenEx EHS",
+        description: "Occupational hygiene assessments and baseline documentation for public sector and training facilities.",
+        keywords: "public sector, training facilities, law enforcement, occupational hygiene",
+        canonicalUrl: "https://lumenexehs.ca/sector/public-sector"
+      },
+      SectorHealthcare: {
+        title: "Healthcare Sector - Occupational Health Services | LumenEx EHS",
+        description: "Specialized occupational hygiene and safety services for healthcare facilities and hospitals.",
+        keywords: "healthcare, hospitals, occupational health, healthcare safety",
+        canonicalUrl: "https://lumenexehs.ca/sector/healthcare"
+      },
+      SectorConstruction: {
+        title: "Construction Sector - Workplace Safety | LumenEx EHS",
+        description: "Occupational hygiene and safety consulting for construction sites and building projects.",
+        keywords: "construction, workplace safety, occupational hygiene, construction sites",
+        canonicalUrl: "https://lumenexehs.ca/sector/construction"
+      },
+      SectorResidential: {
+        title: "Residential & Property - Radon & Air Quality | LumenEx EHS",
+        description: "Radon inspection, mould assessment, and indoor air quality solutions for residential properties.",
+        keywords: "radon inspection, residential, property management, air quality, mould",
+        canonicalUrl: "https://lumenexehs.ca/sector/residential"
+      }
+    };
+    
+    return configs[currentPageName] || configs.Home;
+  };
+
+  const seoConfig = getSEOConfig();
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "LumenEx EHS",
+    "description": "Occupational Health & Safety Consulting",
+    "url": "https://lumenexehs.ca",
+    "email": "info@lumenexehs.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Toronto",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "areaServed": ["Ontario", "Canada"],
+    "serviceType": "Occupational Health & Safety Consulting",
+    "sameAs": [
+      "https://www.linkedin.com/in/lumenex-ehs/",
+      "https://www.instagram.com/lumenexehs/"
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <SEOHead 
+        title={seoConfig.title}
+        description={seoConfig.description}
+        keywords={seoConfig.keywords}
+        canonicalUrl={seoConfig.canonicalUrl}
+        ogImage={seoConfig.ogImage}
+      />
+      <SchemaMarkup schema={organizationSchema} />
+      <Sitemap />
       {/* Header */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
