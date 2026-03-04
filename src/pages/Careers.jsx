@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Briefcase, MapPin, Clock, ArrowRight, Users, Heart, Award, Zap } from "lucide-react";
+import { useLang } from "@/components/LanguageContext";
+import { t } from "@/components/translations";
 
 const openings = [
   {

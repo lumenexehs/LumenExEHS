@@ -1,5 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useLang } from "@/components/LanguageContext";
+import { t } from "@/components/translations";
 import SafetyLampAnimation from "@/components/about/SafetyLampAnimation";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
