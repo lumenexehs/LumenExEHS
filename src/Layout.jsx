@@ -163,16 +163,11 @@ export default function Layout({ children, currentPageName }) {
               <SheetContent side="right" className="w-80 p-0">
                 <div className="flex flex-col h-full">
                   <div className="p-6 border-b">
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center">
                       <img
-                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0d4189f13_ChatGPTImageJan13202612_07_16PM.png"
+                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/de083ff6c_ChatGPTImageMar4202604_01_29PM.png"
                         alt="LumenEx EHS"
-                        className="w-12 h-12 object-contain brightness-100" />
-
-                      <div>
-                        <div className="font-bold text-lg text-slate-900">LumenEx EHS</div>
-                        <div className="text-xs italic text-[#d4af7a]">Carer for Carers</div>
-                      </div>
+                        className="h-12 w-auto object-contain brightness-0" />
                     </div>
                   </div>
                   
