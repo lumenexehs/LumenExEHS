@@ -74,13 +74,13 @@ export default function Layout({ children, currentPageName }) {
         }>
 
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-28">
             {/* Logo */}
             <Link to={createPageUrl("Home")} className="flex items-center">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/56de88fa7_ChatGPTImageMar4202604_01_29PM-Picsart-BackgroundRemover.png"
                 alt="LumenEx EHS"
-                className={`h-20 w-auto object-contain transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`} />
+                className={`h-28 w-auto object-contain transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`} />
             </Link>
 
             {/* Desktop Navigation */}
