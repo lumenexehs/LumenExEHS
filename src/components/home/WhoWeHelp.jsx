@@ -42,15 +42,19 @@ export default function WhoWeHelp() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.07 }}
-              className="flex flex-col items-start gap-3 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:border-[#d4af7a]/40 transition-colors"
             >
-              <div className="w-10 h-10 bg-[#1a3a52]/8 rounded-xl flex items-center justify-center">
-                <sector.icon className="w-5 h-5 text-[#1a3a52]" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-[#1a3a52] text-sm mb-1">{sector.name}</h3>
-                <p className="text-slate-400 text-xs leading-relaxed">{sector.desc}</p>
-              </div>
+              <Link to={createPageUrl(sector.page)} className="group flex flex-col items-start gap-3 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:border-[#d4af7a]/50 hover:bg-white transition-all block h-full">
+                <div className="w-10 h-10 bg-[#1a3a52]/8 rounded-xl flex items-center justify-center group-hover:bg-[#1a3a52]/15 transition-colors">
+                  <sector.icon className="w-5 h-5 text-[#1a3a52]" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-[#1a3a52] text-sm mb-1">{sector.name}</h3>
+                  <p className="text-slate-400 text-xs leading-relaxed">{sector.desc}</p>
+                </div>
+                <span className="flex items-center gap-1 text-xs text-[#d4af7a] font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  Learn more <ArrowRight className="w-3 h-3" />
+                </span>
+              </Link>
             </motion.div>
           ))}
         </div>
