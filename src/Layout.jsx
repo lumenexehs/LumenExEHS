@@ -86,7 +86,7 @@ export default function Layout({ children, currentPageName }) {
                 alt="LumenEx EHS"
                 className={`h-14 w-auto object-contain transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`}
                 style={{
-                  filter: `drop-shadow(0 0 ${8 + scrollProgress * 12}px ${isScrolled ? '#3B82F6' : '#D4AF7A'})`
+                  filter: `drop-shadow(0 0 ${8 + scrollProgress * 12}px #D4AF7A)`
                 }} />
             </Link>
 
