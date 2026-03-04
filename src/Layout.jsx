@@ -17,6 +17,9 @@ import {
 "lucide-react";
 import ServicesMegaMenu from "@/components/navigation/ServicesMegaMenu";
 import Breadcrumbs from "@/components/navigation/Breadcrumbs";
+import SEOHead from "@/components/SEOHead";
+import SchemaMarkup from "@/components/SchemaMarkup";
+import Sitemap from "@/components/Sitemap";
 
 const navLinks = [
 { name: "Home", page: "Home" },
