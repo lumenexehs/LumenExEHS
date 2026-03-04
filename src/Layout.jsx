@@ -99,6 +99,31 @@ export default function Layout({ children, currentPageName }) {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) =>
+              link.name === "Services" ? (
+                <div key={link.page} className="relative" onMouseEnter={() => setSectorsOpen(true)} onMouseLeave={() => setSectorsOpen(false)}>
+                  <Link
+                    to={createPageUrl(link.page)}
+                    className={`text-sm font-medium transition-colors flex items-center gap-1 ${
+                    currentPageName === link.page || sectorLinks.some(s => s.page === currentPageName) ?
+                    isScrolled ? "text-[#1a3a52]" : "text-[#d4af7a]" :
+                    isScrolled ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white"}`}>
+                    {link.name}
+                    <ChevronDown className="w-3 h-3" />
+                  </Link>
+                  {sectorsOpen && (
+                    <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-slate-100 py-2 z-50">
+                      <Link to={createPageUrl(link.page)} className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 font-medium border-b border-slate-100 mb-1">
+                        All Services
+                      </Link>
+                      {sectorLinks.map(s => (
+                        <Link key={s.page} to={createPageUrl(s.page)} className="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-[#1a3a52]">
+                          {s.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
               <Link
                 key={link.page}
                 to={createPageUrl(link.page)}
@@ -110,6 +135,7 @@ export default function Layout({ children, currentPageName }) {
 
                   {link.name}
                 </Link>
+              )
               )}
             </nav>
 
