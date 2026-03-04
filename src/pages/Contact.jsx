@@ -91,13 +91,13 @@ export default function Contact() {
             className="max-w-3xl"
           >
             <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">
-              Contact Us
+              {tr.eyebrow}
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              Talk to Us About Your Concern
+              {tr.heroTitle}
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Air quality issues, odours, mould, noise, workplace exposures, compliance questions — describe what you're dealing with and we'll tell you what we can do.
+              {tr.heroSubtitle}
             </p>
           </motion.div>
         </div>
@@ -117,14 +117,10 @@ export default function Contact() {
             >
               <div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                  What Happens Next
+                  {tr.whatHappensTitle}
                 </h2>
                 <div className="space-y-4 mb-8">
-                  {[
-                    { step: "1", text: "You describe your concern — no jargon needed." },
-                    { step: "2", text: "We respond within 1 business day with a clear recommendation." },
-                    { step: "3", text: "We scope the work together and get started." },
-                  ].map(({ step, text }) => (
+                  {tr.steps.map((text, idx) => ({ step: String(idx + 1), text })).map(({ step, text }) => (
                     <div key={step} className="flex items-start gap-3">
                       <span className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 font-bold text-sm flex items-center justify-center flex-shrink-0 mt-0.5">{step}</span>
                       <p className="text-slate-700 text-sm">{text}</p>
