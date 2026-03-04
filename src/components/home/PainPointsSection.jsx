@@ -30,7 +30,7 @@ const cards = [
   },
   {
     icon: Building2,
-    sector: "Public Sector and Training Facilities",
+    sector: "Public Sector",
     symptom: "Long-term exposure concerns with no documented baseline.",
     consequence: "Absence of evidence is not evidence of absence. Defensible records protect both workers and organizations.",
     color: "border-emerald-200",
