@@ -6,39 +6,33 @@ import { motion } from "framer-motion";
 const services = [
   {
     title: "Indoor Air, Mould & Radon",
-    description: "Something smells off? Worried about mould or radon? We find the source.",
+    description: "Persistent odours or occupant complaints often indicate a measurable source. Unidentified air quality issues carry health and liability consequences over time.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e3ec8e48c_ChatGPTImageFeb28202604_23_54PM.png",
-    color: "#d4af7a"
   },
   {
     title: "Chemical & Dust Exposure",
-    description: "Measure what workers breathe — and tell you if it's safe.",
+    description: "Airborne hazards are not always visible. We measure real exposures and benchmark them against Ontario occupational exposure limits.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/9375df2c5_20260301_0342_ImageGeneration_remix_01kjm8zs61fkyb4nb8xp3f491q.png",
-    color: "#1a3a52"
   },
   {
-    title: "Noise & Physical Hazards",
-    description: "Too loud? Radiation concerns? Vibration? We measure it and tell you what to fix.",
+    title: "Noise, Radiation & Physical Agents",
+    description: "Prolonged physical agent exposure leads to irreversible harm. We quantify levels, identify regulatory obligations, and recommend proportionate controls.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/63355d785_20260301_0400_ImageGeneration_remix_01kjma0etbfg2bskz604ancbdh.png",
-    color: "#d4af7a"
   },
   {
     title: "Heat Stress & Ergonomics",
-    description: "Hot workplaces or injury risk? Protect workers before they get hurt.",
+    description: "Thermal and ergonomic risks are underestimated until incidents occur. We assess conditions early and provide structured recommendations.",
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e1febeb2d_20260301_0417_ImageGeneration_remix_01kjmazxpre3xrr473txxxqw5z.png",
-    color: "#1a3a52"
   },
   {
     title: "Compliance & Safety Programs",
-    description: "Not sure if you're compliant? We build programs that hold up to audits.",
+    description: "Gaps in EHS programs create legal exposure. We develop written systems and audit-ready documentation aligned with Ontario OHS requirements.",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80",
-    color: "#d4af7a"
   },
   {
     title: "Training & Sector Support",
-    description: "Real hazard training — not generic slide decks — for your team.",
+    description: "Generic training rarely addresses real-world hazards. We deliver competency-based sessions tailored to your sector and workforce.",
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
-    color: "#1a3a52"
   }
 ];
 
@@ -53,14 +47,14 @@ export default function ServicesOverview() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <span className="text-[#d4af7a] font-medium tracking-wide text-sm italic">
-            Serving Ontario
+          <span className="text-[#d4af7a] font-medium tracking-wide text-sm uppercase">
+            Serving Organizations Across Ontario
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a3a52] mt-3 mb-3">
-            We Solve These Problems
+            What We Assess and Resolve
           </h2>
-          <p className="text-slate-500">
-            Air quality, odours, mould, noise, exposures, compliance — we've seen it all. Here's how we help.
+          <p className="text-slate-500 leading-relaxed">
+            From indoor air quality to regulatory compliance, we provide science-based assessments that support defensible decisions.
           </p>
         </motion.div>
 
@@ -75,7 +69,7 @@ export default function ServicesOverview() {
             >
               <Link
                 to={createPageUrl("Services")}
-                className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 h-full"
+                className="group block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-100 h-full"
               >
                 <div className="relative h-44 overflow-hidden">
                   <img
@@ -83,13 +77,13 @@ export default function ServicesOverview() {
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <h3 className="absolute bottom-3 left-4 text-white font-semibold text-lg drop-shadow">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <h3 className="absolute bottom-3 left-4 text-white font-semibold text-base drop-shadow">
                     {service.title}
                   </h3>
                 </div>
                 <div className="p-5">
-                  <p className="text-slate-600 text-sm leading-relaxed mb-3">
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
                     {service.description}
                   </p>
                   <span className="inline-flex items-center text-[#d4af7a] font-medium text-sm gap-1 group-hover:gap-2 transition-all">
