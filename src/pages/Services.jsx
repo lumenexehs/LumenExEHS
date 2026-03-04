@@ -23,7 +23,7 @@ const services = [
     icon: Building,
     title: "Indoor Air Quality, Odour & Mould",
     tagline: "Indoor Air · Radon · Microbial",
-    summary: "Something smells off? Worried about mould, radon, or poor air? We find the source, test what matters, and give you clear next steps.",
+    summary: "Persistent odours, occupant health complaints, or mould concerns often indicate a measurable indoor air quality issue. Without a documented assessment, the source remains unresolved. We investigate, test, and deliver clear findings with practical next steps.",
     bullets: ["Mould & Legionella testing", "Radon measurement", "Odour source investigation", "Ventilation assessment"],
     audiences: ["home", "facility", "public", "ngo"],
     triggers: ["Musty smell or visible mould", "Occupant health complaints", "Real estate transaction", "Post-flood or renovation"],
