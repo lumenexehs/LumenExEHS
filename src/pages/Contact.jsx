@@ -187,55 +187,28 @@ export default function Contact() {
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-2">
-                          <Label htmlFor="name">Full Name *</Label>
-                          <Input
-                            id="name"
-                            value={formData.name}
-                            onChange={(e) => handleChange("name", e.target.value)}
-                            placeholder="John Smith"
-                            required
-                            className="h-12"
-                          />
+                          <Label htmlFor="name">{tr.nameLabel} *</Label>
+                          <Input id="name" value={formData.name} onChange={(e) => handleChange("name", e.target.value)} placeholder={tr.namePlaceholder} required className="h-12" />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="email">Email Address *</Label>
-                          <Input
-                            id="email"
-                            type="email"
-                            value={formData.email}
-                            onChange={(e) => handleChange("email", e.target.value)}
-                            placeholder="john@company.com"
-                            required
-                            className="h-12"
-                          />
+                          <Label htmlFor="email">{tr.emailFieldLabel} *</Label>
+                          <Input id="email" type="email" value={formData.email} onChange={(e) => handleChange("email", e.target.value)} placeholder={tr.emailPlaceholder} required className="h-12" />
                         </div>
                       </div>
 
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-2">
-                          <Label htmlFor="company">Company Name</Label>
-                          <Input
-                            id="company"
-                            value={formData.company}
-                            onChange={(e) => handleChange("company", e.target.value)}
-                            placeholder="Acme Corporation"
-                            className="h-12"
-                          />
+                          <Label htmlFor="company">{tr.companyLabel}</Label>
+                          <Input id="company" value={formData.company} onChange={(e) => handleChange("company", e.target.value)} placeholder={tr.companyPlaceholder} className="h-12" />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="phone">Phone Number</Label>
-                          <Input
-                            id="phone"
-                            value={formData.phone}
-                            onChange={(e) => handleChange("phone", e.target.value)}
-                            placeholder="(555) 000-0000"
-                            className="h-12"
-                          />
+                          <Label htmlFor="phone">{tr.phoneLabel}</Label>
+                          <Input id="phone" value={formData.phone} onChange={(e) => handleChange("phone", e.target.value)} placeholder={tr.phonePlaceholder} className="h-12" />
                         </div>
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="service">Service of Interest</Label>
+                        <Label htmlFor="service">{tr.serviceLabel}</Label>
                         <Select
                           value={formData.service_interest}
                           onValueChange={(value) => handleChange("service_interest", value)}
