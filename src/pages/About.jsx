@@ -1,7 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import { useLang } from "@/components/LanguageContext";
-import { t } from "@/components/translations";
 import SafetyLampAnimation from "@/components/about/SafetyLampAnimation";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -83,8 +81,6 @@ const certifications = [
 ];
 
 export default function About() {
-  const { lang } = useLang();
-  const tr = t[lang].about;
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -101,11 +97,17 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">{tr.eyebrow}</span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-4">{tr.heroTitle}</h1>
-            <p className="text-xl text-slate-300 leading-relaxed mb-6">{tr.heroSubtitle}</p>
+            <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">
+              About LumenEx EHS
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-4">
+              Our Mission: Make Invisible Hazards Visible
+            </h1>
+            <p className="text-xl text-slate-300 leading-relaxed mb-6">
+              Data you can trust. Action you can take. — Independent, CIH-led EHS consulting in Ontario since 2006.
+            </p>
             <div className="flex flex-wrap gap-3">
-              {tr.tags.map(tag => (
+              {["CIH-Led", "19+ Years", "Ontario-Based", "Community Volunteer Program"].map(tag => (
                 <span key={tag} className="bg-white/10 border border-white/15 text-white text-xs font-medium px-3 py-1.5 rounded-full">{tag}</span>
               ))}
             </div>
@@ -123,18 +125,26 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">{tr.storyTitle}</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                Our Purpose — and Our Name
+              </h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
-                <p>{tr.storyP1}</p>
-                <p>{tr.storyP2}</p>
-                <p>{tr.storyP3}</p>
+                <p>
+                  Before modern gas detectors existed, miners carried a safety lamp — a carefully engineered tool that did more than provide light. It detected hazardous gases and oxygen-depleted air that were completely invisible to the human eye. A change in the flame was an early warning signal, a way to reveal unseen danger before it became tragedy.
+                </p>
+                <p>
+                  That is the metaphor behind LumenEx EHS. Our work is to <span className="font-semibold text-slate-800">light the environment</span> — to detect, measure, and interpret workplace hazards that most people cannot see, smell, or feel until it is too late. Chemical exposures, noise, heat, contaminated air, biological agents: the risks that silently accumulate over time.
+                </p>
+                <p>
+                  We work with employers in manufacturing, construction, healthcare, education, and the public sector — helping them anticipate risk rather than react to incidents, using science, monitoring, and professional judgement to protect their workers.
+                </p>
               </div>
               <div className="mt-8 flex items-center gap-6">
                 <div className="flex items-center gap-3">
                   <Building2 className="w-8 h-8 text-emerald-600" />
                   <div>
                     <div className="text-2xl font-bold text-slate-900">10+</div>
-                    <div className="text-sm text-slate-500">{tr.sectorsServed}</div>
+                    <div className="text-sm text-slate-500">Sectors Served</div>
                   </div>
                 </div>
                 <div className="w-px h-12 bg-slate-200" />
@@ -142,7 +152,7 @@ export default function About() {
                   <Award className="w-8 h-8 text-emerald-600" />
                   <div>
                     <div className="text-2xl font-bold text-slate-900">19+</div>
-                    <div className="text-sm text-slate-500">{tr.yearsExperience}</div>
+                    <div className="text-sm text-slate-500">Years of Field Experience</div>
                   </div>
                 </div>
               </div>
@@ -183,15 +193,23 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="lg:col-span-2 space-y-5"
             >
-              <span className="text-[#d4af7a] font-semibold tracking-wide uppercase text-sm">{tr.lampEyebrow}</span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white">{tr.lampTitle}</h2>
-              <p className="text-slate-300 leading-relaxed">{tr.lampP1}</p>
-              <p className="text-slate-300 leading-relaxed">{tr.lampP2}</p>
+              <span className="text-[#d4af7a] font-semibold tracking-wide uppercase text-sm">
+                The Safety Lamp
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Detection Before Harm. Foresight Over Reaction.
+              </h2>
+              <p className="text-slate-300 leading-relaxed">
+                The original miner's safety lamp was not designed for emergencies — it was designed for <em>prevention</em>. By revealing the presence of methane or the absence of oxygen through a change in flame, it transformed invisible, deadly conditions into actionable information.
+              </p>
+              <p className="text-slate-300 leading-relaxed">
+                LumenEx EHS brings that same principle to modern workplaces. We use scientific monitoring, professional interpretation, and evidence-based guidance to turn unseen occupational health hazards into clear, manageable insight — before they cause harm to workers.
+              </p>
               <div className="grid sm:grid-cols-3 gap-5 pt-4">
                 {[
-                  { label: tr.detect, desc: tr.detectDesc },
-                  { label: tr.interpret, desc: tr.interpretDesc },
-                  { label: tr.protect, desc: tr.protectDesc }
+                  { label: "Detect", desc: "Identify hazards that are not immediately obvious" },
+                  { label: "Interpret", desc: "Translate data into clear risk findings" },
+                  { label: "Protect", desc: "Guide defensible, proportionate controls" }
                 ].map((item) => (
                   <div key={item.label} className="bg-white/10 rounded-xl p-4 border border-white/10">
                     <div className="text-[#d4af7a] font-bold text-lg mb-1">{item.label}</div>
@@ -274,14 +292,16 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16"
           >
-            <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">{tr.valuesEyebrow}</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3">{tr.valuesTitle}</h2>
+            <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">
+              Our Values
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3">
+              What Drives Us
+            </h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => {
-              const tv = tr.values[index];
-              return (
+            {values.map((value, index) => (
               <motion.div
                 key={value.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -304,12 +324,15 @@ export default function About() {
                   <div className="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mx-auto mb-5">
                     <value.icon className="w-7 h-7 text-emerald-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-3">{tv ? tv.title : value.title}</h3>
-                  <p className="text-slate-600">{tv ? tv.description : value.description}</p>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-slate-600">
+                    {value.description}
+                  </p>
                 </div>
               </motion.div>
-              );
-            })}
+            ))}
           </div>
         </div>
       </section>
@@ -324,9 +347,15 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16"
           >
-            <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">{tr.methodologyEyebrow}</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">{tr.methodologyTitle}</h2>
-            <p className="text-lg text-slate-600">{tr.methodologySubtitle}</p>
+            <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">
+              Our Methodology
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
+              How We Illuminate Workplace Risk
+            </h2>
+            <p className="text-lg text-slate-600">
+              A four-step process to find, measure, and control workplace hazards — clearly and defensibly.
+            </p>
           </motion.div>
 
           <ApproachSteps />
@@ -343,8 +372,12 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-white mb-4">{tr.credentialsTitle}</h2>
-            <p className="text-slate-400">{tr.credentialsSubtitle}</p>
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Credentials & Standards
+            </h2>
+            <p className="text-slate-400">
+              Professional certifications and recognized Canadian standards
+            </p>
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -377,11 +410,18 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">{tr.ctaTitle}</h2>
-            <p className="text-lg text-slate-600 mb-8">{tr.ctaSubtitle}</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+              Let's Bring Clarity to Your Workplace
+            </h2>
+            <p className="text-lg text-slate-600 mb-8">
+              Have a concern? Not sure where to start? Tell us what you're dealing with — we'll point you in the right direction.
+            </p>
             <Link to={createPageUrl("Contact")}>
-              <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group">
-                {tr.ctaButton}
+              <Button 
+                size="lg" 
+                className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group"
+              >
+                Request Consultation
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>

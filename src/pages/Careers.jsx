@@ -3,8 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Briefcase, MapPin, Clock, ArrowRight, Users, Heart, Award, Zap } from "lucide-react";
-import { useLang } from "@/components/LanguageContext";
-import { t } from "@/components/translations";
 
 const openings = [
   {
@@ -57,8 +55,6 @@ const perks = [
 ];
 
 export default function Careers() {
-  const { lang } = useLang();
-  const tr = t[lang].careers;
   return (
     <div className="min-h-screen">
       {/* Hero */}

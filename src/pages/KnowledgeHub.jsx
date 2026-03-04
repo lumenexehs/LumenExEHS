@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useLang } from "@/components/LanguageContext";
-import { t } from "@/components/translations";
 import { createPageUrl } from "@/utils";
 import { ArrowRight, Wind, FlaskConical, Building2, HeartPulse, ShieldCheck, Users, BookOpen } from "lucide-react";
 import { articles } from "@/components/home/KnowledgeHub";
@@ -17,8 +15,6 @@ const topics = [
 ];
 
 export default function KnowledgeHub() {
-  const { lang } = useLang();
-  const tr = t[lang].knowledgeHub;
   const [activeTopic, setActiveTopic] = useState("all");
 
   const filtered = activeTopic === "all"

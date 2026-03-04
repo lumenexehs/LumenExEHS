@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useLang } from "@/components/LanguageContext";
-import { t } from "@/components/translations";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -40,8 +38,6 @@ const serviceOptions = [
 ];
 
 export default function Contact() {
-  const { lang } = useLang();
-  const tr = t[lang].contact;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -91,13 +87,13 @@ export default function Contact() {
             className="max-w-3xl"
           >
             <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">
-              {tr.eyebrow}
+              Contact Us
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
-              {tr.heroTitle}
+              Talk to Us About Your Concern
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              {tr.heroSubtitle}
+              Air quality issues, odours, mould, noise, workplace exposures, compliance questions — describe what you're dealing with and we'll tell you what we can do.
             </p>
           </motion.div>
         </div>
@@ -117,10 +113,14 @@ export default function Contact() {
             >
               <div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                  {tr.whatHappensTitle}
+                  What Happens Next
                 </h2>
                 <div className="space-y-4 mb-8">
-                  {tr.steps.map((text, idx) => ({ step: String(idx + 1), text })).map(({ step, text }) => (
+                  {[
+                    { step: "1", text: "You describe your concern — no jargon needed." },
+                    { step: "2", text: "We respond within 1 business day with a clear recommendation." },
+                    { step: "3", text: "We scope the work together and get started." },
+                  ].map(({ step, text }) => (
                     <div key={step} className="flex items-start gap-3">
                       <span className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 font-bold text-sm flex items-center justify-center flex-shrink-0 mt-0.5">{step}</span>
                       <p className="text-slate-700 text-sm">{text}</p>
@@ -135,9 +135,9 @@ export default function Contact() {
                     <Mail className="w-5 h-5 text-emerald-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">{tr.emailLabel}</h3>
+                    <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
                     <a href="mailto:info@lumenexehs.ca" className="text-slate-600 hover:text-emerald-600 transition-colors">info@lumenexehs.ca</a>
-                    <p className="text-sm text-slate-500 mt-0.5">{tr.emailNote}</p>
+                    <p className="text-sm text-slate-500 mt-0.5">Response within 1 business day</p>
                   </div>
                 </div>
 
@@ -146,8 +146,8 @@ export default function Contact() {
                     <MapPin className="w-5 h-5 text-emerald-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">{tr.officeLabel}</h3>
-                    <p className="text-slate-600">{tr.officeValue}</p>
+                    <h3 className="font-semibold text-slate-900 mb-1">Office</h3>
+                    <p className="text-slate-600">Toronto, Ontario</p>
                   </div>
                 </div>
 
@@ -156,9 +156,9 @@ export default function Contact() {
                     <Clock className="w-5 h-5 text-emerald-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">{tr.hoursLabel}</h3>
-                    <p className="text-slate-600">{tr.hoursWeekday}</p>
-                    <p className="text-slate-600">{tr.hoursWeekend}</p>
+                    <h3 className="font-semibold text-slate-900 mb-1">Business Hours</h3>
+                    <p className="text-slate-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p className="text-slate-600">Saturday - Sunday: Closed</p>
                   </div>
                 </div>
               </div>
@@ -178,37 +178,70 @@ export default function Contact() {
                     <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
                       <CheckCircle className="w-8 h-8 text-emerald-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">{tr.successTitle}</h3>
-                    <p className="text-slate-600 max-w-md mx-auto">{tr.successBody}</p>
+                    <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                      Message Received
+                    </h3>
+                    <p className="text-slate-600 max-w-md mx-auto">
+                      We'll review your concern and follow up within 1 business day with a clear recommendation.
+                    </p>
                   </div>
                 ) : (
                   <>
-                    <h3 className="text-xl font-bold text-slate-900 mb-6">{tr.formTitle}</h3>
+                    <h3 className="text-xl font-bold text-slate-900 mb-6">
+                      Project Inquiry
+                    </h3>
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-2">
-                          <Label htmlFor="name">{tr.nameLabel} *</Label>
-                          <Input id="name" value={formData.name} onChange={(e) => handleChange("name", e.target.value)} placeholder={tr.namePlaceholder} required className="h-12" />
+                          <Label htmlFor="name">Full Name *</Label>
+                          <Input
+                            id="name"
+                            value={formData.name}
+                            onChange={(e) => handleChange("name", e.target.value)}
+                            placeholder="John Smith"
+                            required
+                            className="h-12"
+                          />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="email">{tr.emailFieldLabel} *</Label>
-                          <Input id="email" type="email" value={formData.email} onChange={(e) => handleChange("email", e.target.value)} placeholder={tr.emailPlaceholder} required className="h-12" />
+                          <Label htmlFor="email">Email Address *</Label>
+                          <Input
+                            id="email"
+                            type="email"
+                            value={formData.email}
+                            onChange={(e) => handleChange("email", e.target.value)}
+                            placeholder="john@company.com"
+                            required
+                            className="h-12"
+                          />
                         </div>
                       </div>
 
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-2">
-                          <Label htmlFor="company">{tr.companyLabel}</Label>
-                          <Input id="company" value={formData.company} onChange={(e) => handleChange("company", e.target.value)} placeholder={tr.companyPlaceholder} className="h-12" />
+                          <Label htmlFor="company">Company Name</Label>
+                          <Input
+                            id="company"
+                            value={formData.company}
+                            onChange={(e) => handleChange("company", e.target.value)}
+                            placeholder="Acme Corporation"
+                            className="h-12"
+                          />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="phone">{tr.phoneLabel}</Label>
-                          <Input id="phone" value={formData.phone} onChange={(e) => handleChange("phone", e.target.value)} placeholder={tr.phonePlaceholder} className="h-12" />
+                          <Label htmlFor="phone">Phone Number</Label>
+                          <Input
+                            id="phone"
+                            value={formData.phone}
+                            onChange={(e) => handleChange("phone", e.target.value)}
+                            placeholder="(555) 000-0000"
+                            className="h-12"
+                          />
                         </div>
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="service">{tr.serviceLabel}</Label>
+                        <Label htmlFor="service">Service of Interest</Label>
                         <Select
                           value={formData.service_interest}
                           onValueChange={(value) => handleChange("service_interest", value)}
@@ -227,19 +260,38 @@ export default function Contact() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message">{tr.messageLabel} *</Label>
-                        <Textarea id="message" value={formData.message} onChange={(e) => handleChange("message", e.target.value)} placeholder={tr.messagePlaceholder} required className="min-h-[150px] resize-none" />
+                        <Label htmlFor="message">Project Details *</Label>
+                        <Textarea
+                          id="message"
+                          value={formData.message}
+                          onChange={(e) => handleChange("message", e.target.value)}
+                          placeholder="Describe your assessment needs, agents of concern, or regulatory questions..."
+                          required
+                          className="min-h-[150px] resize-none"
+                        />
                       </div>
 
-                      <Button type="submit" disabled={isSubmitting} className="w-full bg-emerald-500 hover:bg-emerald-600 text-white h-12 rounded-full">
+                      <Button 
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="w-full bg-emerald-500 hover:bg-emerald-600 text-white h-12 rounded-full"
+                      >
                         {isSubmitting ? (
-                          <><Loader2 className="w-4 h-4 mr-2 animate-spin" />{tr.sendingButton}</>
+                          <>
+                            <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                            Sending...
+                          </>
                         ) : (
-                          <><Send className="w-4 h-4 mr-2" />{tr.sendButton}</>
+                          <>
+                            <Send className="w-4 h-4 mr-2" />
+                            Send Message
+                          </>
                         )}
                       </Button>
 
-                      <p className="text-sm text-slate-500 text-center">{tr.privacy}</p>
+                      <p className="text-sm text-slate-500 text-center">
+                        By submitting this form, you agree to our privacy policy.
+                      </p>
                     </form>
                   </>
                 )}
