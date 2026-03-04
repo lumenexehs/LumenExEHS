@@ -241,10 +241,10 @@ export default function Services() {
               Ontario EHS Consulting
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-5">
-              What We Solve
+              What We Assess and Resolve
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed mb-6">
-              Air quality issues. Noise. Odours. Mould. Workplace exposures. Compliance gaps. — We assess, measure, and give you clear answers.
+              From indoor air quality to regulatory compliance, we provide science-based occupational hygiene assessments that translate exposure data into defensible, actionable decisions.
             </p>
             <div className="flex flex-wrap gap-3">
               {["Indoor Air & Odours", "Exposure Assessment", "Heat & Noise", "Compliance Support", "Training"].map(tag => (
