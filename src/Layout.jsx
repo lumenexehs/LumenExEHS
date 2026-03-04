@@ -40,7 +40,6 @@ function LayoutInner({ children, currentPageName }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [sectorsOpen, setSectorsOpen] = useState(false);
   const { lang, toggleLang } = useLang();
-  const tr = t[lang];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,6 +58,7 @@ function LayoutInner({ children, currentPageName }) {
   }, []);
 
   const tr = t[lang];
+  const isHomePage = currentPageName === "Home";
 
   // Don't show layout on ClientPortal page
   if (currentPageName === "ClientPortal") {
