@@ -69,8 +69,8 @@ export default function IAQImagePanel() {
           <img
             src={IMAGE_URL}
             alt="Occupational hygienist conducting indoor air quality monitoring in a school classroom"
-            className="w-full h-full object-cover"
-          />
+            className="w-full h-full object-contain bg-white"
+            />
         </div>
         <div className="mt-4 bg-[#0F2A4A] rounded-2xl">
           <OverlayContent />
