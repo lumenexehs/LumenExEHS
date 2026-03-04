@@ -83,7 +83,7 @@ const services = [
     icon: GraduationCap,
     title: "Training & Specialized Sector Support",
     tagline: "Training · Healthcare · Film · Indigenous Communities",
-    summary: "Need training that reflects real hazards — not a generic slide deck? We deliver competency-based OHS training and sector-specific IH support.",
+    summary: "Generic training rarely prepares workers for real-world hazard scenarios. We deliver competency-based OHS training and sector-specific industrial hygiene support that addresses actual risks in your workplace.",
     bullets: ["Worker & supervisor hazard training", "JHSC Part I & II facilitation", "Healthcare & pharmaceutical IH", "Indigenous & remote site support"],
     audiences: ["business", "public", "ngo"],
     triggers: ["JHSC training due", "New workforce or high turnover", "Specialized sector assessment needed"],
