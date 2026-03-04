@@ -65,8 +65,6 @@ function LayoutInner({ children, currentPageName }) {
     return <>{children}</>;
   }
 
-  const isHomePage = currentPageName === "Home";
-
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
