@@ -70,17 +70,24 @@ export default function PainPointsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Link to={createPageUrl(card.page)} className={`block bg-slate-50 rounded-2xl p-7 border-l-4 ${card.color} border border-slate-100 hover:shadow-md transition-shadow`}>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-[#1a3a52]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <card.icon className="w-5 h-5 text-[#1a3a52]" />
+              <Link to={createPageUrl(card.page)} className={`block bg-slate-50 rounded-2xl overflow-hidden border-l-4 ${card.color} border border-slate-100 hover:shadow-md transition-shadow`}>
+                {card.image && (
+                  <div className="w-full h-44 overflow-hidden">
+                    <img src={card.image} alt={card.sector} className="w-full h-full object-cover" />
                   </div>
-                  <h3 className="font-bold text-[#1a3a52] text-base">{card.sector}</h3>
+                )}
+                <div className="p-7">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-[#1a3a52]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <card.icon className="w-5 h-5 text-[#1a3a52]" />
+                    </div>
+                    <h3 className="font-bold text-[#1a3a52] text-base">{card.sector}</h3>
+                  </div>
+                  <p className="text-slate-700 text-sm font-medium mb-2">{card.symptom}</p>
+                  <p className="text-slate-400 text-xs leading-relaxed italic border-t border-slate-200 pt-3 mt-3">
+                    {card.consequence}
+                  </p>
                 </div>
-                <p className="text-slate-700 text-sm font-medium mb-2">{card.symptom}</p>
-                <p className="text-slate-400 text-xs leading-relaxed italic border-t border-slate-200 pt-3 mt-3">
-                  {card.consequence}
-                </p>
               </Link>
             </motion.div>
           ))}
