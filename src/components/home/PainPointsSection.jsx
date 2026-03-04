@@ -79,9 +79,9 @@ export default function PainPointsSection() {
                   <div className="relative w-full h-44 overflow-hidden">
                     <img src={card.image} alt={card.sector} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-[#0F2A4A]/0 group-hover:bg-[#0F2A4A]/70 transition-all duration-300 flex flex-col justify-end p-5 opacity-0 group-hover:opacity-100">
-                      <p className="text-xs font-semibold text-emerald-300 uppercase tracking-widest mb-1">Education Sector</p>
-                      <p className="text-white text-sm font-semibold leading-snug">Indoor Air Quality Monitoring</p>
-                      <p className="text-white/75 text-xs mt-1 leading-relaxed">Professional monitoring for hidden environmental factors in schools.</p>
+                      <p className="text-xs font-semibold text-emerald-300 uppercase tracking-widest mb-1">{card.overlayLabel}</p>
+                      <p className="text-white text-sm font-semibold leading-snug">{card.overlayTitle}</p>
+                      <p className="text-white/75 text-xs mt-1 leading-relaxed">{card.overlayDesc}</p>
                     </div>
                   </div>
                 )}
