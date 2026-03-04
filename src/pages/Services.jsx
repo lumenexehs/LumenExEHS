@@ -309,7 +309,7 @@ export default function Services() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to={`${createPageUrl("Contact")}?service=general`}>
                 <Button size="lg" className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold px-8 py-6 text-base rounded-full group">
-                  📅 Book a Free 15-Min Consult
+                  Start Your Risk Assessment
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
