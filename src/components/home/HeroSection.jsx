@@ -12,8 +12,8 @@ export default function HeroSection() {
         <img
           src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80"
           alt="Occupational health and safety"
-          className="w-full h-full object-cover"
-        />
+          className="w-full h-full object-cover" />
+
         <div className="absolute inset-0 bg-gradient-to-r from-[#0F2A4A]/97 via-[#0F2A4A]/90 to-[#0F2A4A]/75" />
       </div>
 
@@ -21,8 +21,8 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.07 }}
         transition={{ duration: 1.2, delay: 0.5 }}
-        className="absolute top-1/4 right-1/4 w-96 h-96 bg-emerald-500 rounded-full blur-3xl pointer-events-none"
-      />
+        className="absolute top-1/4 right-1/4 w-96 h-96 bg-emerald-500 rounded-full blur-3xl pointer-events-none" />
+
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-28 w-full">
         {/* Eyebrow */}
@@ -30,8 +30,8 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex items-center gap-2 mb-6"
-        >
+          className="flex items-center gap-2 mb-6">
+
           <Shield className="w-4 h-4 text-[#d4af7a]" />
           <span className="text-[#d4af7a] font-medium text-sm tracking-wide">
             Ontario-Based · CIH-Led · 19+ Years of Field Experience
@@ -43,8 +43,8 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 max-w-3xl"
-        >
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 max-w-3xl">
+
           Making Invisible Workplace
           <span className="block text-[#d4af7a] mt-1">Health Risks Visible.</span>
         </motion.h1>
@@ -54,8 +54,8 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg text-slate-300 mb-3 max-w-xl leading-relaxed"
-        >
+          className="text-lg text-slate-300 mb-3 max-w-xl leading-relaxed">
+
           Science-based occupational hygiene for organizations that need clarity, compliance, and confidence.
         </motion.p>
 
@@ -64,8 +64,8 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.28 }}
-          className="text-sm text-slate-400 mb-10 max-w-md italic border-l-2 border-[#d4af7a]/40 pl-4"
-        >
+          className="text-sm text-slate-400 mb-10 max-w-md italic border-l-2 border-[#d4af7a]/40 pl-4">
+
           When symptoms rise but answers do not, we bring defensible evidence.
         </motion.p>
 
@@ -74,8 +74,8 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.38 }}
-          className="flex flex-col sm:flex-row gap-4"
-        >
+          className="flex flex-col sm:flex-row gap-4">
+
           <Link to={`${createPageUrl("Contact")}?service=general`}>
             <Button size="lg" className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold px-8 py-6 text-base rounded-full group w-full sm:w-auto">
               Book a Consultation
@@ -83,12 +83,12 @@ export default function HeroSection() {
             </Button>
           </Link>
           <Link to={createPageUrl("Contact")}>
-            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-base rounded-full w-full sm:w-auto">
+            <Button size="lg" variant="outline" className="bg-sky-700 text-white px-8 py-6 text-base font-medium rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-10 border-white/30 hover:bg-white/10 w-full sm:w-auto">
               Request an Assessment
             </Button>
           </Link>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
