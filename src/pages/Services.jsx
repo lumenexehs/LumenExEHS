@@ -11,11 +11,11 @@ import {
 "lucide-react";
 
 const audienceMap = {
-  home: { icon: Home, label: "Homeowners" },
-  business: { icon: Factory, label: "Businesses" },
-  facility: { icon: Building2, label: "Facilities" },
-  public: { icon: HeartPulse, label: "Public Sector" },
-  ngo: { icon: Users, label: "NGOs" }
+  home: { icon: Home, label: "Homeowners", page: "SectorResidential" },
+  business: { icon: Factory, label: "Businesses", page: "SectorManufacturing" },
+  facility: { icon: Building2, label: "Facilities", page: null },
+  public: { icon: HeartPulse, label: "Public Sector", page: "SectorPublicSector" },
+  ngo: { icon: Users, label: "NGOs", page: null }
 };
 
 const services = [
