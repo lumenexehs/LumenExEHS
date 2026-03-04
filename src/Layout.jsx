@@ -102,24 +102,24 @@ function LayoutInner({ children, currentPageName }) {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
-              {navLinks.map((link) =>
-              link.name === "Services" ?
+              {navLinkDefs.map((link) =>
+              link.key === "services" ?
               <div key={link.page} className="relative" onMouseEnter={() => setSectorsOpen(true)} onMouseLeave={() => setSectorsOpen(false)}>
                   <Link
                   to={createPageUrl(link.page)}
                   className={`text-sm font-medium transition-colors flex items-center gap-1 ${
-                  currentPageName === link.page || sectorLinks.some((s) => s.page === currentPageName) ?
+                  currentPageName === link.page || sectorLinkDefs.some((s) => s.page === currentPageName) ?
                   isScrolled ? "text-[#1a3a52]" : "text-[#d4af7a]" :
                   isScrolled ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white"}`}>
-                    {link.name}
+                    {tr.nav.services}
                     <ChevronDown className="w-3 h-3" />
                   </Link>
                   {sectorsOpen &&
                 <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-slate-100 py-2 z-50">
                       <Link to={createPageUrl(link.page)} className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 font-medium border-b border-slate-100 mb-1">
-                        All Services
+                        {tr.nav.allServices}
                       </Link>
-                      {sectorLinks.map((s) =>
+                      {sectorLinkDefs.map((s) =>
                   <Link key={s.page} to={createPageUrl(s.page)} className="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-[#1a3a52]">
                           {s.name}
                         </Link>
@@ -136,8 +136,7 @@ function LayoutInner({ children, currentPageName }) {
                 isScrolled ? "text-[#1a3a52]" : "text-[#d4af7a]" :
                 isScrolled ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white"}`
                 }>
-
-                  {link.name}
+                  {tr.nav[link.key]}
                 </Link>
 
               )}
@@ -145,23 +144,31 @@ function LayoutInner({ children, currentPageName }) {
 
             {/* CTA Buttons */}
             <div className="hidden lg:flex items-center gap-4">
+              <button
+                onClick={toggleLang}
+                className={`text-xs font-semibold tracking-wide px-3 py-1.5 rounded-full border transition-all ${
+                  isScrolled
+                    ? "border-slate-300 text-slate-600 hover:border-[#1a3a52] hover:text-[#1a3a52]"
+                    : "border-white/30 text-white/80 hover:text-white hover:border-white"
+                }`}
+              >
+                {lang === "en" ? "中文" : "EN"}
+              </button>
               <Link to={createPageUrl("ClientPortal")}>
                 <Button
                   variant="ghost"
                   size="sm"
                   className={isScrolled ? "text-slate-600" : "text-white/80 hover:text-white hover:bg-white/10"}>
-
                   <User className="w-4 h-4 mr-2" />
-                  Client Portal
+                  {tr.nav.clientPortal}
                 </Button>
               </Link>
               <Link to={createPageUrl("Contact")}>
                 <Button
                   size="sm"
                   className="bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold rounded-full px-5">
-
                   <Phone className="w-4 h-4 mr-2" />
-                  Contact Us
+                  {tr.nav.contact}
                 </Button>
               </Link>
             </div>
