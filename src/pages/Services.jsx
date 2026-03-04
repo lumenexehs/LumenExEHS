@@ -93,14 +93,14 @@ const services = [
 
 
 const industries = [
-{ icon: Home, name: "Homeowners" },
-{ icon: Factory, name: "Manufacturing" },
-{ icon: Building2, name: "Facility Managers" },
-{ icon: HeartPulse, name: "Hospitals & Healthcare" },
-{ icon: GraduationCap, name: "Schools" },
-{ icon: HardHat, name: "Pharmaceuticals" },
-{ icon: Users, name: "NGOs" },
-{ icon: ClipboardCheck, name: "Public Services" }];
+{ icon: Home, name: "Homeowners", page: "SectorResidential" },
+{ icon: Factory, name: "Manufacturing", page: "SectorManufacturing" },
+{ icon: Building2, name: "Facility Managers", page: null },
+{ icon: HeartPulse, name: "Hospitals & Healthcare", page: "SectorHealthcare" },
+{ icon: GraduationCap, name: "Schools", page: "SectorEducation" },
+{ icon: HardHat, name: "Pharmaceuticals", page: null },
+{ icon: Users, name: "NGOs", page: null },
+{ icon: ClipboardCheck, name: "Public Services", page: "SectorPublicSector" }];
 
 
 function ServiceCard({ service, index }) {
