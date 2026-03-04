@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Search, BarChart2, ClipboardCheck, MessageSquare } from "lucide-react";
+import { Link } from "react-router-dom";
+import { createPageUrl } from "@/utils";
 
 const pillars = [
   {
