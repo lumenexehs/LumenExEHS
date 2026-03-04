@@ -135,9 +135,9 @@ export default function Contact() {
                     <Mail className="w-5 h-5 text-emerald-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
+                    <h3 className="font-semibold text-slate-900 mb-1">{tr.emailLabel}</h3>
                     <a href="mailto:info@lumenexehs.ca" className="text-slate-600 hover:text-emerald-600 transition-colors">info@lumenexehs.ca</a>
-                    <p className="text-sm text-slate-500 mt-0.5">Response within 1 business day</p>
+                    <p className="text-sm text-slate-500 mt-0.5">{tr.emailNote}</p>
                   </div>
                 </div>
 
@@ -146,8 +146,8 @@ export default function Contact() {
                     <MapPin className="w-5 h-5 text-emerald-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Office</h3>
-                    <p className="text-slate-600">Toronto, Ontario</p>
+                    <h3 className="font-semibold text-slate-900 mb-1">{tr.officeLabel}</h3>
+                    <p className="text-slate-600">{tr.officeValue}</p>
                   </div>
                 </div>
 
@@ -156,9 +156,9 @@ export default function Contact() {
                     <Clock className="w-5 h-5 text-emerald-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Business Hours</h3>
-                    <p className="text-slate-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                    <p className="text-slate-600">Saturday - Sunday: Closed</p>
+                    <h3 className="font-semibold text-slate-900 mb-1">{tr.hoursLabel}</h3>
+                    <p className="text-slate-600">{tr.hoursWeekday}</p>
+                    <p className="text-slate-600">{tr.hoursWeekend}</p>
                   </div>
                 </div>
               </div>
@@ -178,18 +178,12 @@ export default function Contact() {
                     <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
                       <CheckCircle className="w-8 h-8 text-emerald-600" />
                     </div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                      Message Received
-                    </h3>
-                    <p className="text-slate-600 max-w-md mx-auto">
-                      We'll review your concern and follow up within 1 business day with a clear recommendation.
-                    </p>
+                    <h3 className="text-2xl font-bold text-slate-900 mb-3">{tr.successTitle}</h3>
+                    <p className="text-slate-600 max-w-md mx-auto">{tr.successBody}</p>
                   </div>
                 ) : (
                   <>
-                    <h3 className="text-xl font-bold text-slate-900 mb-6">
-                      Project Inquiry
-                    </h3>
+                    <h3 className="text-xl font-bold text-slate-900 mb-6">{tr.formTitle}</h3>
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-2">
