@@ -299,11 +299,12 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
-              Not Sure Which Service You Need?
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+              Uncertainty creates risk.
             </h2>
-            <p className="text-lg text-slate-300 mb-8">
-              Tell us your concern. We'll point you in the right direction — no obligation.
+            <h3 className="text-2xl font-semibold text-[#d4af7a] mb-6">Clarity creates control.</h3>
+            <p className="text-base text-slate-300 mb-8 max-w-md mx-auto leading-relaxed">
+              Not sure which assessment you need? Describe your concern. We will identify the right approach for your organization.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to={`${createPageUrl("Contact")}?service=general`}>
