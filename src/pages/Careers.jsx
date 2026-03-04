@@ -57,6 +57,8 @@ const perks = [
 ];
 
 export default function Careers() {
+  const { lang } = useLang();
+  const tr = t[lang].careers;
   return (
     <div className="min-h-screen">
       {/* Hero */}

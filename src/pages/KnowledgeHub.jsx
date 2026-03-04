@@ -17,6 +17,8 @@ const topics = [
 ];
 
 export default function KnowledgeHub() {
+  const { lang } = useLang();
+  const tr = t[lang].knowledgeHub;
   const [activeTopic, setActiveTopic] = useState("all");
 
   const filtered = activeTopic === "all"

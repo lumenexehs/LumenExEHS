@@ -83,6 +83,8 @@ const certifications = [
 ];
 
 export default function About() {
+  const { lang } = useLang();
+  const tr = t[lang].about;
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
