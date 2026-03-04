@@ -206,6 +206,22 @@ export default function Layout({ children, currentPageName }) {
                           <ChevronRight className="w-4 h-4" />
                         </Link>
                       )}
+                      <div className="pt-1 pb-1">
+                        <p className="px-4 text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">Sectors</p>
+                        {sectorLinks.map((link) =>
+                        <Link
+                          key={link.page}
+                          to={createPageUrl(link.page)}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className={`flex items-center justify-between py-2.5 px-4 rounded-lg transition-colors text-sm ${
+                          currentPageName === link.page ?
+                          "bg-[#d4af7a]/10 text-[#1a3a52]" :
+                          "text-slate-500 hover:bg-slate-50"}`}>
+                          {link.name}
+                          <ChevronRight className="w-3.5 h-3.5" />
+                        </Link>
+                        )}
+                      </div>
                       <Link
                         to={createPageUrl("ClientPortal")}
                         onClick={() => setMobileMenuOpen(false)}
