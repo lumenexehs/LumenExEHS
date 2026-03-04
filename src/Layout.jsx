@@ -11,7 +11,9 @@ import {
   Phone,
   ChevronRight,
   ChevronDown,
-  User } from
+  User,
+  Linkedin,
+  Instagram } from
 "lucide-react";
 import ServicesMegaMenu from "@/components/navigation/ServicesMegaMenu";
 import Breadcrumbs from "@/components/navigation/Breadcrumbs";
@@ -117,8 +119,28 @@ export default function Layout({ children, currentPageName }) {
               )}
             </nav>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons & Social Links */}
             <div className="hidden lg:flex items-center gap-4">
+              <a
+                href="https://www.instagram.com/lumenexehs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`transition-colors ${
+                  isScrolled ? "text-slate-600 hover:text-[#d4af7a]" : "text-white/80 hover:text-[#d4af7a]"
+                }`}
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/lumenex-ehs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`transition-colors ${
+                  isScrolled ? "text-slate-600 hover:text-[#d4af7a]" : "text-white/80 hover:text-[#d4af7a]"
+                }`}
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
               <Link to={createPageUrl("ClientPortal")}>
                 <Button
                   variant="ghost"
