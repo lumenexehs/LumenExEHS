@@ -3,105 +3,105 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { 
+import {
   Leaf, HardHat, ClipboardCheck, GraduationCap, Zap, Building,
   ArrowRight, CheckCircle2, Factory, Stethoscope, Activity,
-  ChevronDown, ChevronUp, Home, Building2, Users, HeartPulse
-} from "lucide-react";
+  ChevronDown, ChevronUp, Home, Building2, Users, HeartPulse } from
+"lucide-react";
 
 const audienceMap = {
   home: { icon: Home, label: "Homeowners" },
   business: { icon: Factory, label: "Businesses" },
   facility: { icon: Building2, label: "Facilities" },
   public: { icon: HeartPulse, label: "Public Sector" },
-  ngo: { icon: Users, label: "NGOs" },
+  ngo: { icon: Users, label: "NGOs" }
 };
 
 const services = [
-  {
-    id: "iaq",
-    icon: Building,
-    title: "Indoor Air Quality, Odour & Mould",
-    tagline: "Indoor Air · Radon · Microbial",
-    summary: "Persistent odours, occupant health complaints, or mould concerns often indicate a measurable indoor air quality issue. Without a documented assessment, the source remains unresolved. We investigate, test, and deliver clear findings with practical next steps.",
-    bullets: ["Mould & Legionella testing", "Radon measurement", "Odour source investigation", "Ventilation assessment"],
-    audiences: ["home", "facility", "public", "ngo"],
-    triggers: ["Musty smell or visible mould", "Occupant health complaints", "Real estate transaction", "Post-flood or renovation"],
-    deliverables: ["Contaminant source report", "Radon levels vs. Health Canada guidelines", "Mould remediation scope", "Ventilation improvement plan"],
-    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e3ec8e48c_ChatGPTImageFeb28202604_23_54PM.png"
-  },
-  {
-    id: "occupational_hygiene",
-    icon: Leaf,
-    title: "Chemical & Biological Exposure Assessment",
-    tagline: "Dust · Chemicals · Bioaerosols",
-    summary: "Airborne chemical, dust, and biological hazards are not always visible. Undocumented exposures create long-term health risks and regulatory vulnerability. We measure real exposures and benchmark them precisely against Ontario occupational exposure limits.",
-    bullets: ["Personal breathing zone sampling", "SEG exposure profiles", "Bayesian risk analysis", "Control recommendations"],
-    audiences: ["business", "facility", "public"],
-    triggers: ["Chemical or dust concerns", "Ministry of Labour audit", "New process or substance introduced"],
-    deliverables: ["Exposure profiles vs. Ontario OELs & ACGIH TLVs®", "Risk ratings by worker group", "Prioritized control plan", "Audit-ready report"],
-    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/9375df2c5_20260301_0342_ImageGeneration_remix_01kjm8zs61fkyb4nb8xp3f491q.png"
-  },
-  {
-    id: "noise_physical",
-    icon: HardHat,
-    title: "Noise, Radiation & Physical Agents",
-    tagline: "Noise · Vibration · Radiation",
-    summary: "Prolonged exposure to noise, vibration, or radiation causes cumulative and often irreversible harm. We use calibrated instruments to quantify exposures, identify your legal obligations, and recommend proportionate controls.",
-    bullets: ["8-hour TWA noise dosimetry", "Vibration (hand-arm & whole-body)", "Radiation field surveys", "Hearing program review"],
-    audiences: ["business", "facility", "public"],
-    triggers: ["Workers reporting hearing issues", "Loud equipment added", "JHSC noise concerns"],
-    deliverables: ["Noise exposure report vs. O. Reg. 381/15", "Radiation survey findings", "Engineering control priorities", "Hearing conservation gaps"],
-    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e69f0a4a0_20260301_0400_ImageGeneration_remix_01kjma0etbfg2bskz604ancbdh.png"
-  },
-  {
-    id: "heat_ergonomics",
-    icon: Zap,
-    title: "Heat Stress & Ergonomics",
-    tagline: "Heat · Ergonomics · MSD Prevention",
-    summary: "Heat stress and ergonomic risks are underestimated until an incident occurs. We assess thermal conditions and workstation design early, providing structured recommendations to reduce injury risk and support due diligence.",
-    bullets: ["WBGT heat monitoring (ISO 7243)", "Metabolic rate estimation", "RULA/REBA ergonomic review", "MSD control recommendations"],
-    audiences: ["business", "facility"],
-    triggers: ["Summer outdoor or hot indoor work", "MSD injury spike", "New production line or task"],
-    deliverables: ["Heat exposure vs. ACGIH TLV® limits", "Acclimatization protocols", "Ergonomic risk scores", "Workstation modification plan"],
-    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/4b6becd0c_20260301_0417_ImageGeneration_remix_01kjmazxpre3xrr473txxxqw5z.png"
-  },
-  {
-    id: "ehs_programs",
-    icon: ClipboardCheck,
-    title: "Compliance & Safety Management",
-    tagline: "Programs · Policies · Audits",
-    summary: "Gaps in EHS programs create legal exposure and complicate incident investigations. We develop written programs, policies, and audit-ready documentation that align with Ontario OHS requirements and hold up under scrutiny.",
-    bullets: ["Chemical Prestart reviews (O. Reg. 851)", "Written EH&S program development", "ISO 45001 / CSA Z1000 gap analysis", "JHSC-ready summaries"],
-    audiences: ["business", "facility", "public"],
-    triggers: ["Ministry of Labour inspection", "New chemicals or processes", "Program never updated"],
-    deliverables: ["Compliance gap report", "Written programs (OHSA-aligned)", "Safety management system framework", "JHSC communication materials"],
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
-  },
-  {
-    id: "training",
-    icon: GraduationCap,
-    title: "Training & Specialized Sector Support",
-    tagline: "Training · Healthcare · Film · Indigenous Communities",
-    summary: "Generic training rarely prepares workers for real-world hazard scenarios. We deliver competency-based OHS training and sector-specific industrial hygiene support that addresses actual risks in your workplace.",
-    bullets: ["Worker & supervisor hazard training", "JHSC Part I & II facilitation", "Healthcare & pharmaceutical IH", "Indigenous & remote site support"],
-    audiences: ["business", "public", "ngo"],
-    triggers: ["JHSC training due", "New workforce or high turnover", "Specialized sector assessment needed"],
-    deliverables: ["Custom hazard training (needs analysis → delivery)", "JHSC certification facilitation", "Sector-specific IH assessment report", "Plain-language worker materials"],
-    image: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=600&q=80"
-  }
-];
+{
+  id: "iaq",
+  icon: Building,
+  title: "Indoor Air Quality, Odour & Mould",
+  tagline: "Indoor Air · Radon · Microbial",
+  summary: "Persistent odours, occupant health complaints, or mould concerns often indicate a measurable indoor air quality issue. Without a documented assessment, the source remains unresolved. We investigate, test, and deliver clear findings with practical next steps.",
+  bullets: ["Mould & Legionella testing", "Radon measurement", "Odour source investigation", "Ventilation assessment"],
+  audiences: ["home", "facility", "public", "ngo"],
+  triggers: ["Musty smell or visible mould", "Occupant health complaints", "Real estate transaction", "Post-flood or renovation"],
+  deliverables: ["Contaminant source report", "Radon levels vs. Health Canada guidelines", "Mould remediation scope", "Ventilation improvement plan"],
+  image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e3ec8e48c_ChatGPTImageFeb28202604_23_54PM.png"
+},
+{
+  id: "occupational_hygiene",
+  icon: Leaf,
+  title: "Chemical & Biological Exposure Assessment",
+  tagline: "Dust · Chemicals · Bioaerosols",
+  summary: "Airborne chemical, dust, and biological hazards are not always visible. Undocumented exposures create long-term health risks and regulatory vulnerability. We measure real exposures and benchmark them precisely against Ontario occupational exposure limits.",
+  bullets: ["Personal breathing zone sampling", "SEG exposure profiles", "Bayesian risk analysis", "Control recommendations"],
+  audiences: ["business", "facility", "public"],
+  triggers: ["Chemical or dust concerns", "Ministry of Labour audit", "New process or substance introduced"],
+  deliverables: ["Exposure profiles vs. Ontario OELs & ACGIH TLVs®", "Risk ratings by worker group", "Prioritized control plan", "Audit-ready report"],
+  image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/9375df2c5_20260301_0342_ImageGeneration_remix_01kjm8zs61fkyb4nb8xp3f491q.png"
+},
+{
+  id: "noise_physical",
+  icon: HardHat,
+  title: "Noise, Radiation & Physical Agents",
+  tagline: "Noise · Vibration · Radiation",
+  summary: "Prolonged exposure to noise, vibration, or radiation causes cumulative and often irreversible harm. We use calibrated instruments to quantify exposures, identify your legal obligations, and recommend proportionate controls.",
+  bullets: ["8-hour TWA noise dosimetry", "Vibration (hand-arm & whole-body)", "Radiation field surveys", "Hearing program review"],
+  audiences: ["business", "facility", "public"],
+  triggers: ["Workers reporting hearing issues", "Loud equipment added", "JHSC noise concerns"],
+  deliverables: ["Noise exposure report vs. O. Reg. 381/15", "Radiation survey findings", "Engineering control priorities", "Hearing conservation gaps"],
+  image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e69f0a4a0_20260301_0400_ImageGeneration_remix_01kjma0etbfg2bskz604ancbdh.png"
+},
+{
+  id: "heat_ergonomics",
+  icon: Zap,
+  title: "Heat Stress & Ergonomics",
+  tagline: "Heat · Ergonomics · MSD Prevention",
+  summary: "Heat stress and ergonomic risks are underestimated until an incident occurs. We assess thermal conditions and workstation design early, providing structured recommendations to reduce injury risk and support due diligence.",
+  bullets: ["WBGT heat monitoring (ISO 7243)", "Metabolic rate estimation", "RULA/REBA ergonomic review", "MSD control recommendations"],
+  audiences: ["business", "facility"],
+  triggers: ["Summer outdoor or hot indoor work", "MSD injury spike", "New production line or task"],
+  deliverables: ["Heat exposure vs. ACGIH TLV® limits", "Acclimatization protocols", "Ergonomic risk scores", "Workstation modification plan"],
+  image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/4b6becd0c_20260301_0417_ImageGeneration_remix_01kjmazxpre3xrr473txxxqw5z.png"
+},
+{
+  id: "ehs_programs",
+  icon: ClipboardCheck,
+  title: "Compliance & Safety Management",
+  tagline: "Programs · Policies · Audits",
+  summary: "Gaps in EHS programs create legal exposure and complicate incident investigations. We develop written programs, policies, and audit-ready documentation that align with Ontario OHS requirements and hold up under scrutiny.",
+  bullets: ["Chemical Prestart reviews (O. Reg. 851)", "Written EH&S program development", "ISO 45001 / CSA Z1000 gap analysis", "JHSC-ready summaries"],
+  audiences: ["business", "facility", "public"],
+  triggers: ["Ministry of Labour inspection", "New chemicals or processes", "Program never updated"],
+  deliverables: ["Compliance gap report", "Written programs (OHSA-aligned)", "Safety management system framework", "JHSC communication materials"],
+  image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
+},
+{
+  id: "training",
+  icon: GraduationCap,
+  title: "Training & Specialized Sector Support",
+  tagline: "Training · Healthcare · Film · Indigenous Communities",
+  summary: "Generic training rarely prepares workers for real-world hazard scenarios. We deliver competency-based OHS training and sector-specific industrial hygiene support that addresses actual risks in your workplace.",
+  bullets: ["Worker & supervisor hazard training", "JHSC Part I & II facilitation", "Healthcare & pharmaceutical IH", "Indigenous & remote site support"],
+  audiences: ["business", "public", "ngo"],
+  triggers: ["JHSC training due", "New workforce or high turnover", "Specialized sector assessment needed"],
+  deliverables: ["Custom hazard training (needs analysis → delivery)", "JHSC certification facilitation", "Sector-specific IH assessment report", "Plain-language worker materials"],
+  image: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=600&q=80"
+}];
+
 
 const industries = [
-  { icon: Home, name: "Homeowners" },
-  { icon: Factory, name: "Manufacturing" },
-  { icon: Building2, name: "Facility Managers" },
-  { icon: HeartPulse, name: "Hospitals & Healthcare" },
-  { icon: GraduationCap, name: "Schools" },
-  { icon: HardHat, name: "Pharmaceuticals" },
-  { icon: Users, name: "NGOs" },
-  { icon: ClipboardCheck, name: "Public Services" }
-];
+{ icon: Home, name: "Homeowners" },
+{ icon: Factory, name: "Manufacturing" },
+{ icon: Building2, name: "Facility Managers" },
+{ icon: HeartPulse, name: "Hospitals & Healthcare" },
+{ icon: GraduationCap, name: "Schools" },
+{ icon: HardHat, name: "Pharmaceuticals" },
+{ icon: Users, name: "NGOs" },
+{ icon: ClipboardCheck, name: "Public Services" }];
+
 
 function ServiceCard({ service, index }) {
   const [expanded, setExpanded] = useState(false);
@@ -112,8 +112,8 @@ function ServiceCard({ service, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.07 }}
-      className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"
-    >
+      className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+
       {/* Top-level summary */}
       <div className="p-8">
         <div className="flex items-start gap-4 mb-4">
@@ -129,43 +129,43 @@ function ServiceCard({ service, index }) {
         <p className="text-slate-600 mb-5 leading-relaxed">{service.summary}</p>
 
         <ul className="grid grid-cols-2 gap-2 mb-6">
-          {service.bullets.map((b) => (
-            <li key={b} className="flex items-center gap-2 text-sm text-slate-700">
+          {service.bullets.map((b) =>
+          <li key={b} className="flex items-center gap-2 text-sm text-slate-700">
               <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
               {b}
             </li>
-          ))}
+          )}
         </ul>
 
         {/* When you need it */}
-        {service.triggers && (
-          <div className="mb-5">
+        {service.triggers &&
+        <div className="mb-5">
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">When you need it</p>
             <div className="flex flex-wrap gap-2">
-              {service.triggers.map(t => (
-                <span key={t} className="bg-amber-50 border border-amber-100 text-amber-700 text-xs px-2.5 py-1 rounded-full">{t}</span>
-              ))}
+              {service.triggers.map((t) =>
+            <span key={t} className="bg-amber-50 border border-amber-100 text-amber-700 text-xs px-2.5 py-1 rounded-full">{t}</span>
+            )}
             </div>
           </div>
-        )}
+        }
 
         {/* Who it helps */}
-        {service.audiences && (
-          <div className="mb-5">
+        {service.audiences &&
+        <div className="mb-5">
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Who it helps</p>
             <div className="flex flex-wrap gap-2">
-              {service.audiences.map(a => {
-                const info = audienceMap[a];
-                if (!info) return null;
-                return (
-                  <span key={a} className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full">
+              {service.audiences.map((a) => {
+              const info = audienceMap[a];
+              if (!info) return null;
+              return (
+                <span key={a} className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full">
                     <info.icon className="w-3 h-3 text-emerald-500" />{info.label}
-                  </span>
-                );
-              })}
+                  </span>);
+
+            })}
             </div>
           </div>
-        )}
+        }
 
         <div className="flex items-center gap-3">
           <Link to={createPageUrl("Contact") + `?service=${service.id}`}>
@@ -177,8 +177,8 @@ function ServiceCard({ service, index }) {
           <Button
             variant="ghost"
             className="text-slate-500 hover:text-slate-800 text-sm rounded-full"
-            onClick={() => setExpanded(!expanded)}
-          >
+            onClick={() => setExpanded(!expanded)}>
+
             {expanded ? "Less detail" : "What we deliver"}
             {expanded ? <ChevronUp className="ml-1 w-4 h-4" /> : <ChevronDown className="ml-1 w-4 h-4" />}
           </Button>
@@ -187,39 +187,39 @@ function ServiceCard({ service, index }) {
 
       {/* Expandable detail */}
       <AnimatePresence>
-        {expanded && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.35 }}
-            className="overflow-hidden"
-          >
+        {expanded &&
+        <motion.div
+          initial={{ height: 0, opacity: 0 }}
+          animate={{ height: "auto", opacity: 1 }}
+          exit={{ height: 0, opacity: 0 }}
+          transition={{ duration: 0.35 }}
+          className="overflow-hidden">
+
             <div className="border-t border-slate-100 bg-slate-50 px-8 py-8 grid md:grid-cols-2 gap-8">
               <div>
                 <img
-                  src={service.image}
-                  alt={service.title}
-                  className="rounded-xl shadow-md w-full h-48 object-cover"
-                />
+                src={service.image}
+                alt={service.title}
+                className="rounded-xl shadow-md w-full h-48 object-cover" />
+
               </div>
               <div>
                 <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-wide mb-4">What We Deliver</h4>
                 <ul className="space-y-3">
-                  {service.deliverables.map((d) => (
-                    <li key={d} className="flex items-start gap-2">
+                  {service.deliverables.map((d) =>
+                <li key={d} className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
                       <span className="text-slate-700 text-sm">{d}</span>
                     </li>
-                  ))}
+                )}
                 </ul>
               </div>
             </div>
           </motion.div>
-        )}
+        }
       </AnimatePresence>
-    </motion.div>
-  );
+    </motion.div>);
+
 }
 
 export default function Services() {
@@ -235,8 +235,8 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl"
-          >
+            className="max-w-3xl">
+
             <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">
               Ontario EHS Consulting
             </span>
@@ -247,9 +247,9 @@ export default function Services() {
               From indoor air quality to regulatory compliance, we provide science-based occupational hygiene assessments that translate exposure data into defensible, actionable decisions.
             </p>
             <div className="flex flex-wrap gap-3">
-              {["Indoor Air & Odours", "Exposure Assessment", "Heat & Noise", "Compliance Support", "Training"].map(tag => (
-                <span key={tag} className="bg-white/10 border border-white/15 text-white text-xs font-medium px-3 py-1.5 rounded-full">{tag}</span>
-              ))}
+              {["Indoor Air & Odours", "Exposure Assessment", "Heat & Noise", "Compliance Support", "Training"].map((tag) =>
+              <span key={tag} className="bg-white/10 border border-white/15 text-white text-xs font-medium px-3 py-1.5 rounded-full">{tag}</span>
+              )}
             </div>
           </motion.div>
         </div>
@@ -260,12 +260,12 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12">
             <span className="text-slate-500 font-medium text-sm">Sectors Across Ontario:</span>
-            {industries.map((industry) => (
-              <div key={industry.name} className="flex items-center gap-2 text-slate-700">
+            {industries.map((industry) =>
+            <div key={industry.name} className="flex items-center gap-2 text-slate-700">
                 <industry.icon className="w-4 h-4 text-emerald-600" />
                 <span className="font-medium text-sm">{industry.name}</span>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -277,15 +277,15 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
-          >
+            className="text-center mb-12">
+
             <h2 className="text-3xl font-bold text-slate-900 mb-3">Our Services</h2>
             <p className="text-slate-500 max-w-xl mx-auto">Expand any service to review scope, methodology, and deliverables.</p>
           </motion.div>
           <div className="space-y-6">
-            {services.map((service, index) => (
-              <ServiceCard key={service.id} service={service} index={index} />
-            ))}
+            {services.map((service, index) =>
+            <ServiceCard key={service.id} service={service} index={index} />
+            )}
           </div>
         </div>
       </section>
@@ -297,8 +297,8 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+            transition={{ duration: 0.6 }}>
+
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
               Uncertainty creates risk.
             </h2>
@@ -314,7 +314,7 @@ export default function Services() {
                 </Button>
               </Link>
               <Link to={createPageUrl("Contact")}>
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-base rounded-full">
+                <Button size="lg" variant="outline" className="bg-sky-700 text-white px-8 py-6 text-base font-medium rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-10 border-white/30 hover:bg-white/10">
                   Get an Assessment Quote
                 </Button>
               </Link>
@@ -322,6 +322,6 @@ export default function Services() {
           </motion.div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }
