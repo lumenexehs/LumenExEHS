@@ -40,6 +40,8 @@ const serviceOptions = [
 ];
 
 export default function Contact() {
+  const { lang } = useLang();
+  const tr = t[lang].contact;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
