@@ -101,17 +101,11 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">
-              About LumenEx EHS
-            </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-4">
-              Our Mission: Make Invisible Hazards Visible
-            </h1>
-            <p className="text-xl text-slate-300 leading-relaxed mb-6">
-              Data you can trust. Action you can take. — Independent, CIH-led EHS consulting in Ontario since 2006.
-            </p>
+            <span className="text-emerald-400 font-semibold tracking-wide uppercase text-sm">{tr.eyebrow}</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-4">{tr.heroTitle}</h1>
+            <p className="text-xl text-slate-300 leading-relaxed mb-6">{tr.heroSubtitle}</p>
             <div className="flex flex-wrap gap-3">
-              {["CIH-Led", "19+ Years", "Ontario-Based", "Community Volunteer Program"].map(tag => (
+              {tr.tags.map(tag => (
                 <span key={tag} className="bg-white/10 border border-white/15 text-white text-xs font-medium px-3 py-1.5 rounded-full">{tag}</span>
               ))}
             </div>
@@ -129,26 +123,18 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                Our Purpose — and Our Name
-              </h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">{tr.storyTitle}</h2>
               <div className="space-y-4 text-slate-600 leading-relaxed">
-                <p>
-                  Before modern gas detectors existed, miners carried a safety lamp — a carefully engineered tool that did more than provide light. It detected hazardous gases and oxygen-depleted air that were completely invisible to the human eye. A change in the flame was an early warning signal, a way to reveal unseen danger before it became tragedy.
-                </p>
-                <p>
-                  That is the metaphor behind LumenEx EHS. Our work is to <span className="font-semibold text-slate-800">light the environment</span> — to detect, measure, and interpret workplace hazards that most people cannot see, smell, or feel until it is too late. Chemical exposures, noise, heat, contaminated air, biological agents: the risks that silently accumulate over time.
-                </p>
-                <p>
-                  We work with employers in manufacturing, construction, healthcare, education, and the public sector — helping them anticipate risk rather than react to incidents, using science, monitoring, and professional judgement to protect their workers.
-                </p>
+                <p>{tr.storyP1}</p>
+                <p>{tr.storyP2}</p>
+                <p>{tr.storyP3}</p>
               </div>
               <div className="mt-8 flex items-center gap-6">
                 <div className="flex items-center gap-3">
                   <Building2 className="w-8 h-8 text-emerald-600" />
                   <div>
                     <div className="text-2xl font-bold text-slate-900">10+</div>
-                    <div className="text-sm text-slate-500">Sectors Served</div>
+                    <div className="text-sm text-slate-500">{tr.sectorsServed}</div>
                   </div>
                 </div>
                 <div className="w-px h-12 bg-slate-200" />
@@ -156,7 +142,7 @@ export default function About() {
                   <Award className="w-8 h-8 text-emerald-600" />
                   <div>
                     <div className="text-2xl font-bold text-slate-900">19+</div>
-                    <div className="text-sm text-slate-500">Years of Field Experience</div>
+                    <div className="text-sm text-slate-500">{tr.yearsExperience}</div>
                   </div>
                 </div>
               </div>
