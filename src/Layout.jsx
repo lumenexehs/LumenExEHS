@@ -84,7 +84,10 @@ export default function Layout({ children, currentPageName }) {
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/774460418_ChatGPTImageMar4202604_01_29PM-Picsart-BackgroundRemover.png"
                 alt="LumenEx EHS"
-                className={`h-14 w-auto object-contain transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`} />
+                className={`h-14 w-auto object-contain transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`}
+                style={{
+                  filter: `drop-shadow(0 0 ${8 + scrollProgress * 12}px ${isScrolled ? '#3B82F6' : '#D4AF7A'})`
+                }} />
             </Link>
 
             {/* Desktop Navigation */}
