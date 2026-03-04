@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { School, Factory, Building2, Home } from "lucide-react";
+import { Link } from "react-router-dom";
+import { createPageUrl } from "@/utils";
 
 const cards = [
   {
@@ -7,28 +9,32 @@ const cards = [
     sector: "Education and Offices",
     symptom: "Staff reporting odours or headaches.",
     consequence: "Without a documented assessment, the source remains unknown and complaints continue to escalate.",
-    color: "border-amber-200"
+    color: "border-amber-200",
+    page: "SectorEducation"
   },
   {
     icon: Factory,
     sector: "Manufacturing and Industrial",
     symptom: "Uncertainty about noise, heat, dust, diesel, or chemical exposure levels.",
     consequence: "Undocumented exposures create regulatory risk and complicate worker compensation decisions.",
-    color: "border-blue-200"
+    color: "border-blue-200",
+    page: "SectorManufacturing"
   },
   {
     icon: Building2,
     sector: "Public Sector and Training Facilities",
     symptom: "Long-term exposure concerns with no documented baseline.",
     consequence: "Absence of evidence is not evidence of absence. Defensible records protect both workers and organizations.",
-    color: "border-emerald-200"
+    color: "border-emerald-200",
+    page: "SectorPublicSector"
   },
   {
     icon: Home,
     sector: "Residential and Property Management",
     symptom: "Recurring air quality complaints and radon concerns.",
     consequence: "Repeated unresolved complaints carry legal and reputational consequences for property managers.",
-    color: "border-rose-200"
+    color: "border-rose-200",
+    page: "SectorResidential"
   }
 ];
 
