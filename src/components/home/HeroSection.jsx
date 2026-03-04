@@ -14,7 +14,7 @@ export default function HeroSection() {
           alt="Occupational health and safety"
           className="w-full h-full object-cover" />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0F2A4A]/97 via-[#0F2A4A]/90 to-[#0F2A4A]/75" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0F2A4A]/95 via-[#0F2A4A]/80 to-[#0F2A4A]/50" />
       </div>
 
       <motion.div
