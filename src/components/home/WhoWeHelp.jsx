@@ -43,7 +43,7 @@ export default function WhoWeHelp() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.07 }}
             >
-              <Link to={createPageUrl(sector.page)} className="group flex flex-col items-start gap-3 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:border-[#d4af7a]/50 hover:bg-white transition-all block h-full">
+              <Link to={createPageUrl(sector.page)} onClick={() => window.scrollTo(0, 0)} className="group flex flex-col items-start gap-3 p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:border-[#d4af7a]/50 hover:bg-white transition-all block h-full">
                 <div className="w-10 h-10 bg-[#1a3a52]/8 rounded-xl flex items-center justify-center group-hover:bg-[#1a3a52]/15 transition-colors">
                   <sector.icon className="w-5 h-5 text-[#1a3a52]" />
                 </div>

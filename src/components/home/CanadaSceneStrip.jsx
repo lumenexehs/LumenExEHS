@@ -38,7 +38,7 @@ export default function CanadaSceneStrip() {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             className="relative h-48 md:h-64 overflow-hidden group"
           >
-            <Link to={createPageUrl(scene.page)} className="block w-full h-full">
+            <Link to={createPageUrl(scene.page)} onClick={() => window.scrollTo(0, 0)} className="block w-full h-full">
               <img
                 src={scene.image}
                 alt={scene.label}
