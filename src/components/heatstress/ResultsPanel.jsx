@@ -228,14 +228,14 @@ LumenEx EHS
       </div>
 
       {/* Email Dialog */}
-      <AlertDialog open={showEmailDialog} onOpenChange={setShowEmailDialog}>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Send Results to Email</AlertDialogTitle>
-            <AlertDialogDescription>
+      <Dialog open={showEmailDialog} onOpenChange={setShowEmailDialog}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Send Results to Email</DialogTitle>
+            <DialogDescription>
               We'll send your screening summary to the email address below.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
+            </DialogDescription>
+          </DialogHeader>
           {emailSent ? (
             <div className="py-6 text-center">
               <CheckCircle className="w-8 h-8 text-green-600 mx-auto mb-3" />
@@ -257,19 +257,21 @@ LumenEx EHS
                 />
               </div>
               <div className="flex gap-3 justify-end">
-                <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction
+                <Button variant="outline" onClick={() => setShowEmailDialog(false)}>
+                  Cancel
+                </Button>
+                <Button
                   onClick={handleSendEmail}
                   disabled={isSendingEmail}
                   className="bg-emerald-600 hover:bg-emerald-700"
                 >
                   {isSendingEmail ? "Sending..." : "Send"}
-                </AlertDialogAction>
+                </Button>
               </div>
             </div>
           )}
-        </AlertDialogContent>
-      </AlertDialog>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
