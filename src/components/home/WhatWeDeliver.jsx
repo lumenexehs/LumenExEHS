@@ -84,6 +84,7 @@ export default function WhatWeDeliver() {
                   </span>
                 ))}
               </div>
+              </Link>
             </motion.div>
           ))}
         </div>
