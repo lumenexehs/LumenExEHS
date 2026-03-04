@@ -37,14 +37,10 @@ export default function Layout({ children, currentPageName }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [sectorsOpen, setSectorsOpen] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
-      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = maxScroll > 0 ? Math.min(window.scrollY / maxScroll, 1) : 0;
-      setScrollProgress(progress);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -84,10 +80,7 @@ export default function Layout({ children, currentPageName }) {
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/774460418_ChatGPTImageMar4202604_01_29PM-Picsart-BackgroundRemover.png"
                 alt="LumenEx EHS"
-                className={`h-14 w-auto object-contain transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`}
-                style={{
-                  filter: `drop-shadow(0 0 ${8 + scrollProgress * 12}px #D4AF7A)`
-                }} />
+                className={`h-14 w-auto object-contain transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`} />
             </Link>
 
             {/* Desktop Navigation */}
