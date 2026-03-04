@@ -66,6 +66,13 @@ export default function SectorResidential() {
         </div>
       </section>
 
+      {/* Image Panel */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <ResidentialImagePanel />
+        </div>
+      </section>
+
       {/* Common Challenges */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
