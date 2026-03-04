@@ -183,23 +183,15 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="lg:col-span-2 space-y-5"
             >
-              <span className="text-[#d4af7a] font-semibold tracking-wide uppercase text-sm">
-                The Safety Lamp
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
-                Detection Before Harm. Foresight Over Reaction.
-              </h2>
-              <p className="text-slate-300 leading-relaxed">
-                The original miner's safety lamp was not designed for emergencies — it was designed for <em>prevention</em>. By revealing the presence of methane or the absence of oxygen through a change in flame, it transformed invisible, deadly conditions into actionable information.
-              </p>
-              <p className="text-slate-300 leading-relaxed">
-                LumenEx EHS brings that same principle to modern workplaces. We use scientific monitoring, professional interpretation, and evidence-based guidance to turn unseen occupational health hazards into clear, manageable insight — before they cause harm to workers.
-              </p>
+              <span className="text-[#d4af7a] font-semibold tracking-wide uppercase text-sm">{tr.lampEyebrow}</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">{tr.lampTitle}</h2>
+              <p className="text-slate-300 leading-relaxed">{tr.lampP1}</p>
+              <p className="text-slate-300 leading-relaxed">{tr.lampP2}</p>
               <div className="grid sm:grid-cols-3 gap-5 pt-4">
                 {[
-                  { label: "Detect", desc: "Identify hazards that are not immediately obvious" },
-                  { label: "Interpret", desc: "Translate data into clear risk findings" },
-                  { label: "Protect", desc: "Guide defensible, proportionate controls" }
+                  { label: tr.detect, desc: tr.detectDesc },
+                  { label: tr.interpret, desc: tr.interpretDesc },
+                  { label: tr.protect, desc: tr.protectDesc }
                 ].map((item) => (
                   <div key={item.label} className="bg-white/10 rounded-xl p-4 border border-white/10">
                     <div className="text-[#d4af7a] font-bold text-lg mb-1">{item.label}</div>
@@ -282,12 +274,8 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16"
           >
-            <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">
-              Our Values
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3">
-              What Drives Us
-            </h2>
+            <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">{tr.valuesEyebrow}</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3">{tr.valuesTitle}</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
