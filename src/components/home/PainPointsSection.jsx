@@ -11,7 +11,10 @@ const cards = [
     consequence: "Without a documented assessment, the source remains unknown and complaints continue to escalate.",
     color: "border-amber-200",
     page: "SectorEducation",
-    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0b309d691_ChatGPTImageMar4202612_04_48PM.png"
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/0b309d691_ChatGPTImageMar4202612_04_48PM.png",
+    overlayLabel: "Education Sector",
+    overlayTitle: "Indoor Air Quality Monitoring",
+    overlayDesc: "Professional monitoring for hidden environmental factors in schools."
   },
   {
     icon: Factory,
