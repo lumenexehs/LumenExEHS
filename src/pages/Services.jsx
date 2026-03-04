@@ -160,7 +160,7 @@ function ServiceCard({ service, index }) {
               if (!info) return null;
               const inner = <><info.icon className="w-3 h-3 text-emerald-500" />{info.label}</>;
               return info.page ? (
-                <Link key={a} to={createPageUrl(info.page)} className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full hover:bg-emerald-50 hover:border-emerald-200 transition-colors">
+                <Link key={a} to={createPageUrl(info.page)} onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-xs px-2.5 py-1 rounded-full hover:bg-emerald-50 hover:border-emerald-200 transition-colors">
                   {inner}
                 </Link>
               ) : (
