@@ -35,7 +35,7 @@ const cards = [
     consequence: "Absence of evidence is not evidence of absence. Defensible records protect both workers and organizations.",
     color: "border-emerald-200",
     page: "SectorPublicSector",
-    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/3a48e842c_ChatGPTImageMar4202601_45_04PM.png",
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/a87456be0_ChatGPTImageMar4202604_39_54PM.png",
     overlayLabel: "Public Sector",
     overlayTitle: "Noise & Exposure at Training Facilities",
     overlayDesc: "Documented baseline assessments for public sector and law enforcement training environments."
