@@ -47,7 +47,7 @@ const services = [
     icon: HardHat,
     title: "Noise, Radiation & Physical Agents",
     tagline: "Noise · Vibration · Radiation",
-    summary: "Too loud? Concerned about radiation or vibration? We measure it, compare it to the law, and tell you what to fix.",
+    summary: "Prolonged exposure to noise, vibration, or radiation causes cumulative and often irreversible harm. We use calibrated instruments to quantify exposures, identify your legal obligations, and recommend proportionate controls.",
     bullets: ["8-hour TWA noise dosimetry", "Vibration (hand-arm & whole-body)", "Radiation field surveys", "Hearing program review"],
     audiences: ["business", "facility", "public"],
     triggers: ["Workers reporting hearing issues", "Loud equipment added", "JHSC noise concerns"],
