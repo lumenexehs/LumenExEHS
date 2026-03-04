@@ -227,38 +227,19 @@ export default function Contact() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message">Project Details *</Label>
-                        <Textarea
-                          id="message"
-                          value={formData.message}
-                          onChange={(e) => handleChange("message", e.target.value)}
-                          placeholder="Describe your assessment needs, agents of concern, or regulatory questions..."
-                          required
-                          className="min-h-[150px] resize-none"
-                        />
+                        <Label htmlFor="message">{tr.messageLabel} *</Label>
+                        <Textarea id="message" value={formData.message} onChange={(e) => handleChange("message", e.target.value)} placeholder={tr.messagePlaceholder} required className="min-h-[150px] resize-none" />
                       </div>
 
-                      <Button 
-                        type="submit"
-                        disabled={isSubmitting}
-                        className="w-full bg-emerald-500 hover:bg-emerald-600 text-white h-12 rounded-full"
-                      >
+                      <Button type="submit" disabled={isSubmitting} className="w-full bg-emerald-500 hover:bg-emerald-600 text-white h-12 rounded-full">
                         {isSubmitting ? (
-                          <>
-                            <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                            Sending...
-                          </>
+                          <><Loader2 className="w-4 h-4 mr-2 animate-spin" />{tr.sendingButton}</>
                         ) : (
-                          <>
-                            <Send className="w-4 h-4 mr-2" />
-                            Send Message
-                          </>
+                          <><Send className="w-4 h-4 mr-2" />{tr.sendButton}</>
                         )}
                       </Button>
 
-                      <p className="text-sm text-slate-500 text-center">
-                        By submitting this form, you agree to our privacy policy.
-                      </p>
+                      <p className="text-sm text-slate-500 text-center">{tr.privacy}</p>
                     </form>
                   </>
                 )}
