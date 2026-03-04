@@ -202,7 +202,7 @@ function LayoutInner({ children, currentPageName }) {
                   
                   <nav className="flex-1 p-6">
                     <div className="space-y-1">
-                      {navLinks.map((link) =>
+                      {navLinkDefs.map((link) =>
                       <Link
                         key={link.page}
                         to={createPageUrl(link.page)}
@@ -212,14 +212,13 @@ function LayoutInner({ children, currentPageName }) {
                         "bg-[#d4af7a]/10 text-[#1a3a52]" :
                         "text-slate-600 hover:bg-slate-50"}`
                         }>
-
-                          {link.name}
+                          {tr.nav[link.key]}
                           <ChevronRight className="w-4 h-4" />
                         </Link>
                       )}
                       <div className="pt-1 pb-1">
-                        <p className="px-4 text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">Sectors</p>
-                        {sectorLinks.map((link) =>
+                        <p className="px-4 text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">{tr.nav.sectors}</p>
+                        {sectorLinkDefs.map((link) =>
                         <Link
                           key={link.page}
                           to={createPageUrl(link.page)}
@@ -237,17 +236,22 @@ function LayoutInner({ children, currentPageName }) {
                         to={createPageUrl("ClientPortal")}
                         onClick={() => setMobileMenuOpen(false)}
                         className="flex items-center justify-between py-3 px-4 rounded-lg text-slate-600 hover:bg-slate-50">
-
-                        Client Portal
+                        {tr.nav.clientPortal}
                         <ChevronRight className="w-4 h-4" />
                       </Link>
+                      <button
+                        onClick={toggleLang}
+                        className="w-full flex items-center justify-between py-3 px-4 rounded-lg text-slate-600 hover:bg-slate-50 text-left">
+                        {lang === "en" ? "切換至中文" : "Switch to English"}
+                        <ChevronRight className="w-4 h-4" />
+                      </button>
                     </div>
                   </nav>
 
                   <div className="p-6 border-t">
                     <Link to={createPageUrl("Contact")} onClick={() => setMobileMenuOpen(false)}>
                       <Button className="w-full bg-[#d4af7a] hover:bg-[#c49d68] text-[#1a3a52] font-semibold rounded-full">
-                        Contact Us
+                        {tr.nav.contact}
                       </Button>
                     </Link>
                   </div>
