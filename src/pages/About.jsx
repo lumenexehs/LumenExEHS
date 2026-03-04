@@ -304,15 +304,12 @@ export default function About() {
                   <div className="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mx-auto mb-5">
                     <value.icon className="w-7 h-7 text-emerald-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                    {value.title}
-                  </h3>
-                  <p className="text-slate-600">
-                    {value.description}
-                  </p>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">{tv ? tv.title : value.title}</h3>
+                  <p className="text-slate-600">{tv ? tv.description : value.description}</p>
                 </div>
               </motion.div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -327,15 +324,9 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-2xl mx-auto mb-16"
           >
-            <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">
-              Our Methodology
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">
-              How We Illuminate Workplace Risk
-            </h2>
-            <p className="text-lg text-slate-600">
-              A four-step process to find, measure, and control workplace hazards — clearly and defensibly.
-            </p>
+            <span className="text-emerald-600 font-semibold tracking-wide uppercase text-sm">{tr.methodologyEyebrow}</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">{tr.methodologyTitle}</h2>
+            <p className="text-lg text-slate-600">{tr.methodologySubtitle}</p>
           </motion.div>
 
           <ApproachSteps />
@@ -352,12 +343,8 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Credentials & Standards
-            </h2>
-            <p className="text-slate-400">
-              Professional certifications and recognized Canadian standards
-            </p>
+            <h2 className="text-3xl font-bold text-white mb-4">{tr.credentialsTitle}</h2>
+            <p className="text-slate-400">{tr.credentialsSubtitle}</p>
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -390,18 +377,11 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-              Let's Bring Clarity to Your Workplace
-            </h2>
-            <p className="text-lg text-slate-600 mb-8">
-              Have a concern? Not sure where to start? Tell us what you're dealing with — we'll point you in the right direction.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">{tr.ctaTitle}</h2>
+            <p className="text-lg text-slate-600 mb-8">{tr.ctaSubtitle}</p>
             <Link to={createPageUrl("Contact")}>
-              <Button 
-                size="lg" 
-                className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group"
-              >
-                Request Consultation
+              <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 text-lg rounded-full group">
+                {tr.ctaButton}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
