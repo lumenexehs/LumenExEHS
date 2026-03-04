@@ -59,6 +59,11 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import Services from './pages/Services';
 import TermsAndConditions from './pages/TermsAndConditions';
 import SectorEducation from './pages/SectorEducation';
+import SectorManufacturing from './pages/SectorManufacturing';
+import SectorPublicSector from './pages/SectorPublicSector';
+import SectorResidential from './pages/SectorResidential';
+import SectorHealthcare from './pages/SectorHealthcare';
+import SectorConstruction from './pages/SectorConstruction';
 import __Layout from './Layout.jsx';
 
 
@@ -75,6 +80,11 @@ export const PAGES = {
     "Services": Services,
     "TermsAndConditions": TermsAndConditions,
     "SectorEducation": SectorEducation,
+    "SectorManufacturing": SectorManufacturing,
+    "SectorPublicSector": SectorPublicSector,
+    "SectorResidential": SectorResidential,
+    "SectorHealthcare": SectorHealthcare,
+    "SectorConstruction": SectorConstruction,
 }
 
 export const pagesConfig = {
