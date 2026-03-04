@@ -10,6 +10,7 @@ import StatsSection from "@/components/home/StatsSection";
 import CTASection from "@/components/home/CTASection";
 import CommunityServiceSection from "@/components/shared/CommunityServiceSection";
 import CredentialsBadges from "@/components/shared/CredentialsBadges";
+import FeaturedServicesGrid from "@/components/services/FeaturedServicesGrid";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <HeroSection />
       <PainPointsSection />
       <RadonHighlight />
+      <FeaturedServicesGrid />
       <ServicesOverview />
       <WhatWeDeliver />
       <WhoWeHelp />

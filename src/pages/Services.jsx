@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
+import FeaturedServicesGrid from "@/components/services/FeaturedServicesGrid";
 
 import {
   Leaf, HardHat, ClipboardCheck, GraduationCap, Zap, Building,
@@ -260,6 +261,9 @@ export default function Services() {
           </motion.div>
         </div>
       </section>
+
+      {/* Featured Services */}
+      <FeaturedServicesGrid />
 
       {/* Sectors */}
       <section className="py-10 bg-slate-50 border-b">
