@@ -64,8 +64,9 @@ export default function WhatWeDeliver() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/8 transition-colors"
+              className="bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/8 transition-colors cursor-pointer"
             >
+              <Link to={createPageUrl("Services")} className="block h-full">
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-11 h-11 bg-[#d4af7a]/15 rounded-xl flex items-center justify-center flex-shrink-0">
                   <pillar.icon className="w-5 h-5 text-[#d4af7a]" />
