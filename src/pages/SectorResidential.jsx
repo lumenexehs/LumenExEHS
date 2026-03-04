@@ -78,6 +78,8 @@ export default function SectorResidential() {
               Property managers need clarity that resolves disputes and protects long-term asset value. An unresolved tenant complaint is not just a service issue. It is a liability that compounds over time.
             </p>
           </motion.div>
+          <TenantJourneyAnimation />
+
           <div className="space-y-4">
             {challenges.map((c, i) => (
               <motion.div key={i} initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.07 }}
