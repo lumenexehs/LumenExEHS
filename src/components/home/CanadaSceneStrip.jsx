@@ -1,21 +1,27 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { createPageUrl } from "@/utils";
 
 const scenes = [
   {
     image: "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=80",
-    label: "Manufacturing"
+    label: "Manufacturing",
+    page: "SectorManufacturing"
   },
   {
     image: "https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=800&q=80",
-    label: "Healthcare"
+    label: "Healthcare",
+    page: "SectorHealthcare"
   },
   {
     image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80",
-    label: "Construction"
+    label: "Construction",
+    page: "SectorConstruction"
   },
   {
     image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80",
-    label: "Education"
+    label: "Education",
+    page: "SectorEducation"
   }
 ];
 
