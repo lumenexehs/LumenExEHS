@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
-import { School, Factory, Building2, HeartPulse, HardHat, Home } from "lucide-react";
+import { Link } from "react-router-dom";
+import { createPageUrl } from "@/utils";
+import { School, Factory, Building2, HeartPulse, HardHat, Home, ArrowRight } from "lucide-react";
 
 const sectors = [
-  { icon: School, name: "Educational Institutions", desc: "Schools, colleges, and boards of education" },
-  { icon: Factory, name: "Manufacturing", desc: "Industrial facilities and production environments" },
-  { icon: Building2, name: "Public Sector", desc: "Government, municipal, and crown agencies" },
-  { icon: HeartPulse, name: "Healthcare", desc: "Hospitals, clinics, and long-term care" },
-  { icon: HardHat, name: "Construction", desc: "Contractors and project site management" },
-  { icon: Home, name: "Residential Property Management", desc: "Property managers and building owners" }
+  { icon: School, name: "Educational Institutions", desc: "Schools, colleges, and boards of education", page: "SectorEducation" },
+  { icon: Factory, name: "Manufacturing", desc: "Industrial facilities and production environments", page: "SectorManufacturing" },
+  { icon: Building2, name: "Public Sector", desc: "Government, municipal, and crown agencies", page: "SectorPublicSector" },
+  { icon: HeartPulse, name: "Healthcare", desc: "Hospitals, clinics, and long-term care", page: "SectorHealthcare" },
+  { icon: HardHat, name: "Construction", desc: "Contractors and project site management", page: "SectorConstruction" },
+  { icon: Home, name: "Residential Property Management", desc: "Property managers and building owners", page: "SectorResidential" }
 ];
 
 export default function WhoWeHelp() {
