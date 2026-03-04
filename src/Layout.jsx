@@ -241,7 +241,7 @@ export default function Layout({ children, currentPageName }) {
             <div className="md:col-span-2">
               <div className="mb-4">
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/de083ff6c_ChatGPTImageMar4202604_01_29PM.png"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/56de88fa7_ChatGPTImageMar4202604_01_29PM-Picsart-BackgroundRemover.png"
                   alt="LumenEx EHS"
                   className="h-14 w-auto object-contain brightness-0 invert" />
               </div>
