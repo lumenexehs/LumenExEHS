@@ -85,7 +85,7 @@ export default function PainPointsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Link to={createPageUrl(card.page)} className={`block bg-slate-50 rounded-2xl overflow-hidden border-l-4 ${card.color} border border-slate-100 hover:shadow-md transition-shadow group`}>
+              <Link to={createPageUrl(card.page)} onClick={() => window.scrollTo(0, 0)} className={`block bg-slate-50 rounded-2xl overflow-hidden border-l-4 ${card.color} border border-slate-100 hover:shadow-md transition-shadow group`}>
                 {card.image && (
                   <div className="relative w-full h-44 overflow-hidden">
                     <img src={card.image} alt={card.sector} className="w-full h-full object-contain bg-white" />
