@@ -50,6 +50,12 @@ const articleContent = {
       "You are renewing an OHS program and want to address all identified risks proactively",
     ],
     approach: "We conduct long-term radon measurements (minimum 90 days, per Health Canada protocol) using calibrated electret ion chambers or alpha-track detectors. Results are interpreted against both Health Canada's 200 Bq/m³ guideline and the WHO's 100 Bq/m³ reference level, giving you a complete picture of risk — not just regulatory compliance. A remediation pathway (sub-slab depressurization, ventilation) is recommended wherever levels warrant action.",
+    quote: {
+      text: "Canada's radon guideline is due for an update. Having a higher guideline can lead to some complacency and prevent remedial action, when it would be cost effective to lower it and have clear health benefits.",
+      attribution: "Lisa Gue, National Policy Manager, David Suzuki Foundation",
+      source: "CBC News, March 4, 2026",
+      sourceUrl: "https://www.cbc.ca/news/health/radon-guidelines-canada-9.7113142",
+    },
     service: "radon",
   },
   "chemical-exposure-tlv": {
