@@ -235,6 +235,22 @@ export default function Article() {
           </div>
         </motion.section>
 
+        {/* News Quote (if present) */}
+        {content.quote && (
+          <motion.section initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+            <blockquote className="border-l-4 border-[#d4af7a] pl-6 py-2">
+              <p className="text-slate-800 text-lg italic leading-relaxed mb-3">"{content.quote.text}"</p>
+              <footer className="text-sm text-slate-500">
+                <span className="font-semibold text-slate-700">{content.quote.attribution}</span>
+                {" — "}
+                <a href={content.quote.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-[#1a3a52] transition-colors">
+                  {content.quote.source}
+                </a>
+              </footer>
+            </blockquote>
+          </motion.section>
+        )}
+
         {/* Professional Approach */}
         <motion.section initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
           <div className="flex items-center gap-2 mb-4">
