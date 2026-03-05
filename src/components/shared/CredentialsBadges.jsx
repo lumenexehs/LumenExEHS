@@ -13,7 +13,7 @@ const logos = [
   },
   {
     name: "CRSP",
-    url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/825ddff5a_bcrsp_logo_dark.png",
+    url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/53789e80a_BCRSP_CRSP.png",
     bg: "bg-white"
   }
 ];
