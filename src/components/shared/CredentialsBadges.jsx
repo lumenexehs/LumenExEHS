@@ -38,6 +38,7 @@ export default function CredentialsBadges({ dark = false }) {
             src={logo.url}
             alt={`${logo.name} credential logo`}
             className="w-full h-full object-contain"
+            style={logo.name === "CSP" ? { mixBlendMode: "screen" } : {}}
           />
         </motion.a>
       ))}
