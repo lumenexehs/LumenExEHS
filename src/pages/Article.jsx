@@ -258,7 +258,7 @@ export default function Article() {
               </Button>
             </Link>
             <Link to={`${createPageUrl("Contact")}?service=general`}>
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 px-7 rounded-full">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#1a3a52] px-7 rounded-full bg-transparent">
                 Book a Free 30-Min Consult
               </Button>
             </Link>
