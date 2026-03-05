@@ -8,7 +8,7 @@ const logos = [
   },
   {
     name: "CIH",
-    url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c87874c5b_CIH-BGC-1.png",
+    url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/b90a0f5d6_certified-industrial-hygienist-cih-cp-comprehensive-practice1.png",
     link: "https://gobgc.org/cih/"
   },
   {
