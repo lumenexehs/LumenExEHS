@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 
 const logos = [
   {
-    name: "CIH",
-    url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c87874c5b_CIH-BGC-1.png",
-    bg: "bg-white"
-  },
-  {
     name: "CSP",
     url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/e35794f13_1742923500322.jpg",
     bg: "bg-black"
+  },
+  {
+    name: "CIH",
+    url: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69851d4d33bc1cfaaa36d43f/c87874c5b_CIH-BGC-1.png",
+    bg: "bg-white"
   },
   {
     name: "CRSP",
