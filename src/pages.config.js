@@ -64,7 +64,6 @@ import SectorPublicSector from './pages/SectorPublicSector';
 import SectorResidential from './pages/SectorResidential';
 import Services from './pages/Services';
 import TermsAndConditions from './pages/TermsAndConditions';
-import HeatStressCalculator from './pages/HeatStressCalculator';
 import __Layout from './Layout.jsx';
 
 
@@ -86,7 +85,6 @@ export const PAGES = {
     "SectorResidential": SectorResidential,
     "Services": Services,
     "TermsAndConditions": TermsAndConditions,
-    "HeatStressCalculator": HeatStressCalculator,
 }
 
 export const pagesConfig = {
