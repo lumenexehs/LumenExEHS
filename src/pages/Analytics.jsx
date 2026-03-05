@@ -115,8 +115,8 @@ export default function Analytics() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
           {statCards.map(({ label, value, icon: IconComp }) => (
             <div key={label} className="bg-white/5 border border-white/10 rounded-2xl p-5">
-              <div className="flex items-center justify-between mb-3">
-                <Icon className="w-5 h-5 text-[#d4af7a]" />
+            <div className="flex items-center justify-between mb-3">
+              <IconComp className="w-5 h-5 text-[#d4af7a]" />
                 {label === "New This Month" && (
                   <span className={`text-xs font-semibold flex items-center gap-0.5 ${trend >= 0 ? "text-emerald-400" : "text-red-400"}`}>
                     {trend >= 0 ? <ArrowUpRight className="w-3 h-3" /> : <ArrowDownRight className="w-3 h-3" />}
