@@ -28,8 +28,8 @@ export default function CredentialsBadges({ dark = false }) {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: index * 0.12 }}
-          className={`rounded-xl overflow-hidden shadow-md ${logo.bg} p-3 flex items-center justify-center`}
-          style={{ width: 120, height: 120 }}
+          className={`rounded-2xl overflow-hidden ${logo.bg} p-3 flex items-center justify-center ring-2 ring-white/20 shadow-[0_0_30px_rgba(255,255,255,0.12)]`}
+          style={{ width: 130, height: 130 }}
         >
           <img
             src={logo.url}
