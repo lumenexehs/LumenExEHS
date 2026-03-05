@@ -138,7 +138,7 @@ export default function SectorManufacturing() {
                 </Button>
               </Link>
               <Link to={createPageUrl("Services")}>
-                <Button size="lg" variant="outline" className="bg-sky-700 text-white px-8 text-sm font-medium rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-10 border-white/30 hover:bg-white/10">
+                <Button size="lg" variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-[#1a3a52] px-8 rounded-full transition-colors">
                   View All Services
                 </Button>
               </Link>
