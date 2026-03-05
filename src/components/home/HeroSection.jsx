@@ -83,7 +83,7 @@ export default function HeroSection() {
             </Button>
           </Link>
           <Link to={createPageUrl("Contact")}>
-            <Button size="lg" variant="outline" className="bg-sky-700 text-white px-8 py-6 text-base font-medium rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-10 border-white/30 hover:bg-white/10 w-full sm:w-auto">
+            <Button size="lg" variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-[#1a3a52] px-8 py-6 text-base font-medium rounded-full w-full sm:w-auto transition-colors">
               Request an Assessment
             </Button>
           </Link>
