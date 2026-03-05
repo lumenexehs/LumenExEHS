@@ -44,9 +44,9 @@ export const articles = [
     topic: "indoor-air",
     tag: "Radon",
     title: "Radon in Ontario Buildings: What Employers and Landlords Must Know",
-    summary: "Radon is the second leading cause of lung cancer in Canada — and most buildings have never been tested. Ontario OHS requirements are clear. Is your building compliant?",
+    summary: "Radon is the second leading cause of lung cancer in Canada — and nearly half of Canadian homes may exceed the WHO's threshold. Health Canada's guideline hasn't changed since 2007. Is your building truly safe?",
     image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&q=80",
-    date: "Jan 2025",
+    date: "Mar 2026",
     readTime: "5 min read",
   },
   {
