@@ -12,8 +12,13 @@ import CommunityServiceSection from "@/components/shared/CommunityServiceSection
 import CredentialsBadges from "@/components/shared/CredentialsBadges";
 import FeaturedServicesGrid from "@/components/services/FeaturedServicesGrid";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { base44 } from "@/api/base44Client";
 
 export default function Home() {
+  useEffect(() => {
+    base44.analytics.track({ eventName: "page_view", properties: { page: "Home" } });
+  }, []);
   return (
     <div className="min-h-screen">
       <HeroSection />
