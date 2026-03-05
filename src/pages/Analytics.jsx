@@ -113,7 +113,7 @@ export default function Analytics() {
 
         {/* Stat Cards */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
-          {statCards.map(({ label, value, icon: Icon }) => (
+          {statCards.map(({ label, value, icon: IconComp }) => (
             <div key={label} className="bg-white/5 border border-white/10 rounded-2xl p-5">
               <div className="flex items-center justify-between mb-3">
                 <Icon className="w-5 h-5 text-[#d4af7a]" />
