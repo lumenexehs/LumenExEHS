@@ -138,7 +138,7 @@ export default function SectorPublicSector() {
                 </Button>
               </Link>
               <Link to={createPageUrl("Services")}>
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 rounded-full">
+                <Button size="lg" variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-[#1a3a52] px-8 rounded-full transition-colors">
                   View All Services
                 </Button>
               </Link>
