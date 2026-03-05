@@ -257,6 +257,16 @@ export default function Layout({ children, currentPageName }) {
               >
                 <Linkedin className="w-5 h-5" />
               </a>
+              {isAuthenticated && (
+                <Link to={createPageUrl("Analytics")}>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className={isScrolled ? "text-slate-600" : "text-white/80 hover:text-white hover:bg-white/10"}>
+                    Analytics
+                  </Button>
+                </Link>
+              )}
               <Link to={createPageUrl("ClientPortal")}>
                 <Button
                   variant="ghost"
