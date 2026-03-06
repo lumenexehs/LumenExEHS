@@ -40,6 +40,16 @@ export const articles = [
     externalUrl: "https://www.linkedin.com/pulse/regulation-watch-winter-height-hazards-compliance-services-customer-leiic",
   },
   {
+    id: "odour-ambulances",
+    topic: "indoor-air",
+    tag: "Indoor Air Quality",
+    title: "Ambulances Called, Schools Closed: What a Mystery Odour Really Means",
+    summary: "When a swimming pool mechanical issue sent students home sick and drew three fire engines to a UK school, the lesson was clear — odour complaints are emergency triggers, not maintenance tickets.",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
+    date: "Mar 2026",
+    readTime: "4 min read",
+  },
+  {
     id: "odour-schools",
     topic: "indoor-air",
     tag: "Indoor Air Quality",
