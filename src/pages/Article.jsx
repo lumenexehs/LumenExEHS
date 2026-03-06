@@ -8,6 +8,35 @@ import { articles } from "@/components/home/KnowledgeHub";
 
 // Article content database
 const articleContent = {
+  "butadiene-epa": {
+    metaTitle: "EPA Moves to Regulate 1,3-Butadiene: What Employers Should Know | LumenEx EHS",
+    metaDescription: "The U.S. EPA has found 1,3-butadiene presents unreasonable risk to workers in 11 occupational conditions of use. Here's what this means for Canadian employers in manufacturing and chemical handling.",
+    problemSnapshot: "On February 26, 2026, the U.S. EPA finalized its risk evaluation for 1,3-butadiene — a colorless, flammable gas used in the manufacture of synthetic rubber, plastics, adhesives, and paints — finding that it presents an unreasonable risk to workers under 11 conditions of occupational use. Under TSCA, a proposed risk management rule is expected within one year. For employers in manufacturing, processing, and chemical handling environments, this is a clear signal that chemical exposure oversight is tightening — and that waiting for finalized rules is not the strongest strategy.",
+    happening: [
+      "1,3-butadiene is classified as a human carcinogen and is present in a wide range of industrial processes including manufacture, import, processing, repackaging, recycling, and disposal operations",
+      "The EPA's risk evaluation identified unreasonable risk during 11 specific occupational conditions of use — covering a broad spectrum of worker roles and exposure pathways",
+      "Regulatory actions taken by major jurisdictions like the EPA routinely influence client expectations, procurement standards, and corporate EHS programs across North America",
+      "Many organizations do not have a complete picture of where 1,3-butadiene may be present — directly in raw materials, or indirectly in fuels, process streams, or formulations",
+      "Exposure documentation is increasingly expected not just for regulatory compliance, but for insurance, due diligence, and health or compensation inquiries",
+      "The gap between 'no current rule' and 'no current risk' is one that employers can no longer afford to assume away — particularly for classified carcinogens",
+    ],
+    whenToAct: [
+      "Your facility handles synthetic rubber, plastics, adhesives, solvents, fuels, or chemical intermediates where 1,3-butadiene may be present as a raw material, byproduct, or process stream",
+      "Your chemical inventory has not been reviewed against current occupational hygiene exposure benchmarks in the past two years",
+      "Workers perform transfer, blending, maintenance, packaging, or waste handling tasks with limited exposure documentation",
+      "Controls such as local exhaust ventilation, enclosure, or respiratory protection have not been formally assessed for adequacy",
+      "A client, insurer, or regulator has requested evidence of hazard communication, exposure monitoring, or risk control documentation",
+      "Your organization is preparing for an EHS audit, due diligence review, or expansion of chemical operations",
+    ],
+    approach: "We conduct structured chemical exposure assessments that begin with inventory review and hazard identification, followed by exposure pathway analysis, control effectiveness review, and — where warranted — personal or area air monitoring. Our deliverables are written to support both internal decision-making and external scrutiny: regulatory inquiries, client due diligence, and long-term health documentation. We also assist with hazard communication updates, control gap identification, and prioritized remediation plans.",
+    quote: {
+      text: "Chemical risk does not disappear simply because it is familiar. Well-known substances often remain significant risks when exposure is poorly understood, insufficiently monitored, or weakly controlled.",
+      attribution: "Bite-size OHS — LumenEx EHS, March 2026",
+      source: "EPA Final Risk Evaluation: 1,3-Butadiene (Feb 26, 2026)",
+      sourceUrl: "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/risk-management-13-butadiene",
+    },
+    service: "occupational_hygiene",
+  },
   "odour-ambulances": {
     metaTitle: "Ambulances Called, Schools Closed: What a Mystery Odour Really Means | LumenEx EHS",
     metaDescription: "A swimming pool mechanical issue sent students home sick and drew fire engines to a UK school. Here's what that means for Canadian school boards and their duty to investigate.",
