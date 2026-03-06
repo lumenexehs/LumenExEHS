@@ -350,6 +350,18 @@ export default function Article() {
           </p>
         </motion.section>
 
+        {/* Interactive Tool — Heat Stress only */}
+        {id === "heat-stress-construction" && (
+          <motion.section initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-lg">🌡️</span>
+              <h2 className="text-lg font-bold text-slate-900">Primary Assessment Tool</h2>
+            </div>
+            <p className="text-slate-600 text-sm mb-4">Use this ACGIH TLV®-based screener to estimate heat stress risk for your site conditions. Enter today's environmental data and your work type to get an immediate risk classification and recommended controls.</p>
+            <HeatStressAssessor />
+          </motion.section>
+        )}
+
         {/* Disclaimer */}
         <motion.section
           initial={{ opacity: 0, y: 16 }}
