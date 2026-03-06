@@ -151,9 +151,9 @@ const articleContent = {
     metaDescription: "Plain-English guide to Threshold Limit Values for EHS managers. What your air sampling data means and what action it requires.",
     problemSnapshot: "Your hygienist handed you a report full of numbers, ppm values, and TLV® comparisons. You need to know: are my workers safe? Do I need to do something? And how do I explain this to management?",
     happening: [
-      "TLVs® (Threshold Limit Values) are set by ACGIH — the most widely adopted occupational exposure limits in Ontario",
-      "Ontario's O. Reg 833 sets legally binding OELs — some are more permissive than ACGIH TLVs®",
-      "A result at 50% of the TLV® is not necessarily 'safe' — it depends on exposure duration, mixtures, and individual susceptibility",
+      "Occupational Exposure Limits (OELs) are the cornerstone of air sampling interpretation — Ontario's O. Reg 833 sets legally binding limits, and additional guidance values are widely referenced in professional practice",
+      "A result at 50% of the applicable OEL is not necessarily 'safe' — it depends on exposure duration, chemical mixtures, and individual susceptibility",
+      "Results must be interpreted in context — the same concentration can represent different levels of risk depending on the chemical, the task, and the worker",
       "Action levels typically trigger engineering controls, medical surveillance, or PPE upgrades",
       "Mixture effects must be calculated separately — multiple chemicals at sub-limit concentrations can still exceed combined limits",
     ],
