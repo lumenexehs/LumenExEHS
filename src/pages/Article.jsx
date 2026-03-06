@@ -158,7 +158,7 @@ const articleContent = {
       "Mixture effects must be calculated separately — multiple chemicals at sub-limit concentrations can still exceed combined limits",
     ],
     whenToAct: [
-      "Any result exceeds 50% of the applicable OEL or TLV®",
+      "Any result exceeds 50% of the applicable OEL or published guidance value",
       "Workers are using chemicals without documented exposure data",
       "A process change has introduced new chemicals or altered ventilation",
       "A Ministry of Labour inspection is anticipated",
