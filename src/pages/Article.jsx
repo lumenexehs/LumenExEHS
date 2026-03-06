@@ -8,6 +8,35 @@ import { articles } from "@/components/home/KnowledgeHub";
 
 // Article content database
 const articleContent = {
+  "odour-schools": {
+    metaTitle: "Unexplained Odours in Schools: When to Close, When to Investigate | LumenEx EHS",
+    metaDescription: "A persistent or sudden odour in a school is a trigger for professional investigation — not just airing out the room. Ontario guidance for school boards and facility managers.",
+    problemSnapshot: "A teacher notices a chemical smell near the HVAC intake. Students start complaining of headaches. A principal is left deciding: do we send kids home, or wait and see? School boards across Canada have faced this scenario — and in several documented cases, the delay in acting led to school closures, media coverage, and loss of community trust.",
+    happening: [
+      "Odours in schools can originate from dozens of sources: sewage gas, off-gassing building materials, HVAC contamination, chemical storage, nearby industrial sites, or underground infrastructure",
+      "The nose is not a reliable detector — many hazardous compounds (carbon monoxide, radon, formaldehyde) are odourless, while some strongly odorous compounds are relatively low-risk",
+      "When an odour is reported, the instinct to 'air it out and monitor' can delay identification of an actual source — and erode staff and parent confidence",
+      "Schools are high-density occupancy buildings with populations that include children, who are more physiologically vulnerable to airborne exposures than adults",
+      "Ontario's OHSA general duty clause applies to school workers — boards have legal obligations to investigate known and suspected hazards",
+      "A school closure due to odour, without a clear root cause identified, often repeats — the smell returns because the source was never confirmed",
+    ],
+    whenToAct: [
+      "A staff member or student reports a chemical, sewage, or 'gas-like' smell that cannot be immediately explained",
+      "Multiple people in the same area report headaches, eye irritation, nausea, or dizziness",
+      "The odour persists or recurs after standard cleaning or ventilation",
+      "The school has recently undergone renovation, new flooring, painting, or HVAC servicing",
+      "An HVAC system has not been inspected or recommissioned in over a year",
+      "Parents are contacting the board with health concerns — regardless of whether a formal complaint has been filed",
+    ],
+    approach: "We conduct a structured odour investigation that combines a walkthrough assessment, HVAC inspection, and targeted air sampling — prioritizing likely sources based on building history, ventilation layout, and reported odour characteristics. Sampling can include VOCs, formaldehyde, sewage gas indicators (hydrogen sulfide), carbon dioxide, and particulates. We provide a written root cause assessment and remediation guidance that gives school boards a defensible, documented response.",
+    quote: {
+      text: "Parents want answers. And the school board needs to be able to say: we investigated, here's what we found, and here's what we're doing about it.",
+      attribution: "LumenEx EHS — Indoor Air Quality Assessment Practice",
+      source: "Ref: Global News — Sicamous school closure due to unexplained odour",
+      sourceUrl: "https://globalnews.ca/news/5934466/sicamous-school-closure-unexplained-odour/",
+    },
+    service: "iaq",
+  },
   "mould-workplace": {
     metaTitle: "Mould in the Workplace: When to Worry, When to Act | LumenEx EHS",
     metaDescription: "Understand when workplace mould requires professional assessment. Ontario OHS guidance for EHS managers and facility operators.",
