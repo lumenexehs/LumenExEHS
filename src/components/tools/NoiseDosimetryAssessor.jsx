@@ -314,19 +314,24 @@ export default function NoiseDosimetryAssessor() {
                       </div>
                     </div>
 
-                    {/* Duration slider */}
+                    {/* Duration picker — 0.5 hr increments */}
                     <div>
-                      <div className="flex items-center justify-between mb-1">
-                        <label className="text-slate-300 text-xs font-semibold">Duration</label>
-                        <span className="text-[#d4af7a] font-bold text-sm">{fmtHours(seg.hours)}</span>
+                      <label className="text-slate-300 text-xs font-semibold mb-2 block">Duration</label>
+                      <div className="grid grid-cols-6 gap-1.5">
+                        {[0.5,1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8,9,10].map((h) => (
+                          <button
+                            key={h}
+                            onClick={() => updateSeg(i, "hours", h)}
+                            className={`py-1.5 rounded-lg text-xs font-medium border transition-all ${
+                              seg.hours === h
+                                ? "bg-[#d4af7a] border-[#d4af7a] text-[#1a3a52] font-bold"
+                                : "bg-white/5 border-white/10 text-slate-300 hover:border-white/40"
+                            }`}
+                          >
+                            {h % 1 === 0 ? `${h}h` : `${h}h`}
+                          </button>
+                        ))}
                       </div>
-                      <input
-                        type="range" min={0.083} max={12} step={0.083}
-                        value={seg.hours}
-                        onChange={(e) => updateSeg(i, "hours", parseFloat(parseFloat(e.target.value).toFixed(3)))}
-                        className="w-full accent-[#d4af7a]"
-                      />
-                      <div className="flex justify-between text-xs text-slate-500 mt-0.5"><span>5 min</span><span>12 hrs</span></div>
                     </div>
 
                     {/* Per-segment C/T fraction preview */}
