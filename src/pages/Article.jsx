@@ -185,7 +185,7 @@ const articleContent = {
       "A new machine or process has been introduced",
       "A Ministry of Labour inspector has raised noise as a concern",
     ],
-    approach: "We conduct personal noise dosimetry and area sound level measurements using calibrated Type 1 and Type 2 sound level meters and dosimeters. Results are compared against Ontario O. Reg 381/15 and ACGIH TLV® for noise. We provide a written report with engineering and administrative control recommendations, and guidance on setting up a hearing conservation program.",
+    approach: "We conduct personal noise dosimetry and area sound level measurements using calibrated Type 1 and Type 2 sound level meters and dosimeters. Results are compared against Ontario O. Reg 381/15 and applicable occupational noise exposure guidelines. We provide a written report with engineering and administrative control recommendations, and guidance on setting up a hearing conservation program.",
     service: "noise_physical",
   },
   "heat-stress-construction": {
