@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, CheckCircle, AlertCircle, ClipboardList, Microscope, PhoneCall } from "lucide-react";
 import { articles } from "@/components/home/KnowledgeHub";
 import HeatStressAssessor from "@/components/tools/HeatStressAssessor";
+import NoiseDosimetryAssessor from "@/components/tools/NoiseDosimetryAssessor";
 
 // Article content database
 const articleContent = {
