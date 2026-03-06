@@ -147,9 +147,9 @@ const articleContent = {
     service: "radon",
   },
   "chemical-exposure-tlv": {
-    metaTitle: "TLVs® Explained: Understanding Your Air Sampling Report | LumenEx EHS",
-    metaDescription: "Plain-English guide to Threshold Limit Values for EHS managers. What your air sampling data means and what action it requires.",
-    problemSnapshot: "Your hygienist handed you a report full of numbers, ppm values, and TLV® comparisons. You need to know: are my workers safe? Do I need to do something? And how do I explain this to management?",
+    metaTitle: "Understanding Your Air Sampling Report: OELs Explained | LumenEx EHS",
+    metaDescription: "Plain-English guide to occupational exposure limits for EHS managers. What your air sampling data means and what action it requires.",
+    problemSnapshot: "Your hygienist handed you a report full of numbers, ppm values, and exposure limit comparisons. You need to know: are my workers safe? Do I need to do something? And how do I explain this to management?",
     happening: [
       "Occupational Exposure Limits (OELs) are the cornerstone of air sampling interpretation — Ontario's O. Reg 833 sets legally binding limits, and additional guidance values are widely referenced in professional practice",
       "A result at 50% of the applicable OEL is not necessarily 'safe' — it depends on exposure duration, chemical mixtures, and individual susceptibility",
