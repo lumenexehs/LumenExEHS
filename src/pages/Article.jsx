@@ -349,6 +349,20 @@ export default function Article() {
           </p>
         </motion.section>
 
+        {/* Disclaimer */}
+        <motion.section
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="border border-slate-200 rounded-xl p-5 bg-slate-50"
+        >
+          <p className="text-xs text-slate-500 leading-relaxed">
+            <span className="font-semibold text-slate-600">Disclaimer: </span>
+            The information provided in this article is for general informational and educational purposes only. It does not constitute professional occupational hygiene, legal, or regulatory advice, and should not be relied upon as such. Workplace conditions vary significantly — a qualified occupational hygienist should be consulted before making decisions about exposure assessment, control measures, or regulatory compliance. LumenEx EHS accepts no liability for actions taken or not taken based on the content of this article. References to third-party news sources, regulations, or guidelines are provided for context and do not imply endorsement.
+          </p>
+        </motion.section>
+
         {/* CTA */}
         <motion.section
           initial={{ opacity: 0, y: 16 }}
