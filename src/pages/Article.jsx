@@ -351,7 +351,7 @@ export default function Article() {
           </p>
         </motion.section>
 
-        {/* Interactive Tool — Heat Stress only */}
+        {/* Interactive Tool — Heat Stress */}
         {id === "heat-stress-construction" && (
           <motion.section initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
             <div className="flex items-center gap-2 mb-4">
@@ -360,6 +360,20 @@ export default function Article() {
             </div>
             <p className="text-slate-600 text-sm mb-4">Estimate WBGT-based heat stress risk for your site conditions. Enter today's environmental data and your work type to get an immediate risk classification and recommended controls.</p>
             <HeatStressAssessor />
+          </motion.section>
+        )}
+
+        {/* Interactive Tool — Noise Dosimetry */}
+        {id === "noise-dosimetry" && (
+          <motion.section initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-lg">🔊</span>
+              <h2 className="text-lg font-bold text-slate-900">Noise Exposure Screener</h2>
+            </div>
+            <p className="text-slate-600 text-sm mb-4">
+              Enter the noise levels and durations across a worker's typical day to estimate their 8-hour TWA dose. The tool applies Ontario's 5 dB exchange rate and flags exposures against regulatory action and permissible limits.
+            </p>
+            <NoiseDosimetryAssessor />
           </motion.section>
         )}
 
