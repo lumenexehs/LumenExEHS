@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, CheckCircle, AlertCircle, ClipboardList, Microscope, PhoneCall } from "lucide-react";
 import { articles } from "@/components/home/KnowledgeHub";
+import HeatStressAssessor from "@/components/tools/HeatStressAssessor";
 
 // Article content database
 const articleContent = {
