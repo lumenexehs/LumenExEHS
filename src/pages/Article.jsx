@@ -214,7 +214,7 @@ const articleContent = {
     metaDescription: "IAQ assessment for healthcare settings in Ontario. Identifying chemical, biological, and HVAC-related air quality risks in clinical environments.",
     problemSnapshot: "Healthcare workers are exposed to a complex mixture of airborne hazards — from glutaraldehyde and formaldehyde used in sterilization, to aerosolized pathogens, to off-gassing from building materials. IAQ in healthcare settings isn't just a comfort issue — it's a patient and worker safety issue.",
     happening: [
-      "Glutaraldehyde, ethylene oxide, and formaldehyde are common hazardous chemical disinfectants with TLVs® well below detectable odour thresholds",
+      "Glutaraldehyde, ethylene oxide, and formaldehyde are common hazardous chemical disinfectants with occupational exposure limits well below detectable odour thresholds",
       "HVAC pressure relationships between wards, isolation rooms, and corridors are critical infection control infrastructure",
       "Renovation work in occupied healthcare facilities requires infection control risk assessments (ICRA)",
       "Biological aerosols from patient care activities can persist in poorly ventilated spaces",
