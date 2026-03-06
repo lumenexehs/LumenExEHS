@@ -8,6 +8,35 @@ import { articles } from "@/components/home/KnowledgeHub";
 
 // Article content database
 const articleContent = {
+  "odour-ambulances": {
+    metaTitle: "Ambulances Called, Schools Closed: What a Mystery Odour Really Means | LumenEx EHS",
+    metaDescription: "A swimming pool mechanical issue sent students home sick and drew fire engines to a UK school. Here's what that means for Canadian school boards and their duty to investigate.",
+    problemSnapshot: "In January 2026, a 'mystery odour' near a swimming pool at Green Park School in Wolverhampton triggered a 12:20pm emergency call, three fire engines, paramedic treatment for nauseous students, and a two-day school closure. A second neighbouring school — Stowlawn Primary — was shut as a precaution. The source was believed to be a mechanical issue, but that determination came after the emergency response, not before.",
+    happening: [
+      "Swimming pools generate chloramines — compounds formed when chlorine reacts with sweat, urine, and other organic matter — which can cause respiratory irritation, eye irritation, and nausea even at relatively low concentrations",
+      "Mechanical failures in pool HVAC or chemical dosing systems can cause rapid, concentrated releases of chlorine gas or chloramines into occupied areas",
+      "Schools often lack real-time air quality monitoring, meaning the first alert is a person reporting symptoms — by which point exposures may already be significant",
+      "Because pool areas are enclosed and often poorly ventilated relative to occupancy, contaminants can build quickly and migrate into adjacent occupied spaces",
+      "The response at Green Park involved specialist atmospheric monitoring equipment — the type of assessment that should ideally precede a decision to re-open, not just close",
+      "Two schools were closed, multiple students were treated by paramedics, and parents were notified — all from a source that was, ultimately, a 'mechanical issue'",
+    ],
+    whenToAct: [
+      "Students or staff near a pool or mechanical room report nausea, headaches, or eye/throat irritation",
+      "A chemical or chlorine-like smell is detectable outside the pool area in corridors, gyms, or classrooms",
+      "Pool chemical dosing equipment has recently been serviced, adjusted, or replaced",
+      "HVAC units serving the pool area have not been inspected or balanced in the past 12 months",
+      "An odour complaint has been dismissed or monitored without a root cause being confirmed",
+      "A school is preparing to re-open after an odour-related closure and needs documented clearance",
+    ],
+    approach: "We conduct a structured chemical and air quality assessment of pool environments including chloramine monitoring (trichloramine), chlorine gas detection, ventilation effectiveness testing, and HVAC review. For post-incident clearance, we provide a written report that gives boards a defensible, documented basis for re-opening — and a preventive maintenance framework to reduce recurrence.",
+    quote: {
+      text: "No serious concerns were identified — but ambulances were still called, two schools were closed, and parents were alarmed for two days. A professional assessment before re-opening is not optional.",
+      attribution: "LumenEx EHS — Indoor Air Quality Assessment Practice",
+      source: "Ref: The Sun — Schools closed & ambulances called after mystery odour (Jan 2026)",
+      sourceUrl: "https://www.thesun.co.uk/news/37971927/school-closure-ambulances-mystery-odour-nauseous-pupils/",
+    },
+    service: "iaq",
+  },
   "odour-schools": {
     metaTitle: "Unexplained Odours in Schools: When to Close, When to Investigate | LumenEx EHS",
     metaDescription: "A persistent or sudden odour in a school is a trigger for professional investigation — not just airing out the room. Ontario guidance for school boards and facility managers.",
