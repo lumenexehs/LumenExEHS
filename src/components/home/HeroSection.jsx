@@ -42,8 +42,8 @@ export default function HeroSection() {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 max-w-3xl">
+          transition={{ duration: 0.6, delay: 0.1 }} className="text-white mb-5 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl max-w-3xl">
+
 
           Making Invisible Hazards
           <span className="block text-[#d4af7a] mt-1">Visible.</span>
