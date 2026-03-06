@@ -357,7 +357,7 @@ export default function Article() {
               <span className="text-lg">🌡️</span>
               <h2 className="text-lg font-bold text-slate-900">Primary Assessment Tool</h2>
             </div>
-            <p className="text-slate-600 text-sm mb-4">Use this ACGIH TLV®-based screener to estimate heat stress risk for your site conditions. Enter today's environmental data and your work type to get an immediate risk classification and recommended controls.</p>
+            <p className="text-slate-600 text-sm mb-4">Estimate WBGT-based heat stress risk for your site conditions. Enter today's environmental data and your work type to get an immediate risk classification and recommended controls.</p>
             <HeatStressAssessor />
           </motion.section>
         )}
