@@ -40,6 +40,16 @@ export const articles = [
     externalUrl: "https://www.linkedin.com/pulse/regulation-watch-winter-height-hazards-compliance-services-customer-leiic",
   },
   {
+    id: "odour-schools",
+    topic: "indoor-air",
+    tag: "Indoor Air Quality",
+    title: "Unexplained Odours in Schools: When to Close, When to Investigate",
+    summary: "A persistent or sudden odour in a school is not a minor nuisance — it's a trigger for investigation. Schools across Canada have closed due to unexplained smells, and principals are often left without a clear protocol.",
+    image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80",
+    date: "Mar 2026",
+    readTime: "5 min read",
+  },
+  {
     id: "radon-ontario",
     topic: "indoor-air",
     tag: "Radon",
