@@ -45,7 +45,7 @@ export const articles = [
     tag: "Chemical Exposure",
     title: "EPA Moves to Regulate 1,3-Butadiene: What Employers Should Know",
     summary: "The U.S. EPA has determined that 1,3-butadiene presents an unreasonable risk to workers in 11 occupational conditions of use. For Canadian employers in manufacturing and chemical handling, this is a signal worth acting on now.",
-    image: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&q=80",
     date: "Mar 2026",
     readTime: "6 min read",
   },
