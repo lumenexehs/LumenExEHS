@@ -1,0 +1,49 @@
+{
+  "name": "BusinessCardLead",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "contact",
+        "enquiry"
+      ],
+      "description": "Type of submission"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "social": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string",
+      "description": "Enquiry message content"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "reviewed",
+        "followed_up"
+      ],
+      "default": "new"
+    }
+  },
+  "required": [
+    "type",
+    "email"
+  ]
+}

@@ -30,6 +30,51 @@ function downloadVCard() {
   URL.revokeObjectURL(url);
 }
 
+function EnquiryCapture() {
+  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [status, setStatus] = useState("idle");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!message || !email) return;
+    setStatus("submitting");
+    await Promise.all([
+      base44.entities.BusinessCardLead.create({ type: "enquiry", name, email, message }),
+      base44.integrations.Core.SendEmail({
+        to: "info@lumenexehs.ca",
+        subject: `New enquiry from business card — ${name || email}`,
+        body: `Name: ${name || "—"}\nEmail: ${email}\n\nMessage:\n${message}`,
+      }),
+    ]);
+    setStatus("done");
+  };
+
+  return (
+    <div className="mt-6 pt-6 border-t border-slate-100">
+      <p className="text-xs font-semibold text-[#1a3a52] uppercase tracking-widest mb-1">Send an Enquiry</p>
+      <p className="text-xs text-slate-400 mb-4 leading-relaxed">Have a question or want to discuss a project? Leave me a message.</p>
+      {status === "done" ? (
+        <p className="text-xs text-emerald-600 font-medium py-3 text-center">Enquiry sent — I'll get back to you shortly.</p>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-2.5">
+          <input name="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name"
+            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]" />
+          <input name="email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email address *"
+            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68]" />
+          <textarea name="message" required value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Your message *" rows={4}
+            className="w-full text-sm px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#c49d68] resize-none" />
+          <button type="submit" disabled={status === "submitting"}
+            className="w-full py-3 rounded-2xl bg-[#1a3a52] text-white text-sm font-semibold active:scale-95 transition-transform disabled:opacity-50">
+            {status === "submitting" ? "Sending…" : "Send Enquiry"}
+          </button>
+        </form>
+      )}
+    </div>
+  );
+}
+
 function ContactCapture() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", organization: "", occupation: "" });
   const [selectedPlatform, setSelectedPlatform] = useState(null);
@@ -42,14 +87,26 @@ function ContactCapture() {
     e.preventDefault();
     if (!form.email) return;
     setStatus("submitting");
-    const socialLine = selectedPlatform && socialHandle ?
-    `${selectedPlatform.label}: ${selectedPlatform.prefix}${socialHandle}` :
-    "—";
-    await base44.integrations.Core.SendEmail({
-      to: "info@lumenexehs.ca",
-      subject: `New contact from business card — ${form.name || form.email}`,
-      body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nPhone: ${form.phone || "—"}\nOrganization: ${form.organization || "—"}\nOccupation: ${form.occupation || "—"}\nSocial: ${socialLine}`
-    });
+    const socialLine = selectedPlatform && socialHandle
+      ? `${selectedPlatform.label}: ${selectedPlatform.prefix}${socialHandle}`
+      : "";
+    const payload = {
+      type: "contact",
+      name: form.name || "",
+      email: form.email,
+      phone: form.phone || "",
+      organization: form.organization || "",
+      occupation: form.occupation || "",
+      social: socialLine,
+    };
+    await Promise.all([
+      base44.entities.BusinessCardLead.create(payload),
+      base44.integrations.Core.SendEmail({
+        to: "info@lumenexehs.ca",
+        subject: `New contact from business card — ${form.name || form.email}`,
+        body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nPhone: ${form.phone || "—"}\nOrganization: ${form.organization || "—"}\nOccupation: ${form.occupation || "—"}\nSocial: ${socialLine || "—"}`,
+      }),
+    ]);
     setStatus("done");
   };
 
@@ -270,6 +327,9 @@ export default function BusinessCard() {
             19+ yrs
           </span>
         </div>
+
+        {/* Enquiry Form */}
+        <EnquiryCapture />
 
         {/* Contact Capture */}
         <ContactCapture />
