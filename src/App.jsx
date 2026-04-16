@@ -6,6 +6,7 @@ import { pagesConfig } from './pages.config'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import BusinessCardDashboard from './pages/BusinessCardDashboard';
+import AdminPortal from './pages/AdminPortal';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
@@ -60,6 +61,7 @@ const AuthenticatedApp = () => {
         />
       ))}
       <Route path="/BusinessCardDashboard" element={<LayoutWrapper currentPageName="BusinessCardDashboard"><BusinessCardDashboard /></LayoutWrapper>} />
+      <Route path="/AdminPortal" element={<AdminPortal />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
