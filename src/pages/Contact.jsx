@@ -61,14 +61,7 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    await Promise.all([
-      base44.entities.ContactMessage.create(formData),
-      base44.integrations.Core.SendEmail({
-        to: "info@lumenexehs.ca",
-        subject: `New enquiry from website — ${formData.name || formData.email}`,
-        body: `Name: ${formData.name || "—"}\nEmail: ${formData.email}\nPhone: ${formData.phone || "—"}\nCompany: ${formData.company || "—"}\nService Interest: ${formData.service_interest || "—"}\n\nMessage:\n${formData.message}`,
-      }),
-    ]);
+    await base44.functions.invoke("submitContactMessage", formData);
 
     setIsSubmitting(false);
     setIsSubmitted(true);
