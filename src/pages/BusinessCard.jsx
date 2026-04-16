@@ -40,14 +40,7 @@ function EnquiryCapture() {
     e.preventDefault();
     if (!message || !email) return;
     setStatus("submitting");
-    await Promise.all([
-      base44.entities.BusinessCardLead.create({ type: "enquiry", name, email, message }),
-      base44.integrations.Core.SendEmail({
-        to: "info@lumenexehs.ca",
-        subject: `New enquiry from business card — ${name || email}`,
-        body: `Name: ${name || "—"}\nEmail: ${email}\n\nMessage:\n${message}`,
-      }),
-    ]);
+    await base44.functions.invoke("submitBusinessCardLead", { type: "enquiry", name, email, message });
     setStatus("done");
   };
 
@@ -99,14 +92,7 @@ function ContactCapture() {
       occupation: form.occupation || "",
       social: socialLine,
     };
-    await Promise.all([
-      base44.entities.BusinessCardLead.create(payload),
-      base44.integrations.Core.SendEmail({
-        to: "info@lumenexehs.ca",
-        subject: `New contact from business card — ${form.name || form.email}`,
-        body: `Name: ${form.name || "—"}\nEmail: ${form.email}\nPhone: ${form.phone || "—"}\nOrganization: ${form.organization || "—"}\nOccupation: ${form.occupation || "—"}\nSocial: ${socialLine || "—"}`,
-      }),
-    ]);
+    await base44.functions.invoke("submitBusinessCardLead", payload);
     setStatus("done");
   };
 
